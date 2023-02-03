@@ -62,7 +62,8 @@
             android:backgroundTint="#0000ff"
             android:text="Log in"
             android:textSize="20dp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:id="@+id/btn_login"/>
     </LinearLayout>
 
 
@@ -89,7 +90,8 @@
         android:text="Create new account"
         android:layout_gravity="center"
         android:textColor="@color/black"
-        android:backgroundTint="#f2f3f4"/>
+        android:backgroundTint="#f2f3f4"
+        android:id="@+id/btn_new_account"/>
 
 
 </LinearLayout>
