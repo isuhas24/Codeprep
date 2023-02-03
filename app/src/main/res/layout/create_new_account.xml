@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
-
+    android:orientation="vertical">
 
     <View
         android:layout_width="match_parent"
         android:layout_height="25dp"/>
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,11 +19,23 @@
             android:src="@drawable/logo"/>
     </LinearLayout>
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Fullname"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textStyle="italic"
+            android:layout_gravity="center"
+            android:backgroundTintMode="add"
+            android:id="@+id/txt_name"/>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -38,7 +45,7 @@
             android:textStyle="italic"
             android:layout_gravity="center"
             android:backgroundTintMode="add"
-            android:id="@+id/txt_email"/>
+            android:id="@+id/txt_email_or_phone"/>
         <View
             android:layout_width="wrap_content"
             android:layout_height="10dp"/>
@@ -47,53 +54,24 @@
             android:layout_height="match_parent"
             android:hint="Password"
             android:textSize="25dp"
-            android:layout_gravity="center"
-            android:textStyle="italic"
             android:gravity="center"
+            android:textStyle="italic"
+            android:layout_gravity="center"
             android:backgroundTintMode="add"
-            android:id="@+id/txt_password"/>
+            android:id="@+id/txt_passkey"/>
         <View
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="10dp"/>
         <Button
             android:layout_width="400dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:backgroundTint="#0000ff"
-            android:text="Log in"
+            android:text="Register"
             android:textSize="20dp"
             android:textStyle="bold"
-            android:id="@+id/btn_login"/>
+            android:id="@+id/btn_register"/>
     </LinearLayout>
-
-
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="20dp"/>
-
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="----------------------------- or ----------------------------"
-        android:textAlignment="center"
-        android:textSize="20dp"/>
-
-
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="20dp"/>
-
-
-    <Button
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="Create new account"
-        android:layout_gravity="center"
-        android:textSize="17dp"
-        android:textColor="@color/black"
-        android:backgroundTint="#f2f3f4"
-        android:id="@+id/btn_new_account"/>
 
     <TextView
         android:layout_width="match_parent"
