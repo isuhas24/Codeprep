@@ -93,5 +93,12 @@
         android:backgroundTint="#f2f3f4"
         android:id="@+id/btn_new_account"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Codeprep © 2023"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
 
 </LinearLayout>
