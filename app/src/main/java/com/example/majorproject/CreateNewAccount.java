@@ -32,17 +32,22 @@ public class CreateNewAccount extends AppCompatActivity implements View.OnClickL
             String name_=name.getText().toString();
             String mobile_=mobile.getText().toString();
             String key_=key.getText().toString();
-            Database db=new Database(this, Database.DATABASE_NAME, null,1);
-            SQLiteDatabase d=db.getWritableDatabase();
-            ContentValues cv=new ContentValues();
-            cv.put("NAME",name_);
-            cv.put("EMAIL",mobile_);
-            cv.put("PASSWORD",key_);
-            d.insert(Database.TABLE_NAME,null,cv);
-            d.close();
-            Toast.makeText(this, "Registered successfully", Toast.LENGTH_SHORT).show();
-            Intent it=new Intent(this,MainActivity.class);
-            startActivity(it);
+            if(name_.isEmpty() || mobile_.isEmpty() || key_.isEmpty()){
+                Toast.makeText(this, "Enter the credentials to register", Toast.LENGTH_SHORT).show();
+            }
+            else{
+                Database db=new Database(this, Database.DATABASE_NAME, null,1);
+                SQLiteDatabase d=db.getWritableDatabase();
+                ContentValues cv=new ContentValues();
+                cv.put("NAME",name_);
+                cv.put("EMAIL",mobile_);
+                cv.put("PASSWORD",key_);
+                d.insert(Database.TABLE_NAME,null,cv);
+                d.close();
+                Toast.makeText(this, "Registered successfully", Toast.LENGTH_SHORT).show();
+                Intent it=new Intent(this,MainActivity.class);
+                startActivity(it);
+            }
         }
     }
 }

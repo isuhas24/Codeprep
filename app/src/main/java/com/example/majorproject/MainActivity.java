@@ -44,7 +44,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 email_=c.getString(1);
                 password_=c.getString(2);
             }
+            if(passwordField.isEmpty() || emailField.isEmpty()){
+                Toast.makeText(this, "Enter the credentials to login", Toast.LENGTH_SHORT).show();
+            }
             if(passwordField.equals(password_) && emailField.equals(email_)){
+                //create intent here to landing page
+
                 Toast.makeText(this, "Logged in successfully, Redirecting", Toast.LENGTH_SHORT).show();
             }
             else{
