@@ -23,10 +23,6 @@
 
         <activity android:name=".CreateNewAccount"
                   android:exported="true"/>
-        <activity android:name=".Forget_password"
-            android:exported="true"/>
-        <activity android:name=".LandingPage"
-                  android:exported="true"/>
     </application>
 
 </manifest>

@@ -50,10 +50,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if(passwordField.isEmpty() || emailField.isEmpty()){
                 Toast.makeText(this, "Enter the credentials to login", Toast.LENGTH_SHORT).show();
             }
-            if(passwordField.equals(password_) && emailField.equals(email_)){
+            else if(passwordField.equals(password_) && emailField.equals(email_)){
                 //create intent here to landing page
-
                 Toast.makeText(this, "Logged in successfully, Redirecting", Toast.LENGTH_SHORT).show();
+                Intent it=new Intent(this, LandingPage.class);
+                startActivity(it);
             }
             else{
                 Toast.makeText(this, "wrong credentials", Toast.LENGTH_SHORT).show();
