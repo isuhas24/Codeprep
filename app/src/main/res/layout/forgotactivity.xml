@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".Forget_password">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="18dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"/>
+    </LinearLayout>
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="18dp"/>
+
+        <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Enter your email address"
+       android:textStyle="bold"
+       android:textSize="20dp"/>
+
+        <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/txt_Email" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+
+
+
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Cancel"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:id="@+id/btn_cancel"/>
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Search"
+            android:textSize="17dp"
+            android:textStyle="bold"
+
+            android:id="@+id/btn_Search"/>
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
