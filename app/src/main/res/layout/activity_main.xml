@@ -65,7 +65,19 @@
             android:textStyle="bold"
             android:id="@+id/btn_login"/>
     </LinearLayout>
-
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Forgot password ?"
+    android:textSize="18dp"
+    android:layout_gravity="center"
+    android:background="#F5F7F8"
+    android:textColor="#0000ff"
+   android:id="@+id/forget_password"
+    android:onClick="onClick"
+    android:clickable="true"
+    tools:ignore="textSize"
+    />
 
     <View
         android:layout_width="wrap_content"
@@ -101,6 +113,7 @@
         android:text="Codeprep © 2023"
         android:textSize="17dp"
         android:textAlignment="center"
+
         android:textStyle="bold"/>
 
 </LinearLayout>

@@ -9,13 +9,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     EditText field1,password;
     Button login,createNewAccount;
-
+    TextView forget_password;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +27,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         createNewAccount=(Button) findViewById(R.id.btn_new_account);
         login.setOnClickListener(this);
         createNewAccount.setOnClickListener(this);
+        forget_password=(TextView) findViewById(R.id.forget_password);
+        forget_password.setOnClickListener(this);
     }
 
     @Override
@@ -58,6 +61,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         else if(v.equals(createNewAccount)){
             Intent it=new Intent(this, CreateNewAccount.class);
+            startActivity(it);
+        }
+        else if(v.equals(forget_password)){
+            Intent it=new Intent(this,Forget_password.class);
             startActivity(it);
         }
     }
