@@ -3,35 +3,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    
-    <ScrollView
+
+    <View
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+        android:layout_height="25dp" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="25dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="210dp"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/logo" />
+        <ImageView
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo" />
             </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="25dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
@@ -47,7 +45,10 @@
                 android:layout_height="wrap_content"
                 android:text="@string/about_mobility_companies"
                 android:layout_marginLeft="5dp"
-                android:textSize="20dp"/>
+                android:textSize="20dp"
+                android:justificationMode="inter_word"
+                android:textStyle="normal"
+                android:layout_margin="10dp"/>
 
             <View
                 android:layout_width="match_parent"
@@ -58,6 +59,7 @@
                 android:layout_height="wrap_content"
                 android:text="Choose the company from below"
                 android:textSize="20dp"
+                android:textStyle="bold"
                 android:textAlignment="center"
                 android:textColor="@color/black"/>
 
@@ -99,6 +101,10 @@
                     android:textAlignment="center"
                     android:textSize="20dp"
                     android:textStyle="bold"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp" />
         </LinearLayout>
 
     </ScrollView>

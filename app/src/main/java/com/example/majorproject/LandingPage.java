@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class LandingPage extends AppCompatActivity implements View.OnClickListener{
 
-    ImageView mobility_image;
+    ImageView mobility_image,ecommerce_image;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -17,12 +17,17 @@ public class LandingPage extends AppCompatActivity implements View.OnClickListen
         setContentView(R.layout.landing_page);
         mobility_image=(ImageView) findViewById(R.id.company1);
         mobility_image.setOnClickListener(this);
+        ecommerce_image=(ImageView) findViewById(R.id.company2);
+        ecommerce_image.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v){
         if(v.equals(mobility_image)){
             Intent it=new Intent(this, MobilityCompanies.class);
+            startActivity(it);
+        } else if (v.equals(ecommerce_image)) {
+            Intent it=new Intent(this,EcommerceCompanyies.class);
             startActivity(it);
         }
     }

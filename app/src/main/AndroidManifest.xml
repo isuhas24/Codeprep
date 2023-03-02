@@ -32,6 +32,10 @@
 
         <activity android:name=".MobilityCompanies"
                   android:exported="true"/>
+
+        <activity android:name=".EcommerceCompanyies"
+            android:exported="true"
+            />
     </application>
 
 </manifest>
