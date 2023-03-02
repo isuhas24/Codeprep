@@ -21,7 +21,9 @@ public class LandingPage extends AppCompatActivity implements View.OnClickListen
 
     @Override
     public void onClick(View v){
-        Intent it=new Intent(this, MobilityCompanies.class);
-        startActivity(it);
+        if(v.equals(mobility_image)){
+            Intent it=new Intent(this, MobilityCompanies.class);
+            startActivity(it);
+        }
     }
 }
