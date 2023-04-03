@@ -2,13 +2,20 @@
     <string name="app_name">Major Project</string>
     <string name="mobility_companies_heading">Mobility Companies</string>
     <string name="about_mobility_companies">
-        <b>=></b> Mobility is the industry of transporting people and goods.\n
-        <b>=></b> Revenue in the Ride-hailing and Taxi segment is projected to reach US$12.77bn in 2023.\n
-        <b>=></b> Revenue is expected to show an annual growth rate (2023-2027) of 0.12%, resulting in a projected market volume of US$12.83bn by 2027.
+    <b>=></b> Mobility is the industry of transporting people and goods.\n
+    <b>=></b> Revenue in the Ride-hailing and Taxi segment is projected to reach US$12.77bn in 2023.\n
+    <b>=></b> Revenue is expected to show an annual growth rate (2023-2027) of 0.12%, resulting in a projected market volume of US$12.83bn by 2027.
     </string>
+
     <string name="about_Ecommerce_companies">
-        <b>=></b> E-commerce or Electronic commerce is the trading of goods and services on the Internet.\n
-        <b>=></b> The global ecommerce growth rate for 2023 is forecast at 10.4% ,bring global ecommerce sales worldwide to $6.3 trillion.\n
-        <b>=></b> India is the 8th largest market for ecommerce with a predicted revenue of US$79,923.8 million by 2023.
+    <b>=></b> E-commerce or Electronic commerce is the trading of goods and services on the Internet.\n
+    <b>=></b> The global ecommerce growth rate for 2023 is forecast at 10.4% ,bring global ecommerce sales worldwide to $6.3 trillion.\n
+    <b>=></b> India is the 8th largest market for ecommerce with a predicted revenue of US$79,923.8 million by 2023.
+    </string>
+
+    <string name="about_Collaboration_companies">
+    <b>=></b> Collaboration in the context of business allow people to work together in achieving a defined ,common business purpose.\n
+    <b>=></b> The global enterprise collaboration market size grew from $47.74 billion in 2022 to $54.88 billion in 2023 at a compound annual growth rate(CAGR) of 15.0%.
+
     </string>
 </resources>

@@ -36,6 +36,9 @@
         <activity android:name=".EcommerceCompanyies"
             android:exported="true"
             />
+        <activity android:name=".CollaborationCompanies"
+            android:exported="true"
+            />
     </application>
 
 </manifest>
