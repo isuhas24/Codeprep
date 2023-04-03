@@ -22,20 +22,25 @@
         </activity>
 
         <activity android:name=".CreateNewAccount"
-            android:exported="true"/>
+                  android:exported="true"/>
 
         <activity android:name=".Forget_password"
-        android:exported="true"/>
+                  android:exported="true"/>
 
         <activity android:name=".LandingPage"
-        android:exported="true"/>
+                  android:exported="true"/>
 
         <activity android:name=".MobilityCompanies"
                   android:exported="true"/>
 
         <activity android:name=".EcommerceCompanyies"
-            android:exported="true"
-            />
+                  android:exported="true"/>
+
+        <activity android:name=".CRMCompanies"
+                  android:exported="true"/>
+
+        <activity android:name=".CloudCompanies"
+                  android:exported="true"/>
     </application>
 
 </manifest>

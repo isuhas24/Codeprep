@@ -47,6 +47,7 @@
             android:layout_height="match_parent"
             android:hint="Password"
             android:textSize="25dp"
+            android:inputType="textPassword"
             android:layout_gravity="center"
             android:textStyle="italic"
             android:gravity="center"
