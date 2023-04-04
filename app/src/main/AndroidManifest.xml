@@ -44,6 +44,9 @@
 
         <activity android:name=".CollaborationCompanies"
                   android:exported="true"/>
+
+        <activity android:name=".CommunicationCompanies"
+                  android:exported="true"/>
     </application>
 
 </manifest>

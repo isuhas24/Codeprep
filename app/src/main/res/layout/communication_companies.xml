@@ -35,7 +35,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/collaboration_companies_heading"
+                android:text="@string/communication_companies_heading"
                 android:textSize="30dp"
                 android:textColor="@color/black"
                 android:textAlignment="center"
@@ -44,7 +44,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/about_collaboration_companies"
+                android:text="@string/about_communication_companies"
                 android:layout_marginLeft="5dp"
                 android:textSize="20dp"
                 android:justificationMode="inter_word"
@@ -69,40 +69,17 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/atlassian"
-                android:src="@drawable/atlassian_image"
+                android:id="@+id/twilio"
+                android:src="@drawable/twilio_image"
                 android:adjustViewBounds="true"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="ATLASSIAN"
+                android:text="TWILIO"
                 android:textAlignment="center"
                 android:textSize="20dp"
                 android:textStyle="bold"/>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="30dp"/>
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/slack"
-                android:src="@drawable/slack_image"
-                android:adjustViewBounds="true"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="SLACK"
-                android:textAlignment="center"
-                android:textSize="20dp"
-                android:textStyle="bold"/>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="30dp" />
 
             <View
                 android:layout_width="match_parent"
