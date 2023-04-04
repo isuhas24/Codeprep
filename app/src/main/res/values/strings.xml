@@ -3,6 +3,8 @@
     <string name="mobility_companies_heading">Mobility Companies</string>
     <string name="crm_companies_heading">CRM Companies</string>
     <string name="cloud_companies_heading">Cloud services Companies</string>
+    <string name="collaboration_companies_heading">Collaboration Tools Companies</string>
+    <string name="communication_companies_heading">Communication Companies</string>
     <string name="about_mobility_companies">
         <b>=></b> Mobility is the industry of transporting people and goods.\n
         <b>=></b> Revenue in the Ride-hailing and Taxi segment is projected to reach US$12.77bn in 2023.\n
@@ -20,5 +22,12 @@
     <string name="about_cloud_companies">
         <b>=></b> Cloud service provider companies use their own data centers and compute resources to host cloud computing-based infrastructure and platform services for customer organizations.\n
         <b>=></b> Cloud services are typically priced using various pay-as-you-go subscription models.
+    </string>
+    <string name="about_collaboration_companies">
+        <b>=></b> Collaboration tools enable employees to work together on a project without being in the same location.\n
+        <b>=></b> Online collaboration tools are apps, software programs, or platforms that help businesses and their people streamline the creative process, and work together more effectively, and efficiently.
+    </string>
+    <string name="about_communication_companies">
+        <b>=></b>
     </string>
 </resources>

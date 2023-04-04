@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class LandingPage extends AppCompatActivity implements View.OnClickListener{
 
-    ImageView mobility_image,ecommerce_image,crm_image,cloud_image;
+    ImageView mobility_image,ecommerce_image,crm_image,cloud_image,collaboration_image;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -24,6 +24,8 @@ public class LandingPage extends AppCompatActivity implements View.OnClickListen
         crm_image.setOnClickListener(this);
         cloud_image=(ImageView) findViewById(R.id.company5);
         cloud_image.setOnClickListener(this);
+        collaboration_image=(ImageView) findViewById(R.id.company4);
+        collaboration_image.setOnClickListener(this);
     }
 
     @Override
@@ -42,6 +44,10 @@ public class LandingPage extends AppCompatActivity implements View.OnClickListen
         }
         else if(v.equals(cloud_image)){
             Intent it=new Intent(this,CloudCompanies.class);
+            startActivity(it);
+        }
+        else if(v.equals(collaboration_image)){
+            Intent it=new Intent(this,CollaborationCompanies.class);
             startActivity(it);
         }
     }
