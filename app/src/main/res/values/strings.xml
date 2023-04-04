@@ -5,6 +5,9 @@
     <string name="cloud_companies_heading">Cloud services Companies</string>
     <string name="collaboration_companies_heading">Collaboration Tools Companies</string>
     <string name="communication_companies_heading">Communication Companies</string>
+    <string name="advertisement_companies_heading">Advertisement Companies</string>
+    <string name="payment_companies_heading">Payment Companies</string>
+    <string name="trading_companies_heading">Trading Companies</string>
     <string name="about_mobility_companies">
         <b>=></b> Mobility is the industry of transporting people and goods.\n
         <b>=></b> Revenue in the Ride-hailing and Taxi segment is projected to reach US$12.77bn in 2023.\n
@@ -30,5 +33,18 @@
     <string name="about_communication_companies">
         <b>=></b> They provide programmable communication tools for making and receiving text messages, and performing other communication functions using its web services APIs.\n
         <b>=></b> They are a customer engagement platform used by hundreds of thousands of businesses and more than ten million developers worldwide to build unique, personalized experiences for their customers.
+    </string>
+    <string name="about_advertisement_companies">
+        <b>=></b> Advertising companies focus on providing monetization products to digital publishers.\n
+        <b>=></b> The services include search, display, native, video, and mobile advertising to monetize publishers inventory.
+    </string>
+    <string name="about_payment_companies">
+        <b>=></b> A payment service provider is a third-party company that assists businesses to accept electronic payments, such as credit cards and debit cards payments.\n
+        <b>=></b> PSPs act as intermediaries between those who make payments, i.e. consumers, and those who accept them, i.e. retailers.\n
+        <b>=></b> The global payment as a service market size was valued at USD 13.88 billion in 2022 and is expected to expand at a compound annual growth rate (CAGR) of 15.2% from 2023 to 2030.
+    </string>
+    <string name="about_trading_companies">
+        <b>=></b> They are investment platforms that offers a new way of investing money with stockbroking and direct mutual funds.\n
+        <b>=></b> They provide user interface to make investing easy, accessible, transparent, and paperless, enabling users to invest in mutual funds without any hassles.
     </string>
 </resources>

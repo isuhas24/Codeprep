@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class LandingPage extends AppCompatActivity implements View.OnClickListener{
 
-    ImageView mobility_image,ecommerce_image,crm_image,cloud_image,collaboration_image,communication_image;
+    ImageView mobility_image,ecommerce_image,crm_image,cloud_image,collaboration_image,communication_image,advertisement_image,payment_image,trading_image;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -28,6 +28,12 @@ public class LandingPage extends AppCompatActivity implements View.OnClickListen
         collaboration_image.setOnClickListener(this);
         communication_image=(ImageView) findViewById(R.id.company6);
         communication_image.setOnClickListener(this);
+        advertisement_image=(ImageView) findViewById(R.id.company7);
+        advertisement_image.setOnClickListener(this);
+        payment_image=(ImageView) findViewById(R.id.company8);
+        payment_image.setOnClickListener(this);
+        trading_image=(ImageView) findViewById(R.id.company9);
+        trading_image.setOnClickListener(this);
     }
 
     @Override
@@ -54,6 +60,18 @@ public class LandingPage extends AppCompatActivity implements View.OnClickListen
         }
         else if(v.equals(communication_image)){
             Intent it=new Intent(this,CommunicationCompanies.class);
+            startActivity(it);
+        }
+        else if(v.equals(advertisement_image)){
+            Intent it=new Intent(this,AdvertisementCompanies.class);
+            startActivity(it);
+        }
+        else if(v.equals(payment_image)){
+            Intent it=new Intent(this,PaymentCompanies.class);
+            startActivity(it);
+        }
+        else if(v.equals(trading_image)){
+            Intent it=new Intent(this,TradingCompanies.class);
             startActivity(it);
         }
     }

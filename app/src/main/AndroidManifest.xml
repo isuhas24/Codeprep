@@ -47,6 +47,15 @@
 
         <activity android:name=".CommunicationCompanies"
                   android:exported="true"/>
+
+        <activity android:name=".AdvertisementCompanies"
+                  android:exported="true"/>
+
+        <activity android:name=".PaymentCompanies"
+                  android:exported="true"/>
+
+        <activity android:name=".TradingCompanies"
+                  android:exported="true"/>
     </application>
 
 </manifest>
