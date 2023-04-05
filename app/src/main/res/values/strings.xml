@@ -8,6 +8,9 @@
     <string name="advertisement_companies_heading">Advertisement Companies</string>
     <string name="payment_companies_heading">Payment Companies</string>
     <string name="trading_companies_heading">Trading Companies</string>
+    <string name="investment_companies_heading">Investment Banks</string>
+    <string name="gaming_companies_heading">Gaming Companies</string>
+    <string name="entertainment_companies_heading">Entertainment Companies</string>
     <string name="about_mobility_companies">
         <b>=></b> Mobility is the industry of transporting people and goods.\n
         <b>=></b> Revenue in the Ride-hailing and Taxi segment is projected to reach US$12.77bn in 2023.\n
@@ -46,5 +49,17 @@
     <string name="about_trading_companies">
         <b>=></b> They are investment platforms that offers a new way of investing money with stockbroking and direct mutual funds.\n
         <b>=></b> They provide user interface to make investing easy, accessible, transparent, and paperless, enabling users to invest in mutual funds without any hassles.
+    </string>
+    <string name="about_investment_companies">
+        <b>=></b> They are leading global investment banking, securities and investment management firm that provides a wide range of financial services to a substantial and diversified client base.\n
+        <b>=></b> They are leaders in investment banking, financial services for consumers and small business, commercial banking, financial transactions processing and asset management.
+    </string>
+    <string name="about_gaming_companies">
+        <b>=></b> They provide a fantasy gaming platform for multiple sports such as fantasy cricket, football, basketball, kabaddi, hockey, volleyball, handball and baseball.\n
+        <b>=></b> It is an online game where users create a virtual team of real-life players and earn points based on the performances of these players in real matches.
+    </string>
+    <string name="about_entertainment_companies">
+        <b>=></b> These are subscription-based streaming services that allows their members to watch TV shows and movies on an internet-connected device.\n
+        <b>=></b> Total revenue in the Entertainment segment is projected to reach US$29.35bn in 2022. Total revenue is expected to show an annual growth rate (CAGR 2022-2027) of 6.65%, resulting in a projected market volume of US$42.54bn by 2027.
     </string>
 </resources>
