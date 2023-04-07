@@ -11,6 +11,14 @@
     <string name="investment_companies_heading">Investment Banks</string>
     <string name="gaming_companies_heading">Gaming Companies</string>
     <string name="entertainment_companies_heading">Entertainment Companies</string>
+    <string name="system_design_heading">System Design</string>
+    <string name="programming_languages_heading">Programming Languages</string>
+    <string name="dsa_heading">Data Structures and Algorithms</string>
+    <string name="oops_heading">Object Oriented Programming</string>
+    <string name="dbms_heading">Database Management System</string>
+    <string name="os_heading">Operating System</string>
+    <string name="se_heading">Software Engineering</string>
+    <string name="cn_heading">Computer Networks</string>
     <string name="about_mobility_companies">
         <b>=></b> Mobility is the industry of transporting people and goods.\n
         <b>=></b> Revenue in the Ride-hailing and Taxi segment is projected to reach US$12.77bn in 2023.\n
@@ -61,5 +69,48 @@
     <string name="about_entertainment_companies">
         <b>=></b> These are subscription-based streaming services that allows their members to watch TV shows and movies on an internet-connected device.\n
         <b>=></b> Total revenue in the Entertainment segment is projected to reach US$29.35bn in 2022. Total revenue is expected to show an annual growth rate (CAGR 2022-2027) of 6.65%, resulting in a projected market volume of US$42.54bn by 2027.
+    </string>
+    <string name="about_system_design">
+        <b>=></b> Systems design is the process of defining elements of a system like modules, architecture, components and their interfaces and data for a system based on the specified requirements.\n
+        <b>=></b> The goal of system design is to allocate the requirements of a large system to hardware and software components.\n
+        <b>=></b> System design interviews are an important step in the hiring process for many software engineering roles, particularly for positions that involve building and scaling complex systems.
+    </string>
+    <string name="about_programming_languages">
+        <b>=></b> A programming language is a way for programmers (developers) to communicate with computers. Programming languages consist of a set of rules that allows string values to be converted into various ways of generating machine code, or, in the case of visual programming languages, graphical elements.\n
+        <b>=></b> The languages that are used to write a program or set of instructions are called "Programming languages". Programming languages are broadly categorized into three types − Machine level language. Assembly level language. High-level language.\n
+        <b>=></b>  These programming languages are written in lines of code. When its arranged in the right order, it can be used to create software programs.
+    </string>
+    <string name="about_dsa">
+        <b>=></b> DSA stands for Data Structures and Algorithms. It is also sometimes referred to as PSDS - Problem Solving Data Structures. DSA is applied in problem-solving and enables developers to learn to write efficient code. The quality of the code can be judged by how much memory and time it consumes.\n
+        <b>=></b> Data structure and Algorithm (DSA) is applied in all disciplines of software development. DSA is the building block of the software development process. It is not limited to a single programming language. Although programming languages evolve or get dormant over time, DSA is incorporated into all of these languages.\n
+        <b>=></b> Product Based Companies place so much emphasis on Data Structures and Algorithms because it demonstrate the problem-solving ability of a candidate. There is no room to craft elaborate stories and this means that either the candidate can solve the problem or they cant.\n
+        <b>=></b> DSA is a must to crack the tech interviews at top product based companies.
+    </string>
+    <string name="about_oops">
+        <b>=></b> Object-Oriented Programming System (OOPs) is a programming concept that works on the principles of abstraction, encapsulation, inheritance, and polymorphism.\n
+        <b>=></b> It allows users to create objects they want and create methods to handle those objects.\n
+        <b>=></b> Features of OOPS makes it easy for programmers to solve complex scenarios.\n
+        <b>=></b> OOPS is one of the most important part of the tech interviews.
+    </string>
+    <string name="about_dbms">
+        <b>=></b> A database management system (or DBMS) is essentially nothing more than a computerized data-keeping system.\n
+        <b>=></b> Users of the system are given facilities to perform several kinds of operations on such a system for either manipulation of the data in the database or the management of the database structure itself.\n
+        <b>=></b> For example: MySQL, Oracle, etc are a very popular commercial database which is used in different applications.\n
+        <b>=></b> DBMS is also very important part of the tech interviews.
+    </string>
+    <string name="about_os">
+        <b>=></b> An operating system is system software that manages computer hardware and software resources, and provides common services for computer programs.\n
+        <b>=></b> An operating system (OS) is the program that, after being initially loaded into the computer by a boot program, manages all of the other application programs in a computer. The application programs make use of the operating system by making requests for services through a defined application program interface (API).\n
+        <b>=></b> OS is the most essential and vital part of any tech interviews.
+    </string>
+    <string name="about_se">
+        <b>=></b> Software Engineering focuses on analysing the needs and requirements of users to design, deploy, and test new software.\n
+        <b>=></b> This subject mainly revolves around the concepts of designs, requirements, design and implementation, software testing, software evolution, project planning, quality management....
+    </string>
+    <string name="about_cn">
+        <b>=></b> A computer network is a set of computers sharing resources located on or provided by network nodes.\n
+        <b>=></b> Computers use common communication protocols over digital interconnections to communicate with each other.\n
+        <b>=></b> Computer networking refers to interconnected computing devices that can exchange data and share resources with each other. These networked devices use a system of rules, called communications protocols, to transmit information over physical or wireless technologies.\n
+        <b>=></b> Computer Networks is also one of the most important part of the tech interviews.
     </string>
 </resources>

@@ -65,6 +65,30 @@
 
         <activity android:name=".EntertainmentCompanies"
                   android:exported="true"/>
+
+        <activity android:name=".SystemDesign"
+                  android:exported="true"/>
+
+        <activity android:name=".ProgrammingLanguages"
+                  android:exported="true"/>
+
+        <activity android:name=".DSA"
+                  android:exported="true"/>
+
+        <activity android:name=".OOPS"
+                  android:exported="true"/>
+
+        <activity android:name=".DBMS"
+                  android:exported="true"/>
+
+        <activity android:name=".OperatingSystem"
+            android:exported="true"/>
+
+        <activity android:name=".SoftwareEngineering"
+            android:exported="true"/>
+
+        <activity android:name=".ComputerNetworks"
+            android:exported="true"/>
     </application>
 
 </manifest>
