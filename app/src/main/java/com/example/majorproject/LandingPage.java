@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class LandingPage extends AppCompatActivity implements View.OnClickListener{
 
     ImageView mobility_image,ecommerce_image,crm_image,cloud_image,collaboration_image,communication_image,advertisement_image,payment_image,trading_image,investment_image,gaming_image,entertainment_image;
-    Button system_design_button,programming_languages_button,dsa_button,oops_button,dbms_button,os_button,se_button,cn_button;
+    Button system_design_button,programming_languages_button,dsa_button,oops_button,dbms_button,os_button,se_button,cn_button,github_button,sde_sheet_button,web_development_button,leetcode_solutions_button,coding_practices_button,tips_button,questions_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -62,6 +62,20 @@ public class LandingPage extends AppCompatActivity implements View.OnClickListen
         se_button.setOnClickListener(this);
         cn_button=(Button) findViewById(R.id.customButton8);
         cn_button.setOnClickListener(this);
+        github_button=(Button) findViewById(R.id.customButton9);
+        github_button.setOnClickListener(this);
+        sde_sheet_button=(Button) findViewById(R.id.customButton10);
+        sde_sheet_button.setOnClickListener(this);
+        web_development_button=(Button) findViewById(R.id.customButton11);
+        web_development_button.setOnClickListener(this);
+        leetcode_solutions_button=(Button) findViewById(R.id.customButton12);
+        leetcode_solutions_button.setOnClickListener(this);
+        coding_practices_button=(Button) findViewById(R.id.customButton13);
+        coding_practices_button.setOnClickListener(this);
+        tips_button=(Button) findViewById(R.id.customButton14);
+        tips_button.setOnClickListener(this);
+        questions_button=(Button) findViewById(R.id.customButton15);
+        questions_button.setOnClickListener(this);
     }
 
     @Override
@@ -148,6 +162,38 @@ public class LandingPage extends AppCompatActivity implements View.OnClickListen
         }
         else if(v.equals(cn_button)){
             Intent it=new Intent(this,ComputerNetworks.class);
+            startActivity(it);
+        }
+        else if(v.equals(cn_button)){
+            Intent it=new Intent(this,ComputerNetworks.class);
+            startActivity(it);
+        }
+        else if(v.equals(github_button)){
+            Intent it=new Intent(this,GitHub.class);
+            startActivity(it);
+        }
+        else if(v.equals(sde_sheet_button)){
+            Intent it=new Intent(this,SDESheet.class);
+            startActivity(it);
+        }
+        else if(v.equals(web_development_button)){
+            Intent it=new Intent(this,WebDevelopment.class);
+            startActivity(it);
+        }
+        else if(v.equals(leetcode_solutions_button)){
+            Intent it=new Intent(this,LeetcodeSolutions.class);
+            startActivity(it);
+        }
+        else if(v.equals(coding_practices_button)){
+            Intent it=new Intent(this,CodingPractices.class);
+            startActivity(it);
+        }
+        else if(v.equals(tips_button)){
+            Intent it=new Intent(this,Tips.class);
+            startActivity(it);
+        }
+        else if(v.equals(questions_button)){
+            Intent it=new Intent(this,Questions.class);
             startActivity(it);
         }
     }

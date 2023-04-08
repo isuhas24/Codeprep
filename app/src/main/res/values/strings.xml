@@ -19,6 +19,13 @@
     <string name="os_heading">Operating System</string>
     <string name="se_heading">Software Engineering</string>
     <string name="cn_heading">Computer Networks</string>
+    <string name="github_heading">GitHub</string>
+    <string name="sde_sheet_heading">SDE Sheet</string>
+    <string name="web_development_heading">Web Development</string>
+    <string name="leetcode_solutions_heading">Leetcode Solutions</string>
+    <string name="coding_practices_heading">Coding Practices</string>
+    <string name="tips_heading">Tips</string>
+    <string name="questions_heading">Most Important Coding Questions</string>
     <string name="about_mobility_companies">
         <b>=></b> Mobility is the industry of transporting people and goods.\n
         <b>=></b> Revenue in the Ride-hailing and Taxi segment is projected to reach US$12.77bn in 2023.\n
@@ -112,5 +119,34 @@
         <b>=></b> Computers use common communication protocols over digital interconnections to communicate with each other.\n
         <b>=></b> Computer networking refers to interconnected computing devices that can exchange data and share resources with each other. These networked devices use a system of rules, called communications protocols, to transmit information over physical or wireless technologies.\n
         <b>=></b> Computer Networks is also one of the most important part of the tech interviews.
+    </string>
+    <string name="about_github">
+        <b>=></b> GitHub is a web-based interface that uses Git, the open source version control software that lets multiple people make separate changes to web pages at the same time.\n
+        <b>=></b> As Carpenter notes, because it allows for real-time collaboration, GitHub encourages teams to work together to build and edit their site content.\n
+        <b>=></b> Its used for storing, tracking, and collaborating on software projects. It makes it easy for developers to share code files and collaborate with fellow developers on open-source projects. GitHub also serves as a social networking site where developers can openly network, collaborate, and pitch their work.
+    </string>
+    <string name="about_sde_sheet">
+        <b>=></b> SDE Sheet contains very handily crafted and picked top coding interview questions from different topics of Data Structures and Algorithms.\n
+        <b>=></b> Solving all the problems from Striver SDE sheet is enough to get into MNCs.\n
+        <b>=></b> SDE Sheet is a list of the most important topics or the most popular questions that are asked in the Software Development Engineer Interviews.
+    </string>
+    <string name="about_web_development">
+        <b>=></b> Web development is the work involved in developing a website for the Internet or an intranet.\n
+        <b>=></b> Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services.\n
+        <b>=></b> Its the work that happens behind the scenes to make a website look great, work fast and perform well with a seamless user experience. Web developers do this by using a variety of coding languages.
+    </string>
+    <string name="about_leetcode_solutions">
+        <b>=></b> Leetcode-style problems have many benefits aside from the technical learnings they can provide. These types of problems tend to force developers into choosing one among many different paths of implementation.\n
+        <b>=></b> These are great practice for learning new algorithms, data structures, and approaches to solving problems.\n
+        <b>=></b> LeetCode is the best platform to help people practice solving coding problems and prepare for technical interviews. The main users are software engineers. LeetCode has over 1,900 questions covering many different programming concepts.
+        <b>=></b> Almost all of the coding questions asked in the tech interviews are directly taken from leetcode platform.
+    </string>
+    <string name="about_coding_practices">
+        <b>=></b> The definition of coding means inputting commands in a language that computers can understand, to build websites, apps and software. Simply put, computer coding is the process of using a programming language to deliver instructions to a computer.\n
+        <b>=></b> The reason why coding standards are important is that they help to ensure safety, security, and reliability. Every development team should use one. Even the most experienced developer could introduce a coding defect — without realizing it. And that one defect could lead to a minor glitch.\n
+        <b>=></b> Coding best practices or programming best practices are a set of informal rules that many software developers in computer programming follow to improve software quality.
+    </string>
+    <string name="about_questions">
+        <b>=></b> Here is a list of most important coding questions from all the topics asked previously in tech interviews.
     </string>
 </resources>

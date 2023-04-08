@@ -66,6 +66,9 @@
         <activity android:name=".EntertainmentCompanies"
                   android:exported="true"/>
 
+        <activity android:name=".WebDevelopment"
+                  android:exported="true"/>
+
         <activity android:name=".SystemDesign"
                   android:exported="true"/>
 
@@ -88,6 +91,24 @@
             android:exported="true"/>
 
         <activity android:name=".ComputerNetworks"
+            android:exported="true"/>
+
+        <activity android:name=".GitHub"
+                  android:exported="true"/>
+
+        <activity android:name=".SDESheet"
+            android:exported="true"/>
+
+        <activity android:name=".LeetcodeSolutions"
+            android:exported="true"/>
+
+        <activity android:name=".CodingPractices"
+            android:exported="true"/>
+
+        <activity android:name=".Tips"
+                  android:exported="true"/>
+
+        <activity android:name=".Questions"
             android:exported="true"/>
     </application>
 
