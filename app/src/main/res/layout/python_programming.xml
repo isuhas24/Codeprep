@@ -36,7 +36,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/system_design_heading"
+                android:text="@string/python_programming_heading"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="30dp"
@@ -45,7 +45,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/about_system_design"
+                android:text="@string/about_python_programming"
                 android:layout_marginLeft="5dp"
                 android:textSize="20dp"
                 android:justificationMode="inter_word"
@@ -55,45 +55,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Choose the resources from below"
+                android:text="Choose the topics from below"
                 android:textSize="20dp"
                 android:textStyle="bold"
                 android:textAlignment="center"
                 android:textColor="@color/black"/>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="15dp"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:background="#E0FFFF"
-                android:gravity="center">
-
-                <Button
-                    android:id="@+id/SystemDesignCustomButton1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:text="Introduction and Roadmap to system design"/>
-
-                <Button
-                    android:id="@+id/SystemDesignCustomButton2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:text="System Design Basics"/>
-
-                <Button
-                    android:id="@+id/SystemDesignCustomButton3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:text="Advanced concepts of system design"/>
-
-            </LinearLayout>
 
             <View
                 android:layout_width="match_parent"

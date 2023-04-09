@@ -110,6 +110,19 @@
 
         <activity android:name=".Questions"
             android:exported="true"/>
+
+        <activity android:name=".CProgramming"
+            android:exported="true"/>
+
+        <activity android:name=".CPPProgramming"
+            android:exported="true"/>
+
+        <activity android:name=".JavaProgramming"
+            android:exported="true"/>
+
+        <activity android:name=".PythonProgramming"
+            android:exported="true"/>
+
     </application>
 
 </manifest>

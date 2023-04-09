@@ -26,6 +26,10 @@
     <string name="coding_practices_heading">Coding Practices</string>
     <string name="tips_heading">Tips</string>
     <string name="questions_heading">Most Important Coding Questions</string>
+    <string name="c_programming_heading">C Programming</string>
+    <string name="cpp_programming_heading">C++ Programming</string>
+    <string name="java_programming_heading">Java Programming</string>
+    <string name="python_programming_heading">Python Programming</string>
     <string name="about_mobility_companies">
         <b>=></b> Mobility is the industry of transporting people and goods.\n
         <b>=></b> Revenue in the Ride-hailing and Taxi segment is projected to reach US$12.77bn in 2023.\n
@@ -148,5 +152,26 @@
     </string>
     <string name="about_questions">
         <b>=></b> Here is a list of most important coding questions from all the topics asked previously in tech interviews.
+    </string>
+    <string name="about_c_programming">
+        <b>=></b> C is an imperative procedural language, supporting structured programming, lexical variable scope and recursion, with a static type system.\n
+        <b>=></b> It was designed to be compiled to provide low-level access to memory and language constructs that map efficiently to machine instructions, all with minimal runtime support.\n
+        <b>=></b> C language is widely used for developing system software, application software, and embedded systems.
+    </string>
+    <string name="about_cpp_programming">
+        <b>=></b> C++ is an object-oriented programming language which gives a clear structure to programs and allows code to be reused, lowering development costs.\n
+        <b>=></b> C++ is portable and can be used to develop applications that can be adapted to multiple platforms.\n
+        <b>=></b> C++ is used in developing browsers, operating systems, and applications, as well as in-game programming, software engineering, data structures, etc.\n
+        <b>=></b> Latest version of C++ is C++23.
+    </string>
+    <string name="about_java_programming">
+        <b>=></b> Java is a widely-used programming language for coding web applications.\n
+        <b>=></b> Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.\n
+        <b>=></b> Latest version of Java is Java SE 18 released on March, 22nd 2022.
+    </string>
+    <string name="about_python_programming">
+        <b>=></b> Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation via the off-side rule.\n
+        <b>=></b> Python can connect to database systems. It can also read and modify files. Python can be used to handle big data and perform complex mathematics.\n
+        <b>=></b> Latest version of Python is Python 3.10.10, documentation released on 8 February 2023.
     </string>
 </resources>

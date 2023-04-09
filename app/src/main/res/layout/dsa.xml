@@ -65,12 +65,109 @@
                 android:layout_width="match_parent"
                 android:layout_height="15dp"/>
 
-            <Button
-                android:id="@+id/DSACustomButton1"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="ARRAYS"/>
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#E0FFFF"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/DSACustomButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="ALGORITHMS"/>
+
+                <Button
+                    android:id="@+id/DSACustomButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="ARRAYS"/>
+
+                <Button
+                    android:id="@+id/DSACustomButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="BIT-MANIPULATION"/>
+
+                <Button
+                    android:id="@+id/DSACustomButton4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="ALL IN ONE DSA RESOURCES"/>
+
+                <Button
+                    android:id="@+id/DSACustomButton5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="DYNAMIC PROGRAMMING"/>
+
+                <Button
+                    android:id="@+id/DSACustomButton6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="GRAPHS"/>
+
+                <Button
+                    android:id="@+id/DSACustomButton7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="GREEDY"/>
+
+                <Button
+                    android:id="@+id/DSACustomButton8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="HASHMAP"/>
+
+                <Button
+                    android:id="@+id/DSACustomButton9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="LINKED LIST"/>
+
+                <Button
+                    android:id="@+id/DSACustomButton10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="RECURSION AND BACKTRACKING"/>
+
+                <Button
+                    android:id="@+id/DSACustomButton11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="STACKS AND QUEUES"/>
+
+                <Button
+                    android:id="@+id/DSACustomButton12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="TIME COMPLEXITY ANALYSIS"/>
+
+                <Button
+                    android:id="@+id/DSACustomButton13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="TREES"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
 
         </LinearLayout>
 
