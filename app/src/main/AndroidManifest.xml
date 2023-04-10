@@ -109,19 +109,25 @@
                   android:exported="true"/>
 
         <activity android:name=".Questions"
-            android:exported="true"/>
+                  android:exported="true"/>
 
         <activity android:name=".CProgramming"
-            android:exported="true"/>
+                  android:exported="true"/>
 
         <activity android:name=".CPPProgramming"
-            android:exported="true"/>
+                  android:exported="true"/>
 
         <activity android:name=".JavaProgramming"
-            android:exported="true"/>
+                  android:exported="true"/>
 
         <activity android:name=".PythonProgramming"
-            android:exported="true"/>
+                  android:exported="true"/>
+
+        <activity android:name=".DBMSResources"
+                  android:exported="true"/>
+
+        <activity android:name=".SQLResources"
+                  android:exported="true"/>
 
     </application>
 
