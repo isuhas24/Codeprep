@@ -30,6 +30,8 @@
     <string name="cpp_programming_heading">C++ Programming</string>
     <string name="java_programming_heading">Java Programming</string>
     <string name="python_programming_heading">Python Programming</string>
+    <string name="dbms_resources_heading">DBMS Resources</string>
+    <string name="sql_resources_heading">SQL Resources</string>
     <string name="about_mobility_companies">
         <b>=></b> Mobility is the industry of transporting people and goods.\n
         <b>=></b> Revenue in the Ride-hailing and Taxi segment is projected to reach US$12.77bn in 2023.\n
