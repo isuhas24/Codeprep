@@ -13,122 +13,120 @@
         tools:targetApi="31">
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Design.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".CreateNewAccount"
-                  android:exported="true"/>
-
-        <activity android:name=".Forget_password"
-                  android:exported="true"/>
-
-        <activity android:name=".LandingPage"
-                  android:exported="true"/>
-
-        <activity android:name=".MobilityCompanies"
-                  android:exported="true"/>
-
-        <activity android:name=".EcommerceCompanyies"
-                  android:exported="true"/>
-
-        <activity android:name=".CRMCompanies"
-                  android:exported="true"/>
-
-        <activity android:name=".CloudCompanies"
-                  android:exported="true"/>
-
-        <activity android:name=".CollaborationCompanies"
-                  android:exported="true"/>
-
-        <activity android:name=".CommunicationCompanies"
-                  android:exported="true"/>
-
-        <activity android:name=".AdvertisementCompanies"
-                  android:exported="true"/>
-
-        <activity android:name=".PaymentCompanies"
-                  android:exported="true"/>
-
-        <activity android:name=".TradingCompanies"
-                  android:exported="true"/>
-
-        <activity android:name=".InvestmentCompanies"
-                  android:exported="true"/>
-
-        <activity android:name=".GamingCompanies"
-                  android:exported="true"/>
-
-        <activity android:name=".EntertainmentCompanies"
-                  android:exported="true"/>
-
-        <activity android:name=".WebDevelopment"
-                  android:exported="true"/>
-
-        <activity android:name=".SystemDesign"
-                  android:exported="true"/>
-
-        <activity android:name=".ProgrammingLanguages"
-                  android:exported="true"/>
-
-        <activity android:name=".DSA"
-                  android:exported="true"/>
-
-        <activity android:name=".OOPS"
-                  android:exported="true"/>
-
-        <activity android:name=".DBMS"
-                  android:exported="true"/>
-
-        <activity android:name=".OperatingSystem"
-            android:exported="true"/>
-
-        <activity android:name=".SoftwareEngineering"
-            android:exported="true"/>
-
-        <activity android:name=".ComputerNetworks"
-            android:exported="true"/>
-
-        <activity android:name=".GitHub"
-                  android:exported="true"/>
-
-        <activity android:name=".SDESheet"
-            android:exported="true"/>
-
-        <activity android:name=".LeetcodeSolutions"
-            android:exported="true"/>
-
-        <activity android:name=".CodingPractices"
-            android:exported="true"/>
-
-        <activity android:name=".Tips"
-                  android:exported="true"/>
-
-        <activity android:name=".Questions"
-                  android:exported="true"/>
-
-        <activity android:name=".CProgramming"
-                  android:exported="true"/>
-
-        <activity android:name=".CPPProgramming"
-                  android:exported="true"/>
-
-        <activity android:name=".JavaProgramming"
-                  android:exported="true"/>
-
-        <activity android:name=".PythonProgramming"
-                  android:exported="true"/>
-
-        <activity android:name=".DBMSResources"
-                  android:exported="true"/>
-
-        <activity android:name=".SQLResources"
-                  android:exported="true"/>
-
+        
+        <activity
+            android:name=".CreateNewAccount"
+            android:exported="true" />
+        <activity
+            android:name=".Forget_password"
+            android:exported="true" />
+        <activity
+            android:name=".LandingPage"
+            android:exported="true" />
+        <activity
+            android:name=".MobilityCompanies"
+            android:exported="true" />
+        <activity
+            android:name=".EcommerceCompanyies"
+            android:exported="true" />
+        <activity
+            android:name=".CRMCompanies"
+            android:exported="true" />
+        <activity
+            android:name=".CloudCompanies"
+            android:exported="true" />
+        <activity
+            android:name=".CollaborationCompanies"
+            android:exported="true" />
+        <activity
+            android:name=".CommunicationCompanies"
+            android:exported="true" />
+        <activity
+            android:name=".AdvertisementCompanies"
+            android:exported="true" />
+        <activity
+            android:name=".PaymentCompanies"
+            android:exported="true" />
+        <activity
+            android:name=".TradingCompanies"
+            android:exported="true" />
+        <activity
+            android:name=".InvestmentCompanies"
+            android:exported="true" />
+        <activity
+            android:name=".GamingCompanies"
+            android:exported="true" />
+        <activity
+            android:name=".EntertainmentCompanies"
+            android:exported="true" />
+        <activity
+            android:name=".WebDevelopment"
+            android:exported="true" />
+        <activity
+            android:name=".SystemDesign"
+            android:exported="true" />
+        <activity
+            android:name=".ProgrammingLanguages"
+            android:exported="true" />
+        <activity
+            android:name=".DSA"
+            android:exported="true" />
+        <activity
+            android:name=".OOPS"
+            android:exported="true" />
+        <activity
+            android:name=".DBMS"
+            android:exported="true" />
+        <activity
+            android:name=".OperatingSystem"
+            android:exported="true" />
+        <activity
+            android:name=".SoftwareEngineering"
+            android:exported="true" />
+        <activity
+            android:name=".ComputerNetworks"
+            android:exported="true" />
+        <activity
+            android:name=".GitHub"
+            android:exported="true" />
+        <activity
+            android:name=".SDESheet"
+            android:exported="true" />
+        <activity
+            android:name=".LeetcodeSolutions"
+            android:exported="true" />
+        <activity
+            android:name=".CodingPractices"
+            android:exported="true" />
+        <activity
+            android:name=".Tips"
+            android:exported="true" />
+        <activity
+            android:name=".Questions"
+            android:exported="true" />
+        <activity
+            android:name=".CProgramming"
+            android:exported="true" />
+        <activity
+            android:name=".CPPProgramming"
+            android:exported="true" />
+        <activity
+            android:name=".JavaProgramming"
+            android:exported="true" />
+        <activity
+            android:name=".PythonProgramming"
+            android:exported="true" />
     </application>
 
 </manifest>
