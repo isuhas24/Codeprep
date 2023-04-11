@@ -55,7 +55,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Choose the resources from below"
+                android:text="Choose the topics from below"
                 android:textSize="20dp"
                 android:textStyle="bold"
                 android:textAlignment="center"
@@ -64,6 +64,33 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="15dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#E0FFFF"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/DBMSCustomButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="DATABASE MANAGEMENT SYSTEM"/>
+
+                <Button
+                    android:id="@+id/DBMSCustomButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="SQL"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
 
         </LinearLayout>
 
