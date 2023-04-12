@@ -8,7 +8,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class JavaProgramming extends AppCompatActivity implements View.OnClickListener{
-    Button b1,b2,b3,b4,b5,b6,b7,b8,b9,b10;
+    Button b1,b2,b3,b4,b5,b6,b7,b8,b9;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,8 +32,7 @@ public class JavaProgramming extends AppCompatActivity implements View.OnClickLi
         b8.setOnClickListener(this);
         b9=(Button)findViewById(R.id.java_b9);
         b9.setOnClickListener(this);
-        b10=(Button)findViewById(R.id.java_b10);
-        b10.setOnClickListener(this);
+
     }
 
     @Override

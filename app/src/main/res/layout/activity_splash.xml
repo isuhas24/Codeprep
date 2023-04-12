@@ -15,5 +15,6 @@
         android:layout_height="match_parent"
         app:srcCompat="@drawable/logo"
         android:backgroundTint="@color/white"
+        android:background="@color/white"
        />
 </RelativeLayout>

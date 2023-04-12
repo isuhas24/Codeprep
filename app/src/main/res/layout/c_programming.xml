@@ -67,53 +67,66 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="1"
+                android:backgroundTint="#2196F3"
+                android:text="INTRODUCTION TO C PROGRAMMING"
                 android:id="@+id/c_b1"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="2"
+                android:backgroundTint="#2196F3"
+                android:text="OPERATORS"
                 android:id="@+id/c_b2"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="3"
+                android:backgroundTint="#2196F3"
+                android:text="CONDITIONAL STATEMENTS"
                 android:id="@+id/c_b3"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="4"
+                android:backgroundTint="#2196F3"
+                android:text="ALGORITHM AND FLOWCHART"
                 android:id="@+id/c_b4"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="5"
+                android:backgroundTint="#2196F3"
+                android:text="LOOPS"
                 android:id="@+id/c_b5"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="6"
+                android:backgroundTint="#2196F3"
+                android:text="ARRAYS AND STRINGS"
                 android:id="@+id/c_b6"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="7"
+                android:backgroundTint="#2196F3"
+                android:text="FUNCTIONS"
                 android:id="@+id/c_b7"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="8"
+                android:backgroundTint="#2196F3"
+                android:text="RECURSION"
                 android:id="@+id/c_b8"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="9"
+                android:backgroundTint="#2196F3"
+                android:text="POINTERS"
                 android:id="@+id/c_b9"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="10"
+                android:backgroundTint="#2196F3"
+                android:text="MEMORY MANAGEMENT"
                 android:id="@+id/c_b10"/>
+
+
+
 
 
 

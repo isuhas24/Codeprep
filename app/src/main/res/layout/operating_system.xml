@@ -65,6 +65,76 @@
                 android:layout_width="match_parent"
                 android:layout_height="15dp"/>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#E0FFFF"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/OS_btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:backgroundTint="#2196F3"
+                    android:text="INTRODUCTION TO OS"/>
+
+                <Button
+                    android:id="@+id/OS_btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:backgroundTint="#2196F3"
+                    android:text="PROCESS MANAGEMENT"/>
+
+                <Button
+                    android:id="@+id/OS_btn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:backgroundTint="#2196F3"
+                    android:text="CPU MANAGEMENT"/>
+
+                <Button
+                    android:id="@+id/OS_btn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:backgroundTint="#2196F3"
+                    android:text="PRIORITY BASED SCHEDULING"/>
+
+                <Button
+                    android:id="@+id/OS_btn5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:backgroundTint="#2196F3"
+                    android:text="SYNCHRONIZATION"/>
+
+                <Button
+                    android:id="@+id/OS_btn6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:backgroundTint="#2196F3"
+                    android:text="DEADLOCK"/>
+
+
+
+                <Button
+                    android:id="@+id/OS_btn7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:backgroundTint="#2196F3"
+                    android:text="MEMORY MANAGEMENT"/>
+
+
+
+            </LinearLayout>
+
+
         </LinearLayout>
 
     </ScrollView>

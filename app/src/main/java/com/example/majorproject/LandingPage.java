@@ -1,5 +1,6 @@
 package com.example.majorproject;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
@@ -12,8 +13,9 @@ import androidx.appcompat.app.AppCompatActivity;
 public class LandingPage extends AppCompatActivity implements View.OnClickListener{
 
     ImageView mobility_image,ecommerce_image,crm_image,cloud_image,collaboration_image,communication_image,advertisement_image,payment_image,trading_image,investment_image,gaming_image,entertainment_image;
-    Button system_design_button,programming_languages_button,dsa_button,oops_button,dbms_button,os_button,se_button,cn_button,github_button,sde_sheet_button,web_development_button,leetcode_solutions_button,coding_practices_button,tips_button,questions_button;
+    Button system_design_button,programming_languages_button,dsa_button,oops_button,dbms_button,os_button,se_button,cn_button,github_button,sde_sheet_button,web_development_button,leetcode_solutions_button,coding_practices_button,tips_button,questions_button,roadmaps;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -76,6 +78,8 @@ public class LandingPage extends AppCompatActivity implements View.OnClickListen
         tips_button.setOnClickListener(this);
         questions_button=(Button) findViewById(R.id.customButton15);
         questions_button.setOnClickListener(this);
+        roadmaps=(Button)findViewById(R.id.btn_roadmaps);
+        roadmaps.setOnClickListener(this);
     }
 
     @Override
@@ -194,6 +198,10 @@ public class LandingPage extends AppCompatActivity implements View.OnClickListen
         }
         else if(v.equals(questions_button)){
             Intent it=new Intent(this,Questions.class);
+            startActivity(it);
+        }
+        else if(v.equals(roadmaps)){
+            Intent it=new Intent(this,Roadmaps.class);
             startActivity(it);
         }
     }

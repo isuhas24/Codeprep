@@ -68,53 +68,58 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="1"
+                android:backgroundTint="#2196F3"
+                android:text="INTRODUCTION TO PYTHON"
                 android:id="@+id/py_b1"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="2"
+                android:backgroundTint="#2196F3"
+                android:text="DATATYPES"
                 android:id="@+id/py_b2"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="3"
+                android:backgroundTint="#2196F3"
+                android:text="CONDITIONAL STATEMENTS"
                 android:id="@+id/py_b3"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="4"
+                android:backgroundTint="#2196F3"
+                android:text="LISTS AND TUPLES"
                 android:id="@+id/py_b4"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="5"
+                android:backgroundTint="#2196F3"
+                android:text="DICTIONARIES AND SETS"
                 android:id="@+id/py_b5"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="6"
+                android:backgroundTint="#2196F3"
+                android:text="FUNCTION"
                 android:id="@+id/py_b6"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="7"
+                android:backgroundTint="#2196F3"
+                android:text="CLASS"
                 android:id="@+id/py_b7"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="8"
+                android:backgroundTint="#2196F3"
+                android:text="MODULES"
                 android:id="@+id/py_b8"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="9"
+                android:backgroundTint="#2196F3"
+                android:text="DEBUGGING"
                 android:id="@+id/py_b9"/>
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="10"
-                android:id="@+id/py_b10"/>
+
 
         </LinearLayout>
 

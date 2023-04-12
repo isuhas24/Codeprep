@@ -176,4 +176,15 @@
         <b>=></b> Python can connect to database systems. It can also read and modify files. Python can be used to handle big data and perform complex mathematics.\n
         <b>=></b> Latest version of Python is Python 3.10.10, documentation released on 8 February 2023.
     </string>
+    <string name="about_roadmaps">
+        <b>=></b> Step by step guides and paths to learn different tools or technologies\n
+        <b>=></b> Web Developer
+Step by step guide to become a modern web developer.\n
+        <b>=></b> App Developer
+Step by step guide to become a modern app developer.\n
+        <b>=></b> Data Scientist
+Step by step guide to become a Data scientist.\n
+        <b>=></b> AI/ML
+Step by step guide to become a AI/ML scientist.
+    </string>
 </resources>
