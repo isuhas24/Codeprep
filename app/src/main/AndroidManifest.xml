@@ -127,9 +127,19 @@
         <activity
             android:name=".PythonProgramming"
             android:exported="true" />
+            
         <activity
+            android:name=".DBMSResources"
+            android:exported="true" />
+
+        <activity
+            android:name=".SQLResources"
+            android:exported="true" />
+            
+       <activity
             android:name=".Roadmaps"
             android:exported="true" />
+        
     </application>
 
 </manifest>
