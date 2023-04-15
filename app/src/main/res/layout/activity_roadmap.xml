@@ -2,8 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-
+    android:orientation="vertical"
+    android:gravity="center">
     <View
         android:layout_width="match_parent"
         android:layout_height="25dp" />
@@ -31,13 +31,12 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/cpp_programming_heading"
+                android:text="ROADMAPS"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="30dp"
@@ -46,7 +45,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/about_cpp_programming"
+                android:text="@string/about_roadmaps"
                 android:layout_marginLeft="5dp"
                 android:textSize="20dp"
                 android:justificationMode="inter_word"
@@ -56,12 +55,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Choose the topics from below"
+                android:text="Choose the role from below"
                 android:textSize="20dp"
                 android:textStyle="bold"
                 android:textAlignment="center"
                 android:textColor="@color/black"/>
-
 
             <View
                 android:layout_width="match_parent"
@@ -69,51 +67,31 @@
 
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#2196F3"
-                android:text="STRING"
-                android:id="@+id/cpp_b1"/>
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#2196F3"
-                android:text="VECTOR"
-                android:id="@+id/cpp_b2"/>
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#2196F3"
-                android:text="LIST"
-                android:id="@+id/cpp_b3"/>
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#2196F3"
-                android:text="SETS"
-                android:id="@+id/cpp_b4"/>
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#2196F3"
-                android:text="5"
-                android:id="@+id/cpp_b5"/>
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#2196F3"
-                android:text="STACKS AND QUEUE"
-                android:id="@+id/cpp_b6"/>
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#2196F3"
-                android:text="ALGORITHMS"
-                android:id="@+id/cpp_b7"/>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:id="@+id/btn1"
+        android:text="WEB DEVELOPER"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:id="@+id/btn2"
+        android:text="APP DEVELOPER"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:id="@+id/btn3"
+        android:text="DATA SCIENTIST"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:id="@+id/btn4"
+        android:text="AI/ML"/>
 
 
-        </LinearLayout>
-
+</LinearLayout>
     </ScrollView>
-
 </LinearLayout>

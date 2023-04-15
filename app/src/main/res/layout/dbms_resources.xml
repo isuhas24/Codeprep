@@ -67,7 +67,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#A9A9A9"
+                    android:backgroundTint="#2196F3"
                     android:text="Introduction to DBMS"/>
 
                 <Button
@@ -75,7 +75,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#A9A9A9"
+                    android:backgroundTint="#2196F3"
                     android:text="ER to Relational Model"/>
 
                 <Button
@@ -83,7 +83,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#A9A9A9"
+                    android:backgroundTint="#2196F3"
                     android:text="Schema Creation"/>
 
                 <Button
@@ -91,7 +91,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#A9A9A9"
+                    android:backgroundTint="#2196F3"
                     android:text="Relational Constraints"/>
 
                 <Button
@@ -99,7 +99,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#A9A9A9"
+                    android:backgroundTint="#2196F3"
                     android:text="Pattern Matching"/>
 
                 <Button
@@ -107,7 +107,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#A9A9A9"
+                    android:backgroundTint="#2196F3"
                     android:text="Relational Algebra"/>
 
                 <Button
@@ -115,7 +115,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#A9A9A9"
+                    android:backgroundTint="#2196F3"
                     android:text="Normalisation"/>
 
                 <Button
@@ -123,7 +123,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#A9A9A9"
+                    android:backgroundTint="#2196F3"
                     android:text="Transaction"/>
 
 
