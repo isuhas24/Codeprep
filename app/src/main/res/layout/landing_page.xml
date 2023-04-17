@@ -535,7 +535,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:text="CODING PRACTICES"/>
+                    android:text="CODING PATTERNS AND PRACTICES"/>
 
                 <View
                     android:layout_width="match_parent"

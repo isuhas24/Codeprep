@@ -55,7 +55,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Choose the resources from below"
+                android:text="Choose the topics from below"
                 android:textSize="20dp"
                 android:textStyle="bold"
                 android:textAlignment="center"
@@ -64,6 +64,94 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="15dp"/>
+
+            <Button
+                android:id="@+id/Coding_practices_btn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:backgroundTint="#2196F3"
+                android:text="SLIDING WINDOW AND MATRIX TRAVERSAL"/>
+
+            <Button
+                android:id="@+id/Coding_practices_btn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:backgroundTint="#2196F3"
+                android:text="TWO POINTERS AND FAST, SLOW POINTERS"/>
+
+            <Button
+                android:id="@+id/Coding_practices_btn3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:backgroundTint="#2196F3"
+                android:text="MERGE SORT AND CYCLIC SORT"/>
+
+            <Button
+                android:id="@+id/Coding_practices_btn4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:backgroundTint="#2196F3"
+                android:text="REVERSAL OF LINKED LIST AND BFS"/>
+
+            <Button
+                android:id="@+id/Coding_practices_btn5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:backgroundTint="#2196F3"
+                android:text="TWO POINTERS AND FAST, SLOW POINTERS"/>
+
+            <Button
+                android:id="@+id/Coding_practices_btn6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:backgroundTint="#2196F3"
+                android:text="DFS AND TWO HEAPS"/>
+
+            <Button
+                android:id="@+id/Coding_practices_btn7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:backgroundTint="#2196F3"
+                android:text="SUBSETS AND BINARY SEARCH"/>
+
+            <Button
+                android:id="@+id/Coding_practices_btn8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:backgroundTint="#2196F3"
+                android:text="BITWISE XOR AND TOP K ELEMENTS"/>
+
+            <Button
+                android:id="@+id/Coding_practices_btn9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:backgroundTint="#2196F3"
+                android:text="K- WAY MERGE AND TOPOLOGICAL SORT"/>
+
+            <Button
+                android:id="@+id/Coding_practices_btn10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:backgroundTint="#2196F3"
+                android:text="0-1 KNAPSACK AND FIBONACCI NUMBERS"/>
+
+            <Button
+                android:id="@+id/Coding_practices_btn11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:backgroundTint="#2196F3"
+                android:text="PALINDROMIC SUBSEQUENCE AND LONGEST COMMON SUBSTRING"/>
 
         </LinearLayout>
 
