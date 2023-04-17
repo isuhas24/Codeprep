@@ -67,7 +67,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#A9A9A9"
+                    android:backgroundTint="#2196F3"
                     android:text="FUNDAMENTALS OF SQL"/>
 
                 <Button
@@ -75,7 +75,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#A9A9A9"
+                    android:backgroundTint="#2196F3"
                     android:text="AGGREGATE COMMANDS"/>
 
                 <Button
@@ -83,7 +83,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#A9A9A9"
+                    android:backgroundTint="#2196F3"
                     android:text="ALIAS"/>
 
                 <Button
@@ -91,7 +91,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#A9A9A9"
+                    android:backgroundTint="#2196F3"
                     android:text="CONDITIONAL STATEMENT"/>
 
                 <Button
@@ -99,7 +99,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#A9A9A9"
+                    android:backgroundTint="#2196F3"
                     android:text="FILTERING COMMANDS"/>
 
                 <Button
@@ -107,7 +107,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#A9A9A9"
+                    android:backgroundTint="#2196F3"
                     android:text="GROUP BY COMMANDS"/>
 
                 <Button
@@ -115,7 +115,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#A9A9A9"
+                    android:backgroundTint="#2196F3"
                     android:text="JOINS"/>
 
                 <Button
@@ -123,7 +123,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#A9A9A9"
+                    android:backgroundTint="#2196F3"
                     android:text="MATHEMATICAL FUNCTIONS"/>
 
                 <Button
@@ -131,7 +131,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#A9A9A9"
+                    android:backgroundTint="#2196F3"
                     android:text="ORDERING COMMANDS"/>
 
                 <Button
@@ -139,7 +139,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#A9A9A9"
+                    android:backgroundTint="#2196F3"
                     android:text="STRING FUNCTIONS"/>
 
             </LinearLayout>

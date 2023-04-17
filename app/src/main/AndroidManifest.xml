@@ -139,6 +139,26 @@
        <activity
             android:name=".Roadmaps"
             android:exported="true" />
+
+        <activity
+            android:name=".HtmlAndCss"
+            android:exported="true" />
+
+        <activity
+            android:name=".JavaScript"
+            android:exported="true" />
+
+        <activity
+            android:name=".React"
+            android:exported="true" />
+
+        <activity
+            android:name=".Nodejs"
+            android:exported="true" />
+
+        <activity
+            android:name=".MongoDB"
+            android:exported="true" />
         
     </application>
 

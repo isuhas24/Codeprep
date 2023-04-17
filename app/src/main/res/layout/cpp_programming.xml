@@ -96,7 +96,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#2196F3"
-                android:text="5"
+                android:text="MAPS"
                 android:id="@+id/cpp_b5"/>
             <Button
                 android:layout_width="match_parent"
@@ -110,8 +110,7 @@
                 android:backgroundTint="#2196F3"
                 android:text="ALGORITHMS"
                 android:id="@+id/cpp_b7"/>
-
-
+            
         </LinearLayout>
 
     </ScrollView>

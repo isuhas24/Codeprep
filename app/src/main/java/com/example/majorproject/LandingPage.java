@@ -47,7 +47,7 @@ public class LandingPage extends AppCompatActivity implements View.OnClickListen
         entertainment_image=(ImageView) findViewById(R.id.company12);
         entertainment_image.setOnClickListener(this);
 
-        //Buttons
+        //Button
         system_design_button=(Button) findViewById(R.id.customButton1);
         system_design_button.setOnClickListener(this);
         programming_languages_button=(Button) findViewById(R.id.customButton2);

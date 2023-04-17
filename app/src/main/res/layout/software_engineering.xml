@@ -78,7 +78,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:backgroundTint="#2196F3"
-                    android:text="1"/>
+                    android:text="INTRODUCTION TO SOFTWARE ENGINEERING"/>
 
                 <Button
                     android:id="@+id/SE_btn2"
@@ -86,7 +86,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:backgroundTint="#2196F3"
-                    android:text="2"/>
+                    android:text="LEGACY SOFTWARE"/>
 
                 <Button
                     android:id="@+id/SE_btn3"
@@ -94,7 +94,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:backgroundTint="#2196F3"
-                    android:text="3"/>
+                    android:text="SDLC CYCLE"/>
 
                 <Button
                     android:id="@+id/SE_btn4"
@@ -102,7 +102,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:backgroundTint="#2196F3"
-                    android:text="4"/>
+                    android:text="SOFTWARE PROCESS MODEL"/>
 
                 <Button
                     android:id="@+id/SE_btn5"
@@ -110,7 +110,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:backgroundTint="#2196F3"
-                    android:text="5"/>
+                    android:text="SOFTWARE REQUIREMENTS"/>
 
                 <Button
                     android:id="@+id/SE_btn6"
@@ -118,7 +118,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:backgroundTint="#2196F3"
-                    android:text="6"/>
+                    android:text="SYSTEM MODELING"/>
 
                 <Button
                     android:id="@+id/SE_btn7"
@@ -126,7 +126,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:backgroundTint="#2196F3"
-                    android:text="7"/>
+                    android:text="SOFTWARE DESIGNING CONCEPT"/>
 
                 <Button
                     android:id="@+id/SE_btn8"
@@ -134,7 +134,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:backgroundTint="#2196F3"
-                    android:text="8"/>
+                    android:text="SOFTWARE ARCHITECTURE"/>
 
 
 

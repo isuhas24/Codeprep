@@ -36,7 +36,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/cn_heading"
+                android:text="@string/nodejs_heading"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="30dp"
@@ -45,7 +45,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/about_cn"
+                android:text="@string/about_nodejs"
                 android:layout_marginLeft="5dp"
                 android:textSize="20dp"
                 android:justificationMode="inter_word"
@@ -55,7 +55,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Choose the resources from below"
+                android:text="Choose the topics from below"
                 android:textSize="20dp"
                 android:textStyle="bold"
                 android:textAlignment="center"
@@ -73,81 +73,70 @@
                 android:gravity="center">
 
                 <Button
-                    android:id="@+id/CN_btn1"
+                    android:id="@+id/Nodejs_btn1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:backgroundTint="#2196F3"
-                    android:text="INTRODUCTION TO COMPUTER NETWORKS"/>
+                    android:text="INTRODUCTION TO NODEJS"/>
 
                 <Button
-                    android:id="@+id/CN_btn2"
+                    android:id="@+id/Nodejs_btn2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:backgroundTint="#2196F3"
-                    android:text="OSI MODEL AND SUBNET"/>
+                    android:text="COMMAND LINE OPTIONS"/>
 
                 <Button
-                    android:id="@+id/CN_btn3"
+                    android:id="@+id/Nodejs_btn3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:backgroundTint="#2196F3"
-                    android:text="DATA SHARING"/>
+                    android:text="NODEJS DNS"/>
 
                 <Button
-                    android:id="@+id/CN_btn4"
+                    android:id="@+id/Nodejs_btn4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:backgroundTint="#2196F3"
-                    android:text="LAN TECHNOLOGIES"/>
+                    android:text="NODEJS PROCESS"/>
 
                 <Button
-                    android:id="@+id/CN_btn5"
+                    android:id="@+id/Nodejs_btn5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:backgroundTint="#2196F3"
-                    android:text="ETHERNET"/>
+                    android:text="FILE SYSTEM"/>
 
                 <Button
-                    android:id="@+id/CN_btn6"
+                    android:id="@+id/Nodejs_btn6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:backgroundTint="#2196F3"
-                    android:text="TOKEN RING"/>
+                    android:text="NODEJS ZLIB MODULE"/>
 
                 <Button
-                    android:id="@+id/CN_btn7"
+                    android:id="@+id/Nodejs_btn7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:backgroundTint="#2196F3"
-                    android:text="COMPUTER NETWORKS NUMERICAL"/>
+                    android:text="WEB MODULES"/>
 
                 <Button
-                    android:id="@+id/CN_btn8"
+                    android:id="@+id/Nodejs_btn8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:backgroundTint="#2196F3"
-                    android:text="UDP AND PROTOCOLS"/>
-
-                <Button
-                    android:id="@+id/CN_btn9"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
-                    android:text="TCP AND NUMERICAL"/>
-
-
+                    android:text="NODEJS AND MYSQL"/>
 
             </LinearLayout>
-
 
         </LinearLayout>
 

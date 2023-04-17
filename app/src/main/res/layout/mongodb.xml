@@ -24,6 +24,10 @@
         android:layout_width="match_parent"
         android:layout_height="25dp" />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -36,7 +40,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/cn_heading"
+                android:text="@string/mongodb_heading"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="30dp"
@@ -45,7 +49,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/about_cn"
+                android:text="@string/about_mongodb"
                 android:layout_marginLeft="5dp"
                 android:textSize="20dp"
                 android:justificationMode="inter_word"
@@ -55,7 +59,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Choose the resources from below"
+                android:text="Choose the topics from below"
                 android:textSize="20dp"
                 android:textStyle="bold"
                 android:textAlignment="center"
@@ -73,81 +77,54 @@
                 android:gravity="center">
 
                 <Button
-                    android:id="@+id/CN_btn1"
+                    android:id="@+id/Mongodb_btn1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:backgroundTint="#2196F3"
-                    android:text="INTRODUCTION TO COMPUTER NETWORKS"/>
+                    android:text="INTRODUCTION TO MONGODB"/>
 
                 <Button
-                    android:id="@+id/CN_btn2"
+                    android:id="@+id/Mongodb_btn2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:backgroundTint="#2196F3"
-                    android:text="OSI MODEL AND SUBNET"/>
+                    android:text="MONGODB DATABASE MANAGEMENT"/>
 
                 <Button
-                    android:id="@+id/CN_btn3"
+                    android:id="@+id/Mongodb_btn3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:backgroundTint="#2196F3"
-                    android:text="DATA SHARING"/>
+                    android:text="RDBMS"/>
 
                 <Button
-                    android:id="@+id/CN_btn4"
+                    android:id="@+id/Mongodb_btn4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:backgroundTint="#2196F3"
-                    android:text="LAN TECHNOLOGIES"/>
+                    android:text="PIPELINE CONCEPT"/>
 
                 <Button
-                    android:id="@+id/CN_btn5"
+                    android:id="@+id/Mongodb_btn5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:backgroundTint="#2196F3"
-                    android:text="ETHERNET"/>
+                    android:text="MONGODB RELATIONSHIPS"/>
 
                 <Button
-                    android:id="@+id/CN_btn6"
+                    android:id="@+id/Mongodb_btn6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:backgroundTint="#2196F3"
-                    android:text="TOKEN RING"/>
-
-                <Button
-                    android:id="@+id/CN_btn7"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
-                    android:text="COMPUTER NETWORKS NUMERICAL"/>
-
-                <Button
-                    android:id="@+id/CN_btn8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
-                    android:text="UDP AND PROTOCOLS"/>
-
-                <Button
-                    android:id="@+id/CN_btn9"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
-                    android:text="TCP AND NUMERICAL"/>
-
-
+                    android:text="REGULAR EXPRESSIONS"/>
 
             </LinearLayout>
-
 
         </LinearLayout>
 

@@ -23,7 +23,7 @@
     <string name="sde_sheet_heading">SDE Sheet</string>
     <string name="web_development_heading">Web Development</string>
     <string name="leetcode_solutions_heading">Leetcode Solutions</string>
-    <string name="coding_practices_heading">Coding Practices</string>
+    <string name="coding_practices_heading">Coding Patterns and Practices</string>
     <string name="tips_heading">Tips</string>
     <string name="questions_heading">Most Important Coding Questions</string>
     <string name="c_programming_heading">C Programming</string>
@@ -32,6 +32,11 @@
     <string name="python_programming_heading">Python Programming</string>
     <string name="dbms_resources_heading">DBMS Resources</string>
     <string name="sql_resources_heading">SQL Resources</string>
+    <string name="html_and_css_heading">HTML AND CSS</string>
+    <string name="javascript_heading">JavaScript</string>
+    <string name="react_heading">React</string>
+    <string name="nodejs_heading">Node JS</string>
+    <string name="mongodb_heading">Mongo DB</string>
     <string name="about_mobility_companies">
         <b>=></b> Mobility is the industry of transporting people and goods.\n
         <b>=></b> Revenue in the Ride-hailing and Taxi segment is projected to reach US$12.77bn in 2023.\n
@@ -186,5 +191,30 @@ Step by step guide to become a modern app developer.\n
 Step by step guide to become a Data scientist.\n
         <b>=></b> AI/ML
 Step by step guide to become a AI/ML scientist.
+    </string>
+    <string name="about_html_and_css">
+        <b>=></b> HTML (the Hypertext Markup Language) and CSS (Cascading Style Sheets) are two of the core technologies for building Web pages.\n
+        <b>=></b> HTML provides the structure of the page, CSS the (visual and aural) layout, for a variety of devices.\n
+        <b>=></b> HTML and CSS are actually not technically programming languages,they are just page structure and style information.
+    </string>
+    <string name="about_javascript">
+        <b>=></b> JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions.\n
+        <b>=></b> It is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat.\n
+        <b>=></b> It enables us to create dynamically updating content, control multimedia, animate images, and pretty much everything else.
+    </string>
+    <string name="about_react">
+        <b>=></b> React is a free and open-source front-end JavaScript library for building user interfaces based on components.\n
+        <b>=></b> It is maintained by Meta and a community of individual developers and companies.\n
+        <b>=></b> React makes it easier to create dynamic web applications because it requires less coding and offers more functionality, as opposed to JavaScript, where coding often gets complex very quickly.
+    </string>
+    <string name="about_nodejs">
+        <b>=></b> Node.js is a cross-platform, open-source server environment that can run on Windows, Linux, Unix, macOS, and more.\n
+        <b>=></b> Node.js is a back-end JavaScript runtime environment, runs on the V8 JavaScript Engine, and executes JavaScript code outside a web browser.\n
+        <b>=></b> Developers use Node. js to create server-side web applications, and it is perfect for data-intensive applications since it uses an asynchronous, event-driven model.
+    </string>
+    <string name="about_mongodb">
+        <b>=></b> MongoDB is a source-available cross-platform document-oriented database program.\n
+        <b>=></b> It is classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.\n
+        <b>=></b> It is a document database used to build highly available and scalable internet applications. With its flexible schema approach, it is popular with development teams using agile methodologies.
     </string>
 </resources>
