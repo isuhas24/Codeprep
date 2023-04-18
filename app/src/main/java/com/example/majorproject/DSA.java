@@ -1,5 +1,6 @@
 package com.example.majorproject;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -46,7 +47,8 @@ public class DSA extends AppCompatActivity implements View.OnClickListener {
 
         }
         else if(v.equals(btn2)){
-
+            Intent it=new Intent(this,Array.class);
+            startActivity(it);
         }
         else if(v.equals(btn3)){
 

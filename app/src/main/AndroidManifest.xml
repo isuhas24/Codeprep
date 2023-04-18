@@ -159,6 +159,10 @@
         <activity
             android:name=".MongoDB"
             android:exported="true" />
+
+        <activity
+            android:name=".Array"
+            android:exported="true" />
         
     </application>
 
