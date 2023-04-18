@@ -261,7 +261,6 @@ Step by step guide to become a AI/ML scientist.
     </string>
 
 
-
     <string name="arrays_q2">Question 2:\n
         Given an array of size N containing only 0s, 1s, and 2s; sort the array in ascending order.\n
         <b>Input:</b>\n

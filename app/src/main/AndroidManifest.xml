@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,8 +16,26 @@
         android:theme="@style/Theme.MajorProject"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
-            android:exported="false" />
+            android:name=".ForgetPassword"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Register"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Login"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".SplashActivity"
             android:exported="true"
@@ -24,12 +46,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
         <activity
             android:name=".CreateNewAccount"
-            android:exported="true" />
-        <activity
-            android:name=".Forget_password"
             android:exported="true" />
         <activity
             android:name=".LandingPage"
@@ -127,43 +145,33 @@
         <activity
             android:name=".PythonProgramming"
             android:exported="true" />
-            
         <activity
             android:name=".DBMSResources"
             android:exported="true" />
-
         <activity
             android:name=".SQLResources"
             android:exported="true" />
-            
-       <activity
+        <activity
             android:name=".Roadmaps"
             android:exported="true" />
-
         <activity
             android:name=".HtmlAndCss"
             android:exported="true" />
-
         <activity
             android:name=".JavaScript"
             android:exported="true" />
-
         <activity
             android:name=".React"
             android:exported="true" />
-
         <activity
             android:name=".Nodejs"
             android:exported="true" />
-
         <activity
             android:name=".MongoDB"
             android:exported="true" />
-
         <activity
             android:name=".Array"
             android:exported="true" />
-        
     </application>
 
 </manifest>
