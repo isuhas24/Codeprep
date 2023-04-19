@@ -570,7 +570,7 @@ Step by step guide to become a AI/ML scientist.
         arr[] = {1, 2, 3, 2, 1, 4}\n
         <b>Output:</b> 3 4\n
         <b>Explanation:</b>\n
-        3 and 4 occur exactly once.
+        3 and 4 occur exactly once.\n
     </string>
     <string name="code_bit_manipulation_q3">
         <b>JAVA CODE:</b>\n
