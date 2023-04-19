@@ -172,6 +172,10 @@
         <activity
             android:name=".Array"
             android:exported="true" />
+
+        <activity
+            android:name=".BitManipulation"
+            android:exported="true" />
     </application>
 
 </manifest>

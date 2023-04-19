@@ -40,7 +40,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/array_heading"
+                android:text="@string/bit_manipulation_heading"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="30dp"
@@ -60,7 +60,7 @@
                 android:layout_height="15dp"/>
 
             <androidx.cardview.widget.CardView
-                android:onClick="expand_array_q1"
+                android:onClick="expand_bit_manipulation_q1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="20dp"
@@ -71,27 +71,27 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/layout_array_q1"
+                    android:id="@+id/layout_bit_manipulation_q1"
                     android:animateLayoutChanges="true"
                     android:orientation="vertical">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/arrays_q1"
+                        android:text="@string/bit_manipulation_q1"
                         android:textSize="15dp"
                         android:textStyle="bold"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/code_array_q1"
-                        android:text="@string/code_array_q1"
+                        android:id="@+id/code_bit_manipulation_q1"
+                        android:text="@string/code_bit_manipulation_q1"
                         android:visibility="gone"/>
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:onClick="expand_array_q2"
+                android:onClick="expand_bit_manipulation_q2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="20dp"
@@ -102,27 +102,27 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/layout_array_q2"
+                    android:id="@+id/layout_bit_manipulation_q2"
                     android:animateLayoutChanges="true"
                     android:orientation="vertical">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/arrays_q2"
+                        android:text="@string/bit_manipulation_q2"
                         android:textSize="15dp"
                         android:textStyle="bold"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/code_array_q2"
-                        android:text="@string/code_array_q2"
+                        android:id="@+id/code_bit_manipulation_q2"
+                        android:text="@string/code_bit_manipulation_q2"
                         android:visibility="gone"/>
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:onClick="expand_array_q3"
+                android:onClick="expand_bit_manipulation_q3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="20dp"
@@ -133,82 +133,20 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/layout_array_q3"
+                    android:id="@+id/layout_bit_manipulation_q3"
                     android:animateLayoutChanges="true"
                     android:orientation="vertical">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/arrays_q3"
+                        android:text="@string/bit_manipulation_q3"
                         android:textSize="15dp"
                         android:textStyle="bold"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/code_array_q3"
-                        android:text="@string/code_array_q3"
-                        android:visibility="gone"/>
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:onClick="expand_array_q4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="20dp"
-                app:cardElevation="10dp"
-                app:contentPadding="20dp">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/layout_array_q4"
-                    android:animateLayoutChanges="true"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/arrays_q4"
-                        android:textSize="15dp"
-                        android:textStyle="bold"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/code_array_q4"
-                        android:text="@string/code_array_q4"
-                        android:visibility="gone"/>
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:onClick="expand_array_q5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="20dp"
-                app:cardElevation="10dp"
-                app:contentPadding="20dp">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/layout_array_q5"
-                    android:animateLayoutChanges="true"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/arrays_q5"
-                        android:textSize="15dp"
-                        android:textStyle="bold"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/code_array_q5"
-                        android:text="@string/code_array_q5"
+                        android:id="@+id/code_bit_manipulation_q3"
+                        android:text="@string/code_bit_manipulation_q3"
                         android:visibility="gone"/>
                 </LinearLayout>
 

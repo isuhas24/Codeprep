@@ -4,14 +4,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class DSA extends AppCompatActivity implements View.OnClickListener {
     Button btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btn10,btn11,btn12,btn13;
+
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.dsa);
         btn1=(Button) findViewById(R.id.DSACustomButton1);
         btn1.setOnClickListener(this);
@@ -39,6 +42,8 @@ public class DSA extends AppCompatActivity implements View.OnClickListener {
         btn12.setOnClickListener(this);
         btn13=(Button) findViewById(R.id.DSACustomButton13);
         btn13.setOnClickListener(this);
+
+
     }
 
     @Override
@@ -51,7 +56,8 @@ public class DSA extends AppCompatActivity implements View.OnClickListener {
             startActivity(it);
         }
         else if(v.equals(btn3)){
-
+            Intent it=new Intent(this,BitManipulation.class);
+            startActivity(it);
         }
         else if(v.equals(btn4)){
 

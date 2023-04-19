@@ -21,6 +21,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.firebase.client.Firebase;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -41,7 +42,7 @@ public class Register extends AppCompatActivity {
 
 
     public static final String TAG = "TAG";
-    EditText mFullName,mEmail,mPassword,mPhone,mrefercode;
+    EditText mFullName,mEmail,mPassword,mPhone;
     ImageView mRegister;
     TextView mLoginbtn,mtermc,mpprivacypolicy;
     ProgressBar progressBar;
@@ -66,8 +67,6 @@ public class Register extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-
-
 
 
 
@@ -148,7 +147,6 @@ public class Register extends AppCompatActivity {
                             String Password = mPassword.getText().toString().trim();
                             final String FullName = mFullName.getText().toString();
                             final String Phone = mPhone.getText().toString();
-                            String useridtemp = mrefercode.getText().toString();
 
 
 
@@ -163,7 +161,7 @@ public class Register extends AppCompatActivity {
                             }
 
                             if (Password.length() < 6) {
-                                mPassword.setError("Password Must Be Less Then 6 Character");
+                                mPassword.setError("Password Must Be Greater Then 6 Character");
                             }
 
 
@@ -224,7 +222,7 @@ public class Register extends AppCompatActivity {
                                     } else {
                                         Toast.makeText(Register.this, "Error Please Try Again", Toast.LENGTH_SHORT).show();
                                         progressBar.setVisibility(GONE);
-                                        mtermc.setTextColor(Integer.parseInt("#FF0000"));
+
                                     }
                                 }
                             });

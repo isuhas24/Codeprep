@@ -45,7 +45,7 @@ public class CreateNewAccount extends AppCompatActivity implements View.OnClickL
                 d.insert(Database.TABLE_NAME,null,cv);
                 d.close();
                 Toast.makeText(this, "Registered successfully", Toast.LENGTH_SHORT).show();
-                Intent it=new Intent(this,MainActivity.class);
+                Intent it=new Intent(this,LandingPage.class);
                 startActivity(it);
             }
         }
