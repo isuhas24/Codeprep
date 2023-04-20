@@ -139,7 +139,7 @@
         android:id="@+id/Loginbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Alredy Account? Login Here"
+        android:text="Already have account? Login Here"
         android:textColor="#141413"
         android:textSize="17dp"
         app:layout_constraintBottom_toBottomOf="parent"

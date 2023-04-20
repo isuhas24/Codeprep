@@ -176,6 +176,10 @@
         <activity
             android:name=".BitManipulation"
             android:exported="true" />
+
+        <activity
+            android:name=".DynamicProgramming"
+            android:exported="true" />
     </application>
 
 </manifest>
