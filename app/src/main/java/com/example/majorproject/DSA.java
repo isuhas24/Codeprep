@@ -67,7 +67,8 @@ public class DSA extends AppCompatActivity implements View.OnClickListener {
             startActivity(it);
         }
         else if(v.equals(btn6)){
-
+            Intent it=new Intent(this,Graphs.class);
+            startActivity(it);
         }
         else if(v.equals(btn7)){
 

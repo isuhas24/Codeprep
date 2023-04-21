@@ -180,6 +180,10 @@
         <activity
             android:name=".DynamicProgramming"
             android:exported="true" />
+
+        <activity
+            android:name=".Graphs"
+            android:exported="true" />
     </application>
 
 </manifest>
