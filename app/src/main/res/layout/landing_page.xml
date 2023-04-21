@@ -35,42 +35,12 @@
             android:orientation="vertical">
 
             <LinearLayout
+                android:id="@+id/factphoto"
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:background="@drawable/home_page_background_image"
                 android:gravity="center"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="sans-serif-black"
-                    android:text="Did you know?"
-                    android:textColor="@color/design_default_color_on_secondary"
-                    android:textSize="25dp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="sans-serif-black"
-                    android:text="Acceptance rate at FAANG"
-                    android:textColor="@color/design_default_color_on_secondary"
-                    android:textSize="25dp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="sans-serif-black"
-                    android:text="stands at 0.67%"
-                    android:textColor="@color/design_default_color_on_secondary"
-                    android:textSize="25dp"
-                    android:textStyle="bold" />
-            </LinearLayout>
+                android:orientation="vertical"/>
 
             <View
                 android:layout_width="match_parent"
@@ -80,10 +50,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Company Categories"
-                android:textSize="30dp"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textStyle="italic"/>
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/font6" />
 
             <View
                 android:layout_width="match_parent"
@@ -382,9 +353,10 @@
                 android:layout_gravity="center"
                 android:textAlignment="center"
                 android:text="Resource Block"
-                android:textSize="30dp"
+                android:textSize="33dp"
                 android:textColor="@color/black"
-                android:textStyle="italic">
+                android:textStyle="bold"
+                android:fontFamily="@font/font6">
             </TextView>
 
             <View
@@ -395,7 +367,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:background="#E0FFFF"
+
                 android:gravity="center">
 
                 <Button
@@ -403,7 +375,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:text="SYSTEM DESIGN"/>
+                    android:background="@drawable/buttonbag"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="SYSTEM DESIGN" />
 
                 <View
                     android:layout_width="match_parent"
@@ -412,6 +387,9 @@
                 <Button
                     android:id="@+id/customButton2"
                     android:layout_width="match_parent"
+                    android:background="@drawable/buttonbag"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:text="PROGRAMMING LANGUAGES"/>
@@ -424,6 +402,9 @@
                     android:id="@+id/customButton3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/buttonbag"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:layout_centerInParent="true"
                     android:text="DATA STRUCTURES AND ALGORITHMS"/>
 
@@ -434,6 +415,9 @@
                 <Button
                     android:id="@+id/customButton4"
                     android:layout_width="match_parent"
+                    android:background="@drawable/buttonbag"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:text="OBJECT ORIENTED PROGRAMMING"/>
@@ -446,6 +430,9 @@
                     android:id="@+id/customButton5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/buttonbag"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:layout_centerInParent="true"
                     android:text="DATABASE MANAGEMENT SYSTEM"/>
 
@@ -457,6 +444,9 @@
                     android:id="@+id/customButton6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/buttonbag"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:layout_centerInParent="true"
                     android:text="OPERATING SYSTEM"/>
 
@@ -468,6 +458,9 @@
                     android:id="@+id/customButton7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/buttonbag"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:layout_centerInParent="true"
                     android:text="SOFTWARE ENGINEERING"/>
 
@@ -479,6 +472,9 @@
                     android:id="@+id/customButton8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/buttonbag"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:layout_centerInParent="true"
                     android:text="COMPUTER NETWORKS"/>
 
@@ -490,6 +486,9 @@
                     android:id="@+id/customButton9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/buttonbag"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:layout_centerInParent="true"
                     android:text="GITHUB"/>
 
@@ -501,6 +500,9 @@
                     android:id="@+id/customButton10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/buttonbag"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:layout_centerInParent="true"
                     android:text="SDE SHEET"/>
 
@@ -513,6 +515,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
+                    android:background="@drawable/buttonbag"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:text="WEB DEVELOPMENT"/>
 
                 <View
@@ -522,6 +527,9 @@
                 <Button
                     android:id="@+id/customButton12"
                     android:layout_width="match_parent"
+                    android:background="@drawable/buttonbag"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:text="LEETCODE SOLUTIONS"/>
@@ -534,6 +542,9 @@
                     android:id="@+id/customButton13"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/buttonbag"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:layout_centerInParent="true"
                     android:text="CODING PATTERNS AND PRACTICES"/>
 
@@ -545,6 +556,9 @@
                     android:id="@+id/customButton14"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/buttonbag"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:layout_centerInParent="true"
                     android:text="TIPS"/>
 
@@ -556,6 +570,9 @@
                     android:id="@+id/customButton15"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/buttonbag"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:layout_centerInParent="true"
                     android:text="MOST IMPORTANT CODING QUESTIONS"/>
 
@@ -567,6 +584,9 @@
                     android:id="@+id/btn_roadmaps"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/buttonbag"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
                     android:layout_centerInParent="true"
                     android:text="ROADMAPS"/>
 

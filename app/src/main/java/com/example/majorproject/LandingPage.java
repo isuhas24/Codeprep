@@ -4,13 +4,20 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class LandingPage extends AppCompatActivity implements View.OnClickListener{
+
+    private LinearLayout factPhoto;
+    private Handler handler = new Handler();
+    private int[] backgrounds = {R.drawable.fact1, R.drawable.fact2, R.drawable.fact3};
+    private int currentIndex = 0;
 
     ImageView mobility_image,ecommerce_image,crm_image,cloud_image,collaboration_image,communication_image,advertisement_image,payment_image,trading_image,investment_image,gaming_image,entertainment_image;
     Button system_design_button,programming_languages_button,dsa_button,oops_button,dbms_button,os_button,se_button,cn_button,github_button,sde_sheet_button,web_development_button,leetcode_solutions_button,coding_practices_button,tips_button,questions_button,roadmaps;
@@ -20,6 +27,10 @@ public class LandingPage extends AppCompatActivity implements View.OnClickListen
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.landing_page);
+
+
+
+
 
         //Images
         mobility_image=(ImageView) findViewById(R.id.company1);
@@ -80,6 +91,23 @@ public class LandingPage extends AppCompatActivity implements View.OnClickListen
         questions_button.setOnClickListener(this);
         roadmaps=(Button)findViewById(R.id.btn_roadmaps);
         roadmaps.setOnClickListener(this);
+
+
+        //Image Slider Code
+        factPhoto = findViewById(R.id.factphoto);
+
+        // Start the background changer
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                currentIndex++;
+                if (currentIndex >= backgrounds.length) {
+                    currentIndex = 0;
+                }
+                factPhoto.setBackgroundResource(backgrounds[currentIndex]);
+                handler.postDelayed(this, 3000);
+            }
+        }, 3000);
     }
 
     @Override
