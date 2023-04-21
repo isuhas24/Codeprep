@@ -41,6 +41,7 @@
     <string name="bit_manipulation_heading">Bit Manipulation</string>
     <string name="dynamic_programming_heading">Dynamic Programming</string>
     <string name="graphs_heading">Graphs</string>
+    <string name="greedy_heading">Greedy</string>
     <string name="about_mobility_companies">
         <b>=></b> Mobility is the industry of transporting people and goods.\n
         <b>=></b> Revenue in the Ride-hailing and Taxi segment is projected to reach US$12.77bn in 2023.\n
@@ -854,6 +855,137 @@ Step by step guide to become a AI/ML scientist.
             }\n
             return false;\n
         }\n\n
+    </string>
+
+
+
+    <string name="greedy_q1">Question 1:\n
+        Given a value of V Rs and an infinite supply of each of the denominations {1, 2, 5, 10, 20, 50, 100, 500, 1000} valued coins/notes, The task is to find the minimum number of coins and/or notes needed to make the change.\n
+        <b>Input:</b>\n
+         V=20\n
+        <b>Output:</b> 2\n
+        <b>Explanation:</b>\n
+        We need a 50 Rs note and a 20 Rs note.\n
+    </string>
+    <string name="code_greedy_q1">
+        <b>C++ CODE:</b>\n
+        vector&lt;int> minPartition(int N){\n
+        //This is greedy approach work if sum of 2 coins is less than the 3rd one\n
+        // 2+5 &lt; 10\n
+        //10 +20 &lt; 50....\n
+        //optimised approach is by DP\n
+        vector&lt;int> arr = {2000,500,200,100,50,20,10,5,2,1};\n
+        vector&lt;int>ans;\n
+        int n = arr.size();\n
+        int totalMoney = n;\n
+        int i = 0;\n
+        while(N){\n
+            int no = N/arr[i];\n
+            for(int j = 0; j &lt; no; j++){\n
+                ans.push_back(arr[i]);\n
+            }\n
+            N = N - no*arr[i];\n
+            i++;\n
+        }\n
+        return ans;\n
+        }\n\n
+        <b>JAVA CODE:</b>
+        class Solution {\n
+        static List&lt;Integer> minPartition(int N) {\n
+        List&lt;Integer> list = new ArrayList&lt;Integer>();\n
+
+        int arr[] = {1, 2, 5, 10, 20, 50, 100, 200, 500, 2000};\n
+        int ln =arr.length-1;\n
+
+        for(int i=ln; i>=0; i--){\n
+            while(N >= arr[i] &amp;&amp; N > 0){\n
+                N = N - arr[i];\n
+                list.add(arr[i]);\n
+            }\n
+            if(N == 0) break;\n
+        }\n
+
+        return list;\n
+        }\n
+        }\n\n
+        <b>PYTHON CODE:</b>
+        def minPartition(self, n):\n
+        a=[1,2,5,10,20,50,100,200,500,2000]\n
+        l=[]\n
+        i=len(a)-1\n
+        while n!=0 and i>=0:\n
+            if a[i]>n:\n
+                i-=1\n
+            else:\n
+                n-=a[i]\n
+                l.append(a[i])\n
+        return l\n
+    </string>
+    <string name="greedy_q2">Question 2:\n
+        Given arrival and departure times of all trains that reach a railway station. Find the minimum number of platforms required for the railway station so that no train is kept waiting. Consider that all the trains arrive on the same day and leave on the same day. Arrival and departure time can never be the same for a train but we can have arrival time of one train equal to departure time of the other. At any given instance of time, same platform can not be used for both departure of a train and arrival of another train. In such cases, we need different platforms.\n
+        <b>Input:</b>\n
+         n=6\n
+        arr[] = {0900, 0940, 0950, 1100, 1500, 1800}\n
+        dep[] = {0910, 1200, 1120, 1130, 1900, 2000}\n
+        <b>Output:</b> 3\n
+        <b>Explanation:</b>\n
+        Minimum 3 platforms are required to safely arrive and depart all trains.\n
+    </string>
+    <string name="code_greedy_q2">
+        <b>C++ CODE:</b>\n
+        class Solution{\n
+            public:\n
+            //Function to find the minimum number of platforms required at the railway station such that no train waits.\n
+            int findPlatform(int arr[], int dep[], int n){\n
+                map&lt;int,int> mp;\n
+                for(int i=0;i&lt;n;i++){\n
+                    mp[arr[i]]++;\n
+                    mp[dep[i]+1]--;\n
+                }\n
+                int maxplat=1;\n
+                int sum=0;\n
+                for(auto t:mp){\n
+                    sum+=t.second;\n
+                    maxplat = max(maxplat,sum);\n
+                }\n
+                return maxplat;\n
+            }\n
+        };\n\n
+        <b>JAVA CODE:</b>
+        class Solution{\n
+            static int findPlatform(int arr[], int dep[], int n){\n
+            int max = 0, plat_occupied = 0;\n
+            Arrays.sort(arr);\n
+            Arrays.sort(dep);\n
+            int i = 0, j = 0;\n
+            while (i &lt; n) {\n
+                if (arr[i] &lt;= dep[j]) {\n
+                    plat_occupied++;\n
+                    i++;\n
+                } else if (arr[i] > dep[j]) {\n
+                    plat_occupied--;\n
+                    j++;\n
+                }\n
+                max = Math.max(max, plat_occupied);\n
+            }\n
+            return max;\n
+        }\n
+        }\n\n
+        <b>PYTHON CODE:</b>
+        class Solution:\n
+            def minimumPlatform(self,n,arr,dep):\n
+                arr.sort()\n
+                dep.sort()\n
+                i=j=count=max1=0\n
+                while(i&lt;n):\n
+                    if arr[i]&lt;=dep[j]:\n
+                        i+=1\n
+                        count+=1\n
+                        max1 = max(max1,count)\n
+                    else:\n
+                        j+=1\n
+                        count-=1\n
+                return max1\n
     </string>
 
 </resources>

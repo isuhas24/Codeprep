@@ -184,6 +184,10 @@
         <activity
             android:name=".Graphs"
             android:exported="true" />
+
+        <activity
+            android:name=".Greedy"
+            android:exported="true" />
     </application>
 
 </manifest>

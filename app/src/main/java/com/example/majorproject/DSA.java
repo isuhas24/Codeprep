@@ -71,7 +71,8 @@ public class DSA extends AppCompatActivity implements View.OnClickListener {
             startActivity(it);
         }
         else if(v.equals(btn7)){
-
+            Intent it=new Intent(this,Greedy.class);
+            startActivity(it);
         }
         else if(v.equals(btn8)){
 
