@@ -42,6 +42,7 @@
     <string name="dynamic_programming_heading">Dynamic Programming</string>
     <string name="graphs_heading">Graphs</string>
     <string name="greedy_heading">Greedy</string>
+    <string name="linked_list_heading">Linked List</string>
     <string name="about_mobility_companies">
         <b>=></b> Mobility is the industry of transporting people and goods.\n
         <b>=></b> Revenue in the Ride-hailing and Taxi segment is projected to reach US$12.77bn in 2023.\n
@@ -988,4 +989,171 @@ Step by step guide to become a AI/ML scientist.
                 return max1\n
     </string>
 
+
+
+    <string name="linked_list_q1">Question 1:\n
+        Given a linked list of size N. The task is to reverse every k nodes (where k is an input to the function) in the linked list. If the number of nodes is not a multiple of k then left-out nodes, in the end, should be considered as a group and must be reversed.\n
+        <b>Input:</b>\n
+         LinkedList: 1->2->2->4->5->6->7->8\n
+         K = 4\n
+        <b>Output:</b> 4 2 2 1 8 7 6 5 \n
+        <b>Explanation:</b>\n
+        The first 4 elements 1,2,2,4 are reversed first and then the next 4 elements 5,6,7,8. Hence, the resultant linked list is 4->2->2->1->8->7->6->5.\n
+    </string>
+    <string name="code_linked_list_q1">
+        <b>C++ CODE:</b>\n
+        struct node{\n
+            int data;\n
+            struct node* next;\n
+
+            node(int x){\n
+                data = x;\n
+                next = NULL;\n
+            }\n
+        }*head;\n
+        struct node *reverse (struct node *head, int k){\n
+            Node *p,*cr,*t;\n
+            p=nullptr;\n
+            cr=head;\n
+            int d=k;\n
+            while(cr&amp;&amp;d--){\n
+                t=cr->next;\n
+                cr->next=p;\n
+                p=cr;\n
+                cr=t;\n
+            }\n
+            if(cr) head->next=reverse(cr,k);\n
+            return p;\n
+        };\n\n
+        <b>JAVA CODE:</b>
+        class Node{\n
+            int data;\n
+            Node next;\n
+            Node(int key){\n
+                data = key;\n
+                next = null;\n
+            }\n
+        }\n
+        class Solution {\n
+            public static Node reverse(Node node, int k) {\n
+                if (k == 1) return node;\n
+                else k -= 1;\n
+                Node pre = new Node(0);\n
+                pre.next = node;\n
+                Node res = pre, p1 = node, p2 = p1.next;\n
+                for (int cnt = 0; p2 != null; cnt++) {\n
+                    if (cnt != 0 &amp;&amp; cnt % k == 0) {\n
+                        pre = p1;\n
+                        p1 = p1.next;\n
+                        p2 = p2.next;\n
+                        if (p2 == null) break;\n
+                    }\n
+                    p1.next = p2.next;\n
+                    p2.next = pre.next;\n
+                    pre.next = p2;\n
+                    p2 = p1.next;\n
+                }\n
+                return res.next;\n
+            }\n
+        }\n
+    </string>
+    <string name="linked_list_q2">Question 1:\n
+        A number N is represented in Linked List such that each digit corresponds to a node in linked list. You need to add 1 to it.\n
+        <b>Input:</b>\n
+         LinkedList: 4->5->6\n
+        <b>Output:</b> 457\n
+    </string>
+    <string name="code_linked_list_q2">
+        <b>C++ CODE:</b>\n
+        struct node{\n
+            int data;\n
+            struct node* next;\n
+
+            node(int x){\n
+                data = x;\n
+                next = NULL;\n
+            }\n
+        }*head;\n
+        Node* reverse(Node* head){\n
+            if(!head || !head->next)\n
+                return head;\n
+
+            Node* curr = head;\n
+            Node* prev = NULL;\n
+            Node* Next = head->next;\n
+
+            while(curr->next!=NULL){\n
+                curr->next = prev;\n
+                prev = curr;\n
+                curr = Next;\n
+                Next = Next->next;\n
+            }\n
+            curr->next = prev;\n
+            return curr;\n
+        }\n
+
+        Node* addOne(Node *head){\n
+
+            Node* newHead = reverse(head);\n
+            Node* temp = newHead;\n
+
+            while(temp->next != NULL &amp;&amp; temp->data == 9){\n
+                temp->data = 0;\n
+                temp = temp->next;\n
+            }\n
+            if(temp->data != 9)\n
+                temp->data += 1;\n
+            else if(temp->next == NULL &amp;&amp; temp->data == 9){\n
+                temp->data = 0;\n
+                temp->next = new Node(1);\n
+            }\n
+
+            return reverse(newHead);\n
+        }\n\n
+        <b>JAVA CODE:</b>
+        class Node{\n
+            int data;\n
+            Node next;\n
+            Node(int key){\n
+                data = key;\n
+                next = null;\n
+            }\n
+        }\n
+        class Solution {\n
+            public static Node addOne(Node head) { \n
+                Node pre = new Node(0);\n
+                pre.next = head;\n
+                Node p1 = head, p2 = p1.next;\n
+
+                /* reverse the linked list */\n
+                while (p2 != null) {\n
+                    p1.next = p2.next;\n
+                    p2.next = pre.next;\n
+                    pre.next = p2;\n
+                    p2 = p1.next;\n
+                }\n
+                p1 = pre.next;\n
+
+                /* add 1 to the linked list */\n
+                p1.data += 1;\n
+                while (p1.data == 10) {\n
+                    p1.data %= 10;\n
+                    if (p1.next == null) p1.next = new Node(0);\n
+                    p1.next.data += 1;\n
+                    p1 = p1.next;\n
+                }\n
+
+                /* reverse the linked list again */\n
+                p1 = pre.next;\n
+                p2 = p1.next;\n
+                while (p2 != null) {\n
+                    p1.next = p2.next;\n
+                    p2.next = pre.next;\n
+                    pre.next = p2;\n
+                    p2 = p1.next;\n
+                }\n
+                return pre.next;\n
+            }\n
+        }\n
+    </string>
 </resources>

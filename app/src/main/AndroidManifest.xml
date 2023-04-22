@@ -188,6 +188,10 @@
         <activity
             android:name=".Greedy"
             android:exported="true" />
+
+        <activity
+            android:name=".LinkedList"
+            android:exported="true" />
     </application>
 
 </manifest>
