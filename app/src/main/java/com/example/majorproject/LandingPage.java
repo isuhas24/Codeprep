@@ -9,10 +9,29 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
+
 public class LandingPage extends AppCompatActivity implements View.OnClickListener{
+
+    //calling fire base
+    FirebaseFirestore fstore;
+    FirebaseUser user;
+    FirebaseAuth fAuth;
+    String userID,name;
+
+
+    TextView PFname;
 
     private LinearLayout factPhoto;
     private Handler handler = new Handler();
@@ -27,6 +46,12 @@ public class LandingPage extends AppCompatActivity implements View.OnClickListen
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.landing_page);
+
+        //FIREBASE INSTANCE
+        fAuth = FirebaseAuth.getInstance();
+        fstore = FirebaseFirestore.getInstance();
+        user = fAuth.getCurrentUser();
+        userID = fAuth.getCurrentUser().getUid();
 
 
 
@@ -91,6 +116,21 @@ public class LandingPage extends AppCompatActivity implements View.OnClickListen
         questions_button.setOnClickListener(this);
         roadmaps=(Button)findViewById(R.id.btn_roadmaps);
         roadmaps.setOnClickListener(this);
+
+
+        PFname = findViewById(R.id.profilename);
+
+        //GETTING NAME FROM FIREBASE
+        DocumentReference documentReferencenamename = fstore.collection("user").document(userID);
+        documentReferencenamename.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
+            @Override
+            public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
+
+                name = String.valueOf(value.getString("FullName"));
+                PFname.setText(name);
+            }
+        });
+
 
 
         //Image Slider Code
