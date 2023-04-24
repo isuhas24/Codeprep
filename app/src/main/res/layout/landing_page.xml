@@ -13,16 +13,18 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:paddingEnd="18dp"
+
         android:background="@drawable/barbag"
         android:gravity="center||right"
         android:orientation="horizontal">
 
 
         <TextView
-            android:layout_width="57dp"
-            android:layout_height="51dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:gravity="start||top"
+            android:paddingLeft="20dp"
+            android:paddingBottom="29dp"
             android:text="Hello,"
             android:textStyle="bold"
             android:fontFamily="@font/font6"
@@ -36,15 +38,18 @@
             android:layout_width="251dp"
             android:layout_height="31dp"
             android:gravity="start||bottom"
+            android:paddingLeft="11dp"
             android:fontFamily="@font/font6"
             android:textColor="@color/white"
             android:textStyle="bold"
             android:textSize="18sp" />
 
         <ImageView
-            android:layout_width="60dp"
+            android:layout_width="wrap_content"
             android:foregroundGravity="right"
-            android:layout_height="60dp"
+            android:padding="7dp"
+
+            android:layout_height="wrap_content"
             android:src="@drawable/pfphoto" />
 
     </LinearLayout>
@@ -103,11 +108,12 @@
                         android:orientation="vertical">
 
                         <ImageView
+                            android:id="@+id/company1"
                             android:layout_width="200dp"
                             android:layout_height="150dp"
-                            android:id="@+id/company1"
-                            android:src="@drawable/mobility_companies"
-                            android:contentDescription="@string/app_name"/>
+                            android:background="@drawable/roundedimage"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/mobility_companies" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -132,6 +138,7 @@
                             android:id="@+id/company2"
                             android:layout_width="200dp"
                             android:layout_height="150dp"
+                            android:background="@drawable/roundedimage"
                             android:src="@drawable/ecommerce_companies" />
 
                         <TextView
