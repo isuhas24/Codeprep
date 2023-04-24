@@ -43,6 +43,7 @@
     <string name="graphs_heading">Graphs</string>
     <string name="greedy_heading">Greedy</string>
     <string name="linked_list_heading">Linked List</string>
+    <string name="backtracking_heading">Recursion and Backtracking</string>
     <string name="about_mobility_companies">
         <b>=></b> Mobility is the industry of transporting people and goods.\n
         <b>=></b> Revenue in the Ride-hailing and Taxi segment is projected to reach US$12.77bn in 2023.\n
@@ -1057,7 +1058,7 @@ Step by step guide to become a AI/ML scientist.
             }\n
         }\n
     </string>
-    <string name="linked_list_q2">Question 1:\n
+    <string name="linked_list_q2">Question 2:\n
         A number N is represented in Linked List such that each digit corresponds to a node in linked list. You need to add 1 to it.\n
         <b>Input:</b>\n
          LinkedList: 4->5->6\n
@@ -1154,6 +1155,199 @@ Step by step guide to become a AI/ML scientist.
                 }\n
                 return pre.next;\n
             }\n
+        }\n
+    </string>
+
+
+
+    <string name="backtracking_q1">Question 1:\n
+        Consider a rat placed at (0, 0) in a square matrix of order N * N. It has to reach the destination at (N - 1, N - 1). Find all possible paths that the rat can take to reach from source to destination. The directions in which the rat can move are U(up), D(down), L(left), R(right). Value 0 at a cell in the matrix represents that it is blocked and rat cannot move to it while value 1 at a cell in the matrix represents that rat can be travel through it. Note: In a path, no cell can be visited more than one time. If the source cell is 0, the rat cannot move to any other cell.\n
+        <b>Input:</b>\n
+         N = 4\n
+         m[][] = {{1, 0, 0, 0},\n
+         {1, 1, 0, 1}, \n
+         {1, 1, 0, 0},\n
+         {0, 1, 1, 1}}\n
+        <b>Output:</b> DDRDRR DRDDRR\n
+        <b>Explanation:</b>
+        The rat can reach the destination at (3, 3) from (0, 0) by two paths - DRDDRR and DDRDRR, when printed in sorted order we get DDRDRR DRDDRR.\n
+    </string>
+    <string name="code_backtracking_q1">
+        <b>C++ CODE:</b>\n
+        class Solution{\n
+            public:\n
+            vector&lt;string> res;\n
+            vector&lt;int> dx;\n
+            vector&lt;int> dy;\n
+            string dir;\n
+            vector&lt;string> findPath(vector&lt;vector&lt;int>> &amp;m, int n) {\n
+                dx={1,0,-1,0};\n
+                dy = {0,1,0,-1};\n
+                dir="DRUL";\n
+                string temp;\n
+                recur(m,0,0,temp);\n
+                return res;\n
+            }\n
+            void recur(vector&lt;vector&lt;int>> &amp;m,int r,int c,string &amp;temp){\n
+                // cout&lt;&lt;r&lt;&lt;c;\n
+                // cout&lt;&lt;endl;\n
+                if(r==m.size()-1 &amp;&amp; c==m[0].size()-1 &amp;&amp; m[r][c]!=0 ){\n
+                    res.push_back(temp);\n
+                    return ;\n
+                }\n
+
+                if(r>=m.size()  || r&lt;0 || c>=m[0].size() || c&lt;0 || m[r][c]==0 || m[r][c]==-1)\n
+                    return ;\n
+                for(int i=0;i&lt;4;i++){\n
+                    temp.push_back(dir[i]);\n
+                    int nx=r+dx[i];\n
+                    int ny=c+dy[i];\n
+                    int x=m[r][c];\n
+                    m[r][c]=-1;\n
+
+                    recur(m,nx,ny,temp);\n
+                    m[r][c]=x;\n
+
+                    temp.pop_back();\n
+                }\n
+            }\n
+        };\n\n
+        <b>JAVA CODE:</b>
+        public static boolean isitSafe(int[][] m, int x, int y){\n
+            if(x&lt;0 || y&lt;0 || x>=m.length || y>=m.length || m[x][y]==0) return false;\n
+            return true;\n
+        }\n
+
+        public static void ratinmaze(int[][] m, int x, int y, boolean visited[][], ArrayList&lt;String> ans, List&lt;Character> res){\n
+            if(m[m.length-1][m.length-1]==0) return;\n
+            if(x==m.length-1 &amp;&amp; y==m.length-1){\n
+                String s ="";\n
+                for(Character ch: res)\n
+                    s += ""+ch;\n
+
+                ans.add(s);\n
+                return;\n
+            }\n
+
+            if(!isitSafe(m,x,y)) return;\n
+
+            visited[x][y] = true;\n
+            if(isitSafe(m,x+1,y) &amp;&amp; !visited[x+1][y]) {\n
+                res.add("D");\n
+                ratinmaze(m,x+1,y,visited,ans,res);\n
+                res.remove(res.size()-1);\n
+            }\n
+
+            if(isitSafe(m,x-1,y) &amp;&amp; !visited[x-1][y]){\n
+                res.add("U");\n
+                ratinmaze(m,x-1,y,visited,ans,res);\n
+                res.remove(res.size()-1);\n
+            }\n
+
+            if(isitSafe(m,x,y+1) &amp;&amp; !visited[x][y+1]){\n
+                res.add("R");\n
+                ratinmaze(m,x,y+1,visited,ans,res);\n
+                res.remove(res.size()-1);\n
+            }\n
+
+            if(isitSafe(m,x,y-1) &amp;&amp; !visited[x][y-1]){\n
+                res.add("L");\n
+                ratinmaze(m,x,y-1,visited,ans,res);\n
+                res.remove(res.size()-1);\n
+            }\n
+
+            visited[x][y] = false;\n
+        }\n
+    </string>
+    <string name="backtracking_q2">Question 2:\n
+        You are given a string S that contains parentheses and letters. You have to remove the minimum number of invalid parentheses to make the input string valid.\n
+        Return all the possible results in the sorted order.\n
+        <b>Input:</b>\n
+         S = "()())()"\n
+        <b>Output:</b> ["(())()","()()()"]\n
+    </string>
+    <string name="code_backtracking_q2">
+        <b>C++ CODE:</b>\n
+        set&lt;string> ans;\n
+        int c1;\n
+        void help(string s, int i, string temp, int x, int c){\n
+            if(i == s.size()){\n
+                if(x == 0 &amp;&amp; c == c1)\n
+                ans.insert(temp);\n
+                return;\n
+            }\n
+            if(s[i] == "(")\n
+            help(s, i+1, temp+"(", x+1, c+1);\n
+            else if(s[i] == ")" &amp;&amp; x>0)\n
+            help(s, i+1, temp+")", x-1, c+1);\n
+            if(s[i] != "(" &amp;&amp; s[i] != ")")\n
+            help(s, i+1, temp+s[i], x, c);\n
+            else\n
+            help(s, i+1, temp, x, c);\n
+        }\n
+        vector&lt;string> removeInvalidParentheses(string s) {\n
+            int c = 0, x = 0;\n
+            for(int i = 0; i&lt;s.size(); i++){\n
+                if(s[i] == "(")x++;\n
+                if(s[i] == ")" &amp;&amp; x>0){\n
+                    x--;\n
+                    c+=2;\n
+                }\n
+            }\n
+            c1 = c;\n
+            help(s, 0, "", 0, 0);\n
+            vector&lt;string>res;\n
+            for(auto i: ans)res.push_back(i);\n
+            sort(res.begin(), res.end());\n
+            return res;\n
+        }\n\n
+        <b>JAVA CODE:</b>
+        static int findRemovals(String s){\n
+            Stack&lt;Character> st = new Stack&lt;>();\n
+
+            for(int i = 0; i &lt; s.length(); i++){\n
+                if(s.charAt(i) == "("){\n
+                    st.push("(");\n
+                }\n
+                else if(s.charAt(i) == ")"){\n
+                    if(!st.isEmpty() &amp;&amp; st.peek() == "("){\n
+                        st.pop();\n
+                    }\n
+                    else{\n
+                        st.push(")");\n
+                    }\n
+                }\n
+            }\n
+            return st.size();\n
+        }\n
+
+        static void solve(String s, Map&lt;String, Boolean> mp, int rc, ArrayList&lt;String> list){\n
+            if(mp.containsKey(s)){\n
+                return ;\n
+            }\n
+            mp.put(s, true);\n
+
+            if(rc == 0){\n
+                if(findRemovals(s) == 0){\n
+                    list.add(s);\n
+                    return;\n
+                }    \n
+            }\n
+            for(int i = 0; i &lt; s.length(); i++){\n
+                String left = s.substring(0, i);\n
+                String right = s.substring(i+1);\n
+                String join = left + right;\n
+                solve(join, mp, rc-1, list);\n
+            }\n
+            return;\n
+        }\n
+        public static ArrayList&lt;String> removeInvalidParentheses(String s) {\n
+            int rc = findRemovals(s);\n
+            Map&lt;String, Boolean> mp = new HashMap&lt;>();\n
+            ArrayList&lt;String> list = new ArrayList&lt;>();\n
+            solve(s, mp, rc, list);\n
+
+            return list;\n
         }\n
     </string>
 </resources>
