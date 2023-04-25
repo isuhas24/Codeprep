@@ -44,6 +44,7 @@
     <string name="greedy_heading">Greedy</string>
     <string name="linked_list_heading">Linked List</string>
     <string name="backtracking_heading">Recursion and Backtracking</string>
+    <string name="stacks_and_queues_heading">Stack and Queue</string>
     <string name="about_mobility_companies">
         <b>=></b> Mobility is the industry of transporting people and goods.\n
         <b>=></b> Revenue in the Ride-hailing and Taxi segment is projected to reach US$12.77bn in 2023.\n
@@ -1348,6 +1349,166 @@ Step by step guide to become a AI/ML scientist.
             solve(s, mp, rc, list);\n
 
             return list;\n
+        }\n
+    </string>
+
+
+
+    <string name="stacks_and_queues_q1">Question 1:\n
+        Given an expression string x. Examine whether the pairs and the orders of {,},(,),[,] are correct in exp. For example, the function should return true for exp = [()]{}{[()()]()} and false for exp = [(]).\n
+        Note: The drive code prints "balanced" if function return true, otherwise it prints "not balanced".\n
+        <b>Input:</b>\n
+         {([])}\n
+        <b>Output:</b> true\n
+        <b>Explanation:</b>\n
+        { ( [ ] ) }. Same colored brackets can form balanced pairs, with 0 number of unbalanced bracket.\n
+    </string>
+    <string name="code_stacks_and_queues_q1">
+        <b>C++ CODE:</b>\n
+        class Solution{\n
+            public:\n
+                //Function to check if brackets are balanced or not.\n
+                bool ispar(string str){\n
+                    stack&lt;char> stk;\n
+                    if (str[0] == ")" || str[0] == "}" || str[0] == "]")\n
+                        return false;\n
+                    if (str.length() % 2 != 0)\n
+                        return false;\n
+                    for (int i = 0;i&lt;str.length();i++){\n
+                        if (str[i] == "(" || str[i] == "{" || str[i] == "[")\n
+                            stk.push(str[i]);\n
+                        else{\n
+                            if (!stk.empty()){\n
+                                if ((str[i] == ")" &amp;&amp; stk.top() == "(") || (str[i] == "}" &amp;&amp; stk.top() == "{") || (str[i] == "]" &amp;&amp; stk.top() == "["))\n
+                                    stk.pop();\n
+                            else\n
+                                return false;\n\n
+                        }
+                        else\n
+                            return false;\n
+                    }\n
+                }\n
+                if (stk.empty())\n
+                    return true;\n
+                return false;\n
+                }\n
+        };\n\n
+        <b>JAVA CODE:</b>
+        class Solution{\n
+            //Function to check if brackets are balanced or not.\n
+            static boolean ispar(String x){\n
+                int n=x.length();\n
+                Stack&lt;Character> st = new Stack&lt;Character>();\n
+                for(int i=0;i&lt;n;i++){\n
+                    char ch=x.charAt(i);\n
+                    if(ch==")"){\n
+                        if(st.size()==0 || st.peek()!="(")return false;\n
+                            st.pop();\n
+                    }\n
+                    else if(ch=="}"){\n
+                        if(st.size()==0 || st.peek()!="{")return false;\n
+                        st.pop();\n
+                    }\n
+                    else if(ch=="]"){\n
+                        if(st.size()==0 || st.peek()!="[")return false;\n
+                        st.pop();\n
+                    }\n
+                    else{\n
+                        st.push(ch);\n
+                    }\n
+                }\n
+                return st.size()==0;\n
+            }\n
+        }\n
+    </string>
+    <string name="stacks_and_queues_q2">Question 2:\n
+        A celebrity is a person who is known to all but does not know anyone at a party. If you go to a party of N people, find if there is a celebrity in the party or not. A square NxN matrix M[][] is used to represent people at the party such that if an element of row i and column j  is set to 1 it means ith person knows jth person. Here M[i][i] will always be 0.\n
+        Note: Follow 0 based indexing.\n
+        <b>Input:</b>\n
+        N = 3\n
+        M[][] = {{0 1 0},\n
+                {0 0 0}, \n
+                {0 1 0}}\n
+        <b>Output:</b> 1\n
+        <b>Explanation:</b>\n
+        0th and 2nd person both know 1. Therefore, 1 is the celebrity. \n
+    </string>
+    <string name="code_stacks_and_queues_q2">
+        <b>C++ CODE:</b>
+        class Solution{\n
+            public:\n
+            //Function to find if there is a celebrity in the party or not.\n
+            int celebrity(vector&lt;vector&lt;int> >&amp; M, int n){\n
+                //  Using stacks\n
+                stack&lt;int> st;\n
+                for(int i = 0;i&lt;n;i++){\n
+                    st.push(i);\n
+                }\n
+
+                while(st.size() > 1){\n
+                    int a = st.top();\n
+                    st.pop();\n
+                    int b = st.top();\n
+                    st.pop();\n
+
+                    if(M[a][b] == 1){\n
+                        st.push(b);\n
+                    }\n
+                    else{\n
+                        st.push(a);\n
+                    }\n
+                }\n
+
+                int celeb = st.top();\n
+                for(int i = 0;i&lt;n;i++){\n
+                    if(M[celeb][i] == 1){\n
+                        return -1;\n
+                    }\n
+                }\n
+                int knows = 1;\n
+                for(int i = 0;i&lt;n;i++){\n
+                    if(M[i][celeb] == 1){\n
+                        knows++;\n
+                    }\n
+                }\n
+                if(knows != n){\n
+                    return -1;\n
+                }\n
+                return celeb;\n
+            }\n
+        };\n
+        <b>JAVA CODE:</b>
+        class Solution{\n
+            //Function to find if there is a celebrity in the party or not.\n
+            int celebrity(int M[][], int n){\n
+                Stack&lt;Integer> stack = new Stack&lt;>();\n
+                for(int i = 0; i&lt; n;i++){\n
+                    stack.push(i);\n
+                }\n
+
+                while(stack.size() > 1){\n
+                    int a = stack.pop();\n
+                    int b = stack.pop();\n
+                    if(M[a][b] == 1){\n
+                        stack.push(b);\n
+                    }else{\n
+                        stack.push(a);\n
+                    }\n
+                }\n
+                int celeb = stack.peek();\n
+                for(int i = 0; i &lt; n ;i++){\n
+                    if(M[celeb][i] == 1){\n
+                        return -1;\n
+                    }\n
+                }\n
+                for(int i = 0; i &lt; n ;i++){\n
+                    if(M[i][celeb] == 0 &amp;&amp; i!=celeb){\n
+                        return -1;\n
+                    }\n
+                }\n
+
+                return celeb;\n
+            }\n
         }\n
     </string>
 </resources>
