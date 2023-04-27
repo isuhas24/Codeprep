@@ -14,7 +14,6 @@ public class DSA extends AppCompatActivity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.dsa);
         btn1=(Button) findViewById(R.id.DSACustomButton1);
         btn1.setOnClickListener(this);
@@ -42,8 +41,6 @@ public class DSA extends AppCompatActivity implements View.OnClickListener {
         btn12.setOnClickListener(this);
         btn13=(Button) findViewById(R.id.DSACustomButton13);
         btn13.setOnClickListener(this);
-
-
     }
 
     @Override
@@ -82,10 +79,12 @@ public class DSA extends AppCompatActivity implements View.OnClickListener {
             startActivity(it);
         }
         else if(v.equals(btn10)){
-
+            Intent it=new Intent(this,Backtracking.class);
+            startActivity(it);
         }
         else if(v.equals(btn11)){
-
+            Intent it=new Intent(this,StacksAndQueues.class);
+            startActivity(it);
         }
         else if(v.equals(btn12)){
 

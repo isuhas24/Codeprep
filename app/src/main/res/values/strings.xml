@@ -43,6 +43,8 @@
     <string name="graphs_heading">Graphs</string>
     <string name="greedy_heading">Greedy</string>
     <string name="linked_list_heading">Linked List</string>
+    <string name="backtracking_heading">Recursion and Backtracking</string>
+    <string name="stacks_and_queues_heading">Stack and Queue</string>
     <string name="about_mobility_companies">
         <b>=></b> Mobility is the industry of transporting people and goods.\n
         <b>=></b> Revenue in the Ride-hailing and Taxi segment is projected to reach US$12.77bn in 2023.\n
@@ -1057,7 +1059,7 @@ Step by step guide to become a AI/ML scientist.
             }\n
         }\n
     </string>
-    <string name="linked_list_q2">Question 1:\n
+    <string name="linked_list_q2">Question 2:\n
         A number N is represented in Linked List such that each digit corresponds to a node in linked list. You need to add 1 to it.\n
         <b>Input:</b>\n
          LinkedList: 4->5->6\n
@@ -1153,6 +1155,359 @@ Step by step guide to become a AI/ML scientist.
                     p2 = p1.next;\n
                 }\n
                 return pre.next;\n
+            }\n
+        }\n
+    </string>
+
+
+
+    <string name="backtracking_q1">Question 1:\n
+        Consider a rat placed at (0, 0) in a square matrix of order N * N. It has to reach the destination at (N - 1, N - 1). Find all possible paths that the rat can take to reach from source to destination. The directions in which the rat can move are U(up), D(down), L(left), R(right). Value 0 at a cell in the matrix represents that it is blocked and rat cannot move to it while value 1 at a cell in the matrix represents that rat can be travel through it. Note: In a path, no cell can be visited more than one time. If the source cell is 0, the rat cannot move to any other cell.\n
+        <b>Input:</b>\n
+         N = 4\n
+         m[][] = {{1, 0, 0, 0},\n
+         {1, 1, 0, 1}, \n
+         {1, 1, 0, 0},\n
+         {0, 1, 1, 1}}\n
+        <b>Output:</b> DDRDRR DRDDRR\n
+        <b>Explanation:</b>
+        The rat can reach the destination at (3, 3) from (0, 0) by two paths - DRDDRR and DDRDRR, when printed in sorted order we get DDRDRR DRDDRR.\n
+    </string>
+    <string name="code_backtracking_q1">
+        <b>C++ CODE:</b>\n
+        class Solution{\n
+            public:\n
+            vector&lt;string> res;\n
+            vector&lt;int> dx;\n
+            vector&lt;int> dy;\n
+            string dir;\n
+            vector&lt;string> findPath(vector&lt;vector&lt;int>> &amp;m, int n) {\n
+                dx={1,0,-1,0};\n
+                dy = {0,1,0,-1};\n
+                dir="DRUL";\n
+                string temp;\n
+                recur(m,0,0,temp);\n
+                return res;\n
+            }\n
+            void recur(vector&lt;vector&lt;int>> &amp;m,int r,int c,string &amp;temp){\n
+                // cout&lt;&lt;r&lt;&lt;c;\n
+                // cout&lt;&lt;endl;\n
+                if(r==m.size()-1 &amp;&amp; c==m[0].size()-1 &amp;&amp; m[r][c]!=0 ){\n
+                    res.push_back(temp);\n
+                    return ;\n
+                }\n
+
+                if(r>=m.size()  || r&lt;0 || c>=m[0].size() || c&lt;0 || m[r][c]==0 || m[r][c]==-1)\n
+                    return ;\n
+                for(int i=0;i&lt;4;i++){\n
+                    temp.push_back(dir[i]);\n
+                    int nx=r+dx[i];\n
+                    int ny=c+dy[i];\n
+                    int x=m[r][c];\n
+                    m[r][c]=-1;\n
+
+                    recur(m,nx,ny,temp);\n
+                    m[r][c]=x;\n
+
+                    temp.pop_back();\n
+                }\n
+            }\n
+        };\n\n
+        <b>JAVA CODE:</b>
+        public static boolean isitSafe(int[][] m, int x, int y){\n
+            if(x&lt;0 || y&lt;0 || x>=m.length || y>=m.length || m[x][y]==0) return false;\n
+            return true;\n
+        }\n
+
+        public static void ratinmaze(int[][] m, int x, int y, boolean visited[][], ArrayList&lt;String> ans, List&lt;Character> res){\n
+            if(m[m.length-1][m.length-1]==0) return;\n
+            if(x==m.length-1 &amp;&amp; y==m.length-1){\n
+                String s ="";\n
+                for(Character ch: res)\n
+                    s += ""+ch;\n
+
+                ans.add(s);\n
+                return;\n
+            }\n
+
+            if(!isitSafe(m,x,y)) return;\n
+
+            visited[x][y] = true;\n
+            if(isitSafe(m,x+1,y) &amp;&amp; !visited[x+1][y]) {\n
+                res.add("D");\n
+                ratinmaze(m,x+1,y,visited,ans,res);\n
+                res.remove(res.size()-1);\n
+            }\n
+
+            if(isitSafe(m,x-1,y) &amp;&amp; !visited[x-1][y]){\n
+                res.add("U");\n
+                ratinmaze(m,x-1,y,visited,ans,res);\n
+                res.remove(res.size()-1);\n
+            }\n
+
+            if(isitSafe(m,x,y+1) &amp;&amp; !visited[x][y+1]){\n
+                res.add("R");\n
+                ratinmaze(m,x,y+1,visited,ans,res);\n
+                res.remove(res.size()-1);\n
+            }\n
+
+            if(isitSafe(m,x,y-1) &amp;&amp; !visited[x][y-1]){\n
+                res.add("L");\n
+                ratinmaze(m,x,y-1,visited,ans,res);\n
+                res.remove(res.size()-1);\n
+            }\n
+
+            visited[x][y] = false;\n
+        }\n
+    </string>
+    <string name="backtracking_q2">Question 2:\n
+        You are given a string S that contains parentheses and letters. You have to remove the minimum number of invalid parentheses to make the input string valid.\n
+        Return all the possible results in the sorted order.\n
+        <b>Input:</b>\n
+         S = "()())()"\n
+        <b>Output:</b> ["(())()","()()()"]\n
+    </string>
+    <string name="code_backtracking_q2">
+        <b>C++ CODE:</b>\n
+        set&lt;string> ans;\n
+        int c1;\n
+        void help(string s, int i, string temp, int x, int c){\n
+            if(i == s.size()){\n
+                if(x == 0 &amp;&amp; c == c1)\n
+                ans.insert(temp);\n
+                return;\n
+            }\n
+            if(s[i] == "(")\n
+            help(s, i+1, temp+"(", x+1, c+1);\n
+            else if(s[i] == ")" &amp;&amp; x>0)\n
+            help(s, i+1, temp+")", x-1, c+1);\n
+            if(s[i] != "(" &amp;&amp; s[i] != ")")\n
+            help(s, i+1, temp+s[i], x, c);\n
+            else\n
+            help(s, i+1, temp, x, c);\n
+        }\n
+        vector&lt;string> removeInvalidParentheses(string s) {\n
+            int c = 0, x = 0;\n
+            for(int i = 0; i&lt;s.size(); i++){\n
+                if(s[i] == "(")x++;\n
+                if(s[i] == ")" &amp;&amp; x>0){\n
+                    x--;\n
+                    c+=2;\n
+                }\n
+            }\n
+            c1 = c;\n
+            help(s, 0, "", 0, 0);\n
+            vector&lt;string>res;\n
+            for(auto i: ans)res.push_back(i);\n
+            sort(res.begin(), res.end());\n
+            return res;\n
+        }\n\n
+        <b>JAVA CODE:</b>
+        static int findRemovals(String s){\n
+            Stack&lt;Character> st = new Stack&lt;>();\n
+
+            for(int i = 0; i &lt; s.length(); i++){\n
+                if(s.charAt(i) == "("){\n
+                    st.push("(");\n
+                }\n
+                else if(s.charAt(i) == ")"){\n
+                    if(!st.isEmpty() &amp;&amp; st.peek() == "("){\n
+                        st.pop();\n
+                    }\n
+                    else{\n
+                        st.push(")");\n
+                    }\n
+                }\n
+            }\n
+            return st.size();\n
+        }\n
+
+        static void solve(String s, Map&lt;String, Boolean> mp, int rc, ArrayList&lt;String> list){\n
+            if(mp.containsKey(s)){\n
+                return ;\n
+            }\n
+            mp.put(s, true);\n
+
+            if(rc == 0){\n
+                if(findRemovals(s) == 0){\n
+                    list.add(s);\n
+                    return;\n
+                }    \n
+            }\n
+            for(int i = 0; i &lt; s.length(); i++){\n
+                String left = s.substring(0, i);\n
+                String right = s.substring(i+1);\n
+                String join = left + right;\n
+                solve(join, mp, rc-1, list);\n
+            }\n
+            return;\n
+        }\n
+        public static ArrayList&lt;String> removeInvalidParentheses(String s) {\n
+            int rc = findRemovals(s);\n
+            Map&lt;String, Boolean> mp = new HashMap&lt;>();\n
+            ArrayList&lt;String> list = new ArrayList&lt;>();\n
+            solve(s, mp, rc, list);\n
+
+            return list;\n
+        }\n
+    </string>
+
+
+
+    <string name="stacks_and_queues_q1">Question 1:\n
+        Given an expression string x. Examine whether the pairs and the orders of {,},(,),[,] are correct in exp. For example, the function should return true for exp = [()]{}{[()()]()} and false for exp = [(]).\n
+        Note: The drive code prints "balanced" if function return true, otherwise it prints "not balanced".\n
+        <b>Input:</b>\n
+         {([])}\n
+        <b>Output:</b> true\n
+        <b>Explanation:</b>\n
+        { ( [ ] ) }. Same colored brackets can form balanced pairs, with 0 number of unbalanced bracket.\n
+    </string>
+    <string name="code_stacks_and_queues_q1">
+        <b>C++ CODE:</b>\n
+        class Solution{\n
+            public:\n
+                //Function to check if brackets are balanced or not.\n
+                bool ispar(string str){\n
+                    stack&lt;char> stk;\n
+                    if (str[0] == ")" || str[0] == "}" || str[0] == "]")\n
+                        return false;\n
+                    if (str.length() % 2 != 0)\n
+                        return false;\n
+                    for (int i = 0;i&lt;str.length();i++){\n
+                        if (str[i] == "(" || str[i] == "{" || str[i] == "[")\n
+                            stk.push(str[i]);\n
+                        else{\n
+                            if (!stk.empty()){\n
+                                if ((str[i] == ")" &amp;&amp; stk.top() == "(") || (str[i] == "}" &amp;&amp; stk.top() == "{") || (str[i] == "]" &amp;&amp; stk.top() == "["))\n
+                                    stk.pop();\n
+                            else\n
+                                return false;\n\n
+                        }
+                        else\n
+                            return false;\n
+                    }\n
+                }\n
+                if (stk.empty())\n
+                    return true;\n
+                return false;\n
+                }\n
+        };\n\n
+        <b>JAVA CODE:</b>
+        class Solution{\n
+            //Function to check if brackets are balanced or not.\n
+            static boolean ispar(String x){\n
+                int n=x.length();\n
+                Stack&lt;Character> st = new Stack&lt;Character>();\n
+                for(int i=0;i&lt;n;i++){\n
+                    char ch=x.charAt(i);\n
+                    if(ch==")"){\n
+                        if(st.size()==0 || st.peek()!="(")return false;\n
+                            st.pop();\n
+                    }\n
+                    else if(ch=="}"){\n
+                        if(st.size()==0 || st.peek()!="{")return false;\n
+                        st.pop();\n
+                    }\n
+                    else if(ch=="]"){\n
+                        if(st.size()==0 || st.peek()!="[")return false;\n
+                        st.pop();\n
+                    }\n
+                    else{\n
+                        st.push(ch);\n
+                    }\n
+                }\n
+                return st.size()==0;\n
+            }\n
+        }\n
+    </string>
+    <string name="stacks_and_queues_q2">Question 2:\n
+        A celebrity is a person who is known to all but does not know anyone at a party. If you go to a party of N people, find if there is a celebrity in the party or not. A square NxN matrix M[][] is used to represent people at the party such that if an element of row i and column j  is set to 1 it means ith person knows jth person. Here M[i][i] will always be 0.\n
+        Note: Follow 0 based indexing.\n
+        <b>Input:</b>\n
+        N = 3\n
+        M[][] = {{0 1 0},\n
+                {0 0 0}, \n
+                {0 1 0}}\n
+        <b>Output:</b> 1\n
+        <b>Explanation:</b>\n
+        0th and 2nd person both know 1. Therefore, 1 is the celebrity. \n
+    </string>
+    <string name="code_stacks_and_queues_q2">
+        <b>C++ CODE:</b>
+        class Solution{\n
+            public:\n
+            //Function to find if there is a celebrity in the party or not.\n
+            int celebrity(vector&lt;vector&lt;int> >&amp; M, int n){\n
+                //  Using stacks\n
+                stack&lt;int> st;\n
+                for(int i = 0;i&lt;n;i++){\n
+                    st.push(i);\n
+                }\n
+
+                while(st.size() > 1){\n
+                    int a = st.top();\n
+                    st.pop();\n
+                    int b = st.top();\n
+                    st.pop();\n
+
+                    if(M[a][b] == 1){\n
+                        st.push(b);\n
+                    }\n
+                    else{\n
+                        st.push(a);\n
+                    }\n
+                }\n
+
+                int celeb = st.top();\n
+                for(int i = 0;i&lt;n;i++){\n
+                    if(M[celeb][i] == 1){\n
+                        return -1;\n
+                    }\n
+                }\n
+                int knows = 1;\n
+                for(int i = 0;i&lt;n;i++){\n
+                    if(M[i][celeb] == 1){\n
+                        knows++;\n
+                    }\n
+                }\n
+                if(knows != n){\n
+                    return -1;\n
+                }\n
+                return celeb;\n
+            }\n
+        };\n
+        <b>JAVA CODE:</b>
+        class Solution{\n
+            //Function to find if there is a celebrity in the party or not.\n
+            int celebrity(int M[][], int n){\n
+                Stack&lt;Integer> stack = new Stack&lt;>();\n
+                for(int i = 0; i&lt; n;i++){\n
+                    stack.push(i);\n
+                }\n
+
+                while(stack.size() > 1){\n
+                    int a = stack.pop();\n
+                    int b = stack.pop();\n
+                    if(M[a][b] == 1){\n
+                        stack.push(b);\n
+                    }else{\n
+                        stack.push(a);\n
+                    }\n
+                }\n
+                int celeb = stack.peek();\n
+                for(int i = 0; i &lt; n ;i++){\n
+                    if(M[celeb][i] == 1){\n
+                        return -1;\n
+                    }\n
+                }\n
+                for(int i = 0; i &lt; n ;i++){\n
+                    if(M[i][celeb] == 0 &amp;&amp; i!=celeb){\n
+                        return -1;\n
+                    }\n
+                }\n
+
+                return celeb;\n
             }\n
         }\n
     </string>

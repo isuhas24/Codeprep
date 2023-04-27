@@ -194,6 +194,12 @@
         <activity
             android:name=".LinkedList"
             android:exported="true" />
+
+        <activity android:name=".Backtracking"
+            android:exported="true"/>
+
+        <activity android:name=".StacksAndQueues"
+            android:exported="true"/>
     </application>
 
 </manifest>
