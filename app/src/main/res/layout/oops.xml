@@ -31,6 +31,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:padding="11dp"
             android:orientation="vertical">
 
             <TextView
@@ -69,31 +70,40 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:background="#E0FFFF"
+                android:background="@drawable/layoutback"
                 android:gravity="center">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
 
                 <Button
                     android:id="@+id/OOPS_btn1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="C++, OOPS IN C++"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
 
                 <Button
                     android:id="@+id/OOPS_btn2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="JAVA, OOPS IN JAVA"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
 
                 <Button
                     android:id="@+id/OOPS_btn3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="OOPS INTERVIEW QA"/>
 
             </LinearLayout>

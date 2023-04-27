@@ -77,15 +77,18 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="INTRODUCTION TO COMPUTER NETWORKS"/>
 
                 <Button
                     android:id="@+id/CN_btn2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:layout_centerInParent="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
                     android:text="OSI MODEL AND SUBNET"/>
 
                 <Button
@@ -93,31 +96,40 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="DATA SHARING"/>
 
                 <Button
                     android:id="@+id/CN_btn4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:layout_centerInParent="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
                     android:text="LAN TECHNOLOGIES"/>
 
                 <Button
                     android:id="@+id/CN_btn5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:layout_centerInParent="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
                     android:text="ETHERNET"/>
 
                 <Button
                     android:id="@+id/CN_btn6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:layout_centerInParent="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
                     android:text="TOKEN RING"/>
 
                 <Button
@@ -125,23 +137,30 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="COMPUTER NETWORKS NUMERICAL"/>
 
                 <Button
                     android:id="@+id/CN_btn8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:layout_centerInParent="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
                     android:text="UDP AND PROTOCOLS"/>
 
                 <Button
                     android:id="@+id/CN_btn9"
                     android:layout_width="match_parent"
+                    android:background="@drawable/buttonbag"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:layout_centerInParent="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
                     android:text="TCP AND NUMERICAL"/>
 
 

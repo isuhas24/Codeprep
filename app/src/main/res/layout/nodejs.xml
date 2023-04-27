@@ -45,20 +45,24 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/about_nodejs"
+                android:layout_margin="10dp"
                 android:layout_marginLeft="5dp"
-                android:textSize="20dp"
+                android:fontFamily="@font/font4"
+
                 android:justificationMode="inter_word"
-                android:textStyle="normal"
-                android:layout_margin="10dp"/>
+                android:text="@string/about_nodejs"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Choose the topics from below"
+                android:text="Choose The Topics From Below"
                 android:textSize="20dp"
                 android:textStyle="bold"
                 android:textAlignment="center"
+                android:fontFamily="@font/font6"
                 android:textColor="@color/black"/>
 
             <View
@@ -69,7 +73,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:background="#E0FFFF"
+                android:padding="10dp"
+                android:background="@drawable/layoutback"
                 android:gravity="center">
 
                 <Button
@@ -77,63 +82,77 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="INTRODUCTION TO NODEJS"/>
-
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
                 <Button
                     android:id="@+id/Nodejs_btn2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="COMMAND LINE OPTIONS"/>
-
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
                 <Button
                     android:id="@+id/Nodejs_btn3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="NODEJS DNS"/>
-
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
                 <Button
                     android:id="@+id/Nodejs_btn4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="NODEJS PROCESS"/>
-
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
                 <Button
                     android:id="@+id/Nodejs_btn5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="FILE SYSTEM"/>
-
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
                 <Button
                     android:id="@+id/Nodejs_btn6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="NODEJS ZLIB MODULE"/>
-
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
                 <Button
                     android:id="@+id/Nodejs_btn7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="WEB MODULES"/>
-
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
                 <Button
                     android:id="@+id/Nodejs_btn8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="NODEJS AND MYSQL"/>
 
             </LinearLayout>

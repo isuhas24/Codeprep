@@ -76,80 +76,99 @@
                     android:id="@+id/Javascript_btn1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
-                    android:text="INTRODUCTION TO JAVASCRIPT"/>
 
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/buttonbag"
+                    android:text="INTRODUCTION TO JAVASCRIPT"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
                 <Button
                     android:id="@+id/Javascript_btn2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="OBJECTS, PROPERTIES AND METHODS"/>
-
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
                 <Button
                     android:id="@+id/Javascript_btn3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="ALERTS, PROMPTS AND CONFIRM"/>
-
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
                 <Button
                     android:id="@+id/Javascript_btn4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="CONDITIONALS"/>
-
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
                 <Button
                     android:id="@+id/Javascript_btn5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="ARRAYS IN JAVASCRIPT"/>
-
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
                 <Button
                     android:id="@+id/Javascript_btn6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="EVENT HANDLING"/>
-
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
                 <Button
                     android:id="@+id/Javascript_btn7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="WORKING WITH BROWSER WINDOWS"/>
-
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
                 <Button
                     android:id="@+id/Javascript_btn8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="WORKING WITH MULTIPLE WINDOWS"/>
-
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
                 <Button
                     android:id="@+id/Javascript_btn9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="JAVASCRIPT AND MATHS"/>
-
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
                 <Button
                     android:id="@+id/Javascript_btn10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="WORKING WITH DATES"/>
 
             </LinearLayout>

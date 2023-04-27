@@ -22,15 +22,18 @@
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="25dp" />
+        android:layout_height="5dp" />
 
     <ScrollView
         android:layout_width="match_parent"
+
         android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/layoutback"
             android:orientation="vertical">
 
             <TextView
@@ -66,57 +69,90 @@
                 android:layout_height="15dp"/>
 
             <Button
+                android:id="@+id/java_b1"
+                android:background="@drawable/buttonbag"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:backgroundTint="#2196F3"
-                android:text="INTRODUCTION TO JAVA"
-                android:id="@+id/java_b1"/>
+                android:text="INTRODUCTION TO JAVA" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:backgroundTint="#2196F3"
+                android:background="@drawable/buttonbag"
+
                 android:text="OPERATORS AND STRINGS"
                 android:id="@+id/java_b2"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:backgroundTint="#2196F3"
+                android:background="@drawable/buttonbag"
+
                 android:text="CONDITIONAL STATEMENTS"
                 android:id="@+id/java_b3"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:backgroundTint="#2196F3"
+
+                android:background="@drawable/buttonbag"
                 android:text="METHODS IN JAVA"
                 android:id="@+id/java_b4"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:backgroundTint="#2196F3"
+
+                android:background="@drawable/buttonbag"
                 android:text="OOPS IN JAVA"
                 android:id="@+id/java_b5"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:backgroundTint="#2196F3"
+
+                android:background="@drawable/buttonbag"
                 android:text="ABSTRACT CLASS AND INTERFACES"
                 android:id="@+id/java_b6"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:backgroundTint="#2196F3"
+
                 android:text="PACKAGES"
+                android:background="@drawable/buttonbag"
                 android:id="@+id/java_b7"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:backgroundTint="#2196F3"
+
+                android:background="@drawable/buttonbag"
                 android:text="MULTITHREADING"
                 android:id="@+id/java_b8"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:backgroundTint="#2196F3"
+
+                android:background="@drawable/buttonbag"
                 android:text="ERROR AND EXCEPTION HANDLING"
                 android:id="@+id/java_b9"/>
 
