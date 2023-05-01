@@ -173,6 +173,10 @@
         <b>=></b> It was designed to be compiled to provide low-level access to memory and language constructs that map efficiently to machine instructions, all with minimal runtime support.\n
         <b>=></b> C language is widely used for developing system software, application software, and embedded systems.
     </string>
+
+    <string name="OPERATORS">
+        OPERATORS
+    </string>
     <string name="about_cpp_programming">
         <b>=></b> C++ is an object-oriented programming language which gives a clear structure to programs and allows code to be reused, lowering development costs.\n
         <b>=></b> C++ is portable and can be used to develop applications that can be adapted to multiple platforms.\n
@@ -482,8 +486,6 @@ Step by step guide to become a AI/ML scientist.
     </string>
 
 
-
-
     <string name="bit_manipulation_q1">Question 1:\n
         Given a non-negative integer N. The task is to check if N is a power of 2. More formally, check if N can be expressed as 2^x for some x.\n
         <b>Input:</b>\n
@@ -530,7 +532,6 @@ Step by step guide to become a AI/ML scientist.
     </string>
 
 
-
     <string name="bit_manipulation_q2">Question 2:\n
         You are given two numbers A and B. The task is to count the number of bits needed to be flipped to convert A to B.\n
         <b>Input:</b>\n
@@ -566,7 +567,6 @@ Step by step guide to become a AI/ML scientist.
             }\n
         }\n\n
     </string>
-
 
 
     <string name="bit_manipulation_q3">Question 3:\n
@@ -726,7 +726,6 @@ Step by step guide to become a AI/ML scientist.
     </string>
 
 
-
     <string name="graphs_q1">Question 1:\n
         Detect Cycle in a Directed Graph\n\n
         Given the root of a Directed graph, The task is to check whether the graph contains a cycle or not. \n
@@ -861,7 +860,6 @@ Step by step guide to become a AI/ML scientist.
     </string>
 
 
-
     <string name="greedy_q1">Question 1:\n
         Given a value of V Rs and an infinite supply of each of the denominations {1, 2, 5, 10, 20, 50, 100, 500, 1000} valued coins/notes, The task is to find the minimum number of coins and/or notes needed to make the change.\n
         <b>Input:</b>\n
@@ -990,7 +988,6 @@ Step by step guide to become a AI/ML scientist.
                         count-=1\n
                 return max1\n
     </string>
-
 
 
     <string name="linked_list_q1">Question 1:\n
@@ -1158,7 +1155,6 @@ Step by step guide to become a AI/ML scientist.
             }\n
         }\n
     </string>
-
 
 
     <string name="backtracking_q1">Question 1:\n
@@ -1353,7 +1349,6 @@ Step by step guide to become a AI/ML scientist.
     </string>
 
 
-
     <string name="stacks_and_queues_q1">Question 1:\n
         Given an expression string x. Examine whether the pairs and the orders of {,},(,),[,] are correct in exp. For example, the function should return true for exp = [()]{}{[()()]()} and false for exp = [(]).\n
         Note: The drive code prints "balanced" if function return true, otherwise it prints "not balanced".\n
@@ -1511,4 +1506,6 @@ Step by step guide to become a AI/ML scientist.
             }\n
         }\n
     </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
