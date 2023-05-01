@@ -67,98 +67,129 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="15dp" />
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/buttonbag"
                 android:text="INTRODUCTION TO C PROGRAMMING"
                 android:id="@+id/c_b1"/>
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="15dp" />
+
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/buttonbag"
                 android:text="OPERATORS"
                 android:id="@+id/c_b2"/>
+
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="15dp" />
+
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/buttonbag"
                 android:text="CONDITIONAL STATEMENTS"
                 android:id="@+id/c_b3"/>
+
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="15dp" />
+
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/buttonbag"
                 android:text="ALGORITHM AND FLOWCHART"
                 android:id="@+id/c_b4"/>
+
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="15dp" />
+
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/buttonbag"
                 android:text="LOOPS"
                 android:id="@+id/c_b5"/>
+
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="15dp" />
+
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/buttonbag"
                 android:text="ARRAYS AND STRINGS"
                 android:id="@+id/c_b6"/>
+
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="15dp" />
+
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/buttonbag"
                 android:text="FUNCTIONS"
                 android:id="@+id/c_b7"/>
+
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="15dp" />
+
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/buttonbag"
                 android:text="RECURSION"
                 android:id="@+id/c_b8"/>
+
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="15dp" />
+
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/buttonbag"
                 android:text="POINTERS"
                 android:id="@+id/c_b9"/>
+
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="15dp" />
+
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/buttonbag"
                 android:text="MEMORY MANAGEMENT"
                 android:id="@+id/c_b10"/>
-
-
-
-
-
 
         </LinearLayout>
 

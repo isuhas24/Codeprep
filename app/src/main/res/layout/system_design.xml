@@ -26,12 +26,15 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:padding="11dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/layoutback">
 
             <TextView
                 android:layout_width="match_parent"
@@ -69,7 +72,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:background="#E0FFFF"
                 android:gravity="center">
 
                 <Button
@@ -77,23 +79,31 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="Introduction and Roadmap to system design"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
 
                 <Button
                     android:id="@+id/SystemDesignCustomButton2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="System Design Basics"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
 
                 <Button
                     android:id="@+id/SystemDesignCustomButton3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="Advanced concepts of system design"/>
 
             </LinearLayout>

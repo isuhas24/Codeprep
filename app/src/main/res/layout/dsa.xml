@@ -26,11 +26,14 @@
 
     <ScrollView
         android:layout_width="match_parent"
+        android:padding="11dp"
         android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:padding="10dp"
+            android:background="@drawable/layoutback"
             android:orientation="vertical">
 
             <TextView
@@ -69,7 +72,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:background="#E0FFFF"
                 android:gravity="center">
 
                 <Button
@@ -77,104 +79,179 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="ALGORITHMS"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
 
                 <Button
                     android:id="@+id/DSACustomButton2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="ARRAYS"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+
 
                 <Button
                     android:id="@+id/DSACustomButton3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="BIT-MANIPULATION"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+
 
                 <Button
                     android:id="@+id/DSACustomButton4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="ALL IN ONE DSA RESOURCES"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+
 
                 <Button
                     android:id="@+id/DSACustomButton5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="DYNAMIC PROGRAMMING"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+
 
                 <Button
                     android:id="@+id/DSACustomButton6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="GRAPHS"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+
 
                 <Button
                     android:id="@+id/DSACustomButton7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="GREEDY"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+
 
                 <Button
                     android:id="@+id/DSACustomButton8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="HASHMAP"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+
 
                 <Button
                     android:id="@+id/DSACustomButton9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="LINKED LIST"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+
 
                 <Button
                     android:id="@+id/DSACustomButton10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="RECURSION AND BACKTRACKING"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+
 
                 <Button
                     android:id="@+id/DSACustomButton11"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="STACKS AND QUEUES"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+
 
                 <Button
                     android:id="@+id/DSACustomButton12"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="TIME COMPLEXITY ANALYSIS"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+
 
                 <Button
                     android:id="@+id/DSACustomButton13"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="TREES"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
 
             </LinearLayout>
 

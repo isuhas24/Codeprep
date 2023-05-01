@@ -26,11 +26,14 @@
 
     <ScrollView
         android:layout_width="match_parent"
+        android:padding="11dp"
         android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:padding="10dp"
+            android:background="@drawable/layoutback"
             android:orientation="vertical">
 
             <TextView
@@ -69,7 +72,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:background="#E0FFFF"
                 android:gravity="center">
 
                 <Button
@@ -77,65 +79,111 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="INTRODUCTION TO SOFTWARE ENGINEERING"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+
 
                 <Button
                     android:id="@+id/SE_btn2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="LEGACY SOFTWARE"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+
 
                 <Button
                     android:id="@+id/SE_btn3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="SDLC CYCLE"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+
 
                 <Button
                     android:id="@+id/SE_btn4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="SOFTWARE PROCESS MODEL"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+
 
                 <Button
                     android:id="@+id/SE_btn5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="SOFTWARE REQUIREMENTS"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+
 
                 <Button
                     android:id="@+id/SE_btn6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="SYSTEM MODELING"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+
 
                 <Button
                     android:id="@+id/SE_btn7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="SOFTWARE DESIGNING CONCEPT"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+
 
                 <Button
                     android:id="@+id/SE_btn8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="SOFTWARE ARCHITECTURE"/>
 
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
 
 
             </LinearLayout>

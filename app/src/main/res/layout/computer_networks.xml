@@ -26,11 +26,14 @@
 
     <ScrollView
         android:layout_width="match_parent"
+        android:padding="11dp"
         android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:padding="10dp"
+            android:background="@drawable/layoutback"
             android:orientation="vertical">
 
             <TextView
@@ -69,7 +72,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:background="#E0FFFF"
                 android:gravity="center">
 
                 <Button
@@ -80,16 +82,23 @@
                     android:background="@drawable/buttonbag"
                     android:text="INTRODUCTION TO COMPUTER NETWORKS"/>
 
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+
+
                 <Button
                     android:id="@+id/CN_btn2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"/>
+                    android:background="@drawable/buttonbag"
+                    android:layout_centerInParent="true"
+                    android:text="SUBNET AND OSI MODEL"/>
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="15dp"
-                    android:text="OSI MODEL AND SUBNET"/>
+                    android:layout_height="15dp"/>
 
                 <Button
                     android:id="@+id/CN_btn3"
@@ -99,38 +108,47 @@
                     android:background="@drawable/buttonbag"
                     android:text="DATA SHARING"/>
 
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+
+
+
                 <Button
                     android:id="@+id/CN_btn4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"/>
+                    android:background="@drawable/buttonbag"
+                    android:layout_centerInParent="true"
+                    android:text="LAN TECHNOLOGIES"/>
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="15dp"
-                    android:text="LAN TECHNOLOGIES"/>
+                    android:layout_height="15dp"/>
 
                 <Button
                     android:id="@+id/CN_btn5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/buttonbag"
+                    android:text="ETHERNET"
                     android:layout_centerInParent="true"/>
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="15dp"
-                    android:text="ETHERNET"/>
+                    android:layout_height="15dp"/>
 
                 <Button
                     android:id="@+id/CN_btn6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/buttonbag"
+                    android:text="TOKEN RING"
                     android:layout_centerInParent="true"/>
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="15dp"
-                    android:text="TOKEN RING"/>
+                    android:layout_height="15dp"/>
 
                 <Button
                     android:id="@+id/CN_btn7"
@@ -140,30 +158,33 @@
                     android:background="@drawable/buttonbag"
                     android:text="COMPUTER NETWORKS NUMERICAL"/>
 
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+
                 <Button
                     android:id="@+id/CN_btn8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"/>
+                    android:background="@drawable/buttonbag"
+                    android:layout_centerInParent="true"
+                    android:text="UDP AND PROTOCOLS"/>
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="15dp"
-                    android:text="UDP AND PROTOCOLS"/>
+                    android:layout_height="15dp"/>
 
                 <Button
                     android:id="@+id/CN_btn9"
                     android:layout_width="match_parent"
                     android:background="@drawable/buttonbag"
                     android:layout_height="wrap_content"
+                    android:text="TCP AND NUMERICAL"
                     android:layout_centerInParent="true"/>
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="15dp"
-                    android:text="TCP AND NUMERICAL"/>
-
-
+                    android:layout_height="15dp"/>
 
             </LinearLayout>
 

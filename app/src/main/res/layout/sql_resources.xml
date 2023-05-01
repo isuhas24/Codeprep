@@ -26,11 +26,14 @@
 
     <ScrollView
         android:layout_width="match_parent"
+        android:padding="11dp"
         android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:padding="10dp"
+            android:background="@drawable/layoutback"
             android:orientation="vertical">
 
             <TextView
@@ -59,7 +62,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:background="#E0FFFF"
                 android:gravity="center">
 
                 <Button
@@ -67,80 +69,136 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="FUNDAMENTALS OF SQL"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+
 
                 <Button
                     android:id="@+id/SQLResourcesCustomButton2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="AGGREGATE COMMANDS"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+
 
                 <Button
                     android:id="@+id/SQLResourcesCustomButton3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="ALIAS"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+
 
                 <Button
                     android:id="@+id/SQLResourcesCustomButton4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="CONDITIONAL STATEMENT"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
 
                 <Button
                     android:id="@+id/SQLResourcesCustomButton5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="FILTERING COMMANDS"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+
 
                 <Button
                     android:id="@+id/SQLResourcesCustomButton6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="GROUP BY COMMANDS"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+
 
                 <Button
                     android:id="@+id/SQLResourcesCustomButton7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="JOINS"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+
 
                 <Button
                     android:id="@+id/SQLResourcesCustomButton8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="MATHEMATICAL FUNCTIONS"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+
 
                 <Button
                     android:id="@+id/SQLResourcesCustomButton9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="ORDERING COMMANDS"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
 
                 <Button
                     android:id="@+id/SQLResourcesCustomButton10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/buttonbag"
                     android:text="STRING FUNCTIONS"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
 
             </LinearLayout>
 

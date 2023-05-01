@@ -26,7 +26,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-
+        android:padding="11dp"
         android:layout_height="match_parent">
 
         <LinearLayout
@@ -101,7 +101,6 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-
                 android:background="@drawable/buttonbag"
                 android:text="METHODS IN JAVA"
                 android:id="@+id/java_b4"/>
@@ -111,7 +110,6 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-
                 android:background="@drawable/buttonbag"
                 android:text="OOPS IN JAVA"
                 android:id="@+id/java_b5"/>
@@ -121,7 +119,6 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-
                 android:background="@drawable/buttonbag"
                 android:text="ABSTRACT CLASS AND INTERFACES"
                 android:id="@+id/java_b6"/>
@@ -156,7 +153,9 @@
                 android:text="ERROR AND EXCEPTION HANDLING"
                 android:id="@+id/java_b9"/>
 
-
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
         </LinearLayout>
 
     </ScrollView>

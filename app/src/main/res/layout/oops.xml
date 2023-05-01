@@ -26,12 +26,14 @@
 
     <ScrollView
         android:layout_width="match_parent"
+        android:padding="11dp"
         android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="11dp"
+            android:padding="10dp"
+            android:background="@drawable/layoutback"
             android:orientation="vertical">
 
             <TextView
@@ -66,16 +68,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="15dp"/>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:background="@drawable/layoutback"
-                android:gravity="center">
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"/>
-
                 <Button
                     android:id="@+id/OOPS_btn1"
                     android:layout_width="match_parent"
@@ -83,6 +75,7 @@
                     android:layout_centerInParent="true"
                     android:background="@drawable/buttonbag"
                     android:text="C++, OOPS IN C++"/>
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="15dp"/>
@@ -106,8 +99,9 @@
                     android:background="@drawable/buttonbag"
                     android:text="OOPS INTERVIEW QA"/>
 
-            </LinearLayout>
-
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
 
         </LinearLayout>
 

@@ -26,11 +26,14 @@
 
     <ScrollView
         android:layout_width="match_parent"
+        android:padding="11dp"
         android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:padding="10dp"
+            android:background="@drawable/layoutback"
             android:orientation="vertical">
 
             <TextView
@@ -69,7 +72,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:background="#E0FFFF"
                 android:gravity="center">
 
                 <Button
@@ -77,20 +79,27 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
+                    android:background="@drawable/buttonbag"
                     android:text="DATABASE MANAGEMENT SYSTEM"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
 
                 <Button
                     android:id="@+id/DBMSCustomButton2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/buttonbag"
                     android:layout_centerInParent="true"
                     android:text="SQL"/>
 
-            </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="30dp"/>
+            </LinearLayout>
 
         </LinearLayout>
 

@@ -26,11 +26,14 @@
 
     <ScrollView
         android:layout_width="match_parent"
+        android:padding="11dp"
         android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:padding="10dp"
+            android:background="@drawable/layoutback"
             android:orientation="vertical">
 
             <TextView
@@ -69,47 +72,75 @@
                 android:id="@+id/WebDevelopmentCustomButton1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/buttonbag"
                 android:layout_centerInParent="true"
                 android:text="HTML and CSS"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
 
             <Button
                 android:id="@+id/WebDevelopmentCustomButton2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/buttonbag"
                 android:layout_centerInParent="true"
                 android:text="JAVASCRIPT"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
 
             <Button
                 android:id="@+id/WebDevelopmentCustomButton3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/buttonbag"
                 android:layout_centerInParent="true"
                 android:text="BOOTSTRAP and JQUERY"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
 
             <Button
                 android:id="@+id/WebDevelopmentCustomButton4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
+                android:background="@drawable/buttonbag"
                 android:text="REACT"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
 
             <Button
                 android:id="@+id/WebDevelopmentCustomButton5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
+                android:background="@drawable/buttonbag"
                 android:text="NODEJS"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
 
             <Button
                 android:id="@+id/WebDevelopmentCustomButton6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
+                android:background="@drawable/buttonbag"
                 android:text="MONGODB"/>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
         </LinearLayout>
-
-
 
     </ScrollView>
 

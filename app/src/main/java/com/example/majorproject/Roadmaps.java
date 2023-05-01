@@ -7,7 +7,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Roadmaps extends AppCompatActivity implements View.OnClickListener {
-    Button b1,b2,b3,b4;
+    Button b1,b2,b3;
     @Override
     public void onCreate(Bundle b) {
 
@@ -19,8 +19,6 @@ public class Roadmaps extends AppCompatActivity implements View.OnClickListener 
         b2.setOnClickListener(this);
         b3=(Button) findViewById(R.id.btn3);
         b3.setOnClickListener(this);
-        b4=(Button) findViewById(R.id.btn4);
-        b4.setOnClickListener(this);
     }
     public void onClick(View view) {
 

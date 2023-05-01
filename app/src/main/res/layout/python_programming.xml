@@ -26,11 +26,14 @@
 
     <ScrollView
         android:layout_width="match_parent"
+        android:padding="11dp"
         android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:padding="10dp"
+            android:background="@drawable/layoutback"
             android:orientation="vertical">
 
             <TextView
@@ -68,57 +71,109 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:backgroundTint="#2196F3"
+                android:background="@drawable/buttonbag"
                 android:text="INTRODUCTION TO PYTHON"
                 android:id="@+id/py_b1"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:backgroundTint="#2196F3"
+                android:background="@drawable/buttonbag"
                 android:text="DATATYPES"
                 android:id="@+id/py_b2"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:backgroundTint="#2196F3"
+                android:background="@drawable/buttonbag"
                 android:text="CONDITIONAL STATEMENTS"
                 android:id="@+id/py_b3"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:backgroundTint="#2196F3"
+                android:background="@drawable/buttonbag"
                 android:text="LISTS AND TUPLES"
                 android:id="@+id/py_b4"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:backgroundTint="#2196F3"
+                android:background="@drawable/buttonbag"
                 android:text="DICTIONARIES AND SETS"
                 android:id="@+id/py_b5"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:backgroundTint="#2196F3"
+                android:background="@drawable/buttonbag"
                 android:text="FUNCTION"
                 android:id="@+id/py_b6"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:backgroundTint="#2196F3"
+                android:background="@drawable/buttonbag"
                 android:text="CLASS"
                 android:id="@+id/py_b7"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:backgroundTint="#2196F3"
+                android:background="@drawable/buttonbag"
                 android:text="MODULES"
                 android:id="@+id/py_b8"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:backgroundTint="#2196F3"
+                android:background="@drawable/buttonbag"
                 android:text="DEBUGGING"
                 android:id="@+id/py_b9"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
 
 
         </LinearLayout>
