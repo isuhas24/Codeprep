@@ -45,6 +45,7 @@
     <string name="linked_list_heading">Linked List</string>
     <string name="backtracking_heading">Recursion and Backtracking</string>
     <string name="stacks_and_queues_heading">Stack and Queue</string>
+    <string name="bootstrap_and_jquery_heading">Bootstrap and Jquery</string>
     <string name="about_mobility_companies">
         <b>=></b> Mobility is the industry of transporting people and goods.\n
         <b>=></b> Revenue in the Ride-hailing and Taxi segment is projected to reach US$12.77bn in 2023.\n
@@ -228,6 +229,11 @@ Step by step guide to become a AI/ML scientist.
         <b>=></b> MongoDB is a source-available cross-platform document-oriented database program.\n
         <b>=></b> It is classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.\n
         <b>=></b> It is a document database used to build highly available and scalable internet applications. With its flexible schema approach, it is popular with development teams using agile methodologies.
+    </string>
+    <string name="about_bootstrap_and_jquery">
+        <b>=></b> Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.\n
+        <b>=></b> It contains HTML, CSS and (optionally) JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.\n
+        <b>=></b> JQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.
     </string>
     <string name="arrays_q1">Question 1:\n
         Given an array arr[] and an integer K where K is smaller than size of array, the task is to find the Kth smallest element in the given array. It is given that all array elements are distinct.\n

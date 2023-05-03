@@ -50,6 +50,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/about_web_development"
                 android:layout_marginLeft="5dp"
+                android:fontFamily="@font/font4"
                 android:textSize="20dp"
                 android:justificationMode="inter_word"
                 android:textStyle="normal"
@@ -60,6 +61,7 @@
                 android:layout_height="wrap_content"
                 android:text="Choose the technology from below"
                 android:textSize="20dp"
+                android:fontFamily="@font/font6"
                 android:textStyle="bold"
                 android:textAlignment="center"
                 android:textColor="@color/black"/>
@@ -79,21 +81,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="15dp" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="15dp" />
-
             <Button
                 android:id="@+id/WebDevelopmentCustomButton2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/buttonbag"
                 android:layout_centerInParent="true"
-                android:background="@drawable/buttonbag"
                 android:text="JAVASCRIPT"/>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="15dp" />
 
             <View
                 android:layout_width="match_parent"
@@ -103,7 +97,6 @@
                 android:id="@+id/WebDevelopmentCustomButton3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/buttonbag"
                 android:layout_centerInParent="true"
                 android:background="@drawable/buttonbag"
                 android:text="BOOTSTRAP and JQUERY"/>
@@ -142,7 +135,6 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/buttonbag"
                 android:layout_centerInParent="true"
-                android:background="@drawable/buttonbag"
                 android:text="MONGODB"/>
 
             <View

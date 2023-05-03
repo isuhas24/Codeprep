@@ -3,6 +3,8 @@ package com.example.majorproject;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.view.View;
@@ -54,17 +56,18 @@ public class CProgramming extends AppCompatActivity {
             public void onClick(View v) {
                 String videoId = "r-M3ESr8WLY";
                 Resources res = getResources();
-                String Headtxt = "OPERATORS";
+                String Headtxt = "text";
                 String Link = "Click here for more information: https://drive.google.com/file/d/1_2neyCmDgv3_VCBrY824VckIFQu40zCD/view?usp=share_link";
                 //for image view
                 ImageView imageView = new ImageView(CProgramming.this);
                 imageView.setImageResource(R.drawable.cprogramthumb);
+                Bitmap bitmap = ((BitmapDrawable) imageView.getDrawable()).getBitmap();
                     //image view task ends
                 Intent intent = new Intent(CProgramming.this, VideoPlayerActivity.class);
                 intent.putExtra("Link_file", Link);
                 intent.putExtra("video_id", videoId);
                 intent.putExtra("Headtext_id", Headtxt);
-                intent.putExtra("Thumb_nail", (Parcelable) imageView.getDrawable());
+               // intent.putExtra("Thumb_nail", bitmap);
                 startActivity(intent);
 
             }

@@ -22,7 +22,7 @@
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="5dp" />
+        android:layout_height="15dp" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -31,7 +31,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:padding="10dp"
             android:background="@drawable/layoutback"
             android:orientation="vertical">
@@ -39,7 +39,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/java_programming_heading"
+                android:text="@string/bootstrap_and_jquery_heading"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="30dp"
@@ -48,7 +48,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/about_java_programming"
+                android:text="@string/about_bootstrap_and_jquery"
                 android:layout_marginLeft="5dp"
                 android:fontFamily="@font/font4"
                 android:textSize="20dp"
@@ -71,89 +71,132 @@
                 android:layout_height="15dp"/>
 
             <Button
-                android:id="@+id/java_b1"
-                android:background="@drawable/buttonbag"
+                android:id="@+id/BootstrapAndJqueryCustomButton1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="INTRODUCTION TO JAVA" />
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonbag"
+                android:layout_centerInParent="true"
+                android:text="Bootstrap overview"/>
+
             <View
                 android:layout_width="match_parent"
-                android:layout_height="15dp"/>
+                android:layout_height="15dp" />
 
             <Button
+                android:id="@+id/BootstrapAndJqueryCustomButton2"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:background="@drawable/buttonbag"
+                android:layout_centerInParent="true"
+                android:text="CSS overview"/>
 
-                android:text="OPERATORS AND STRINGS"
-                android:id="@+id/java_b2"/>
             <View
                 android:layout_width="match_parent"
-                android:layout_height="15dp"/>
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/buttonbag"
+                android:layout_height="15dp" />
 
-                android:text="CONDITIONAL STATEMENTS"
-                android:id="@+id/java_b3"/>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="15dp"/>
             <Button
+                android:id="@+id/BootstrapAndJqueryCustomButton3"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:background="@drawable/buttonbag"
-                android:text="METHODS IN JAVA"
-                android:id="@+id/java_b4"/>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="15dp"/>
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/buttonbag"
-                android:text="OOPS IN JAVA"
-                android:id="@+id/java_b5"/>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="15dp"/>
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/buttonbag"
-                android:text="ABSTRACT CLASS AND INTERFACES"
-                android:id="@+id/java_b6"/>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="15dp"/>
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:text="Environment setup"/>
 
-                android:text="PACKAGES"
-                android:background="@drawable/buttonbag"
-                android:id="@+id/java_b7"/>
             <View
                 android:layout_width="match_parent"
-                android:layout_height="15dp"/>
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="15dp" />
 
+            <Button
+                android:id="@+id/BootstrapAndJqueryCustomButton4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:background="@drawable/buttonbag"
-                android:text="MULTITHREADING"
-                android:id="@+id/java_b8"/>
+                android:layout_centerInParent="true"
+                android:text="Grid system"/>
+
             <View
                 android:layout_width="match_parent"
-                android:layout_height="15dp"/>
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="15dp" />
 
+            <Button
+                android:id="@+id/BootstrapAndJqueryCustomButton5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:background="@drawable/buttonbag"
-                android:text="ERROR AND EXCEPTION HANDLING"
-                android:id="@+id/java_b9"/>
+                android:layout_centerInParent="true"
+                android:text="Typography"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <Button
+                android:id="@+id/BootstrapAndJqueryCustomButton6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonbag"
+                android:layout_centerInParent="true"
+                android:text="Jquery overview"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <Button
+                android:id="@+id/BootstrapAndJqueryCustomButton7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonbag"
+                android:layout_centerInParent="true"
+                android:text="Basics of Jquery"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <Button
+                android:id="@+id/BootstrapAndJqueryCustomButton8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonbag"
+                android:layout_centerInParent="true"
+                android:text="Selectors"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <Button
+                android:id="@+id/BootstrapAndJqueryCustomButton9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonbag"
+                android:layout_centerInParent="true"
+                android:text="Events and Functions"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <Button
+                android:id="@+id/BootstrapAndJqueryCustomButton10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonbag"
+                android:layout_centerInParent="true"
+                android:text="DOM"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <Button
+                android:id="@+id/BootstrapAndJqueryCustomButton11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonbag"
+                android:layout_centerInParent="true"
+                android:text="Element visibility"/>
 
             <View
                 android:layout_width="match_parent"

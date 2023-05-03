@@ -2,6 +2,8 @@ package com.example.majorproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.webkit.WebSettings;
@@ -38,15 +40,16 @@ public class VideoPlayerActivity extends AppCompatActivity {
         webView.setWebViewClient(new WebViewClient());
 
 
-        //FOR IMAGEVIEW GETTING THE IMGAE
+       /* //FOR IMAGEVIEW GETTING THE IMGAE
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             // Get the image from the extras and set it in the ImageView
-            Drawable imageDrawable = extras.getParcelable("Thumb_nail");
-            if (imageDrawable != null) {
-                first.setImageDrawable(imageDrawable);
+            Bitmap bitmap = extras.getParcelable("Thumb_nail");
+            if (bitmap != null) {
+                BitmapDrawable drawable = new BitmapDrawable(getResources(), bitmap);
+                first.setImageDrawable(drawable);
             }
-        }
+        }*/
 
 
 

@@ -49,6 +49,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/about_python_programming"
+                android:fontFamily="@font/font4"
                 android:layout_marginLeft="5dp"
                 android:textSize="20dp"
                 android:justificationMode="inter_word"
@@ -60,6 +61,7 @@
                 android:layout_height="wrap_content"
                 android:text="Choose the topics from below"
                 android:textSize="20dp"
+                android:fontFamily="@font/font6"
                 android:textStyle="bold"
                 android:textAlignment="center"
                 android:textColor="@color/black"/>

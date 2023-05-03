@@ -26,11 +26,14 @@
 
     <ScrollView
         android:layout_width="match_parent"
+        android:padding="11dp"
         android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:padding="10dp"
+            android:background="@drawable/layoutback"
             android:orientation="vertical">
 
             <TextView
@@ -48,7 +51,6 @@
                 android:layout_margin="10dp"
                 android:layout_marginLeft="5dp"
                 android:fontFamily="@font/font4"
-
                 android:justificationMode="inter_word"
                 android:text="@string/about_nodejs"
                 android:textColor="@color/black"
@@ -69,13 +71,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="15dp"/>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:padding="10dp"
-                android:background="@drawable/layoutback"
-                android:gravity="center">
+
 
                 <Button
                     android:id="@+id/Nodejs_btn1"
@@ -154,8 +150,6 @@
                     android:layout_centerInParent="true"
                     android:background="@drawable/buttonbag"
                     android:text="NODEJS AND MYSQL"/>
-
-            </LinearLayout>
 
         </LinearLayout>
 

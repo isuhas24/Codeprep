@@ -17,6 +17,8 @@ public class WebDevelopment extends AppCompatActivity implements View.OnClickLis
         html_and_css_button.setOnClickListener(this);
         js_button=(Button) findViewById(R.id.WebDevelopmentCustomButton2);
         js_button.setOnClickListener(this);
+        bootstrap_and_jquery_button=(Button) findViewById(R.id.WebDevelopmentCustomButton3);
+        bootstrap_and_jquery_button.setOnClickListener(this);
         react_button=(Button) findViewById(R.id.WebDevelopmentCustomButton4);
         react_button.setOnClickListener(this);
         nodejs_button=(Button) findViewById(R.id.WebDevelopmentCustomButton5);
@@ -33,6 +35,10 @@ public class WebDevelopment extends AppCompatActivity implements View.OnClickLis
         }
         else if(v.equals(js_button)){
             Intent it=new Intent(this,JavaScript.class);
+            startActivity(it);
+        }
+        else if(v.equals(bootstrap_and_jquery_button)){
+            Intent it=new Intent(this,BootstrapAndJquery.class);
             startActivity(it);
         }
         else if(v.equals(react_button)){

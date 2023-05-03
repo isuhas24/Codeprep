@@ -204,6 +204,9 @@
         <activity
             android:name=".StacksAndQueues"
             android:exported="true" />
+
+        <activity android:name=".BootstrapAndJquery"
+            android:exported="true"/>
     </application>
 
 </manifest>

@@ -51,6 +51,7 @@
                 android:text="@string/about_github"
                 android:layout_marginLeft="5dp"
                 android:textSize="20dp"
+                android:fontFamily="@font/font4"
                 android:justificationMode="inter_word"
                 android:textStyle="normal"
                 android:layout_margin="10dp"/>
@@ -61,6 +62,7 @@
                 android:text="Choose the resources from below"
                 android:textSize="20dp"
                 android:textStyle="bold"
+                android:fontFamily="@font/font6"
                 android:textAlignment="center"
                 android:textColor="@color/black"/>
 

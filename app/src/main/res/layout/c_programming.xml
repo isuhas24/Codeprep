@@ -52,6 +52,7 @@
                 android:layout_marginLeft="5dp"
                 android:justificationMode="inter_word"
                 android:text="@string/about_c_programming"
+                android:fontFamily="@font/font4"
                 android:textSize="20dp"
                 android:textStyle="normal" />
 
@@ -61,6 +62,7 @@
                 android:text="Choose the topics from below"
                 android:textAlignment="center"
                 android:textColor="@color/black"
+                android:fontFamily="@font/font6"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
