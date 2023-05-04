@@ -2,8 +2,9 @@ package com.example.majorproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.drawable.BitmapDrawable;
+import android.graphics.BitmapFactory;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.webkit.WebSettings;
@@ -32,35 +33,26 @@ public class VideoPlayerActivity extends AppCompatActivity {
         first = findViewById(R.id.imageview1);
         webView = findViewById(R.id.web_view);
         linktxt= findViewById(R.id.Linkshow);
-
-
-
         webView.getSettings().setJavaScriptEnabled(true);
         webView.getSettings().setPluginState(WebSettings.PluginState.ON);
         webView.setWebViewClient(new WebViewClient());
 
-
-       /* //FOR IMAGEVIEW GETTING THE IMGAE
-        Bundle extras = getIntent().getExtras();
-        if (extras != null) {
-            // Get the image from the extras and set it in the ImageView
-            Bitmap bitmap = extras.getParcelable("Thumb_nail");
-            if (bitmap != null) {
-                BitmapDrawable drawable = new BitmapDrawable(getResources(), bitmap);
-                first.setImageDrawable(drawable);
-            }
-        }*/
+        //Image getting
+        Intent intent = getIntent();
+        byte[] byteArray = intent.getByteArrayExtra("image_byte_array");
+        Bitmap bitmap = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
+        first.setImageBitmap(bitmap);
 
 
 
-        //for textview getting the texts
+
         //for head text
         String Headtxt = getIntent().getStringExtra("Headtext_id");
         headlinetxt.setText(Headtxt);
         //for info text
         String infotext = getIntent().getStringExtra("infotext_id");
         infolinetxt.setText(infotext);
-
+        //file link setter
         String setlink = getIntent().getStringExtra("Link_file");
         linktxt.setText(setlink);
 
