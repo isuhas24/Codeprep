@@ -40,8 +40,15 @@ public class VideoPlayerActivity extends AppCompatActivity {
         //Image getting
         Intent intent = getIntent();
         byte[] byteArray = intent.getByteArrayExtra("image_byte_array");
-        Bitmap bitmap = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
-        first.setImageBitmap(bitmap);
+        if(byteArray != null && byteArray.length > 0) {
+            Bitmap bitmap = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
+            if (bitmap != null) {
+                first.setImageBitmap(bitmap);
+            }
+        }
+       // byte[] byteArray = intent.getByteArrayExtra("image_byte_array");
+        //Bitmap bitmap = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
+        //first.setImageBitmap(bitmap);
 
 
 
