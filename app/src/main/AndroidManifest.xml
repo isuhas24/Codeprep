@@ -207,6 +207,9 @@
 
         <activity android:name=".BootstrapAndJquery"
             android:exported="true"/>
+
+        <activity android:name=".Trees"
+            android:exported="true"/>
     </application>
 
 </manifest>

@@ -8,6 +8,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.firebase.client.core.utilities.Tree;
+
 public class DSA extends AppCompatActivity implements View.OnClickListener {
     Button btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btn10,btn11,btn12,btn13;
 
@@ -90,7 +92,8 @@ public class DSA extends AppCompatActivity implements View.OnClickListener {
 
         }
         else if(v.equals(btn13)){
-
+            Intent it=new Intent(this, Trees.class);
+            startActivity(it);
         }
     }
 }

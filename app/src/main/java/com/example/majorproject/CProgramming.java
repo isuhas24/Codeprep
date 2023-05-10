@@ -128,7 +128,7 @@ public class CProgramming extends AppCompatActivity {
                 String Link = "Download Resources PDF From Here: https://drive.google.com/file/d/1vnfKTocwMIgzbjiX9uX3DtI6aWQUpZh7/view?usp=share_link";
                 BitmapFactory.Options options = new BitmapFactory.Options();
                 options.inSampleSize = 2;
-                Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.algorithmandflowchart, options);
+                Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.loop, options);
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
                 bitmap.compress(Bitmap.CompressFormat.JPEG, 50, stream);
                 byte[] byteArray = stream.toByteArray();
