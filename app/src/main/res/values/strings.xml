@@ -737,623 +737,634 @@ Step by step guide to become a AI/ML scientist.
 
     <string name="graphs_q1">Question 1:\n
         Detect Cycle in a Directed Graph\n\n
-        Given the root of a Directed graph, The task is to check whether the graph contains a cycle or not. \n
+        Given the root of a Directed graph, The task is to check whether the graph contains a cycle or not. \n\n
         <b>Input:</b>\n
          N = 4, E = 6\n
-         coins[] = {1,2,3}\n
-        <b>Output:</b> Yes\n
+         coins[] = {1,2,3}\n\n
+        <b>Output:</b> Yes\n\n
         <b>Explanation:</b>\n
          The diagram clearly shows a cycle 0 -> 2 -> 0\n
     </string>
     <string name="code_graphs_q1">
         <b>C++ CODE:</b>\n
         class Graph {\n
-            // No. of vertices\n
-            int V;\n
+            &#160;// No. of vertices\n
+            &#160;int V;\n
 
-            // Pointer to an array containing adjacency lists\n
-            list&lt;int>* adj;\n
+            &#160;// Pointer to an array containing adjacency lists\n
+            &#160;list&lt;int>* adj;\n
 
-            // Used by isCyclic()\n
-            bool isCyclicUtil(int v, bool visited[], bool* rs);\n
+            &#160;// Used by isCyclic()\n
+            &#160;bool isCyclicUtil(int v, bool visited[], bool* rs);\n\n
 
-            public:\n
-            Graph(int V);\n
-            void addEdge(int v, int w);\n
-            bool isCyclic();\n
-        };\n
+            &#160;public:\n
+            &#160;Graph(int V);\n
+            &#160;void addEdge(int v, int w);\n
+            &#160;bool isCyclic();\n
+        };\n\n
 
         Graph::Graph(int V){\n
-            this->V = V;\n
-            adj = new list&lt;int>[V];\n
-        }\n
+            &#160;this->V = V;\n
+            &#160;adj = new list&lt;int>[V];\n
+        }\n\n
 
         void Graph::addEdge(int v, int w){\n
-            // Add w to v’s list.\n
-            adj[v].push_back(w);\n
-        }\n
+            &#160;// Add w to v’s list.\n
+            &#160;adj[v].push_back(w);\n
+        }\n\n
 
         // DFS function to find if a cycle exists\n
         bool Graph::isCyclicUtil(int v, bool visited[],bool* recStack){\n
-            if (visited[v] == false) {\n
-                // Mark the current node as visited\n
-                // and part of recursion stack\n\n
-                visited[v] = true;\n
-                recStack[v] = true;\n
+            &#160;if (visited[v] == false) {\n
+                &#160;&#160;// Mark the current node as visited\n
+                &#160;&#160;// and part of recursion stack\n
+                &#160;&#160;visited[v] = true;\n
+                &#160;&#160;recStack[v] = true;\n
 
-                // Recur for all the vertices adjacent to this\n
-                // vertex\n
-                list&lt;int>::iterator i;\n
-                for (i = adj[v].begin(); i != adj[v].end(); ++i) {\n
-                    if (!visited[*i] &amp;&amp; isCyclicUtil(*i, visited, recStack))\n
-                        return true;\n
-                    else if (recStack[*i])\n
-                        return true;\n
-                }\n
-            }\n
+                &#160;&#160;// Recur for all the vertices adjacent to this vertex\n
+                &#160;&#160;list&lt;int>::iterator i;\n
+                &#160;&#160;for (i = adj[v].begin(); i != adj[v].end(); ++i) {\n
+                    &#160;&#160;&#160;if (!visited[*i] &amp;&amp; isCyclicUtil(*i, visited, recStack))\n
+                        &#160;&#160;&#160;&#160;return true;\n
+                    &#160;&#160;&#160;else if (recStack[*i])\n
+                        &#160;&#160;&#160;&#160;return true;\n
+                &#160;&#160;}\n
+            &#160;}\n
 
-            // Remove the vertex from recursion stack\n
-            recStack[v] = false;\n
-            return false;\n
-        }\n
+            &#160;// Remove the vertex from recursion stack\n
+            &#160;recStack[v] = false;\n
+            &#160;return false;\n
+        }\n\n
 
         // Returns true if the graph contains a cycle, else false\n
         bool Graph::isCyclic(){\n
-            // Mark all the vertices as not visited\n
-            // and not part of recursion stack\n
-            bool* visited = new bool[V];\n
-            bool* recStack = new bool[V];\n
-            for (int i = 0; i &lt; V; i++) {\n
-                visited[i] = false;\n
-                recStack[i] = false;\n
-            }\n
+            &#160;// Mark all the vertices as not visited\n
+            &#160;// and not part of recursion stack\n
+            &#160;bool* visited = new bool[V];\n
+            &#160;bool* recStack = new bool[V];\n
+            &#160;for (int i = 0; i &lt; V; i++) {\n
+                &#160;&#160;visited[i] = false;\n
+                &#160;&#160;recStack[i] = false;\n
+            &#160;}\n
 
-            // Call the recursive helper function\n
-            // to detect cycle in different DFS trees\n
-            for (int i = 0; i &lt; V; i++)\n
-                if (!visited[i] &amp;&amp; isCyclicUtil(i, visited, recStack))\n
-                    return true;\n
+            &#160;// Call the recursive helper function\n
+            &#160;// to detect cycle in different DFS trees\n
+            &#160;for (int i = 0; i &lt; V; i++)\n
+                &#160;&#160;if (!visited[i] &amp;&amp; isCyclicUtil(i, visited, recStack))\n
+                    &#160;&#160;&#160;return true;\n
 
-            return false;\n
-        }\n
+            &#160;return false;\n
+        }\n\n
 
         // Driver code\n
         int main(){\n
-            // Create a graph\n
-            Graph g(4);\n
-            g.addEdge(0, 1);\n
-            g.addEdge(0, 2);\n
-            g.addEdge(1, 2);\n
-            g.addEdge(2, 0);\n
-            g.addEdge(2, 3);\n
-            g.addEdge(3, 3);\n
+            &#160;// Create a graph\n
+            &#160;Graph g(4);\n
+            &#160;g.addEdge(0, 1);\n
+            &#160;g.addEdge(0, 2);\n
+            &#160;g.addEdge(1, 2);\n
+            &#160;g.addEdge(2, 0);\n
+            &#160;g.addEdge(2, 3);\n
+            &#160;g.addEdge(3, 3);\n
 
-            // Function call\n
-            if (g.isCyclic())\n
-                cout &lt;&lt; "Graph contains cycle";\n
-            else\n
-                cout &lt;&lt; "Graph doesn't contain cycle";\n
-            return 0;\n
+            &#160;// Function call\n
+            &#160;if (g.isCyclic())\n
+                &#160;&#160;cout &lt;&lt; "Graph contains cycle";\n
+            &#160;else\n
+                &#160;&#160;cout &lt;&lt; "Graph doesn't contain cycle";\n
+            &#160;return 0;\n
         }\n\n
     </string>
     <string name="graphs_q2">Question 2:\n
         Detect Cycle in a Undirected Graph\n\n
-        Given an undirected graph with V vertices and E edges, check whether it contains any cycle or not. Graph is in the form of adjacency list where adj[i] contains all the nodes ith node is having edge with.\n
+        Given an undirected graph with V vertices and E edges, check whether it contains any cycle or not. Graph is in the form of adjacency list where adj[i] contains all the nodes ith node is having edge with.\n\n
         <b>Input:</b>\n
          N = 5, E = 5\n
-         adj ={{1}, {0, 2, 4}, {1, 3}, {2, 4}, {1, 3}}\n
-        <b>Output:</b> 1\n
+         adj ={{1}, {0, 2, 4}, {1, 3}, {2, 4}, {1, 3}}\n\n
+        <b>Output:</b> 1\n\n
         <b>Explanation:</b>\n
-         1->2->3->4->1 is a cycle.\n
+         1->2->3->4->1 is a cycle.\n\n
     </string>
     <string name="code_graphs_q2">
         <b>C++ CODE:</b>\n
         bool dfs(int st,bool visited[],vector&lt;int>adj[],int par){\n
-            visited[st]=true;\n
-            bool isCycle=false;\n
-            for(auto child:adj[st]){\n
-                if(visited[child] &amp;&amp; child==par) continue;\n
-                if(visited[child])  return true;\n
-                isCycle|=dfs(child,visited,adj,st);\n
-            }\n
-            return isCycle;\n
-        }\n
+            &#160;visited[st]=true;\n
+            &#160;bool isCycle=false;\n
+            &#160;for(auto child:adj[st]){\n
+                &#160;&#160;if(visited[child] &amp;&amp; child==par) \n
+                &#160;&#160;&#160;continue;\n
+                &#160;&#160;if(visited[child])  return true;\n
+                &#160;&#160;isCycle|=dfs(child,visited,adj,st);\n
+            &#160;}\n
+            &#160;return isCycle;\n
+        }\n\n
+
         bool isCycle(int v, vector&lt;int> adj[]) {\n
-            bool visited[v+10]={0};\n
-            for(int i=0;i&lt;v;i++){\n
-                if(visited[i])  continue;\n
-                    if(dfs(i,visited,adj,-1))   return true;\n
-            }\n
-            return false;\n
+            &#160;bool visited[v+10]={0};\n
+            &#160;for(int i=0;i&lt;v;i++){\n
+                &#160;&#160;if(visited[i])  continue;\n
+                    &#160;&#160;&#160;if(dfs(i,visited,adj,-1))   return true;\n
+            &#160;}\n
+            &#160;return false;\n
         }\n\n
     </string>
 
 
     <string name="greedy_q1">Question 1:\n
-        Given a value of V Rs and an infinite supply of each of the denominations {1, 2, 5, 10, 20, 50, 100, 500, 1000} valued coins/notes, The task is to find the minimum number of coins and/or notes needed to make the change.\n
+        Given a value of V Rs and an infinite supply of each of the denominations {1, 2, 5, 10, 20, 50, 100, 500, 1000} valued coins/notes, The task is to find the minimum number of coins and/or notes needed to make the change.\n\n
         <b>Input:</b>\n
-         V=20\n
-        <b>Output:</b> 2\n
+         V=20\n\n
+        <b>Output:</b> 2\n\n
         <b>Explanation:</b>\n
         We need a 50 Rs note and a 20 Rs note.\n
     </string>
     <string name="code_greedy_q1">
         <b>C++ CODE:</b>\n
         vector&lt;int> minPartition(int N){\n
-        //This is greedy approach work if sum of 2 coins is less than the 3rd one\n
-        // 2+5 &lt; 10\n
-        //10 +20 &lt; 50....\n
-        //optimised approach is by DP\n
-        vector&lt;int> arr = {2000,500,200,100,50,20,10,5,2,1};\n
-        vector&lt;int>ans;\n
-        int n = arr.size();\n
-        int totalMoney = n;\n
-        int i = 0;\n
-        while(N){\n
-            int no = N/arr[i];\n
-            for(int j = 0; j &lt; no; j++){\n
-                ans.push_back(arr[i]);\n
-            }\n
-            N = N - no*arr[i];\n
-            i++;\n
-        }\n
-        return ans;\n
+            &#160;//This is greedy approach work if sum of 2 coins is less than the 3rd one\n
+            &#160;// 2+5 &lt; 10\n
+            &#160;//10 +20 &lt; 50....\n
+            &#160;//optimised approach is by DP\n
+            &#160;vector&lt;int> arr = {2000,500,200,100,50,20,10,5,2,1};\n
+            &#160;vector&lt;int>ans;\n
+            &#160;int n = arr.size();\n
+            &#160;int totalMoney = n;\n
+            &#160;int i = 0;\n
+            &#160;while(N){\n
+                &#160;&#160;int no = N/arr[i];\n
+                &#160;&#160;for(int j = 0; j &lt; no; j++){\n
+                    &#160;&#160;&#160;ans.push_back(arr[i]);\n
+                &#160;&#160;}\n
+                &#160;&#160;N = N - no*arr[i];\n
+                &#160;&#160;i++;\n
+            &#160;}\n
+            &#160;return ans;\n
         }\n\n
         <b>JAVA CODE:</b>
         class Solution {\n
-        static List&lt;Integer> minPartition(int N) {\n
-        List&lt;Integer> list = new ArrayList&lt;Integer>();\n
+            &#160;static List&lt;Integer> minPartition(int N) {\n
+                &#160;&#160;List&lt;Integer> list = new ArrayList&lt;Integer>();\n
 
-        int arr[] = {1, 2, 5, 10, 20, 50, 100, 200, 500, 2000};\n
-        int ln =arr.length-1;\n
+                &#160;&#160;int arr[] = {1, 2, 5, 10, 20, 50, 100, 200, 500, 2000};\n
+                &#160;&#160;int ln =arr.length-1;\n
 
-        for(int i=ln; i>=0; i--){\n
-            while(N >= arr[i] &amp;&amp; N > 0){\n
-                N = N - arr[i];\n
-                list.add(arr[i]);\n
-            }\n
-            if(N == 0) break;\n
-        }\n
+                &#160;&#160;for(int i=ln; i>=0; i--){\n
+                    &#160;&#160;&#160;while(N >= arr[i] &amp;&amp; N > 0){\n
+                        &#160;&#160;&#160;&#160;N = N - arr[i];\n
+                        &#160;&#160;&#160;&#160;list.add(arr[i]);\n
+                    &#160;&#160;&#160;}\n
+                    &#160;&#160;&#160;if(N == 0) break;\n
+                &#160;&#160;}\n
 
-        return list;\n
-        }\n
+                &#160;&#160;return list;\n
+            &#160;}\n
         }\n\n
-        <b>PYTHON CODE:</b>
+        <b>PYTHON CODE:</b>\n
         def minPartition(self, n):\n
-        a=[1,2,5,10,20,50,100,200,500,2000]\n
-        l=[]\n
-        i=len(a)-1\n
-        while n!=0 and i>=0:\n
-            if a[i]>n:\n
-                i-=1\n
-            else:\n
-                n-=a[i]\n
-                l.append(a[i])\n
-        return l\n
+            &#160;a=[1,2,5,10,20,50,100,200,500,2000]\n
+            &#160;l=[]\n
+            &#160;i=len(a)-1\n
+            &#160;while n!=0 and i>=0:\n
+                &#160;&#160;if a[i]>n:\n
+                    &#160;&#160;&#160;i-=1\n
+                &#160;&#160;else:\n
+                    &#160;&#160;&#160;n-=a[i]\n
+                    &#160;&#160;&#160;l.append(a[i])\n
+            &#160;return l\n
     </string>
     <string name="greedy_q2">Question 2:\n
-        Given arrival and departure times of all trains that reach a railway station. Find the minimum number of platforms required for the railway station so that no train is kept waiting. Consider that all the trains arrive on the same day and leave on the same day. Arrival and departure time can never be the same for a train but we can have arrival time of one train equal to departure time of the other. At any given instance of time, same platform can not be used for both departure of a train and arrival of another train. In such cases, we need different platforms.\n
+        Given arrival and departure times of all trains that reach a railway station. Find the minimum number of platforms required for the railway station so that no train is kept waiting. Consider that all the trains arrive on the same day and leave on the same day. Arrival and departure time can never be the same for a train but we can have arrival time of one train equal to departure time of the other. At any given instance of time, same platform can not be used for both departure of a train and arrival of another train. In such cases, we need different platforms.\n\n
         <b>Input:</b>\n
          n=6\n
         arr[] = {0900, 0940, 0950, 1100, 1500, 1800}\n
-        dep[] = {0910, 1200, 1120, 1130, 1900, 2000}\n
-        <b>Output:</b> 3\n
+        dep[] = {0910, 1200, 1120, 1130, 1900, 2000}\n\n
+        <b>Output:</b> 3\n\n
         <b>Explanation:</b>\n
         Minimum 3 platforms are required to safely arrive and depart all trains.\n
     </string>
     <string name="code_greedy_q2">
         <b>C++ CODE:</b>\n
         class Solution{\n
-            public:\n
-            //Function to find the minimum number of platforms required at the railway station such that no train waits.\n
-            int findPlatform(int arr[], int dep[], int n){\n
-                map&lt;int,int> mp;\n
-                for(int i=0;i&lt;n;i++){\n
-                    mp[arr[i]]++;\n
-                    mp[dep[i]+1]--;\n
-                }\n
-                int maxplat=1;\n
-                int sum=0;\n
-                for(auto t:mp){\n
-                    sum+=t.second;\n
-                    maxplat = max(maxplat,sum);\n
-                }\n
-                return maxplat;\n
-            }\n
+            &#160;public:\n
+            &#160;//Function to find the minimum number of platforms required at the railway station such that no train waits.\n
+            &#160;int findPlatform(int arr[], int dep[], int n){\n
+                &#160;&#160;map&lt;int,int> mp;\n
+                &#160;&#160;for(int i=0;i&lt;n;i++){\n
+                    &#160;&#160;&#160;mp[arr[i]]++;\n
+                    &#160;&#160;&#160;mp[dep[i]+1]--;\n
+                &#160;&#160;}\n
+                &#160;&#160;int maxplat=1;\n
+                &#160;&#160;int sum=0;\n
+                &#160;&#160;for(auto t:mp){\n
+                    &#160;&#160;&#160;sum+=t.second;\n
+                    &#160;&#160;&#160;maxplat = max(maxplat,sum);\n
+                &#160;&#160;}\n
+                &#160;&#160;return maxplat;\n
+            &#160;}\n
         };\n\n
-        <b>JAVA CODE:</b>
+        <b>JAVA CODE:</b>\n
         class Solution{\n
-            static int findPlatform(int arr[], int dep[], int n){\n
-            int max = 0, plat_occupied = 0;\n
-            Arrays.sort(arr);\n
-            Arrays.sort(dep);\n
-            int i = 0, j = 0;\n
-            while (i &lt; n) {\n
-                if (arr[i] &lt;= dep[j]) {\n
-                    plat_occupied++;\n
-                    i++;\n
-                } else if (arr[i] > dep[j]) {\n
-                    plat_occupied--;\n
-                    j++;\n
-                }\n
-                max = Math.max(max, plat_occupied);\n
-            }\n
-            return max;\n
-        }\n
+            &#160;static int findPlatform(int arr[], int dep[], int n){\n
+                &#160;&#160;int max = 0, plat_occupied = 0;\n
+                &#160;&#160;Arrays.sort(arr);\n
+                &#160;&#160;Arrays.sort(dep);\n
+                &#160;&#160;int i = 0, j = 0;\n
+                &#160;&#160;while (i &lt; n) {\n
+                    &#160;&#160;&#160;if (arr[i] &lt;= dep[j]) {\n
+                        &#160;&#160;&#160;&#160;plat_occupied++;\n
+                        &#160;&#160;&#160;&#160;i++;\n
+                    &#160;&#160;&#160;} else if (arr[i] > dep[j]) {\n
+                        &#160;&#160;&#160;&#160;plat_occupied--;\n
+                        &#160;&#160;&#160;&#160;j++;\n
+                    &#160;&#160;&#160;}\n
+                    &#160;&#160;&#160;max = Math.max(max, plat_occupied);\n
+                &#160;&#160;}\n
+                &#160;&#160;return max;\n
+            &#160;}\n
         }\n\n
-        <b>PYTHON CODE:</b>
+        <b>PYTHON CODE:</b>\n
         class Solution:\n
-            def minimumPlatform(self,n,arr,dep):\n
-                arr.sort()\n
-                dep.sort()\n
-                i=j=count=max1=0\n
-                while(i&lt;n):\n
-                    if arr[i]&lt;=dep[j]:\n
-                        i+=1\n
-                        count+=1\n
-                        max1 = max(max1,count)\n
-                    else:\n
-                        j+=1\n
-                        count-=1\n
-                return max1\n
+            &#160;def minimumPlatform(self,n,arr,dep):\n
+                &#160;&#160;arr.sort()\n
+                &#160;&#160;dep.sort()\n
+                &#160;&#160;i=j=count=max1=0\n
+                &#160;&#160;while(i&lt;n):\n
+                    &#160;&#160;&#160;if arr[i]&lt;=dep[j]:\n
+                        &#160;&#160;&#160;&#160;i+=1\n
+                        &#160;&#160;&#160;&#160;count+=1\n
+                        &#160;&#160;&#160;&#160;max1 = max(max1,count)\n
+                    &#160;&#160;&#160;else:\n
+                        &#160;&#160;&#160;&#160;j+=1\n
+                        &#160;&#160;&#160;&#160;count-=1\n
+                &#160;&#160;return max1\n
     </string>
 
 
     <string name="linked_list_q1">Question 1:\n
-        Given a linked list of size N. The task is to reverse every k nodes (where k is an input to the function) in the linked list. If the number of nodes is not a multiple of k then left-out nodes, in the end, should be considered as a group and must be reversed.\n
+        Given a linked list of size N. The task is to reverse every k nodes (where k is an input to the function) in the linked list. If the number of nodes is not a multiple of k then left-out nodes, in the end, should be considered as a group and must be reversed.\n\n
         <b>Input:</b>\n
          LinkedList: 1->2->2->4->5->6->7->8\n
-         K = 4\n
-        <b>Output:</b> 4 2 2 1 8 7 6 5 \n
+         K = 4\n\n
+        <b>Output:</b> 4 2 2 1 8 7 6 5 \n\n
         <b>Explanation:</b>\n
         The first 4 elements 1,2,2,4 are reversed first and then the next 4 elements 5,6,7,8. Hence, the resultant linked list is 4->2->2->1->8->7->6->5.\n
     </string>
     <string name="code_linked_list_q1">
         <b>C++ CODE:</b>\n
         struct node{\n
-            int data;\n
-            struct node* next;\n
+            &#160;int data;\n
+            &#160;struct node* next;\n\n
 
-            node(int x){\n
-                data = x;\n
-                next = NULL;\n
-            }\n
-        }*head;\n
+            &#160;node(int x){\n
+                &#160;&#160;data = x;\n
+                &#160;&#160;next = NULL;\n
+            &#160;}\n
+        }*head;\n\n
+
         struct node *reverse (struct node *head, int k){\n
-            Node *p,*cr,*t;\n
-            p=nullptr;\n
-            cr=head;\n
-            int d=k;\n
-            while(cr&amp;&amp;d--){\n
-                t=cr->next;\n
-                cr->next=p;\n
-                p=cr;\n
-                cr=t;\n
-            }\n
-            if(cr) head->next=reverse(cr,k);\n
-            return p;\n
+            &#160;Node *p,*cr,*t;\n
+            &#160;p=nullptr;\n
+            &#160;cr=head;\n
+            &#160;int d=k;\n
+            &#160;while(cr&amp;&amp;d--){\n
+                &#160;&#160;t=cr->next;\n
+                &#160;&#160;cr->next=p;\n
+                &#160;&#160;p=cr;\n
+                &#160;&#160;cr=t;\n
+            &#160;}\n
+            &#160;if(cr) head->next=reverse(cr,k);\n
+            &#160;return p;\n
         };\n\n
-        <b>JAVA CODE:</b>
+        <b>JAVA CODE:</b>\n
         class Node{\n
-            int data;\n
-            Node next;\n
-            Node(int key){\n
-                data = key;\n
-                next = null;\n
-            }\n
-        }\n
+            &#160;int data;\n
+            &#160;Node next;\n\n
+
+            &#160;Node(int key){\n
+                &#160;&#160;data = key;\n
+                &#160;&#160;next = null;\n
+            &#160;}\n
+        }\n\n
+
         class Solution {\n
-            public static Node reverse(Node node, int k) {\n
-                if (k == 1) return node;\n
-                else k -= 1;\n
-                Node pre = new Node(0);\n
-                pre.next = node;\n
-                Node res = pre, p1 = node, p2 = p1.next;\n
-                for (int cnt = 0; p2 != null; cnt++) {\n
-                    if (cnt != 0 &amp;&amp; cnt % k == 0) {\n
-                        pre = p1;\n
-                        p1 = p1.next;\n
-                        p2 = p2.next;\n
-                        if (p2 == null) break;\n
-                    }\n
-                    p1.next = p2.next;\n
-                    p2.next = pre.next;\n
-                    pre.next = p2;\n
-                    p2 = p1.next;\n
-                }\n
-                return res.next;\n
-            }\n
+            &#160;public static Node reverse(Node node, int k) {\n
+                &#160;&#160;if (k == 1) return node;\n
+                &#160;&#160;else k -= 1;\n
+                &#160;&#160;Node pre = new Node(0);\n
+                &#160;&#160;pre.next = node;\n
+                &#160;&#160;Node res = pre, p1 = node, p2 = p1.next;\n
+                &#160;&#160;for (int cnt = 0; p2 != null; cnt++) {\n
+                    &#160;&#160;&#160;if (cnt != 0 &amp;&amp; cnt % k == 0) {\n
+                        &#160;&#160;&#160;&#160;pre = p1;\n
+                        &#160;&#160;&#160;&#160;p1 = p1.next;\n
+                        &#160;&#160;&#160;&#160;p2 = p2.next;\n
+                        &#160;&#160;&#160;&#160;if (p2 == null) break;\n
+                    &#160;&#160;&#160;}\n
+                    &#160;&#160;&#160;p1.next = p2.next;\n
+                    &#160;&#160;&#160;p2.next = pre.next;\n
+                    &#160;&#160;&#160;pre.next = p2;\n
+                    &#160;&#160;&#160;p2 = p1.next;\n
+                &#160;&#160;}\n
+                &#160;&#160;return res.next;\n
+            &#160;}\n
         }\n
     </string>
     <string name="linked_list_q2">Question 2:\n
-        A number N is represented in Linked List such that each digit corresponds to a node in linked list. You need to add 1 to it.\n
+        A number N is represented in Linked List such that each digit corresponds to a node in linked list. You need to add 1 to it.\n\n
         <b>Input:</b>\n
-         LinkedList: 4->5->6\n
+         LinkedList: 4->5->6\n\n
         <b>Output:</b> 457\n
     </string>
     <string name="code_linked_list_q2">
         <b>C++ CODE:</b>\n
         struct node{\n
-            int data;\n
-            struct node* next;\n
+            &#160;int data;\n
+            &#160;struct node* next;\n\n
 
-            node(int x){\n
-                data = x;\n
-                next = NULL;\n
-            }\n
-        }*head;\n
+            &#160;node(int x){\n
+                &#160;&#160;data = x;\n
+                &#160;&#160;next = NULL;\n
+            &#160;}\n
+        }*head;\n\n
+
         Node* reverse(Node* head){\n
-            if(!head || !head->next)\n
-                return head;\n
+            &#160;if(!head || !head->next)\n
+                &#160;&#160;return head;\n
 
-            Node* curr = head;\n
-            Node* prev = NULL;\n
-            Node* Next = head->next;\n
+            &#160;Node* curr = head;\n
+            &#160;Node* prev = NULL;\n
+            &#160;Node* Next = head->next;\n
 
-            while(curr->next!=NULL){\n
-                curr->next = prev;\n
-                prev = curr;\n
-                curr = Next;\n
-                Next = Next->next;\n
-            }\n
-            curr->next = prev;\n
-            return curr;\n
-        }\n
+            &#160;while(curr->next!=NULL){\n
+                &#160;&#160;curr->next = prev;\n
+                &#160;&#160;prev = curr;\n
+                &#160;&#160;curr = Next;\n
+                &#160;&#160;Next = Next->next;\n
+            &#160;}\n
+            &#160;curr->next = prev;\n
+            &#160;return curr;\n
+        }\n\n
 
         Node* addOne(Node *head){\n
+            &#160;Node* newHead = reverse(head);\n
+            &#160;Node* temp = newHead;\n\n
 
-            Node* newHead = reverse(head);\n
-            Node* temp = newHead;\n
+            &#160;while(temp->next != NULL &amp;&amp; temp->data == 9){\n
+                &#160;&#160;temp->data = 0;\n
+                &#160;&#160;temp = temp->next;\n
+            &#160;}\n
+            &#160;if(temp->data != 9)\n
+                &#160;&#160;temp->data += 1;\n
+            &#160;else if(temp->next == NULL &amp;&amp; temp->data == 9){\n
+                &#160;&#160;temp->data = 0;\n
+                &#160;&#160;temp->next = new Node(1);\n
+            &#160;}\n
 
-            while(temp->next != NULL &amp;&amp; temp->data == 9){\n
-                temp->data = 0;\n
-                temp = temp->next;\n
-            }\n
-            if(temp->data != 9)\n
-                temp->data += 1;\n
-            else if(temp->next == NULL &amp;&amp; temp->data == 9){\n
-                temp->data = 0;\n
-                temp->next = new Node(1);\n
-            }\n
-
-            return reverse(newHead);\n
+            &#160;return reverse(newHead);\n
         }\n\n
-        <b>JAVA CODE:</b>
+        <b>JAVA CODE:</b>\n
         class Node{\n
-            int data;\n
-            Node next;\n
-            Node(int key){\n
-                data = key;\n
-                next = null;\n
-            }\n
-        }\n
+            &#160;int data;\n
+            &#160;Node next;\n\n
+
+            &#160;Node(int key){\n
+                &#160;&#160;data = key;\n
+                &#160;&#160;next = null;\n
+            &#160;}\n
+        }\n\n
+
         class Solution {\n
-            public static Node addOne(Node head) { \n
-                Node pre = new Node(0);\n
-                pre.next = head;\n
-                Node p1 = head, p2 = p1.next;\n
+            &#160;public static Node addOne(Node head) { \n
+                &#160;&#160;Node pre = new Node(0);\n
+                &#160;&#160;pre.next = head;\n
+                &#160;&#160;Node p1 = head, p2 = p1.next;\n
 
-                /* reverse the linked list */\n
-                while (p2 != null) {\n
-                    p1.next = p2.next;\n
-                    p2.next = pre.next;\n
-                    pre.next = p2;\n
-                    p2 = p1.next;\n
-                }\n
-                p1 = pre.next;\n
+                &#160;&#160;/* reverse the linked list */\n
+                &#160;&#160;while (p2 != null) {\n
+                    &#160;&#160;&#160;p1.next = p2.next;\n
+                    &#160;&#160;&#160;p2.next = pre.next;\n
+                    &#160;&#160;&#160;pre.next = p2;\n
+                    &#160;&#160;&#160;p2 = p1.next;\n
+                &#160;&#160;}\n
+                &#160;&#160;p1 = pre.next;\n
 
-                /* add 1 to the linked list */\n
-                p1.data += 1;\n
-                while (p1.data == 10) {\n
-                    p1.data %= 10;\n
-                    if (p1.next == null) p1.next = new Node(0);\n
-                    p1.next.data += 1;\n
-                    p1 = p1.next;\n
-                }\n
+                &#160;&#160;/* add 1 to the linked list */\n
+                &#160;&#160;p1.data += 1;\n
+                &#160;&#160;while (p1.data == 10) {\n
+                    &#160;&#160;&#160;p1.data %= 10;\n
+                    &#160;&#160;&#160;if (p1.next == null)\n
+                    &#160;&#160;&#160;&#160;p1.next = new Node(0);\n
+                    &#160;&#160;&#160;p1.next.data += 1;\n
+                    &#160;&#160;&#160;p1 = p1.next;\n
+                &#160;&#160;}\n
 
-                /* reverse the linked list again */\n
-                p1 = pre.next;\n
-                p2 = p1.next;\n
-                while (p2 != null) {\n
-                    p1.next = p2.next;\n
-                    p2.next = pre.next;\n
-                    pre.next = p2;\n
-                    p2 = p1.next;\n
-                }\n
-                return pre.next;\n
-            }\n
+                &#160;&#160;/* reverse the linked list again */\n
+                &#160;&#160;p1 = pre.next;\n
+                &#160;&#160;p2 = p1.next;\n
+                &#160;&#160;while (p2 != null) {\n
+                    &#160;&#160;&#160;p1.next = p2.next;\n
+                    &#160;&#160;&#160;p2.next = pre.next;\n
+                    &#160;&#160;&#160;pre.next = p2;\n
+                    &#160;&#160;&#160;p2 = p1.next;\n
+                &#160;&#160;}\n
+                &#160;&#160;return pre.next;\n
+            &#160;}\n
         }\n
     </string>
 
 
     <string name="backtracking_q1">Question 1:\n
-        Consider a rat placed at (0, 0) in a square matrix of order N * N. It has to reach the destination at (N - 1, N - 1). Find all possible paths that the rat can take to reach from source to destination. The directions in which the rat can move are U(up), D(down), L(left), R(right). Value 0 at a cell in the matrix represents that it is blocked and rat cannot move to it while value 1 at a cell in the matrix represents that rat can be travel through it. Note: In a path, no cell can be visited more than one time. If the source cell is 0, the rat cannot move to any other cell.\n
+        Consider a rat placed at (0, 0) in a square matrix of order N * N. It has to reach the destination at (N - 1, N - 1). Find all possible paths that the rat can take to reach from source to destination. The directions in which the rat can move are U(up), D(down), L(left), R(right). Value 0 at a cell in the matrix represents that it is blocked and rat cannot move to it while value 1 at a cell in the matrix represents that rat can be travel through it. Note: In a path, no cell can be visited more than one time. If the source cell is 0, the rat cannot move to any other cell.\n\n
         <b>Input:</b>\n
          N = 4\n
          m[][] = {{1, 0, 0, 0},\n
          {1, 1, 0, 1}, \n
          {1, 1, 0, 0},\n
-         {0, 1, 1, 1}}\n
-        <b>Output:</b> DDRDRR DRDDRR\n
+         {0, 1, 1, 1}}\n\n
+        <b>Output:</b> DDRDRR DRDDRR\n\n
         <b>Explanation:</b>
         The rat can reach the destination at (3, 3) from (0, 0) by two paths - DRDDRR and DDRDRR, when printed in sorted order we get DDRDRR DRDDRR.\n
     </string>
     <string name="code_backtracking_q1">
         <b>C++ CODE:</b>\n
         class Solution{\n
-            public:\n
-            vector&lt;string> res;\n
-            vector&lt;int> dx;\n
-            vector&lt;int> dy;\n
-            string dir;\n
-            vector&lt;string> findPath(vector&lt;vector&lt;int>> &amp;m, int n) {\n
-                dx={1,0,-1,0};\n
-                dy = {0,1,0,-1};\n
-                dir="DRUL";\n
-                string temp;\n
-                recur(m,0,0,temp);\n
-                return res;\n
-            }\n
-            void recur(vector&lt;vector&lt;int>> &amp;m,int r,int c,string &amp;temp){\n
-                // cout&lt;&lt;r&lt;&lt;c;\n
-                // cout&lt;&lt;endl;\n
-                if(r==m.size()-1 &amp;&amp; c==m[0].size()-1 &amp;&amp; m[r][c]!=0 ){\n
-                    res.push_back(temp);\n
-                    return ;\n
-                }\n
+            &#160;public:\n
+            &#160;vector&lt;string> res;\n
+            &#160;vector&lt;int> dx;\n
+            &#160;vector&lt;int> dy;\n
+            &#160;string dir;\n
+            &#160;vector&lt;string> findPath(vector&lt;vector&lt;int>> &amp;m, int n) {\n
+                &#160;&#160;dx={1,0,-1,0};\n
+                &#160;&#160;dy = {0,1,0,-1};\n
+                &#160;&#160;dir="DRUL";\n
+                &#160;&#160;string temp;\n
+                &#160;&#160;recur(m,0,0,temp);\n
+                &#160;&#160;return res;\n
+            &#160;}\n\n
 
-                if(r>=m.size()  || r&lt;0 || c>=m[0].size() || c&lt;0 || m[r][c]==0 || m[r][c]==-1)\n
-                    return ;\n
-                for(int i=0;i&lt;4;i++){\n
-                    temp.push_back(dir[i]);\n
-                    int nx=r+dx[i];\n
-                    int ny=c+dy[i];\n
-                    int x=m[r][c];\n
-                    m[r][c]=-1;\n
+            &#160;void recur(vector&lt;vector&lt;int>> &amp;m,int r,int c,string &amp;temp){\n
+                &#160;&#160;// cout&lt;&lt;r&lt;&lt;c;\n
+                &#160;&#160;// cout&lt;&lt;endl;\n
+                &#160;&#160;if(r==m.size()-1 &amp;&amp; c==m[0].size()-1 &amp;&amp; m[r][c]!=0 ){\n
+                    &#160;&#160;&#160;res.push_back(temp);\n
+                    &#160;&#160;&#160;return ;\n
+                &#160;&#160;}\n
 
-                    recur(m,nx,ny,temp);\n
-                    m[r][c]=x;\n
+                &#160;&#160;if(r>=m.size()  || r&lt;0 || c>=m[0].size() || c&lt;0 || m[r][c]==0 || m[r][c]==-1)\n
+                    &#160;&#160;&#160;return ;\n
+                &#160;&#160;for(int i=0;i&lt;4;i++){\n
+                    &#160;&#160;&#160;temp.push_back(dir[i]);\n
+                    &#160;&#160;&#160;int nx=r+dx[i];\n
+                    &#160;&#160;&#160;int ny=c+dy[i];\n
+                    &#160;&#160;&#160;int x=m[r][c];\n
+                    &#160;&#160;&#160;m[r][c]=-1;\n
 
-                    temp.pop_back();\n
-                }\n
-            }\n
+                    &#160;&#160;&#160;recur(m,nx,ny,temp);\n
+                    &#160;&#160;&#160;m[r][c]=x;\n
+
+                    &#160;&#160;&#160;temp.pop_back();\n
+                &#160;&#160;}\n
+            &#160;}\n
         };\n\n
-        <b>JAVA CODE:</b>
+        <b>JAVA CODE:</b>\n
         public static boolean isitSafe(int[][] m, int x, int y){\n
-            if(x&lt;0 || y&lt;0 || x>=m.length || y>=m.length || m[x][y]==0) return false;\n
-            return true;\n
-        }\n
+            &#160;if(x&lt;0 || y&lt;0 || x>=m.length || y>=m.length || m[x][y]==0)\n
+            &#160;&#160;return false;\n
+            &#160;return true;\n
+        }\n\n
 
         public static void ratinmaze(int[][] m, int x, int y, boolean visited[][], ArrayList&lt;String> ans, List&lt;Character> res){\n
-            if(m[m.length-1][m.length-1]==0) return;\n
-            if(x==m.length-1 &amp;&amp; y==m.length-1){\n
-                String s ="";\n
-                for(Character ch: res)\n
-                    s += ""+ch;\n
+            &#160;if(m[m.length-1][m.length-1]==0) return;\n
+            &#160;if(x==m.length-1 &amp;&amp; y==m.length-1){\n
+                &#160;&#160;String s ="";\n
+                &#160;&#160;for(Character ch: res)\n
+                    &#160;&#160;&#160;s += ""+ch;\n
 
-                ans.add(s);\n
-                return;\n
-            }\n
+                &#160;&#160;ans.add(s);\n
+                &#160;&#160;return;\n
+            &#160;}\n\n
 
-            if(!isitSafe(m,x,y)) return;\n
+            &#160;if(!isitSafe(m,x,y)) return;\n\n
 
-            visited[x][y] = true;\n
-            if(isitSafe(m,x+1,y) &amp;&amp; !visited[x+1][y]) {\n
-                res.add("D");\n
-                ratinmaze(m,x+1,y,visited,ans,res);\n
-                res.remove(res.size()-1);\n
-            }\n
+            &#160;visited[x][y] = true;\n
+            &#160;if(isitSafe(m,x+1,y) &amp;&amp; !visited[x+1][y]){\n
+                &#160;&#160;res.add("D");\n
+                &#160;&#160;ratinmaze(m,x+1,y,visited,ans,res);\n
+                &#160;&#160;res.remove(res.size()-1);\n
+            &#160;}\n\n
 
-            if(isitSafe(m,x-1,y) &amp;&amp; !visited[x-1][y]){\n
-                res.add("U");\n
-                ratinmaze(m,x-1,y,visited,ans,res);\n
-                res.remove(res.size()-1);\n
-            }\n
+            &#160;if(isitSafe(m,x-1,y) &amp;&amp; !visited[x-1][y]){\n
+                &#160;&#160;res.add("U");\n
+                &#160;&#160;ratinmaze(m,x-1,y,visited,ans,res);\n
+                &#160;&#160;res.remove(res.size()-1);\n
+            &#160;}\n\n
 
-            if(isitSafe(m,x,y+1) &amp;&amp; !visited[x][y+1]){\n
-                res.add("R");\n
-                ratinmaze(m,x,y+1,visited,ans,res);\n
-                res.remove(res.size()-1);\n
-            }\n
+            &#160;if(isitSafe(m,x,y+1) &amp;&amp; !visited[x][y+1]){\n
+                &#160;&#160;res.add("R");\n
+                &#160;&#160;ratinmaze(m,x,y+1,visited,ans,res);\n
+                &#160;&#160;res.remove(res.size()-1);\n
+            &#160;}\n\n
 
-            if(isitSafe(m,x,y-1) &amp;&amp; !visited[x][y-1]){\n
-                res.add("L");\n
-                ratinmaze(m,x,y-1,visited,ans,res);\n
-                res.remove(res.size()-1);\n
-            }\n
+            &#160;if(isitSafe(m,x,y-1) &amp;&amp; !visited[x][y-1]){\n
+                &#160;&#160;res.add("L");\n
+                &#160;&#160;ratinmaze(m,x,y-1,visited,ans,res);\n
+                &#160;&#160;res.remove(res.size()-1);\n
+            &#160;}\n\n
 
-            visited[x][y] = false;\n
+            &#160;visited[x][y] = false;\n
         }\n
     </string>
     <string name="backtracking_q2">Question 2:\n
         You are given a string S that contains parentheses and letters. You have to remove the minimum number of invalid parentheses to make the input string valid.\n
-        Return all the possible results in the sorted order.\n
+        Return all the possible results in the sorted order.\n\n
         <b>Input:</b>\n
-         S = "()())()"\n
+         S = "()())()"\n\n
         <b>Output:</b> ["(())()","()()()"]\n
     </string>
     <string name="code_backtracking_q2">
         <b>C++ CODE:</b>\n
         set&lt;string> ans;\n
-        int c1;\n
+        int c1;\n\n
         void help(string s, int i, string temp, int x, int c){\n
-            if(i == s.size()){\n
-                if(x == 0 &amp;&amp; c == c1)\n
-                ans.insert(temp);\n
-                return;\n
-            }\n
-            if(s[i] == "(")\n
-            help(s, i+1, temp+"(", x+1, c+1);\n
-            else if(s[i] == ")" &amp;&amp; x>0)\n
-            help(s, i+1, temp+")", x-1, c+1);\n
-            if(s[i] != "(" &amp;&amp; s[i] != ")")\n
-            help(s, i+1, temp+s[i], x, c);\n
-            else\n
-            help(s, i+1, temp, x, c);\n
-        }\n
-        vector&lt;string> removeInvalidParentheses(string s) {\n
-            int c = 0, x = 0;\n
-            for(int i = 0; i&lt;s.size(); i++){\n
-                if(s[i] == "(")x++;\n
-                if(s[i] == ")" &amp;&amp; x>0){\n
-                    x--;\n
-                    c+=2;\n
-                }\n
-            }\n
-            c1 = c;\n
-            help(s, 0, "", 0, 0);\n
-            vector&lt;string>res;\n
-            for(auto i: ans)res.push_back(i);\n
-            sort(res.begin(), res.end());\n
-            return res;\n
+            &#160;if(i == s.size()){\n
+                &#160;&#160;if(x == 0 &amp;&amp; c == c1)\n
+                &#160;&#160;ans.insert(temp);\n
+                &#160;&#160;return;\n
+            &#160;}\n
+            &#160;if(s[i] == "(")\n
+            &#160;&#160;help(s, i+1, temp+"(", x+1, c+1);\n
+            &#160;else if(s[i] == ")" &amp;&amp; x>0)\n
+            &#160;&#160;help(s, i+1, temp+")", x-1, c+1);\n
+            &#160;if(s[i] != "(" &amp;&amp; s[i] != ")")\n
+            &#160;&#160;help(s, i+1, temp+s[i], x, c);\n
+            &#160;else\n
+            &#160;&#160;help(s, i+1, temp, x, c);\n
         }\n\n
-        <b>JAVA CODE:</b>
-        static int findRemovals(String s){\n
-            Stack&lt;Character> st = new Stack&lt;>();\n
 
-            for(int i = 0; i &lt; s.length(); i++){\n
-                if(s.charAt(i) == "("){\n
-                    st.push("(");\n
-                }\n
-                else if(s.charAt(i) == ")"){\n
-                    if(!st.isEmpty() &amp;&amp; st.peek() == "("){\n
-                        st.pop();\n
-                    }\n
-                    else{\n
-                        st.push(")");\n
-                    }\n
-                }\n
-            }\n
-            return st.size();\n
-        }\n
+        vector&lt;string> removeInvalidParentheses(string s) {\n
+            &#160;int c = 0, x = 0;\n
+            &#160;for(int i = 0; i&lt;s.size(); i++){\n
+                &#160;&#160;if(s[i] == "(")x++;\n
+                &#160;&#160;if(s[i] == ")" &amp;&amp; x>0){\n
+                    &#160;&#160;&#160;x--;\n
+                    &#160;&#160;&#160;c+=2;\n
+                &#160;&#160;}\n
+            &#160;}\n
+            &#160;c1 = c;\n
+            &#160;help(s, 0, "", 0, 0);\n
+            &#160;vector&lt;string>res;\n
+            &#160;for(auto i: ans)res.push_back(i);\n
+            &#160;sort(res.begin(), res.end());\n
+            &#160;return res;\n
+        }\n\n
+        <b>JAVA CODE:</b>\n
+        static int findRemovals(String s){\n
+            &#160;Stack&lt;Character> st = new Stack&lt;>();\n
+
+            &#160;for(int i = 0; i &lt; s.length(); i++){\n
+                &#160;&#160;if(s.charAt(i) == "("){\n
+                    &#160;&#160;&#160;st.push("(");\n
+                &#160;&#160;}\n
+                &#160;&#160;else if(s.charAt(i) == ")"){\n
+                    &#160;&#160;&#160;if(!st.isEmpty() &amp;&amp; st.peek() == "("){\n
+                        &#160;&#160;&#160;&#160;st.pop();\n
+                    &#160;&#160;&#160;}\n
+                    &#160;&#160;&#160;else{\n
+                        &#160;&#160;&#160;&#160;st.push(")");\n
+                   &#160;&#160;&#160;}\n
+                &#160;&#160;}\n
+            &#160;}\n
+            &#160;return st.size();\n
+        }\n\n
 
         static void solve(String s, Map&lt;String, Boolean> mp, int rc, ArrayList&lt;String> list){\n
-            if(mp.containsKey(s)){\n
-                return ;\n
-            }\n
-            mp.put(s, true);\n
+            &#160;if(mp.containsKey(s)){\n
+                &#160;&#160;return ;\n
+            &#160;}\n
+            &#160;mp.put(s, true);\n
 
-            if(rc == 0){\n
-                if(findRemovals(s) == 0){\n
-                    list.add(s);\n
-                    return;\n
-                }    \n
-            }\n
-            for(int i = 0; i &lt; s.length(); i++){\n
-                String left = s.substring(0, i);\n
-                String right = s.substring(i+1);\n
-                String join = left + right;\n
-                solve(join, mp, rc-1, list);\n
-            }\n
-            return;\n
-        }\n
+            &#160;if(rc == 0){\n
+                &#160;&#160;if(findRemovals(s) == 0){\n
+                    &#160;&#160;&#160;list.add(s);\n
+                    &#160;&#160;&#160;return;\n
+                &#160;&#160;}\n
+            &#160;}\n
+            &#160;for(int i = 0; i &lt; s.length(); i++){\n
+                &#160;&#160;String left = s.substring(0, i);\n
+                &#160;&#160;String right = s.substring(i+1);\n
+                &#160;&#160;String join = left + right;\n
+                &#160;&#160;solve(join, mp, rc-1, list);\n
+            &#160;}\n
+            &#160;return;\n
+        }\n\n
+
         public static ArrayList&lt;String> removeInvalidParentheses(String s) {\n
-            int rc = findRemovals(s);\n
-            Map&lt;String, Boolean> mp = new HashMap&lt;>();\n
-            ArrayList&lt;String> list = new ArrayList&lt;>();\n
-            solve(s, mp, rc, list);\n
+            &#160;int rc = findRemovals(s);\n
+            &#160;Map&lt;String, Boolean> mp = new HashMap&lt;>();\n
+            &#160;ArrayList&lt;String> list = new ArrayList&lt;>();\n
+            &#160;solve(s, mp, rc, list);\n
 
-            return list;\n
+            &#160;return list;\n
         }\n
     </string>
 
