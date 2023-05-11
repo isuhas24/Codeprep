@@ -237,55 +237,52 @@ Step by step guide to become a AI/ML scientist.
         <b>=></b> JQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.
     </string>
     <string name="arrays_q1">Question 1:\n
-        Given an array arr[] and an integer K where K is smaller than size of array, the task is to find the Kth smallest element in the given array. It is given that all array elements are distinct.\n
+        Given an array arr[] and an integer K where K is smaller than size of array, the task is to find the Kth smallest element in the given array. It is given that all array elements are distinct.\n\n
         <b>Input:</b>\n
         N = 6\n
         arr[] = {7 10 4 3 20 15}\n
-        K = 3\n
-        <b>Output:</b> 7\n
+        K = 3\n\n
+        <b>Output:</b> 7\n\n
         <b>Explanation:</b>\n
         3rd smallest element in the given array is 7.\n
     </string>
     <string name="code_array_q1">
         <b>C++ CODE:</b>\n
-        int kthSmallest(int arr[], int l, int r, int k) {\n
-            int n=r+1;\n
-            sort(arr,arr+n);\n
-            int count=0;\n
-            for(int i=0;i &lt; n;i++)\n
-            {\n
-                if(arr[i]>0)\n
-                {\n
-                    count++;\n
-                }\n
-                if(count==k)\n
-                {\n
-                    return arr[i];\n
-                }\n
-            }\n
+        int kthSmallest(int arr[], int l, int r, int k){\n
+            &#160;int n=r+1;\n
+            &#160;sort(arr,arr+n);\n
+            &#160;int count=0;\n
+            &#160;for(int i=0;i &lt; n;i++){\n
+                &#160;&#160;if(arr[i]>0){\n
+                    &#160;&#160;&#160;count++;\n
+                &#160;&#160;}\n
+                &#160;&#160;if(count==k){\n
+                    &#160;&#160;&#160;return arr[i];\n
+                &#160;&#160;}\n
+            &#160;}\n
         }\n\n
         <b>JAVA CODE:</b>\n
         class Solution{\n
-            public static int kthSmallest(int[] arr, int l, int r, int k){\n
-                Arrays.sort(arr);\n
-                return arr[k-1];\n
-            }\n
+            &#160;public static int kthSmallest(int[] arr, int l, int r, int k){\n
+                &#160;&#160;Arrays.sort(arr);\n
+                &#160;&#160;return arr[k-1];\n
+            &#160;}\n
         }\n\n
         <b>PYTHON CODE:</b>\n
         class Solution:\n
-            def kthSmallest(self,arr, l, r, k):\n
-                arr.sort()\n
-                return arr[k-1]\n
+            &#160;def kthSmallest(self,arr, l, r, k):\n
+                &#160;&#160;arr.sort()\n
+                &#160;&#160;return arr[k-1]\n
     </string>
 
 
     <string name="arrays_q2">Question 2:\n
-        Given an array of size N containing only 0s, 1s, and 2s; sort the array in ascending order.\n
+        Given an array of size N containing only 0s, 1s, and 2s; sort the array in ascending order.\n\n
         <b>Input:</b>\n
         N = 5\n
-        arr[]= {0 2 1 2 0}\n
+        arr[]= {0 2 1 2 0}\n\n
         <b>Output:</b>\n
-        0 0 1 2 2\n
+        0 0 1 2 2\n\n
         <b>Explanation:</b>\n
         0s 1s and 2s are segregated into ascending order.\n
     </string>
@@ -293,257 +290,258 @@ Step by step guide to become a AI/ML scientist.
     <string name="code_array_q2">
         <b>C++ CODE:</b>\n
         void sort012(int a[], int n){\n
-            int num0=0,num2=0;\n
-            for(int i=0;i &lt; n;i++){\n
-                if(a[i]==0) num0++;\n
-                else if(a[i]==2) num2++;\n
-            }\n
-            for(int i=0;i &lt; n  i++){\n
-                if(i>=0 &amp;&amp; i &lt; num0) a[i]=0;\n
-                else if(i>=num0 &amp;&amp; i &lt; (n-num2)) a[i]=1;\n
-                else a[i]=2;\n
-            }\n
+            &#160;int num0=0,num2=0;\n
+            &#160;for(int i=0;i &lt; n;i++){\n
+                &#160;&#160;if(a[i]==0) num0++;\n
+                &#160;&#160;else if(a[i]==2) num2++;\n
+            &#160;}\n
+            &#160;for(int i=0;i &lt; n  i++){\n
+                &#160;&#160;if(i>=0 &amp;&amp; i &lt; num0) a[i]=0;\n
+                &#160;&#160;else if(i>=num0 &amp;&amp; i &lt; (n-num2))\n
+                &#160;&#160;&#160;a[i]=1;\n
+                &#160;&#160;else a[i]=2;\n
+            &#160;}\n
         }\n\n
         <b>JAVA CODE:</b>\n
         public static void sort012(int a[], int n){\n
-            int zero=0, one=0, two=0;\n
-            for(int i=0; i &lt; a.length; i++){\n
-                if(a[i] == 0){\n
-                    zero++;\n
-                }\n
-                else if(a[i] == 1){\n
-                    one++;\n
-                }\n
-                else{\n
-                    two++;\n
-                }\n
-            }\n
-            for(int i=0; i &lt; a.length; i++){\n
-                if(i &lt; zero){\n
-                    a[i] = 0;\n
-                }\n
-                else if(i>=zero &amp;&amp; i &lt; (one+zero)){\n
-                    a[i] = 1;\n
-                }\n
-                else{\n
-                    a[i] = 2;\n
-                }\n
-            }\n
+            &#160;int zero=0, one=0, two=0;\n
+            &#160;for(int i=0; i &lt; a.length; i++){\n
+                &#160;&#160;if(a[i] == 0){\n
+                    &#160;&#160;&#160;zero++;\n
+                &#160;&#160;}\n
+                &#160;&#160;else if(a[i] == 1){\n
+                    &#160;&#160;&#160;one++;\n
+                &#160;&#160;}\n
+                &#160;&#160;else{\n
+                    &#160;&#160;&#160;two++;\n
+                &#160;&#160;}\n
+            &#160;}\n
+            &#160;for(int i=0; i &lt; a.length; i++){\n
+                &#160;&#160;if(i &lt; zero){\n
+                    &#160;&#160;&#160;a[i] = 0;\n
+                &#160;&#160;}\n
+                &#160;&#160;else if(i>=zero &amp;&amp; i &lt; (one+zero)){\n
+                    &#160;&#160;&#160;a[i] = 1;\n
+                &#160;&#160;}\n
+                &#160;&#160;else{\n
+                    &#160;&#160;&#160;a[i] = 2;\n
+                &#160;&#160;}\n
+            &#160;}\n
         }\n\n
     </string>
 
     <string name="arrays_q3">Question 3:\n
-        Given an unsorted array arr[] of size N having both negative and positive integers. The task is place all negative element at the end of array without changing the order of positive element and negative element.\n
+        Given an unsorted array arr[] of size N having both negative and positive integers. The task is place all negative element at the end of array without changing the order of positive element and negative element.\n\n
         <b>Input:</b>\n
         N = 8\n
         arr[] = {1, -1, 3, 2, -7, -5, 11, 6}\n
-        K = 3\n
+        K = 3\n\n
         <b>Output:</b> 1  3  2  11  6  -1  -7  -5\n
     </string>
     <string name="code_array_q3">
         <b>C++ CODE:</b>\n
         class Solution{\n
-            public:\n
-            void segregateElements(int arr[],int n){\n
-                int j=0,k=0;\n
-                int neg[n];\n
-                for(int i=0;i &lt; n;i++){\n
-                    if(arr[i] &lt; 0) neg[k++] = arr[i];\n
-                    else arr[j++] = arr[i];\n
-                }\n
-                for(int i=0;j &lt; n;j++,i++)\n
-                    arr[j] = neg[i];\n
-                }\n
-            }\n\n
+            &#160;public:\n
+            &#160;void segregateElements(int arr[],int n){\n
+                &#160;&#160;int j=0,k=0;\n
+                &#160;&#160;int neg[n];\n
+                &#160;&#160;for(int i=0;i &lt; n;i++){\n
+                    &#160;&#160;&#160;if(arr[i] &lt; 0) neg[k++] = arr[i];\n
+                    &#160;&#160;&#160;else arr[j++] = arr[i];\n
+                &#160;&#160;}\n
+                &#160;&#160;for(int i=0;j &lt; n;j++,i++)\n
+                    &#160;&#160;&#160;arr[j] = neg[i];\n
+                &#160;&#160;}\n
+            &#160;}\n\n
         <b>JAVA CODE:</b>\n
         class Solution {\n
-            public void segregateElements(int arr[], int n){\n
-                if(n==0||n==1)\n
-                    return;\n
-                int[] a=new int [n];\n
-                int x=0;\n
-                for(int i=0;i&lt;n;i++){\n
-                    if(arr[i]>=0){\n
-                        a[x]=arr[i];\n
-                        x++;\n
-                    }\n
-                }\n
-                for(int i=0;i&lt;n;i++){\n
-                    if(arr[i]&lt;=0){\n
-                        a[x]=arr[i];\n
-                        x++;\n
-                    }\n
-                }\n
-                for(int i=0;i&lt;n;i++){\n
-                    arr[i]=a[i];\n
-                }\n
-            }\n
+            &#160;public void segregateElements(int arr[], int n){\n
+                &#160;&#160;if(n==0||n==1)\n
+                    &#160;&#160;&#160;return;\n
+                &#160;&#160;int[] a=new int [n];\n
+                &#160;&#160;int x=0;\n
+                &#160;&#160;for(int i=0;i&lt;n;i++){\n
+                    &#160;&#160;&#160;if(arr[i]>=0){\n
+                        &#160;&#160;&#160;&#160;a[x]=arr[i];\n
+                        &#160;&#160;&#160;&#160;x++;\n
+                    &#160;&#160;&#160;}\n
+                &#160;&#160;}\n
+                &#160;&#160;for(int i=0;i&lt;n;i++){\n
+                    &#160;&#160;&#160;if(arr[i]&lt;=0){\n
+                        &#160;&#160;&#160;&#160;a[x]=arr[i];\n
+                        &#160;&#160;&#160;&#160;x++;\n
+                    &#160;&#160;&#160;}\n
+                &#160;&#160;}\n
+                &#160;&#160;for(int i=0;i&lt;n;i++){\n
+                    &#160;&#160;&#160;arr[i]=a[i];\n
+                &#160;&#160;}\n
+            &#160;}\n
         }\n\n
         <b>PYTHON CODE:</b>\n
         def segregateElements(self, arr, n):\n
-            n=len(arr)\n
-            x=[]\n
-            for i in range(n):\n
-                if arr[i]&lt;0:\n
-                    arr=arr+[arr[i]]\n
-                    x=x+[arr[i]]\n
-            for i in range(len(x)):\n
-                arr.remove(x[i])\n
-            return arr\n
+            &#160;n=len(arr)\n
+            &#160;x=[]\n
+            &#160;for i in range(n):\n
+                &#160;&#160;if arr[i]&lt;0:\n
+                    &#160;&#160;&#160;arr=arr+[arr[i]]\n
+                    &#160;&#160;&#160;x=x+[arr[i]]\n
+            &#160;for i in range(len(x)):\n
+                &#160;&#160;arr.remove(x[i])\n
+            &#160;return arr\n
     </string>
 
 
     <string name="arrays_q4">Question 4:\n
-        Given an unsorted array arr[] of size N having both negative and positive integers. The task is place all negative element at the end of array without changing the order of positive element and negative element.\n
+        Given an unsorted array arr[] of size N having both negative and positive integers. The task is place all negative element at the end of array without changing the order of positive element and negative element.\n\n
         <b>Input:</b>\n
         N = 5\n
-        arr[] = {1,2,3,-2,5}\n
-        <b>Output:</b> 9\n
+        arr[] = {1,2,3,-2,5}\n\n
+        <b>Output:</b> 9\n\n
         <b>Explanation:</b>\n
         Max sub array sum is 9 of elements (1, 2, 3, -2, 5) which is a contiguous sub array.\n
     </string>
     <string name="code_array_q4">
         <b>C++ CODE:</b>\n
          long long maxSub_arraySum(int arr[], int n){\n
-            int res = arr[0];\n
-            int curr = arr[0];\n
-            for(int i=1;i &lt; n;i++){\n
-                curr = max(curr+arr[i], arr[i]);\n
-                res = max(res,curr);\n
-            }\n
-            return res;\n
+            &#160;int res = arr[0];\n
+            &#160;int curr = arr[0];\n
+            &#160;for(int i=1;i &lt; n;i++){\n
+                &#160;&#160;curr = max(curr+arr[i], arr[i]);\n
+                &#160;&#160;res = max(res,curr);\n
+            &#160;}\n
+            &#160;return res;\n
          }\n\n
         <b>JAVA CODE:</b>\n
         class Solution{\n
-            long maxSub_arraySum(int arr[], int n){\n
-                long max=Integer.MIN_VALUE;\n
-                long sum=0;\n
-                for(int i=0;i &lt; n;i++){\n
-                    sum+=arr[i];\n
-                    if(max &lt; sum)\n
-                    max=sum;\n
-                    //dont carry negative sum\n
-                    if(sum &lt; 0)\n
-                    sum=0;\n
-                }\n
-                return max;\n
-            }\n
+            &#160;long maxSub_arraySum(int arr[], int n){\n
+                &#160;&#160;long max=Integer.MIN_VALUE;\n
+                &#160;&#160;long sum=0;\n
+                &#160;&#160;for(int i=0;i &lt; n;i++){\n
+                    &#160;&#160;&#160;sum+=arr[i];\n
+                    &#160;&#160;&#160;if(max &lt; sum)\n
+                    &#160;&#160;&#160;&#160;max=sum;\n
+                    &#160;&#160;&#160;//dont carry negative sum\n
+                    &#160;&#160;&#160;if(sum &lt; 0)\n
+                    &#160;&#160;&#160;&#160;sum=0;\n
+                &#160;&#160;}\n
+                &#160;&#160;return max;\n
+            &#160;}\n
         }\n\n
     </string>
 
 
     <string name="arrays_q5">Question 5:\n
         Given a sorted array of positive integers. Your task is to rearrange the array elements alternatively i.e first element should be max value, second should be min value, third should be second max, fourth should be second min and so on.\n
-        Note: Modify the original array itself. Do it without using any extra space. You do not have to return anything.\n
+        Note: Modify the original array itself. Do it without using any extra space. You do not have to return anything.\n\n
         <b>Input:</b>\n
         N = 6\n
-        arr[] = {1,2,3,4,5,6}\n
-        <b>Output:</b> 6 1 5 2 4 3\n
+        arr[] = {1,2,3,4,5,6}\n\n
+        <b>Output:</b> 6 1 5 2 4 3\n\n
         <b>Explanation:</b>\n
         Max element = 6, min = 1, second max = 5, second min = 2, and so on... Modified array is : 6 1 5 2 4 3.\n
     </string>
     <string name="code_array_q5">
         <b>C++ CODE:</b>\n
          class Solution{\n
-            public:\n
-            int next (int prev, int n){\n
-                if(prev+1 > n/2) return (n-prev-1)*2;\n
-                else{\n
-                    return (prev+1)*2-1;\n
-                }\n
-            }\n
-            void arrange (int start, int n, long long *arr){\n
-                int swap_index = next(start, n);\n
-                while(arr[swap_index] > 0){\n
-                    swap(arr[swap_index], arr[start]);\n
-                    arr[swap_index] *= -1;\n
-                    swap_index = next(swap_index, n);\n
-                }\n
-            }\n
-            void rearrange(long long *arr, int n){\n
-                for(int i=0; i &lt; n; i++){\n
-                    if(arr[i] > 0)\n
-                        arrange(i, n, arr);\n
-                    }\n
-                for(int i=0; i &lt; n; i++){\n
-                    arr[i] *= -1;\n
-                }\n
-            }\n
+            &#160;public:\n
+            &#160;int next (int prev, int n){\n
+                &#160;&#160;if(prev+1 > n/2) return (n-prev-1)*2;\n
+                &#160;&#160;else{\n
+                    &#160;&#160;&#160;return (prev+1)*2-1;\n
+                &#160;&#160;}\n
+            &#160;}\n
+            &#160;void arrange (int start, int n, long long *arr){\n
+                &#160;&#160;int swap_index = next(start, n);\n
+                &#160;&#160;while(arr[swap_index] > 0){\n
+                    &#160;&#160;&#160;swap(arr[swap_index], arr[start]);\n
+                    &#160;&#160;&#160;arr[swap_index] *= -1;\n
+                    &#160;&#160;&#160;swap_index = next(swap_index, n);\n
+                &#160;&#160;}\n
+            &#160;}\n
+            &#160;void rearrange(long long *arr, int n){\n
+                &#160;&#160;for(int i=0; i &lt; n; i++){\n
+                    &#160;&#160;&#160;if(arr[i] > 0)\n
+                        &#160;&#160;&#160;&#160;arrange(i, n, arr);\n
+                    &#160;&#160;&#160;}\n
+                &#160;&#160;&#160;for(int i=0; i &lt; n; i++){\n
+                    &#160;&#160;&#160;&#160;arr[i] *= -1;\n
+                &#160;&#160;&#160;}\n
+            &#160;}\n
          }\n\n
         <b>JAVA CODE:</b>\n
         public static void rearrange(long arr[], int n){\n
-            int max = (int)arr[n-1] + 1;\n
-            int max_i = n-1;\n
-            int min_i = 0;\n
-            for(int i=0; i &lt; n; i++){\n
-                if(i%2 == 0){\n
-                    arr[i] = (arr[max_i]%max)*max + arr[i];\n
-                    max_i--;\n
-                }\n
-                else{\n
-                    arr[i] = (arr[min_i]%max)*max + arr[i];\n
-                    min_i++;\n
-                }\n
-            }\n
+            &#160;int max = (int)arr[n-1] + 1;\n
+            &#160;int max_i = n-1;\n
+            &#160;int min_i = 0;\n
+            &#160;for(int i=0; i &lt; n; i++){\n
+                &#160;&#160;if(i%2 == 0){\n
+                    &#160;&#160;&#160;arr[i] = (arr[max_i]%max)*max + arr[i];\n
+                    &#160;&#160;&#160;max_i--;\n
+                &#160;&#160;}\n
+                &#160;&#160;else{\n
+                    &#160;&#160;&#160;arr[i] = (arr[min_i]%max)*max + arr[i];\n
+                    &#160;&#160;&#160;min_i++;\n
+                &#160;&#160;}\n
+            &#160;}\n
 
-            for(int i=0; i &lt; n; i++){\n
-                arr[i] = arr[i]/max;\n
-            }\n
+            &#160;for(int i=0; i &lt; n; i++){\n
+                &#160;&#160;arr[i] = arr[i]/max;\n
+            &#160;}\n
         }
     </string>
 
 
     <string name="bit_manipulation_q1">Question 1:\n
-        Given a non-negative integer N. The task is to check if N is a power of 2. More formally, check if N can be expressed as 2^x for some x.\n
+        Given a non-negative integer N. The task is to check if N is a power of 2. More formally, check if N can be expressed as 2^x for some x.\n\n
         <b>Input:</b>\n
-        N = 1\n
-        <b>Output:</b> YES\n
+        N = 1\n\n
+        <b>Output:</b> YES\n\n
         <b>Explanation:</b>\n
-        1 is equal to 2 raised to 0 (20 = 1).
+        1 is equal to 2 raised to 0 (20 = 1).\n
     </string>
     <string name="code_bit_manipulation_q1">
         <b>C++ CODE:</b>\n
          bool isPowerofTwo(long long n){\n
-            if(n==0)return false;\n
-            if((n &amp; n-1)==0)return true;\n
-            return false;\n
+            &#160;if(n==0)return false;\n
+            &#160;if((n &amp; n-1)==0)return true;\n
+            &#160;return false;\n
          }\n\n
         <b>JAVA CODE:</b>\n
         class Solution{\n
-            // Function to check if given number n is a power of two.\n
-            public static boolean isPowerofTwo(long n){\n
-                if(n==1){\n
-                    return true;\n
-                }\n
-                if(n==0){\n
-                    return false;\n
-                }\n
-                while(n>1){\n
-                    if(n%2!=0){\n
-                        return false;\n
-                    }\n
-                    else{\n
-                        n=n/2;\n
-                    }\n
-                }\n
-                return true;\n
-            }\n
+            &#160;// Function to check if given number n is a power of two.\n
+            &#160;public static boolean isPowerofTwo(long n){\n
+                &#160;&#160;if(n==1){\n
+                    &#160;&#160;&#160;return true;\n
+                &#160;&#160;}\n
+                &#160;&#160;if(n==0){\n
+                    &#160;&#160;&#160;return false;\n
+                &#160;&#160;}\n
+                &#160;&#160;while(n>1){\n
+                    &#160;&#160;&#160;if(n%2!=0){\n
+                        &#160;&#160;&#160;&#160;return false;\n
+                    &#160;&#160;&#160;}\n
+                    &#160;&#160;&#160;else{\n
+                        &#160;&#160;&#160;&#160;n=n/2;\n
+                    &#160;&#160;&#160;}\n
+                &#160;&#160;}\n
+                &#160;&#160;return true;\n
+            &#160;}\n
         }\n\n
         <b>PYTHON CODE:</b>\n
         def isPowerofTwo(self,n):\n
-            if n==0:\n
-                return 0\n
-            if (n &amp; (n-1))==0:\n
-                return 1\n
-            return 0
+            &#160;if n==0:\n
+                &#160;&#160;return 0\n
+            &#160;if (n &amp; (n-1))==0:\n
+                &#160;&#160;return 1\n
+            &#160;return 0
     </string>
 
 
     <string name="bit_manipulation_q2">Question 2:\n
-        You are given two numbers A and B. The task is to count the number of bits needed to be flipped to convert A to B.\n
+        You are given two numbers A and B. The task is to count the number of bits needed to be flipped to convert A to B.\n\n
         <b>Input:</b>\n
-         A = 10, B = 20\n
-        <b>Output:</b> 4\n
+         A = 10, B = 20\n\n
+        <b>Output:</b> 4\n\n
         <b>Explanation:</b>\n
         A  = 10100\n
         B  = 11001\n
@@ -552,184 +550,188 @@ Step by step guide to become a AI/ML scientist.
     <string name="code_bit_manipulation_q2">
         <b>C++ CODE:</b>\n
          int countBitsFlip(int a, int b){\n
-            int i=0,cnt=0;\n
-            while(i &lt; 32){\n
-                if((a&amp;(1&lt;&lt;i))!=(b&amp;(1&lt;&lt;i)))\n
-                cnt++;\n
-                i++;\n
-            }\n
-            return cnt;\n
+            &#160;int i=0,cnt=0;\n
+            &#160;while(i &lt; 32){\n
+                &#160;&#160;if((a&amp;(1&lt;&lt;i))!=(b&amp;(1&lt;&lt;i)))\n
+                &#160;&#160;&#160;cnt++;\n
+                &#160;&#160;i++;\n
+            &#160;}\n
+            &#160;return cnt;\n
          }\n\n
         <b>JAVA CODE:</b>\n
         class Solution{\n
-            // Function to check if given number n is a power of two.\n
-            public static int countBitsFlip(int a, int b){\n
-                int c=a^b;  // XOR will identify diff bit values\n
-                int count=0;\n
-                while(c>0){\n
-                    c&amp;=(c-1);\n
-                    count++;\n
-                }\n
-                return count;\n
-            }\n
+            &#160;// Function to check if given number n is a power of two.\n
+            &#160;public static int countBitsFlip(int a, int b){\n
+                &#160;&#160;// XOR will identify diff bit values\n
+                &#160;&#160;int c=a^b;
+                &#160;&#160;int count=0;\n
+                &#160;&#160;while(c>0){\n
+                    &#160;&#160;&#160;c&amp;=(c-1);\n
+                    &#160;&#160;&#160;count++;\n
+                &#160;&#160;}\n
+                &#160;&#160;return count;\n
+            &#160;}\n
         }\n\n
     </string>
 
 
     <string name="bit_manipulation_q3">Question 3:\n
-        Given an array A containing 2*N+2 positive numbers, out of which 2*N numbers exist in pairs whereas the other two number occur exactly once and are distinct. Find the other two numbers. Return in increasing order.\n
+        Given an array A containing 2*N+2 positive numbers, out of which 2*N numbers exist in pairs whereas the other two number occur exactly once and are distinct. Find the other two numbers. Return in increasing order.\n\n
         <b>Input:</b>\n
          N=2\n
-        arr[] = {1, 2, 3, 2, 1, 4}\n
-        <b>Output:</b> 3 4\n
+        arr[] = {1, 2, 3, 2, 1, 4}\n\n
+        <b>Output:</b> 3 4\n\n
         <b>Explanation:</b>\n
         3 and 4 occur exactly once.\n
     </string>
     <string name="code_bit_manipulation_q3">
         <b>JAVA CODE:</b>\n
         class Solution{\n
-            // Function to check if given number n is a power of two.\n
-            public static int countBitsFlip(int a, int b){\n
-                int c=a^b;  // XOR will identify diff bit values\n
-                int count=0;\n
-                while(c>0){\n
-                    c&amp;=(c-1);\n
-                    count++;\n
-                }\n
-                return count;\n
-            }\n
+            &#160;// Function to check if given number n is a power of two.\n
+            &#160;public static int countBitsFlip(int a, int b){\n
+                &#160;&#160;// XOR will identify diff bit values\n
+                &#160;&#160;int c=a^b;
+                &#160;&#160;int count=0;\n
+                &#160;&#160;&#160;while(c>0){\n
+                    &#160;&#160;&#160;&#160;c&amp;=(c-1);\n
+                    &#160;&#160;&#160;&#160;count++;\n
+                &#160;&#160;&#160;}\n
+                &#160;&#160;return count;\n
+            &#160;}\n
         }\n\n
     </string>
 
 
     <string name="dynamic_programming_q1">Question 1:\n
-        Given an integer array coins[ ] of size N representing different denominations of currency and an integer sum, find the number of ways you can make sum by using different combinations from coins[ ].
-        Note: Assume that you have an infinite supply of each type of coin. \n
+        Given an integer array coins[ ] of size N representing different denominations of currency and an integer sum, find the number of ways you can make sum by using different combinations from coins[ ].\n
+        Note: Assume that you have an infinite supply of each type of coin. \n\n
         <b>Input:</b>\n
          sum = 4, N = 3\n
-         coins[] = {1,2,3}\n
-        <b>Output:</b> 4\n
+         coins[] = {1,2,3}\n\n
+        <b>Output:</b> 4\n\n
         <b>Explanation:</b>\n
          Four Possible ways are: {1,1,1,1},{1,1,2},{2,2},{1,3}.\n
     </string>
     <string name="code_dynamic_programming_q1">
         <b>C++ CODE:</b>\n
          long long int count(int coins[], int n, int sum) {\n
-                long long int dp[n+1][sum+1];\n
-                for(int i=0;i&lt;=sum;i++){\n
-                    dp[0][i]=0;\n
-                }\n
-                for(int i=0;i&lt;=n;i++){\n
-                    dp[i][0]=1;\n
-                }\n
-                for(int i=1;i&lt;=n;i++){\n
-                    for(int j=1;j&lt;=sum;j++){\n
-                        if(coins[i-1]>j){\n
-                            dp[i][j]=dp[i-1][j];\n
-                        }\n
-                        else{\n
-                            dp[i][j]=dp[i][j-coins[i-1]]+dp[i-1][j];\n
-                        }\n
-                    }\n\n
-                }\n
-                return dp[n][sum];\n
+                &#160;long long int dp[n+1][sum+1];\n
+                &#160;for(int i=0;i&lt;=sum;i++){\n
+                    &#160;&#160;dp[0][i]=0;\n
+                &#160;}\n
+                &#160;for(int i=0;i&lt;=n;i++){\n
+                    &#160;&#160;dp[i][0]=1;\n
+                &#160;}\n
+                &#160;for(int i=1;i&lt;=n;i++){\n
+                    &#160;&#160;for(int j=1;j&lt;=sum;j++){\n
+                        &#160;&#160;&#160;if(coins[i-1]>j){\n
+                            &#160;&#160;&#160;&#160;dp[i][j]=dp[i-1][j];\n
+                        &#160;&#160;&#160;}\n
+                        &#160;&#160;&#160;else{\n
+                            &#160;&#160;&#160;&#160;dp[i][j]=dp[i][j-coins[i-1]]+dp[i-1][j];\n
+                        &#160;&#160;&#160;}\n
+                    &#160;&#160;}\n\n
+                &#160;}\n
+                &#160;return dp[n][sum];\n
          }\n\n
         <b>JAVA CODE:</b>\n
-        class Solution {
-            public long count(int coins[], int N, int sum) {\n
-                long dp[][]=new long[N+1][sum+1];\n
-                for(int i=N-1;i>=0;i--){\n
-                    for(int j=0;j&lt;=sum;j++){\n
-                        if(j==0){\n
-                            dp[i][j]=1;\n
-                            continue;\n
-                        }\n
-                        long x=0,y=0;\n
-                        if(j-coins[i]>=0)\n
-                        x=dp[i][j-coins[i]];\n
-                        y=dp[i+1][j];\n
-                        dp[i][j]=x+y;\n
-                    }\n
-                }\n
-                return dp[0][sum];\n
-            }\n
+        class Solution {\n
+            &#160;public long count(int coins[], int N, int sum) {\n
+                &#160;&#160;long dp[][]=new long[N+1][sum+1];\n
+                &#160;&#160;for(int i=N-1;i>=0;i--){\n
+                    &#160;&#160;&#160;for(int j=0;j&lt;=sum;j++){\n
+                        &#160;&#160;&#160;&#160;if(j==0){\n
+                            &#160;&#160;&#160;&#160;&#160;dp[i][j]=1;\n
+                            &#160;&#160;&#160;&#160;&#160;continue;\n
+                        &#160;&#160;&#160;&#160;}\n
+                        &#160;&#160;&#160;&#160;long x=0,y=0;\n
+                        &#160;&#160;&#160;&#160;if(j-coins[i]>=0)\n
+                        &#160;&#160;&#160;&#160;&#160;x=dp[i][j-coins[i]];\n
+                        &#160;&#160;&#160;&#160;y=dp[i+1][j];\n
+                        &#160;&#160;&#160;&#160;dp[i][j]=x+y;\n
+                    &#160;&#160;&#160;}\n
+                &#160;&#160;}\n
+                &#160;&#160;return dp[0][sum];\n
+            &#160;}\n
         }\n\n
         <b>PYTHON CODE:</b>\n
         class Solution:\n
-            def count(self, coins, N, Sum):\n
-                dp=[[0 for i in range(Sum+1)]for j in range(N+1)]\n
-                for i in range(N+1):\n
-                    dp[i][0]=1\n
-                for i in range(1,N+1):\n
-                    for j in range(Sum+1):\n
-                        if coins[i-1]&lt;=j:\n
-                            dp[i][j]=dp[i][j-coins[i-1]]+dp[i-1][j]\n
-                        else:\n
-                            dp[i][j]=dp[i-1][j]\n
-                return dp[N][Sum]\n
+            &#160;def count(self, coins, N, Sum):\n
+                &#160;&#160;dp=[[0 for i in range(Sum+1)]for j in range(N+1)]\n
+                &#160;&#160;for i in range(N+1):\n
+                    &#160;&#160;&#160;dp[i][0]=1\n
+                &#160;&#160;for i in range(1,N+1):\n
+                    &#160;&#160;&#160;for j in range(Sum+1):\n
+                        &#160;&#160;&#160;&#160;if coins[i-1]&lt;=j:\n
+                            &#160;&#160;&#160;&#160;&#160;dp[i][j]=dp[i][j-coins[i-1]]+dp[i-1][j]\n
+                        &#160;&#160;&#160;&#160;else:\n
+                            &#160;&#160;&#160;&#160;&#160;dp[i][j]=dp[i-1][j]\n
+                &#160;&#160;return dp[N][Sum]\n
     </string>
 
     <string name="dynamic_programming_q2">Question 2:\n
-        Given two sequences, find the length of longest subsequence present in both of them. Both the strings are of uppercase.\n
+        Given two sequences, find the length of longest subsequence present in both of them. Both the strings are of uppercase.\n\n
         <b>Input:</b>\n
          A = 6, B = 6\n
          str1 = ABCDGH\n
-         str2 = AEDFHR\n
-        <b>Output:</b> 3\n
+         str2 = AEDFHR\n\n
+        <b>Output:</b> 3\n\n
         <b>Explanation:</b>\n
           LCS for input Sequences ABCDGH and AEDFHR is ADH of length 3..\n
     </string>
     <string name="code_dynamic_programming_q2">
         <b>C++ CODE:</b>\n
          int solve(string s1 , string s2 , int x ,int y,vector&lt;vector&lt;int>>>&amp; dp){\n
-            if(x&lt;0 || y&lt;0) return 0;\n
-            if(dp[x][y]!=-1) return dp[x][y];\n
-            if(s1[x]==s2[y])return dp[x][y]=  1+solve(s1,s2,x-1,y-1,dp);\n
-            else return dp[x][y]=max(solve(s1,s2,x-1,y,dp),solve(s1,s2,x,y-1,dp));\n
+            &#160;if(x&lt;0 || y&lt;0) return 0;\n
+            &#160;if(dp[x][y]!=-1) return dp[x][y];\n
+            &#160;if(s1[x]==s2[y])\n
+            &#160;&#160;return dp[x][y]=1+solve(s1,s2,x-1,y-1,dp);\n
+            &#160;else\n
+            &#160;&#160;return dp[x][y]=max(solve(s1,s2,x-1,y,dp),solve(s1,s2,x,y-1,dp));\n
          }\n
          int lcs(int x, int y, string s1, string s2){\n
-            vector&lt;vector&lt;int>> dp(x+1,vector&lt;int>(y+1,-1));\n
-            x--;\n
-            y--;\n
-            return  solve(s1,s2,x,y,dp);\n
+            &#160;vector&lt;vector&lt;int>> dp(x+1,vector&lt;int>(y+1,-1));\n
+            &#160;x--;\n
+            &#160;y--;\n
+            &#160;return  solve(s1,s2,x,y,dp);\n
          }\n\n
         <b>JAVA CODE:</b>\n
         class Solution{\n
-            //Function to find the length of longest common subsequence in two strings.\n
-            static int lcs(int m, int n, String s1, String s2){\n
-                int [][]dp = new int[m+1][n+1];\n
-                for(int i =0; i&lt;m; i++){\n
-                    dp[i][0] =0;\n
-                }\n
-                for(int i =0; i&lt;n; i++){\n
-                    dp[0][i] =0;\n
-                }\n
-                for(int i=1; i&lt;=m; i++){\n
-                    for(int j =1;j&lt;=n;j++){\n
-                        if(s1.charAt(i-1) == s2.charAt(j-1)){\n
-                            dp[i][j] = 1+ dp[i-1][j-1];\n
-                        }\n
-                        else{\n
-                            dp[i][j] = Math.max(dp[i-1][j],dp[i][j-1]);\n
-                        }\n
-                    }\n
-                }\n
-                return dp[m][n];\n
-            }\n
+            &#160;//Function to find the length of longest common subsequence in two strings.\n
+            &#160;static int lcs(int m, int n, String s1, String s2){\n
+                &#160;&#160;int [][]dp = new int[m+1][n+1];\n
+                &#160;&#160;for(int i =0; i&lt;m; i++){\n
+                    &#160;&#160;&#160;dp[i][0] =0;\n
+                &#160;&#160;}\n
+                &#160;&#160;for(int i =0; i&lt;n; i++){\n
+                    &#160;&#160;&#160;dp[0][i] =0;\n
+                &#160;&#160;}\n
+                &#160;&#160;for(int i=1; i&lt;=m; i++){\n
+                    &#160;&#160;&#160;for(int j =1;j&lt;=n;j++){\n
+                        &#160;&#160;&#160;&#160;if(s1.charAt(i-1) == s2.charAt(j-1)){\n
+                            &#160;&#160;&#160;&#160;&#160;dp[i][j] = 1+ dp[i-1][j-1];\n
+                        &#160;&#160;&#160;&#160;}\n
+                        &#160;&#160;&#160;&#160;else{\n
+                            &#160;&#160;&#160;&#160;&#160;dp[i][j] = Math.max(dp[i-1][j],dp[i][j-1]);\n
+                        &#160;&#160;&#160;&#160;}\n
+                    &#160;&#160;&#160;}\n
+                &#160;&#160;}\n
+                &#160;&#160;return dp[m][n];\n
+            &#160;}\n
         }\n\n
         <b>PYTHON CODE:</b>\n
         class Solution:\n
-            #Function to find the length of longest common subsequence in two strings.\n
-            def lcs(self,n,m,text1,text2):\n
-                n,m=len(text1),len(text2)\n
-                dp=[[0 for i in range(m+1)]for j in range(n+1)]\n
-                for i in range(1,n+1):\n
-                    for j in range(1,m+1):\n
-                        if text1[i-1]==text2[j-1]:\n
-                            dp[i][j]=dp[i-1][j-1]+1\n
-                        else:\n
-                            dp[i][j]=max(dp[i-1][j],dp[i][j-1])\n
-                return dp[n][m]\n
+            &#160;#Function to find the length of longest common subsequence in two strings.\n
+            &#160;def lcs(self,n,m,text1,text2):\n
+                &#160;&#160;n,m=len(text1),len(text2)\n
+                &#160;&#160;dp=[[0 for i in range(m+1)]for j in range(n+1)]\n
+                &#160;&#160;for i in range(1,n+1):\n
+                    &#160;&#160;&#160;for j in range(1,m+1):\n
+                        &#160;&#160;&#160;&#160;if text1[i-1]==text2[j-1]:\n
+                            &#160;&#160;&#160;&#160;&#160;dp[i][j]=dp[i-1][j-1]+1\n
+                        &#160;&#160;&#160;&#160;else:\n
+                            &#160;&#160;&#160;&#160;&#160;dp[i][j]=max(dp[i-1][j],dp[i][j-1])\n
+                &#160;&#160;return dp[n][m]\n
     </string>
 
 
