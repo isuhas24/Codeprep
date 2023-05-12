@@ -1371,159 +1371,162 @@ Step by step guide to become a AI/ML scientist.
 
     <string name="stacks_and_queues_q1">Question 1:\n
         Given an expression string x. Examine whether the pairs and the orders of {,},(,),[,] are correct in exp. For example, the function should return true for exp = [()]{}{[()()]()} and false for exp = [(]).\n
-        Note: The drive code prints "balanced" if function return true, otherwise it prints "not balanced".\n
+        Note: The drive code prints "balanced" if function return true, otherwise it prints "not balanced".\n\n
         <b>Input:</b>\n
-         {([])}\n
-        <b>Output:</b> true\n
+         {([])}\n\n
+        <b>Output:</b> true\n\n
         <b>Explanation:</b>\n
         { ( [ ] ) }. Same colored brackets can form balanced pairs, with 0 number of unbalanced bracket.\n
     </string>
     <string name="code_stacks_and_queues_q1">
         <b>C++ CODE:</b>\n
         class Solution{\n
-            public:\n
-                //Function to check if brackets are balanced or not.\n
-                bool ispar(string str){\n
-                    stack&lt;char> stk;\n
-                    if (str[0] == ")" || str[0] == "}" || str[0] == "]")\n
-                        return false;\n
-                    if (str.length() % 2 != 0)\n
-                        return false;\n
-                    for (int i = 0;i&lt;str.length();i++){\n
-                        if (str[i] == "(" || str[i] == "{" || str[i] == "[")\n
-                            stk.push(str[i]);\n
-                        else{\n
-                            if (!stk.empty()){\n
-                                if ((str[i] == ")" &amp;&amp; stk.top() == "(") || (str[i] == "}" &amp;&amp; stk.top() == "{") || (str[i] == "]" &amp;&amp; stk.top() == "["))\n
-                                    stk.pop();\n
-                            else\n
-                                return false;\n\n
-                        }
-                        else\n
-                            return false;\n
-                    }\n
-                }\n
-                if (stk.empty())\n
-                    return true;\n
-                return false;\n
-                }\n
+            &#160;public:\n
+                &#160;//Function to check if brackets are balanced or not.\n
+                &#160;bool ispar(string str){\n
+                    &#160;&#160;stack&lt;char> stk;\n
+                    &#160;&#160;if (str[0] == ")" || str[0] == "}" || str[0] == "]")\n
+                        &#160;&#160;&#160;return false;\n
+                    &#160;&#160;if (str.length() % 2 != 0)\n
+                        &#160;&#160;&#160;return false;\n
+                    &#160;&#160;for (int i = 0;i&lt;str.length();i++){\n
+                        &#160;&#160;&#160;if (str[i] == "(" || str[i] == "{" || str[i] == "[")\n
+                            &#160;&#160;&#160;&#160;stk.push(str[i]);\n
+                        &#160;&#160;&#160;else{\n
+                            &#160;&#160;&#160;&#160;if (!stk.empty()){\n
+                                &#160;&#160;&#160;&#160;&#160;if ((str[i] == ")" &amp;&amp; stk.top() == "(") || (str[i] == "}" &amp;&amp; stk.top() == "{") || (str[i] == "]" &amp;&amp; stk.top() == "["))\n
+                                    &#160;&#160;&#160;&#160;&#160;&#160;stk.pop();\n
+                            &#160;&#160;&#160;&#160;else\n
+                                &#160;&#160;&#160;&#160;&#160;return false;\n\n
+                        &#160;&#160;&#160;}\n
+                        &#160;&#160;&#160;else\n
+                            &#160;&#160;&#160;&#160;return false;\n
+                    &#160;&#160;&#160;}\n
+                &#160;&#160;}\n
+                &#160;&#160;if (stk.empty())\n
+                    &#160;&#160;&#160;return true;\n
+                &#160;&#160;return false;\n
+                &#160;}\n
         };\n\n
-        <b>JAVA CODE:</b>
+        <b>JAVA CODE:</b>\n
         class Solution{\n
-            //Function to check if brackets are balanced or not.\n
-            static boolean ispar(String x){\n
-                int n=x.length();\n
-                Stack&lt;Character> st = new Stack&lt;Character>();\n
-                for(int i=0;i&lt;n;i++){\n
-                    char ch=x.charAt(i);\n
-                    if(ch==")"){\n
-                        if(st.size()==0 || st.peek()!="(")return false;\n
-                            st.pop();\n
-                    }\n
-                    else if(ch=="}"){\n
-                        if(st.size()==0 || st.peek()!="{")return false;\n
-                        st.pop();\n
-                    }\n
-                    else if(ch=="]"){\n
-                        if(st.size()==0 || st.peek()!="[")return false;\n
-                        st.pop();\n
-                    }\n
-                    else{\n
-                        st.push(ch);\n
-                    }\n
-                }\n
-                return st.size()==0;\n
-            }\n
+            &#160;//Function to check if brackets are balanced or not.\n
+            &#160;static boolean ispar(String x){\n
+                &#160;&#160;int n=x.length();\n
+                &#160;&#160;Stack&lt;Character> st = new Stack&lt;Character>();\n
+                &#160;&#160;for(int i=0;i&lt;n;i++){\n
+                    &#160;&#160;&#160;char ch=x.charAt(i);\n
+                    &#160;&#160;&#160;if(ch==")"){\n
+                        &#160;&#160;&#160;&#160;if(st.size()==0 || st.peek()!="(")\n
+                        &#160;&#160;&#160;&#160;&#160;return false;\n
+                            &#160;&#160;&#160;&#160;&#160;st.pop();\n
+                    &#160;&#160;&#160;}\n
+                    &#160;&#160;&#160;else if(ch=="}"){\n
+                        &#160;&#160;&#160;&#160;if(st.size()==0 || st.peek()!="{")\n
+                        &#160;&#160;&#160;&#160;&#160;return false;\n
+                        &#160;&#160;&#160;&#160;st.pop();\n
+                    &#160;&#160;&#160;}\n
+                    &#160;&#160;&#160;else if(ch=="]"){\n
+                        &#160;&#160;&#160;&#160;if(st.size()==0 || st.peek()!="[")\n
+                        &#160;&#160;&#160;&#160;&#160;return false;\n
+                        &#160;&#160;&#160;&#160;st.pop();\n
+                    &#160;&#160;&#160;}\n
+                    &#160;&#160;&#160;else{\n
+                        &#160;&#160;&#160;&#160;st.push(ch);\n
+                    &#160;&#160;&#160;}\n
+                &#160;&#160;}\n
+                &#160;&#160;return st.size()==0;\n
+            &#160;}\n
         }\n
     </string>
     <string name="stacks_and_queues_q2">Question 2:\n
         A celebrity is a person who is known to all but does not know anyone at a party. If you go to a party of N people, find if there is a celebrity in the party or not. A square NxN matrix M[][] is used to represent people at the party such that if an element of row i and column j  is set to 1 it means ith person knows jth person. Here M[i][i] will always be 0.\n
-        Note: Follow 0 based indexing.\n
+        Note: Follow 0 based indexing.\n\n
         <b>Input:</b>\n
         N = 3\n
         M[][] = {{0 1 0},\n
                 {0 0 0}, \n
-                {0 1 0}}\n
-        <b>Output:</b> 1\n
+                {0 1 0}}\n\n
+        <b>Output:</b> 1\n\n
         <b>Explanation:</b>\n
         0th and 2nd person both know 1. Therefore, 1 is the celebrity. \n
     </string>
     <string name="code_stacks_and_queues_q2">
-        <b>C++ CODE:</b>
+        <b>C++ CODE:</b>\n
         class Solution{\n
-            public:\n
-            //Function to find if there is a celebrity in the party or not.\n
-            int celebrity(vector&lt;vector&lt;int> >&amp; M, int n){\n
-                //  Using stacks\n
-                stack&lt;int> st;\n
-                for(int i = 0;i&lt;n;i++){\n
-                    st.push(i);\n
-                }\n
+            &#160;public:\n
+            &#160;//Function to find if there is a celebrity in the party or not.\n
+            &#160;int celebrity(vector&lt;vector&lt;int> >&amp; M, int n){\n
+                &#160;&#160;//  Using stacks\n
+                &#160;&#160;stack&lt;int> st;\n
+                &#160;&#160;for(int i = 0;i&lt;n;i++){\n
+                    &#160;&#160;&#160;st.push(i);\n
+                &#160;&#160;}\n\n
 
-                while(st.size() > 1){\n
-                    int a = st.top();\n
-                    st.pop();\n
-                    int b = st.top();\n
-                    st.pop();\n
+                &#160;&#160;while(st.size() > 1){\n
+                    &#160;&#160;&#160;int a = st.top();\n
+                    &#160;&#160;&#160;st.pop();\n
+                    &#160;&#160;&#160;int b = st.top();\n
+                    &#160;&#160;&#160;st.pop();\n
 
-                    if(M[a][b] == 1){\n
-                        st.push(b);\n
-                    }\n
-                    else{\n
-                        st.push(a);\n
-                    }\n
-                }\n
+                    &#160;&#160;&#160;if(M[a][b] == 1){\n
+                        &#160;&#160;&#160;&#160;st.push(b);\n
+                    &#160;&#160;&#160;}\n
+                    &#160;&#160;&#160;else{\n
+                        &#160;&#160;&#160;&#160;st.push(a);\n
+                    &#160;&#160;&#160;}\n
+                &#160;&#160;}\n\n
 
-                int celeb = st.top();\n
-                for(int i = 0;i&lt;n;i++){\n
-                    if(M[celeb][i] == 1){\n
-                        return -1;\n
-                    }\n
-                }\n
-                int knows = 1;\n
-                for(int i = 0;i&lt;n;i++){\n
-                    if(M[i][celeb] == 1){\n
-                        knows++;\n
-                    }\n
-                }\n
-                if(knows != n){\n
-                    return -1;\n
-                }\n
-                return celeb;\n
-            }\n
+                &#160;&#160;int celeb = st.top();\n
+                &#160;&#160;for(int i = 0;i&lt;n;i++){\n
+                    &#160;&#160;&#160;if(M[celeb][i] == 1){\n
+                        &#160;&#160;&#160;&#160;return -1;\n
+                    &#160;&#160;&#160;}\n
+                &#160;&#160;}\n
+                &#160;&#160;int knows = 1;\n
+                &#160;&#160;for(int i = 0;i&lt;n;i++){\n
+                    &#160;&#160;&#160;if(M[i][celeb] == 1){\n
+                        &#160;&#160;&#160;&#160;knows++;\n
+                    &#160;&#160;&#160;}\n
+                &#160;&#160;}\n
+                &#160;&#160;if(knows != n){\n
+                    &#160;&#160;&#160;return -1;\n
+                &#160;&#160;}\n
+                &#160;&#160;return celeb;\n
+            &#160;}\n
         };\n\n
-        <b>JAVA CODE:</b>
+        <b>JAVA CODE:</b>\n
         class Solution{\n
-            //Function to find if there is a celebrity in the party or not.\n
-            int celebrity(int M[][], int n){\n
-                Stack&lt;Integer> stack = new Stack&lt;>();\n
-                for(int i = 0; i&lt; n;i++){\n
-                    stack.push(i);\n
-                }\n
+            &#160;//Function to find if there is a celebrity in the party or not.\n
+            &#160;int celebrity(int M[][], int n){\n
+                &#160;&#160;Stack&lt;Integer> stack = new Stack&lt;>();\n
+                &#160;&#160;for(int i = 0; i&lt; n;i++){\n
+                    &#160;&#160;&#160;stack.push(i);\n
+                &#160;&#160;}\n\n
 
-                while(stack.size() > 1){\n
-                    int a = stack.pop();\n
-                    int b = stack.pop();\n
-                    if(M[a][b] == 1){\n
-                        stack.push(b);\n
-                    }else{\n
-                        stack.push(a);\n
-                    }\n
-                }\n
-                int celeb = stack.peek();\n
-                for(int i = 0; i &lt; n ;i++){\n
-                    if(M[celeb][i] == 1){\n
-                        return -1;\n
-                    }\n
-                }\n
-                for(int i = 0; i &lt; n ;i++){\n
-                    if(M[i][celeb] == 0 &amp;&amp; i!=celeb){\n
-                        return -1;\n
-                    }\n
-                }\n
+                &#160;&#160;while(stack.size() > 1){\n
+                    &#160;&#160;&#160;int a = stack.pop();\n
+                    &#160;&#160;&#160;int b = stack.pop();\n
+                    &#160;&#160;&#160;if(M[a][b] == 1){\n
+                        &#160;&#160;&#160;&#160;stack.push(b);\n
+                    &#160;&#160;&#160;}else{\n
+                        &#160;&#160;&#160;&#160;stack.push(a);\n
+                    &#160;&#160;&#160;}\n
+                &#160;&#160;}\n
+                &#160;&#160;int celeb = stack.peek();\n
+                &#160;&#160;for(int i = 0; i &lt; n ;i++){\n
+                    &#160;&#160;&#160;if(M[celeb][i] == 1){\n
+                        &#160;&#160;&#160;&#160;return -1;\n
+                    &#160;&#160;&#160;}\n
+                &#160;&#160;}\n
+                &#160;&#160;for(int i = 0; i &lt; n ;i++){\n
+                    &#160;&#160;&#160;if(M[i][celeb] == 0 &amp;&amp; i!=celeb){\n
+                        &#160;&#160;&#160;&#160;return -1;\n
+                    &#160;&#160;&#160;}\n
+                &#160;&#160;}\n
 
-                return celeb;\n
-            }\n
+                &#160;&#160;return celeb;\n
+            &#160;}\n
         }\n
     </string>
 
@@ -1531,117 +1534,120 @@ Step by step guide to become a AI/ML scientist.
 
 
     <string name="trees_q1">Question 1:\n
-        Given a binary tree, find its level order traversal. Level order traversal of a tree is breadth-first traversal for the tree.\n
+        Given a binary tree, find its level order traversal. Level order traversal of a tree is breadth-first traversal for the tree.\n\n
     </string>
     <string name="code_trees_q1">
         <b>C++ CODE:</b>\n
         class Solution{\n
-            public:\n
-                //Function to return the level order traversal of a tree.\n
-                vector&lt;int> levelOrder(Node* node){\n
-                    vector&lt;int>ans;\n
-                    queue&lt;Node*>q;\n
-                    q.push(node);\n
+            &#160;public:\n
+                &#160;//Function to return the level order traversal of a tree.\n
+                &#160;vector&lt;int> levelOrder(Node* node){\n
+                    &#160;&#160;vector&lt;int>ans;\n
+                    &#160;&#160;queue&lt;Node*>q;\n
+                    &#160;&#160;q.push(node);\n
 
-                    if(node==NULL)return ans;\n
+                    &#160;&#160;if(node==NULL)return ans;\n
 
-                    while(!q.empty()){\n
-                        Node* temp = q.front();\n
-                        q.pop();\n
-                        ans.push_back(temp->data);\n
+                    &#160;&#160;while(!q.empty()){\n
+                        &#160;&#160;&#160;Node* temp = q.front();\n
+                        &#160;&#160;&#160;q.pop();\n
+                        &#160;&#160;&#160;ans.push_back(temp->data);\n
 
-                        if(temp->left) q.push(temp->left);\n
-                        if(temp->right) q.push(temp->right);\n
-                    }\n
-                    return ans;\n
-                }\n
+                        &#160;&#160;&#160;if(temp->left)\n
+                        &#160;&#160;&#160;&#160;q.push(temp->left);\n
+                        &#160;&#160;&#160;if(temp->right)\n
+                        &#160;&#160;&#160;&#160;q.push(temp->right);\n
+                    &#160;&#160;}\n
+                    &#160;&#160;return ans;\n
+                &#160;}\n
         };\n\n
-        <b>JAVA CODE:</b>
+        <b>JAVA CODE:</b>\n
         class Solution{\n
-            //Function to return the level order traversal of a tree.\n
-            static ArrayList &lt;Integer> levelOrder(Node node){\n
-                ArrayList&lt;Integer> list=new ArrayList&lt;>();\n
-                if(node==null) return;\n
-                Queue&lt;Node> q=new LinkedList&lt;Node>();\n
-                q.add(node);\n
-                while(q.isEmpty()==false){\n
-                    Node curr=q.poll();\n
-                    list.add(curr.data);\n
-                    if(curr.left!=null){\n
-                        q.add(curr.left);\n
-                    }\n
-                    if(curr.right!=null){\n
-                        q.add(curr.right);\n
-                    }\n
-                }\n
-                return list;\n
-            }\n
+            &#160;//Function to return the level order traversal of a tree.\n
+            &#160;static ArrayList &lt;Integer> levelOrder(Node node){\n
+                &#160;&#160;ArrayList&lt;Integer> list=new ArrayList&lt;>();\n
+                &#160;&#160;if(node==null) return;\n
+                &#160;&#160;Queue&lt;Node> q=new LinkedList&lt;Node>();\n
+                &#160;&#160;q.add(node);\n
+                &#160;&#160;while(q.isEmpty()==false){\n
+                    &#160;&#160;&#160;Node curr=q.poll();\n
+                    &#160;&#160;&#160;list.add(curr.data);\n
+                    &#160;&#160;&#160;if(curr.left!=null){\n
+                        &#160;&#160;&#160;&#160;q.add(curr.left);\n
+                    &#160;&#160;&#160;}\n
+                    &#160;&#160;&#160;if(curr.right!=null){\n
+                        &#160;&#160;&#160;&#160;q.add(curr.right);\n
+                    &#160;&#160;&#160;}\n
+                &#160;&#160;}\n
+                &#160;&#160;return list;\n
+            &#160;}\n
         }\n
     </string>
 
 
 
     <string name="trees_q2">Question 2:\n
-        Given a binary tree, find if it is height balanced or not. A tree is height balanced if difference between heights of left and right subtrees is not more than one for all nodes of tree. \n
+        Given a binary tree, find if it is height balanced or not. A tree is height balanced if difference between heights of left and right subtrees is not more than one for all nodes of tree. \n\n
     </string>
     <string name="code_trees_q2">
         <b>C++ CODE:</b>\n
         class Solution{\n
-            public:\n
-            //Function to check whether a binary tree is balanced or not.\n
+            &#160;public:\n
+            &#160;//Function to check whether a binary tree is balanced or not.\n\n
 
-            int isbal(Node * root)// if tree is balanced return height , else return -1(not balanced){\n
-                // this is O(n) code where n is the number of nodes\n
-                // if we calculate height seprately then it becomes O(n^2)\n
-                if(!root)return 0;\n
+            &#160;int isbal(Node * root)// if tree is balanced return height , else return -1(not balanced){\n
+                &#160;&#160;// this is O(n) code where n is the number of nodes\n
+                &#160;&#160;// if we calculate height seprately then it becomes O(n^2)\n
+                &#160;&#160;if(!root)return 0;\n
 
-                int lh=isbal(root->left);\n
-                if(lh==-1)return -1;\n
-                int rh=isbal(root->right);\n
-                if(rh==-1)return -1;\n
+                &#160;&#160;int lh=isbal(root->left);\n
+                &#160;&#160;if(lh==-1)return -1;\n
+                &#160;&#160;int rh=isbal(root->right);\n
+                &#160;&#160;if(rh==-1)return -1;\n
 
-                if(abs(rh-lh)>1)return -1;\n
-                else return max(lh,rh)+1;\n
+                &#160;&#160;if(abs(rh-lh)>1)return -1;\n
+                &#160;&#160;else return max(lh,rh)+1;\n
 
-            }\n
+            &#160;}\n\n
 
-            bool isBalanced(Node *root){\n
-                int ans=isbal(root);\n
-                if(ans==-1)return 0;\n
-                else return 1;\n
-            }\n
+            &#160;bool isBalanced(Node *root){\n
+                &#160;&#160;int ans=isbal(root);\n
+                &#160;&#160;if(ans==-1)return 0;\n
+                &#160;&#160;else return 1;\n
+            &#160;}\n
         };\n\n
-        <b>JAVA CODE:</b>
+        <b>JAVA CODE:</b>\n
         class Tree{\n
-            int height(Node root){\n
-                if(root==null){\n
-                    return 0;\n
-                }   \n
-                int left=height(root.left);\n
-                int right=height(root.right);\n
+            &#160;int height(Node root){\n
+                &#160;&#160;if(root==null){\n
+                    &#160;&#160;&#160;return 0;\n
+                &#160;&#160;}\n
+                &#160;&#160;int left=height(root.left);\n
+                &#160;&#160;int right=height(root.right);\n
 
 
-                return Math.max(left,right)+1;\n
-            }\n
+                &#160;&#160;return Math.max(left,right)+1;\n
+            &#160;}\n\n
 
 
-            boolean isBalanced(Node root){\n
-                if(root==null){\n
-                    return true;\n
-                }\n
-                int lh=height(root.left);\n
-                int rh=height(root.right);\n
-                if(Math.abs(lh-rh)>1){\n
-                    return false;\n
-                }\n
+            &#160;boolean isBalanced(Node root){\n
+                &#160;&#160;if(root==null){\n
+                    &#160;&#160;&#160;return true;\n
+                &#160;&#160;}\n
+                &#160;&#160;int lh=height(root.left);\n
+                &#160;&#160;int rh=height(root.right);\n
+                &#160;&#160;if(Math.abs(lh-rh)>1){\n
+                    &#160;&#160;&#160;return false;\n
+                &#160;&#160;}\n
 
-                boolean left=isBalanced(root.left);\n
-                boolean right=isBalanced(root.right);\n
-                if(left==false||right==false)return false;\n
-                else{\n
-                    return true;\n
-                }\n
-            }\n
+                &#160;&#160;boolean left=isBalanced(root.left);\n
+                &#160;&#160;boolean right=isBalanced(root.right);\n
+                &#160;&#160;if(left==false||right==false)\n
+                    &#160;&#160;&#160;return false;\n
+                &#160;&#160;else{\n
+                    &#160;&#160;&#160;return true;\n
+                &#160;&#160;}\n
+            &#160;}\n
         }\n
     </string>
 
