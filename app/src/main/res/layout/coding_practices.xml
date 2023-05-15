@@ -51,6 +51,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/about_coding_practices"
                 android:layout_marginLeft="5dp"
+                android:fontFamily="@font/font4"
                 android:textSize="20dp"
                 android:justificationMode="inter_word"
                 android:textStyle="normal"
