@@ -156,11 +156,11 @@ public class LandingPage extends AppCompatActivity implements View.OnClickListen
         //Images if-else block
         if(v.equals(mobility_image)){
 
-            Intent intent = new Intent(LandingPage.this, VideoPlayerActivity.class);
-            intent.putExtra(VideoPlayerActivity.VIDEO_ID_KEY, "VIDEO_ID_KEY");
-            startActivity(intent);
-            //Intent it=new Intent(this, MobilityCompanies.class);
-            //startActivity(it);
+            //Intent intent = new Intent(LandingPage.this, VideoPlayerActivity.class);
+            //intent.putExtra(VideoPlayerActivity.VIDEO_ID_KEY, "VIDEO_ID_KEY");
+            //startActivity(intent);
+            Intent it=new Intent(this, MobilityCompanies.class);
+            startActivity(it);
         }
         else if (v.equals(ecommerce_image)) {
             Intent it=new Intent(this,EcommerceCompanyies.class);

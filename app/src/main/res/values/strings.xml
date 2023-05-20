@@ -1654,4 +1654,38 @@ Step by step guide to become a AI/ML scientist.
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="ola_about_heading">About OLA</string>
+    <string name="ola_about_content">
+        <b>=></b> Founded on December 3, 2010.Ola has its headquarters in Bangalore.\n
+        <b>=></b> Ola is one of the largest online Taxi services company in India. Started from Mumbai, Ola has a network of more than 2 lakh cars operating in more than 85 cities.\n
+        <b>=></b> At present Ola has extended its services overseas as well, operating in New Zealand, UK and Australia.
+    </string>
+    <string name="ola_hiring_details_heading">Hiring process at OLA</string>
+    <string name="ola_hiring_details_content">
+        <b>=></b> OLA has a total of 4 rounds, no % criteria is included, open for CSE, IT, ECE, EI, EN streams. Generally the position offered is Software Development Engineer(SDE). Difficulty of the Interview is Medium-Hard.\n
+        <b>=></b> Round 1 is an online assessment: It is a 90 minutes online coding round. Includes 3 coding questions (easy-medium) and all are mandatory to attempt. Questions would be covered from arrays, string, DP.\n
+        <b>=></b> Round 2 is a Technical Round for 40-50 minutes on zoom. Normally 2-coding questions (medium-hard) would be asked.\n
+        <b>=></b> Round 3 is basically a F2F System Design round. Questions like Design email, tag, sub tagging system may be asked here.\n
+        <b>=></b> Round 4 is a HR round where in personality and fitment related questions are asked.\n
+        <b>NOTE:</b> Extra rounds of F2F Technical rounds may also be included based on the requirements.
+    </string>
+
+
+    <string name="uber_about_heading">About UBER</string>
+    <string name="uber_about_content">
+        <b>=></b> Founded on March, 2009. Uber has its headquarters in San Francisco, California, United States.\n
+        <b>=></b> Uber is a ride sharing company that hires independent contractors as drivers. It is one of many services today that contribute to the sharing economy, supplying a means of connecting existing resources instead of providing the physical resources themselves.\n
+        <b>=></b> As of 2021, it operates in almost 10,500 locations across 72 countries.
+    </string>
+    <string name="uber_hiring_details_heading">Hiring process at UBER</string>
+    <string name="uber_hiring_details_content">
+        <b>=> Uber Eligibility Criteria:</b> B.E/B.Tech (In Computer Science, Electronics Eng, Electrical Engineering, Mechanical or Mathematical Sciences or related fields).\n
+        <b>=> Online Assessment:</b> This round is Conducted on an Online Platform, Questions are asked from Data Structure and Algorithms, Two – Three coding Questions of Medium -Hard difficulty Level.\n
+        <b>=> Technical Round 1:</b> This round is conducted to Check your Problem-Solving Skills, Questions are asked from Data Structure and Algorithms.\n
+        <b>=>Technical Round 2:</b> Discussion on Projects, Data Structure and Algorithms and Computer Science Concepts.\n
+        <b>=>Design-Based Round:</b> Candidates are evaluated for their capacity to develop distributed systems following a series of technical skill-focused interviews. When interviewing new applicants, interviewers frequently ask them to utilize object-oriented programming to construct a high-level design for a product by asking them to first group the system’s most crucial features. Later, employing ideas like load balancing, caching, etc., the applicants are expected to scale the system they have developed.\n
+        <b>=>Human Resources (HR) or Managerial Round:</b>  Some Behavioral questions and Normal Hr questions are asked here.\n
+
+    </string>
 </resources>
