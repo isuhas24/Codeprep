@@ -1661,7 +1661,7 @@ Step by step guide to become a AI/ML scientist.
         <b>=></b> Ola is one of the largest online Taxi services company in India. Started from Mumbai, Ola has a network of more than 2 lakh cars operating in more than 85 cities.\n
         <b>=></b> At present Ola has extended its services overseas as well, operating in New Zealand, UK and Australia.
     </string>
-    <string name="ola_hiring_details_heading">Hiring process at OLA</string>
+    <string name="ola_hiring_details_heading">Recruitment process at OLA</string>
     <string name="ola_hiring_details_content">
         <b>=></b> OLA has a total of 4 rounds, no % criteria is included, open for CSE, IT, ECE, EI, EN streams. Generally the position offered is Software Development Engineer(SDE). Difficulty of the Interview is Medium-Hard.\n
         <b>=></b> Round 1 is an online assessment: It is a 90 minutes online coding round. Includes 3 coding questions (easy-medium) and all are mandatory to attempt. Questions would be covered from arrays, string, DP.\n
@@ -1678,7 +1678,7 @@ Step by step guide to become a AI/ML scientist.
         <b>=></b> Uber is a ride sharing company that hires independent contractors as drivers. It is one of many services today that contribute to the sharing economy, supplying a means of connecting existing resources instead of providing the physical resources themselves.\n
         <b>=></b> As of 2021, it operates in almost 10,500 locations across 72 countries.
     </string>
-    <string name="uber_hiring_details_heading">Hiring process at UBER</string>
+    <string name="uber_hiring_details_heading">Recruitment process at UBER</string>
     <string name="uber_hiring_details_content">
         <b>=> Uber Eligibility Criteria:</b> B.E/B.Tech (In Computer Science, Electronics Eng, Electrical Engineering, Mechanical or Mathematical Sciences or related fields).\n
         <b>=> Online Assessment:</b> This round is Conducted on an Online Platform, Questions are asked from Data Structure and Algorithms, Two – Three coding Questions of Medium -Hard difficulty Level.\n
@@ -1686,6 +1686,21 @@ Step by step guide to become a AI/ML scientist.
         <b>=>Technical Round 2:</b> Discussion on Projects, Data Structure and Algorithms and Computer Science Concepts.\n
         <b>=>Design-Based Round:</b> Candidates are evaluated for their capacity to develop distributed systems following a series of technical skill-focused interviews. When interviewing new applicants, interviewers frequently ask them to utilize object-oriented programming to construct a high-level design for a product by asking them to first group the system’s most crucial features. Later, employing ideas like load balancing, caching, etc., the applicants are expected to scale the system they have developed.\n
         <b>=>Human Resources (HR) or Managerial Round:</b>  Some Behavioral questions and Normal Hr questions are asked here.\n
+    </string>
 
+
+    <string name="walmart_about_heading">About WALMART</string>
+    <string name="walmart_about_content">
+        <b>=></b> Founded on 2 July 1962, Rogers, Arkansas, United States.  Headquartered in Bentonville, Arkansas.\n
+        <b>=></b> Walmart super centers offer a one-stop shopping experience by combining a grocery store with fresh produce, bakery, deli and dairy products with electronics, apparel, toys and home furnishings.\n
+        <b>=></b> As of October 31, 2022, Walmart has 10,586 stores and clubs in 24 countries, operating under 46 different names. The company operates under the name Walmart in the United States and Canada, as Walmart de México y Centroamérica in Mexico and Central America, and as Flipkart Wholesale in India.
+    </string>
+    <string name="walmart_hiring_details_heading">Recruitment process at WALMART</string>
+    <string name="walmart_hiring_details_content">
+        <b>=> Academic Criteria:</b> 70 percent or above in B.Tech, Class X and XII, No backlogs at the time of interview.\n
+        <b>=> Online Round:</b> Walmart Labs conducts first round on HackerEarth. Generally, it is a 90 minute test which includes programming, little aptitude and Core subjects MCQs (Compiler Design, Operating System, Computer Networks and DBMS). There is separate cutoff for both mcq section and coding section so you need to clear both of these sectional cutoff.\n
+        <b>=> Technical Rounds:</b> The students who clear the online round are called for Technical Interview. To clear this round you should be clear with your basics. You should be prepared with Data structures and Algorithms, DBMS, Operating System, Networking, OOPs concepts. You should also be familiar with design patterns, system design problems. Students will be expected to write codes in the interview. They also ask questions from resume. You may be asked puzzles in this round.\n
+        <b>=> Managerial and HR Rounds:</b> Some Behavioral questions and Normal Hr questions are asked here.\n
+        <b>NOTE:</b> The number of Technical rounds at Walmart Labs may vary from 3-4.
     </string>
 </resources>

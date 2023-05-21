@@ -2,8 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
+
     <View
         android:layout_width="match_parent"
         android:layout_height="25dp" />
@@ -19,6 +19,7 @@
             android:layout_height="wrap_content"
             android:src="@drawable/logo" />
     </LinearLayout>
+
     <View
         android:layout_width="match_parent"
         android:layout_height="25dp" />
@@ -70,10 +71,9 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/walmart"
+                android:src="@drawable/walmart_image"
                 android:adjustViewBounds="true"
-                android:id="@+id/ecommerce_walmart"
-                />
+                android:id="@+id/ecommerce_walmart"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -90,7 +90,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/flipkart_pic"
+                android:src="@drawable/flipkart"
                 android:adjustViewBounds="true"
                 android:id="@+id/ecommerce_flipkart"/>
 
@@ -106,12 +106,13 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="30dp"/>
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/target_image"
                 android:adjustViewBounds="true"
-                android:id="@+id/ecommerce_Target"/>
+                android:id="@+id/ecommerce_target"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -120,11 +121,12 @@
                 android:textAlignment="center"
                 android:layout_gravity="center"
                 android:textSize="20dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"/>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="30dp"/>
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -139,7 +141,7 @@
                 android:textAlignment="center"
                 android:layout_gravity="center"
                 android:textSize="20dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"/>
 
             <View
                 android:layout_width="match_parent"
