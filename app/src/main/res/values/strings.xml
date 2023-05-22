@@ -1663,11 +1663,11 @@ Step by step guide to become a AI/ML scientist.
     </string>
     <string name="ola_hiring_details_heading">Recruitment process at OLA</string>
     <string name="ola_hiring_details_content">
-        <b>=></b> OLA has a total of 4 rounds, no % criteria is included, open for CSE, IT, ECE, EI, EN streams. Generally the position offered is Software Development Engineer(SDE). Difficulty of the Interview is Medium-Hard.\n
-        <b>=></b> Round 1 is an online assessment: It is a 90 minutes online coding round. Includes 3 coding questions (easy-medium) and all are mandatory to attempt. Questions would be covered from arrays, string, DP.\n
-        <b>=></b> Round 2 is a Technical Round for 40-50 minutes on zoom. Normally 2-coding questions (medium-hard) would be asked.\n
-        <b>=></b> Round 3 is basically a F2F System Design round. Questions like Design email, tag, sub tagging system may be asked here.\n
-        <b>=></b> Round 4 is a HR round where in personality and fitment related questions are asked.\n
+        <b>=></b> OLA has a total of 4 rounds, no % criteria is included, open for CSE, IT, ECE, EI, EN streams. Generally the position offered is Software Development Engineer(SDE). Difficulty of the Interview is Medium-Hard.\n\n
+        <b>=></b> Round 1 is an online assessment: It is a 90 minutes online coding round. Includes 3 coding questions (easy-medium) and all are mandatory to attempt. Questions would be covered from arrays, string, DP.\n\n
+        <b>=></b> Round 2 is a Technical Round for 40-50 minutes on zoom. Normally 2-coding questions (medium-hard) would be asked.\n\n
+        <b>=></b> Round 3 is basically a F2F System Design round. Questions like Design email, tag, sub tagging system may be asked here.\n\n
+        <b>=></b> Round 4 is a HR round where in personality and fitment related questions are asked.\n\n
         <b>NOTE:</b> Extra rounds of F2F Technical rounds may also be included based on the requirements.
     </string>
 
@@ -1680,12 +1680,25 @@ Step by step guide to become a AI/ML scientist.
     </string>
     <string name="uber_hiring_details_heading">Recruitment process at UBER</string>
     <string name="uber_hiring_details_content">
-        <b>=> Uber Eligibility Criteria:</b> B.E/B.Tech (In Computer Science, Electronics Eng, Electrical Engineering, Mechanical or Mathematical Sciences or related fields).\n
-        <b>=> Online Assessment:</b> This round is Conducted on an Online Platform, Questions are asked from Data Structure and Algorithms, Two – Three coding Questions of Medium -Hard difficulty Level.\n
-        <b>=> Technical Round 1:</b> This round is conducted to Check your Problem-Solving Skills, Questions are asked from Data Structure and Algorithms.\n
-        <b>=>Technical Round 2:</b> Discussion on Projects, Data Structure and Algorithms and Computer Science Concepts.\n
-        <b>=>Design-Based Round:</b> Candidates are evaluated for their capacity to develop distributed systems following a series of technical skill-focused interviews. When interviewing new applicants, interviewers frequently ask them to utilize object-oriented programming to construct a high-level design for a product by asking them to first group the system’s most crucial features. Later, employing ideas like load balancing, caching, etc., the applicants are expected to scale the system they have developed.\n
-        <b>=>Human Resources (HR) or Managerial Round:</b>  Some Behavioral questions and Normal Hr questions are asked here.\n
+        <b>=> Uber Eligibility Criteria:</b>\n
+        B.E/B.Tech (In Computer Science, Electronics Eng, Electrical Engineering, Mechanical or Mathematical Sciences or related fields).\n\n
+        <b>=> Recruitment Process:</b>\n
+        &#160;&#160;&#160;&#160;* Online Assessment\n
+        &#160;&#160;&#160;&#160;* Technical Round 1\n
+        &#160;&#160;&#160;&#160;* Technical Round 2\n
+        &#160;&#160;&#160;&#160;* Design-Based Round\n
+        &#160;&#160;&#160;&#160;* Human Resources (HR) or Managerial Round\n\n
+
+        <b>=> Online Assessment:</b> \n
+        This round is Conducted on an Online Platform, Questions are asked from Data Structure and Algorithms, Two – Three coding Questions of Medium -Hard difficulty Level.\n\n
+        <b>=> Technical Round 1:</b>\n
+        This round is conducted to Check your Problem-Solving Skills, Questions are asked from Data Structure and Algorithms.\n\n
+        <b>=>Technical Round 2:</b>\n
+        Discussion on Projects, Data Structure and Algorithms and Computer Science Concepts.\n\n
+        <b>=>Design-Based Round:</b>\n
+        Candidates are evaluated for their capacity to develop distributed systems following a series of technical skill-focused interviews. When interviewing new applicants, interviewers frequently ask them to utilize object-oriented programming to construct a high-level design for a product by asking them to first group the system’s most crucial features. Later, employing ideas like load balancing, caching, etc., the applicants are expected to scale the system they have developed.\n\n
+        <b>=>Human Resources (HR) or Managerial Round:</b>\n
+        Some Behavioral questions and Normal Hr questions are asked here.\n
     </string>
 
 
@@ -1697,10 +1710,53 @@ Step by step guide to become a AI/ML scientist.
     </string>
     <string name="walmart_hiring_details_heading">Recruitment process at WALMART</string>
     <string name="walmart_hiring_details_content">
-        <b>=> Academic Criteria:</b> 70 percent or above in B.Tech, Class X and XII, No backlogs at the time of interview.\n
-        <b>=> Online Round:</b> Walmart Labs conducts first round on HackerEarth. Generally, it is a 90 minute test which includes programming, little aptitude and Core subjects MCQs (Compiler Design, Operating System, Computer Networks and DBMS). There is separate cutoff for both mcq section and coding section so you need to clear both of these sectional cutoff.\n
-        <b>=> Technical Rounds:</b> The students who clear the online round are called for Technical Interview. To clear this round you should be clear with your basics. You should be prepared with Data structures and Algorithms, DBMS, Operating System, Networking, OOPs concepts. You should also be familiar with design patterns, system design problems. Students will be expected to write codes in the interview. They also ask questions from resume. You may be asked puzzles in this round.\n
-        <b>=> Managerial and HR Rounds:</b> Some Behavioral questions and Normal Hr questions are asked here.\n
+        <b>=> Academic Criteria:</b> \n
+        70 percent or above in B.Tech, Class X and XII, No backlogs at the time of interview.\n\n
+        <b>=> Recruitment Process:</b>\n
+        @Walmart Labs conducts 5-7 rounds to select Software Engineer in their organisation.\n
+        &#160;&#160;&#160;&#160;* Online Round\n
+        &#160;&#160;&#160;&#160;* Technical Round 1\n
+        &#160;&#160;&#160;&#160;* Technical Round 2\n
+        &#160;&#160;&#160;&#160;* Technical Round 3\n
+        &#160;&#160;&#160;&#160;* Technical Round 4\n
+        &#160;&#160;&#160;&#160;* Managerial Round\n
+        &#160;&#160;&#160;&#160;* HR Round\n\n
+
+        <b>=> Online Round:</b>\n
+        Walmart Labs conducts first round on HackerEarth. Generally, it is a 90 minute test which includes programming, little aptitude and Core subjects MCQs (Compiler Design, Operating System, Computer Networks and DBMS). There is separate cutoff for both mcq section and coding section so you need to clear both of these sectional cutoff.\n\n
+        <b>=> Technical Rounds:</b> \n
+        The students who clear the online round are called for Technical Interview. To clear this round you should be clear with your basics. You should be prepared with Data structures and Algorithms, DBMS, Operating System, Networking, OOPs concepts. You should also be familiar with design patterns, system design problems. Students will be expected to write codes in the interview. They also ask questions from resume. You may be asked puzzles in this round.\n\n
+        <b>=> Managerial and HR Rounds:</b> \n
+        Some Behavioral questions and Normal Hr questions are asked here.\n\n
         <b>NOTE:</b> The number of Technical rounds at Walmart Labs may vary from 3-4.
+    </string>
+
+
+    <string name="flipkart_about_heading">About FLIPKART</string>
+    <string name="flipkart_about_content">
+        <b>=></b> Founded on October 2007. Headquartered in Bengaluru.\n
+        <b>=></b> The company generates revenue through commission-based fees, logistics and fulfillment services, advertising, subscription-based services, and financial services.\n
+        <b>=></b> In May 2018, after more than half a year of negotiations, Walmart agreed to pay $16 billion for a 77% stake in Flipkart. It remains Walmarts biggest-ever deal.
+    </string>
+    <string name="flipkart_hiring_details_heading">Recruitment process at FLIPKART</string>
+    <string name="flipkart_hiring_details_content">
+        <b>=> Recruitment Process:</b>\n
+        Flipkart conducts around 4 rounds to select freshers as SDE in their organization. The following rounds are conducted:\n
+        &#160;&#160;&#160;&#160;* Online Coding or Telephonic round\n
+        &#160;&#160;&#160;&#160;* Multiple Technical Rounds\n
+        &#160;&#160;&#160;&#160;* Hiring Manager Round\n
+        &#160;&#160;&#160;&#160;* HR Round\n\n
+
+        <b>=> Online Coding Round/ Telephonic round:</b>\n
+        The online round is hosted on Hackerrank and the candidates are presented with around 3 coding questions, of which 2 are easy and 1 is hard. The number of questions may vary the difficulty distribution is same. The whole round is around 60 minutes long. Problems are generally based on recursion, strings, trees and graphs.\n\n
+        <b>=> Technical Round 1:</b>\n
+        Personal interview round which largely consists of algorithmic problems on DS like graphs, dp, matrices and strings. Many times puzzles are also asked, though standard puzzles, some variation maybe there. A strong understanding of data structures is needed to pass this round.\n\n
+        <b>=> Technical Round 2:</b>\n
+        This round generally is a machine coding round, in which a particular problem is given whose solution is to be built from scratch in any language of choice, ex: job scheduling problem, implementing a complete text line editor with specified features. The round is of 90 mins and a complete working code with error handling is expected at the end.\n\n
+        <b>=> Technical Round 3:</b>\n
+        This round mainly consists of hard algorithmic and DS related problems, mostly from trees, graphs and linked lists, along with the discussion of your projects, the technologies used in them, the problems faced etc. Some conceptual problems related to OS are also asked.\n\n
+        <b>=> Hiring manager and HR Round:</b>\n
+        Some Behavioral questions and Normal Hr questions are asked here.\n\n
+        <b>NOTE:</b> The number of Technical rounds at Flipkart may vary from 3-4.
     </string>
 </resources>
