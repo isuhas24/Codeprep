@@ -53,5 +53,17 @@ public class EcommerceCompanyies extends AppCompatActivity implements View.OnCli
             it.putExtra("hiring_details_content",hiring_details_content);
             startActivity(it);
         }
+        else if(v.equals(target_image)){
+            String about_company_heading=getResources().getString(R.string.target_about_heading);
+            String about_company_content=getResources().getString(R.string.target_about_content);
+            String hiring_details_heading=getResources().getString(R.string.target_hiring_details_heading);
+            String hiring_details_content=getResources().getString(R.string.target_hiring_details_content);
+            Intent it=new Intent(this,CompanySpecificGeneralLayout.class);
+            it.putExtra("about_company_heading",about_company_heading);
+            it.putExtra("about_company_content",about_company_content);
+            it.putExtra("hiring_details_heading",hiring_details_heading);
+            it.putExtra("hiring_details_content",hiring_details_content);
+            startActivity(it);
+        }
     }
 }

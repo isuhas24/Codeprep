@@ -1759,4 +1759,34 @@ Step by step guide to become a AI/ML scientist.
         Some Behavioral questions and Normal Hr questions are asked here.\n\n
         <b>NOTE:</b> The number of Technical rounds at Flipkart may vary from 3-4.
     </string>
+
+
+    <string name="target_about_heading">About TARGET</string>
+    <string name="target_about_content">
+        <b>=></b> Founded in 1902, Minneapolis, Minnesota, United States.\n
+        <b>=></b> Target corporation makes the majority of their revenue through retail merchandise sales. 98.7% of Targets total revenue came from merchandise sales at the end of 2021.\n
+        <b>=></b> Target has a market cap or net worth of $70.29 billion as of May 21, 2023.\n
+    </string>
+    <string name="target_hiring_details_heading">Recruitment process at TARGET</string>
+    <string name="target_hiring_details_content">
+        <b>=> Recruitment Process:</b>\n
+        &#160;&#160;&#160;&#160;* Online Assessment\n
+        &#160;&#160;&#160;&#160;* Technical Round 1\n
+        &#160;&#160;&#160;&#160;* Technical Round 2\n
+        &#160;&#160;&#160;&#160;* HR Round\n\n
+
+        <b>=> Target Eligibility Criteria :</b>\n
+        &#160;&#160;&#160;&#160;* B.E or B.Tech ( CS/IT/ECE/EEE)\n
+        &#160;&#160;&#160;&#160;* CGPA: 65 or %\n\n
+
+        <b>=> Online Assessment :</b>\n
+        MCQ-based Quantitative, Verbal, Reasoning, and Coding. The aptitude section has medium-level questions, Computer Science Concepts.\n\n
+        <b>=> Technical Round 1 :</b>\n
+        Questions asked about Programming logic and coding questions on Data Structures and Algorithms.\n\n
+        <b>=> Technical Round 2 :</b> \n
+        Discussion on Projects like the technologies used in detail, Data structures, Algorithms, and Computer Science Concepts.\n\n
+        <b>=> HR Round :</b>\n
+        Some Behavioral questions and Normal Hr questions are asked here.\n\n
+        <b>NOTE:</b> The number of Technical rounds at Target may vary from 2-3.\n
+    </string>
 </resources>
