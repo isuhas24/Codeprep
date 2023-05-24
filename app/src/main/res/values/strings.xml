@@ -1789,4 +1789,100 @@ Step by step guide to become a AI/ML scientist.
         Some Behavioral questions and Normal Hr questions are asked here.\n\n
         <b>NOTE:</b> The number of Technical rounds at Target may vary from 2-3.\n
     </string>
+
+
+    <string name="amazon_about_heading">About AMAZON</string>
+    <string name="amazon_about_content">
+        <b>=></b> Amazon is an American electronic commerce and cloud computing company based in Seattle, Washington that was founded by Jeff Bezos on July 5, 1994. \n
+        <b>=></b> In 2015, Amazon surpassed Walmart as the most valuable retailer in the United States by market capitalization. \n
+        <b>=></b> Amazon is the fourth most valuable public company in the world (behind only Apple, Alphabet, and Microsoft).\n
+        <b>=></b> the largest Internet company by revenue in the world, and after Walmart, the second largest employer in the United States.\n
+    </string>
+    <string name="amazon_hiring_details_heading">Recruitment process at AMAZON</string>
+    <string name="amazon_hiring_details_content">
+        <b>=> Recruitment Process :</b>\n
+        Amazon conducts 5-6 rounds to select freshers as SDE (SDE-1) in their organization. The following rounds are conducted:\n
+        &#160;&#160;&#160;&#160;* Written Round\n
+        &#160;&#160;&#160;&#160;* Online Coding Round\n
+        &#160;&#160;&#160;&#160;* Multiple Technical Rounds\n
+        &#160;&#160;&#160;&#160;* Hiring Manager Round\n
+        &#160;&#160;&#160;&#160;* HR Round\n\n
+
+        <b>=> Written Round :</b>\n
+        The Written round majorly consists of two sections namely Aptitude / Logical Test and technical test. The technical test contains questions mainly from C, C++, Operating System, Data Structure, inheritance, functions. Generally in MCQ format with a given time frame of about 30 minutes.\n\n
+        <b>=> Online Coding Round :</b>\n
+        This round is hosted online and the candidates are presented with 3-4 coding questions, the questions are of intermediate difficulty, mainly from Arrays, strings, and matrices. To clear this round, one should have a strong understanding of these data structures.\n\n
+        <b>=> Telephonic Round :</b>\n
+        This round is purely algorithmic based with around 2-4 questions ranging from arrays, trees, to dynamic programming problems. You are to present algorithm and in some questions, the code also if necessary. Apt candidates are selected for further rounds.\n\n
+        <b>=> Technical Round 1 :</b>\n
+        Technical rounds are face-to-face algorithmic rounds in which candidates are presented with 2-4 questions, all from data structures. The most commonly asked DSs are the matrix, binary tree, BST, Linked list.\n\n
+        <b>=> Technical Round 2 :</b>\n
+        Same as previous round, however the difficulty is increased and more questions from Trees, BST, and Tries are asked. One should have a clear knowledge of tree-based recursion, and the standard questions based on it are a must.\n\n
+        <b>=> Hiring Manager Round :</b>\n
+        This is generally the most technical-intensive round, with questions ranging from the projects you have done, the technology used in them, design problems and DS/Algo problems and tricky puzzle-like questions.\n\n
+        <b>=> HR Round :</b>\n
+        Some Behavioral questions and Normal Hr questions are asked here.\n\n
+    </string>
+
+
+    <string name="salesforce_about_heading">About SALESFORCE</string>
+    <string name="salesforce_about_content">
+        <b>=></b> Salesforce was founded in February 1999, California, United States.\n
+        <b>=></b> In its 2023 fiscal year, Salesforce achieved $31.4 billion in revenue, a record high.\n
+        <b>=></b> It offers CRM software and apps with a focus on sales, customer service, marketing automation, analytics, and application development.\n
+    </string>
+    <string name="salesforce_hiring_details_heading">Recruitment process at SALESFORCE</string>
+    <string name="salesforce_hiring_details_content">
+        <b>=> Recruitment Process :</b>\n
+        &#160;&#160;&#160;&#160;* Online Assessment\n
+        &#160;&#160;&#160;&#160;* Technical Round 1\n
+        &#160;&#160;&#160;&#160;* Technical Round 2\n
+        &#160;&#160;&#160;&#160;* Design Round\n
+        &#160;&#160;&#160;&#160;* HR\n
+
+        <b>=> Salesforce Eligibility Criteria :</b>\n
+        &#160;&#160;&#160;&#160;* B.E/ B.Tech\n
+        &#160;&#160;&#160;&#160;* 7 CGPA and above with no backlogs.\n
+
+        <b>=> Online Assessment :</b>\n
+        Online assessment tests may include numerical reasoning, inductive logical thinking, verbal reasoning assessments, Coding questions on Data Structures and Algorithms personality questionnaires, and much more besides.\n\n
+        <b>=> Technical Round 1 :</b>\n
+        To check your Problem-Solving Skills questions are asked from Data Structure and Algorithms of Medium -Hard Level difficulty.\n\n
+        <b>=> Technical Round 2 :</b>\n
+        Discussion on Projects and technologies used in detail, Computer Science Concepts and new technologies, etc.\n\n
+        <b>=> Design :</b>\n
+        Questions asked on Low-Level Design and High-Level Design in depth.\n\n
+        <b>=> HR :</b>\n
+        Some Behavioral questions and Normal Hr questions are asked here.\n\n
+    </string>
+
+
+    <string name="servicenow_about_heading">About SERVICENOW</string>
+    <string name="servicenow_about_content">
+        <b>=></b> ServiceNow was founded as Glidesoft, Inc. in 2003 by Fred Luddy, and later incorporated in California in 2004.\n
+        <b>=></b> ServiceNow is a software company that provides a cloud-based platform for automating IT management workflows. The company specializes in IT service management, IT operations management and IT business management.\n
+        <b>=></b> ServiceNow annual net income for 2022 was $0.325B, a 41.3% increase from 2021.\n
+    </string>
+    <string name="servicenow_hiring_details_heading">Recruitment process at SERVICENOW</string>
+    <string name="servicenow_hiring_details_content">
+        <b>=> Recruitment Process :</b>\n
+        &#160;&#160;&#160;&#160;* Online Assessment\n
+        &#160;&#160;&#160;&#160;* Technical Round 1\n
+        &#160;&#160;&#160;&#160;* Technical Round 2\n
+        &#160;&#160;&#160;&#160;* HR\n
+
+        <b>=> Servicenow Eligibility Criteria :</b>\n
+        &#160;&#160;&#160;&#160;* BE/B.Tech – (CSE,IT,ECE)\n
+        &#160;&#160;&#160;&#160;* 60% or 6.5 GPA and above throughout without any running backlogs\n
+
+        <b>=> Online Assessment :</b>\n
+        Online assessment tests may include numerical reasoning, inductive logical thinking, verbal reasoning assessments, Coding questions on Data Structures and Algorithms personality questionnaires, and much more besides.\n\n
+        <b>=> Technical Round 1 :</b>\n
+        To check your Problem-Solving Skills Questions are asked from Data Structure and Algorithms, Computer Science Concepts, and questions related to Programming languages mentioned in your resume.\n\n
+        <b>=> Technical Round 2 :</b>\n
+        Discussion on Projects and technologies used in detail, Data Structures, and Algorithms, and Some Behavioral Questions.\n\n
+        <b>=> HR :</b>\n
+        Some Behavioral questions and Normal Hr questions are asked here.\n\n
+        <b>NOTE:</b> The number of Technical rounds at Target may vary from 2-3.\n
+    </string>
 </resources>
