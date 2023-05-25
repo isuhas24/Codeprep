@@ -1883,6 +1883,33 @@ Step by step guide to become a AI/ML scientist.
         Discussion on Projects and technologies used in detail, Data Structures, and Algorithms, and Some Behavioral Questions.\n\n
         <b>=> HR :</b>\n
         Some Behavioral questions and Normal Hr questions are asked here.\n\n
-        <b>NOTE:</b> The number of Technical rounds at Target may vary from 2-3.\n
+        <b>NOTE:</b> The number of Technical rounds at Servicenow may vary from 2-3.\n
+    </string>
+
+
+    <string name="atlassian_about_heading">About ATLASSIAN</string>
+    <string name="atlassian_about_content">
+        <b>=></b> Atlassian was founded in 2002 and headquartered in Sydney, Australia.\n
+        <b>=></b> Atlassian Corporation is an Australian software company that develops products for software developers, project managers and other software development teams.\n
+        <b>=></b> In 2019, Atlassian made it to the “Fortune 100 Best Companies To Work For” list.\n
+        <b>=></b> Atlassian reported strong financial results for the second quarter of the fiscal year 2023. Revenue was $873 million which increased by a rapid 27% year over year.\n
+    </string>
+    <string name="atlassian_hiring_details_heading">Recruitment process at ATLASSIAN</string>
+    <string name="atlassian_hiring_details_content">
+        <b>=> Recruitment Process :</b>\n
+        &#160;&#160;&#160;&#160;* Online Round\n
+        &#160;&#160;&#160;&#160;* Technical Round-1\n
+        &#160;&#160;&#160;&#160;* Technical Round-2\n
+        &#160;&#160;&#160;&#160;* HR Round/ Interview\n
+
+        <b>=> Online Assessment :</b>\n
+        The online test is conducted on Hackerrank. The time duration is 90 minutes which includes 3 problems(50, 75, and 100 marks respectively). The questions would be asked from topics like arrays, trees, DP, etc.\n\n
+        <b>=> Technical Round 1 :</b>\n
+        Technical Interview is the next round in their recruitment. There are generally, 2 panelists. The earlier questions consisted of information about projects and followed-up questions related to them. Apart from that, coding questions are asked that are to be coded while sharing the screen. The questions are asked from  OS and DBMS including topics like processes, threads, deadlocks, normalization, and relational model, etc.\n\n
+        <b>=> Technical Round 2 :</b>\n
+        This round consists of a single interviewer and is conducted on Zoom. The pattern is more or less the same as the first round. If any topic mentioned above is not covered in the first technical round is covered here. Apart from that problem solving and data structures are in the limelight during this round.\n\n
+        <b>=> HR Round/ Interview: :</b>\n
+        The HR Round is based on Atlassian core values. Here the interviewers check if the candidate is culturally fit or not for the organization.\n\n
+        <b>NOTE:</b> The number of Technical rounds at Atlassian may vary from 2-3.\n
     </string>
 </resources>
