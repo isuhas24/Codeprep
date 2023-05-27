@@ -35,19 +35,16 @@ public class JavaScript extends AppCompatActivity {
         //On click listeners
 
 
-        // NOTE
-        // : NEED TO SET THE RESOURCES AND THUMBNAILS
-
         Javascript_btn1b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String videoId = "B7wHpNUUT4Y";
                 Resources res = getResources();
                 String Headtxt = "INTRODUCTION TO JAVASCRIPT";
-                String Link = "Download Resources PDF From Here: https://drive.google.com/file/d/1sRs5yuZzYUAfdjj3kCJCRua2X0ZenKGi/view?usp=sharing";
+                String Link = "Download Resources PDF From Here: https://drive.google.com/file/d/1_QyNUnrNm8TjznFkR4yV9G7cKsxblafn/view?usp=share_link";
                 BitmapFactory.Options options = new BitmapFactory.Options();
                 options.inSampleSize = 2;
-                Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.osshort, options);
+                Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.jsintro, options);
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
                 bitmap.compress(Bitmap.CompressFormat.JPEG, 50, stream);
                 byte[] byteArray = stream.toByteArray();
@@ -70,10 +67,10 @@ public class JavaScript extends AppCompatActivity {
                 String videoId = "4A2LiUMYyvQ";
                 Resources res = getResources();
                 String Headtxt = "OBJECTS,PROPERTIES AND METHODS";
-                String Link = "Download Resources PDF From Here: https://drive.google.com/file/d/1sRs5yuZzYUAfdjj3kCJCRua2X0ZenKGi/view?usp=sharing";
+                String Link = "Download Resources PDF From Here: https://drive.google.com/file/d/1qxHhqXlrOwBurkxU-TPePFli2NgQqa9b/view?usp=sharing";
                 BitmapFactory.Options options = new BitmapFactory.Options();
                 options.inSampleSize = 2;
-                Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.osshort, options);
+                Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.jsobject, options);
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
                 bitmap.compress(Bitmap.CompressFormat.JPEG, 50, stream);
                 byte[] byteArray = stream.toByteArray();
@@ -95,10 +92,10 @@ public class JavaScript extends AppCompatActivity {
                 String videoId = "pdqXYAe1kKA";
                 Resources res = getResources();
                 String Headtxt = "ALERTS,PROMPTS AND CONFIRM";
-                String Link = "Download Resources PDF From Here: https://drive.google.com/file/d/1sRs5yuZzYUAfdjj3kCJCRua2X0ZenKGi/view?usp=sharing";
+                String Link = "Download Resources PDF From Here: https://drive.google.com/file/d/18y2hYIqbgqFohJyNQr9hH6yhG9UJn7y5/view?usp=sharing";
                 BitmapFactory.Options options = new BitmapFactory.Options();
                 options.inSampleSize = 2;
-                Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.osshort, options);
+                Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.jsalert, options);
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
                 bitmap.compress(Bitmap.CompressFormat.JPEG, 50, stream);
                 byte[] byteArray = stream.toByteArray();
@@ -120,10 +117,10 @@ public class JavaScript extends AppCompatActivity {
                 String videoId = "s5Lu4QTjeL0";
                 Resources res = getResources();
                 String Headtxt = "CONDITIONAL";
-                String Link = "Download Resources PDF From Here: https://drive.google.com/file/d/1sRs5yuZzYUAfdjj3kCJCRua2X0ZenKGi/view?usp=sharing";
+                String Link = "Download Resources PDF From Here: https://drive.google.com/file/d/11bUqXCMy-ZbSnU5pS-zBZaqrPsJ9YLJZ/view?usp=share_link";
                 BitmapFactory.Options options = new BitmapFactory.Options();
                 options.inSampleSize = 2;
-                Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.osshort, options);
+                Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.jscondit, options);
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
                 bitmap.compress(Bitmap.CompressFormat.JPEG, 50, stream);
                 byte[] byteArray = stream.toByteArray();
@@ -146,10 +143,10 @@ public class JavaScript extends AppCompatActivity {
                 String videoId = "a_Bz5ciBHQ0";
                 Resources res = getResources();
                 String Headtxt = "ARRAYS IN JAVASCRIPT";
-                String Link = "Download Resources PDF From Here: https://drive.google.com/file/d/1sRs5yuZzYUAfdjj3kCJCRua2X0ZenKGi/view?usp=sharing";
+                String Link = "Download Resources PDF From Here: https://drive.google.com/file/d/1kNYaf5pXTu5qyjb5YtvFudT7jrf7hTW9/view?usp=share_link";
                 BitmapFactory.Options options = new BitmapFactory.Options();
                 options.inSampleSize = 2;
-                Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.osshort, options);
+                Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.jsarray, options);
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
                 bitmap.compress(Bitmap.CompressFormat.JPEG, 50, stream);
                 byte[] byteArray = stream.toByteArray();
@@ -172,10 +169,10 @@ public class JavaScript extends AppCompatActivity {
                 String videoId = "akl2siu7iDM";
                 Resources res = getResources();
                 String Headtxt = "EVENT HANDLING";
-                String Link = "Download Resources PDF From Here: https://drive.google.com/file/d/1sRs5yuZzYUAfdjj3kCJCRua2X0ZenKGi/view?usp=sharing";
+                String Link = "Download Resources PDF From Here: https://drive.google.com/file/d/1r3LpRQ-rgGflayXIVkvTO8VDnYsQevw2/view?usp=share_link";
                 BitmapFactory.Options options = new BitmapFactory.Options();
                 options.inSampleSize = 2;
-                Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.osshort, options);
+                Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.jsevent, options);
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
                 bitmap.compress(Bitmap.CompressFormat.JPEG, 50, stream);
                 byte[] byteArray = stream.toByteArray();
@@ -198,10 +195,10 @@ public class JavaScript extends AppCompatActivity {
                 String videoId = "ImFeTcWCsR0";
                 Resources res = getResources();
                 String Headtxt = "WORKING WITH BROWSER WINDOWS";
-                String Link = "Download Resources PDF From Here: https://drive.google.com/file/d/1sRs5yuZzYUAfdjj3kCJCRua2X0ZenKGi/view?usp=sharing";
+                String Link = "Download Resources PDF From Here: https://drive.google.com/file/d/17LWeHGLPAwBwkj7RN2PfPQ7jgE4EFDqb/view?usp=share_link";
                 BitmapFactory.Options options = new BitmapFactory.Options();
                 options.inSampleSize = 2;
-                Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.osshort, options);
+                Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.jsbrowser, options);
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
                 bitmap.compress(Bitmap.CompressFormat.JPEG, 50, stream);
                 byte[] byteArray = stream.toByteArray();
@@ -225,10 +222,10 @@ public class JavaScript extends AppCompatActivity {
                 String videoId = "tkMZ5n8EObk";
                 Resources res = getResources();
                 String Headtxt = "WORKING WITH MULTIPLE WINDOWS";
-                String Link = "Download Resources PDF From Here: https://drive.google.com/file/d/1sRs5yuZzYUAfdjj3kCJCRua2X0ZenKGi/view?usp=sharing";
+                String Link = "Download Resources PDF From Here: https://drive.google.com/file/d/1Vd8zmtwtbYvxSTqtFVrPTjJ_Oxf6qqp1/view?usp=sharing";
                 BitmapFactory.Options options = new BitmapFactory.Options();
                 options.inSampleSize = 2;
-                Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.osshort, options);
+                Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.jswindows, options);
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
                 bitmap.compress(Bitmap.CompressFormat.JPEG, 50, stream);
                 byte[] byteArray = stream.toByteArray();
@@ -251,10 +248,10 @@ public class JavaScript extends AppCompatActivity {
                 String videoId = "JwOROnOmuNQ";
                 Resources res = getResources();
                 String Headtxt = "JAVASCRIPT AND MATHS";
-                String Link = "Download Resources PDF From Here: https://drive.google.com/file/d/1sRs5yuZzYUAfdjj3kCJCRua2X0ZenKGi/view?usp=sharing";
+                String Link = "Download Resources PDF From Here: https://drive.google.com/file/d/15OgdZQD10v77heK6CIvc8YXRLqJ2F2PO/view?usp=sharing";
                 BitmapFactory.Options options = new BitmapFactory.Options();
                 options.inSampleSize = 2;
-                Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.osshort, options);
+                Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.jsmaths, options);
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
                 bitmap.compress(Bitmap.CompressFormat.JPEG, 50, stream);
                 byte[] byteArray = stream.toByteArray();
@@ -277,10 +274,10 @@ public class JavaScript extends AppCompatActivity {
                 String videoId = "CnozSz4wbBQ";
                 Resources res = getResources();
                 String Headtxt = "WORKING WITH DATES";
-                String Link = "Download Resources PDF From Here: https://drive.google.com/file/d/1sRs5yuZzYUAfdjj3kCJCRua2X0ZenKGi/view?usp=sharing";
+                String Link = "Download Resources PDF From Here: https://drive.google.com/file/d/16Styx5mbe2D5j6veNJnUnYiEDu6YG5Id/view?usp=sharing";
                 BitmapFactory.Options options = new BitmapFactory.Options();
                 options.inSampleSize = 2;
-                Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.osshort, options);
+                Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.jsdates, options);
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
                 bitmap.compress(Bitmap.CompressFormat.JPEG, 50, stream);
                 byte[] byteArray = stream.toByteArray();
