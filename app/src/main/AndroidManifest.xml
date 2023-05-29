@@ -88,9 +88,6 @@
             android:name=".PaymentCompanies"
             android:exported="true" />
         <activity
-            android:name=".TradingCompanies"
-            android:exported="true" />
-        <activity
             android:name=".InvestmentCompanies"
             android:exported="true" />
         <activity

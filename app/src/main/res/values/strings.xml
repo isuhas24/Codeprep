@@ -2006,6 +2006,7 @@ Step by step guide to become a AI/ML scientist.
     </string>
     <string name="media_dot_net_hiring_details_heading">Recruitment process at MEDIA.NET</string>
     <string name="media_dot_net_hiring_details_content">
+        <b>=> Recruitment Process :</b>\n
         &#160;&#160;&#160;&#160;* Round 1: Online Assessment\n
         &#160;&#160;&#160;&#160;* Round 2: Technical Interview 1\n
         &#160;&#160;&#160;&#160;* Round 3: Technical Interview 2\n
@@ -2021,5 +2022,54 @@ Step by step guide to become a AI/ML scientist.
         Questions from CS fundamentals, Discussion on previously performed projects, and low-level system designing may be asked.\n\n
         <b>=> HR Round :</b>\n
         Some Behavioral questions and Normal Hr questions are asked here.\n\n
+    </string>
+
+
+    <string name="paypal_about_heading">About PAYPAL</string>
+    <string name="paypal_about_content">
+        <b>=></b> PayPal is a multinational financial technology business headquartered in the United States that operates an online payment system. \n
+        <b>=></b> PayPal is one of the largest online payment processors in the world. PayPal provides the service as a faster, safer way to send and receive money or make an online payment.\n
+        <b>=></b> In 2022, the company revenue was $27.5 billion, out of which it made $2.4 billion in net profit. In 2021, PayPal generated $25.37 billion in revenue, an increase over the previous years $21.45 billion.\n
+    </string>
+    <string name="paypal_hiring_details_heading">Recruitment process at PAYPAL</string>
+    <string name="paypal_hiring_details_content">
+        <b>=> Recruitment Process :</b>\n
+        &#160;&#160;&#160;&#160;* Round 1: Online Assessment\n
+        &#160;&#160;&#160;&#160;* Round 2: Technical Interview 1\n
+        &#160;&#160;&#160;&#160;* Round 3: Technical Interview 2\n
+        &#160;&#160;&#160;&#160;* Round 4: HR Round\n
+
+        <b>=> PAYPAL Eligibility Criteria :</b>\n
+        BE degree in Computer Science or Engineering or relevant experience.\n\n
+        <b>=> Online Assessment :</b>\n
+        In this round, candidates are to solve 2-3 easy to medium-level coding questions in 60-90 Minutes.\n\n
+        <b>=> Technical Interview 1 :</b>\n
+        This round will be fully based on data structures and algorithms. The interviewer could check the candidate’s problem-solving skills. Ask technical questions, including topics like C/C++, data structures, OOPs, operating systems, DBMS, and networking, and solve coding problems.\n\n
+        <b>=> Technical Interview 2 :</b>\n
+        This Round will be based on system design. Discussion on previously performed projects, scenario-based questions, and low-level system design.\n\n
+        <b>=> HR Round :</b>\n
+        Some Behavioral questions and Normal Hr questions are asked here.\n\n
+    </string>
+
+
+    <string name="paytm_about_heading">About PAYTM</string>
+    <string name="paytm_about_content">
+        <b>=></b> It was founded in 2010 by Vijay Shekhar Sharma under One97 Communications.\n
+        <b>=></b> Paytm is an Indian multinational financial technology company, that specializes in digital payments and financial services, based in Noida.\n
+        <b>=></b> Paytm FY23 Results: Revenue Jumps to ₹7,990 Crore, Up By 61% YoY.\n
+    </string>
+    <string name="paytm_hiring_details_heading">Recruitment processes at PAYTM</string>
+    <string name="paytm_hiring_details_content">
+        <b>=> Recruitment Process :</b>\n
+        &#160;&#160;&#160;&#160;* Online Coding Round(On platforms like Hackkerank, HackerEarth, etc.)\n
+        &#160;&#160;&#160;&#160;* Technical Interview Rounds\n
+        &#160;&#160;&#160;&#160;* HR Round\n\n
+
+        <b>=> Online Coding Round :</b>\n
+        It is usually a coding round where candidates are required to answer two to three questions about Data Structures and Algorithms on platforms like Hackkerank, HackerEarth, Cocubes and others over a time span of about sixty to seventy minutes.\n\n
+        <b>=> Technical Interview Rounds :</b>\n
+        The Paytm on-site or online technical interviews will consist of four to six face-to-face interviews.a series of questions about Data Structures and Algorithms are asked.For a range of operations requiring Relational Databases, candidates may be requested to write SQL queries.Data structures, algorithms, database management systems, operating systems, networking, object-oriented programming concepts, and their chosen programming languages, such as C++, Java, Python, and others, should all be familiar to candidates.\n\n
+        <b>=> HR Round :</b>\n
+        The Human Resources (HR) or Behavioral Round (usually one or two in number) of the Paytm Recruitment Process tries to establish whether the candidate is a cultural match for Paytm. In order to ace these interviews, candidates need to study more about Paytm and its products. Candidates may be offered puzzle-based questions during these rounds to assess their overall intelligence and how well they adapt to awkward and challenging situations.\n\n
     </string>
 </resources>
