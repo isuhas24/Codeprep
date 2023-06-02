@@ -91,9 +91,6 @@
             android:name=".InvestmentCompanies"
             android:exported="true" />
         <activity
-            android:name=".GamingCompanies"
-            android:exported="true" />
-        <activity
             android:name=".EntertainmentCompanies"
             android:exported="true" />
         <activity

@@ -2072,4 +2072,99 @@ Step by step guide to become a AI/ML scientist.
         <b>=> HR Round :</b>\n
         The Human Resources (HR) or Behavioral Round (usually one or two in number) of the Paytm Recruitment Process tries to establish whether the candidate is a cultural match for Paytm. In order to ace these interviews, candidates need to study more about Paytm and its products. Candidates may be offered puzzle-based questions during these rounds to assess their overall intelligence and how well they adapt to awkward and challenging situations.\n\n
     </string>
+
+
+    <string name="goldman_sachs_about_heading">About GOLDMAN SACHS</string>
+    <string name="goldman_sachs_about_content">
+        <b>=></b> It was founded in 1869 and is headquartered in New York, United States.\n
+        <b>=></b> Apart from investment banking, it offers services in investment management, securities, asset management, prime brokerage, and securities underwriting.\n
+        <b>=></b> Goldman Sachs revenue for the twelve months ending March 31, 2023 was $46.656B, a 14.5% decline year-over-year. Goldman Sachs annual revenue for 2022 was $47.365B, a 20.18% decline from 2021.\n
+    </string>
+    <string name="goldman_sachs_hiring_details_heading">Recruitment process at GOLDMAN SACHS</string>
+    <string name="goldman_sachs_hiring_details_content">
+        <b>=> Recruitment Process :</b>\n
+        Goldman Sachs conducts 6 to 8 rounds to select the freshers as SDE in their organisation: \n
+        &#160;&#160;&#160;&#160;* Online or The Hackerrank Round\n
+        &#160;&#160;&#160;&#160;* Coderpad Round\n
+        &#160;&#160;&#160;&#160;* Telephonic Round\n
+        &#160;&#160;&#160;&#160;* Technical Round 1\n
+        &#160;&#160;&#160;&#160;* Technical Round 2\n
+        &#160;&#160;&#160;&#160;* Technical Round 3\n
+        &#160;&#160;&#160;&#160;* Technical Round 4\n
+        &#160;&#160;&#160;&#160;* Technical-cum HR round\n\n
+
+        <b>=> Online or The Hackerrank Round :</b>\n
+        The online round is held on the Hackerrank platform and generally consists of three sections and user is allowed to switch between the sections. \n
+        &#160;&#160;&#160;&#160;* The CS section which consists of programming questions along with few MCQs and lasts for about 1 hour.\n
+        &#160;&#160;&#160;&#160;* ML section consists of questions from Machine Learning and lasts for about 30 minutes.\n
+        &#160;&#160;&#160;&#160;* Quants sections consist of general numerical aptitude questions running for about 1 hour.\n\n
+        <b>=> The Coderpad Round :</b>\n
+        The CoderPad Round is a coding round in which live coding is held in which the screen is shared between the student and the interviewer who will be on call with the student. The round lasts for about 1 hour and the interviewer may ask one to two questions depending on the time frame. \n\n
+        <b>=> Telephonic Round :</b>\n
+        In this round, the interviewer asks questions over the phone, testing the students technical skills, related to course subjects, programming, System Designing and Algorithms. \n\n
+        <b>=> Technical Rounds :</b>\n
+        Subjects that interest the interviewer mostly are Data Structure, Algorithms, Operating System, Networking, Database Management etc. Students will be tested of his or her in-depth knowledge in all aspects of domains related to Computer Science and his or her interests. Students can also be expected to write codes in the interview. \n\n
+        <b>=> Technical-cum HR Round :</b>\n
+        This round deals less with less technical questions and more with the HR questions.\n\n
+    </string>
+
+
+    <string name="jpmorgan_about_heading">About JP MORGAN CHASE and CO.</string>
+    <string name="jpmorgan_about_content">
+        <b>=></b> It was founded on 31 December 2000 and is headquartered in New York, New York, United States.\n
+        <b>=></b> J.P. Morgan is a leader in investment banking, commercial banking, financial transaction processing and asset management. \n
+        <b>=></b> JPMorgan Chase net worth as of May 31, 2023 is $401.7B.\n
+    </string>
+    <string name="jpmorgan_hiring_details_heading">Recruitment process at JP MORGAN CHASE and CO.</string>
+    <string name="jpmorgan_hiring_details_content">
+        <b>=> Recruitment Process :</b>\n
+        &#160;&#160;&#160;&#160;* Round 1: Online Assessment\n
+        &#160;&#160;&#160;&#160;* Round 2: Technical Round 1\n
+        &#160;&#160;&#160;&#160;* Round 3: Technical Round 2\n
+        &#160;&#160;&#160;&#160;* Round 4: HR\n\n
+
+        <b>=> JP MORGAN Eligibility Criteria :</b>\n
+        Bachelors Degree in an engineering field, experience in Software Development.\n\n
+        <b>=> Online Assessment :</b>\n
+        The Online Assessment is a coding round. DSA based coding questions are asked.\n\n
+        <b>=> Technical Round 1 :</b>\n
+        &#160;&#160;&#160;&#160;* Some self-introduction questions.\n
+        &#160;&#160;&#160;&#160;* Easy to medium-level questions based on technologies like java, python, oops, DSA, etc.\n\n
+        <b>=> Technical Round 2 :</b>\n
+        Coding Questions on Data Structures and System Design questions on Low-Level Design.\n\n
+        <b>=> HR Round :</b>\n
+        Some Behavioral questions and Normal Hr questions are asked here.\n\n
+    </string>
+
+
+    <string name="netflix_about_heading">About NETFLIX</string>
+    <string name="netflix_about_content">
+        <b>=></b> Netflix was founded on 29 August 1997 and is headquartered in Scotts Valley, California.\n\n
+        <b>=></b> It consumes more than 15 percent of the world’s internet bandwidth and has subscribers in more than 190 countries.\n
+        <b>=></b> Netflix net income for the twelve months ending March 31, 2023 was $4.200B, a 16.12% decline year-over-year. Netflix annual net income for 2022 was $4.492B, a 12.2% decline from 2021. Netflix annual net income for 2021 was $5.116B, a 85.28% increase from 2020.\n
+    </string>
+    <string name="netflix_hiring_details_heading">Recruitment process at NETFLIX</string>
+    <string name="netflix_hiring_details_content">
+        <b>=> Recruitment Process :</b>\n
+        &#160;&#160;&#160;&#160;* Pre screening with a recruiter\n
+        &#160;&#160;&#160;&#160;* Phone call interview\n
+        &#160;&#160;&#160;&#160;* On-site interview\n
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;* Coding Round 1\n
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;* Coding Round 2\n
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;* HR\n\n
+
+        <b>=> NETFLIX Eligibility Criteria :</b>\n
+        &#160;&#160;&#160;&#160;* A graduate degree in Computer Science, IT, or a relevant field\n
+        &#160;&#160;&#160;&#160;* Good problem-solving and analytical skills\n\n
+        <b>=> Pre screening With a recruiter :</b>\n
+        Your initial phone screen will be around 30 minutes when the recruiter will dig into your resume and ask questions about your past projects and cultural fit.\n\n
+        <b>=> Phone Call Interview :</b>\n
+        The next step is a phone interview to assess your technical skills. You can anticipate questions on data structures and algorithms as well as an assignment with a Netflix use case. There may also be some behavioral inquiries. The interview will be led by an engineer.\n\n
+        <b>=> Coding Round 1 :</b>\n
+        Coding Questions on data Structures Medium and Hard Level and Computer Science Concepts.\n\n
+        <b>=> Coding Round 2 :</b>\n
+        Coding Questions on Data Structures and Design questions Low-Level Design and High-Level Design.\n\n
+        <b>=> HR Round :</b>\n
+        Some Behavioral questions and Normal Hr questions are asked here.\n\n
+    </string>
 </resources>
