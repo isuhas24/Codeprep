@@ -84,25 +84,6 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="30dp" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/hotstar"
-                android:src="@drawable/hotstar_image"
-                android:adjustViewBounds="true"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="HOTSTAR"
-                android:textAlignment="center"
-                android:textSize="20dp"
-                android:textStyle="bold"/>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="30dp" />
         </LinearLayout>
 
     </ScrollView>

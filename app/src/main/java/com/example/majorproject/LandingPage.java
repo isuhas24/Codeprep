@@ -38,7 +38,7 @@ public class LandingPage extends AppCompatActivity implements View.OnClickListen
     private int[] backgrounds = {R.drawable.fact1, R.drawable.fact2, R.drawable.fact3};
     private int currentIndex = 0;
 
-    ImageView mobility_image,ecommerce_image,crm_image,cloud_image,collaboration_image,communication_image,advertisement_image,payment_image,trading_image,investment_image,gaming_image,entertainment_image;
+    ImageView mobility_image,ecommerce_image,crm_image,cloud_image,collaboration_image,communication_image,advertisement_image,payment_image,investment_image,entertainment_image;
     Button system_design_button,programming_languages_button,dsa_button,oops_button,dbms_button,os_button,se_button,cn_button,github_button,sde_sheet_button,web_development_button,leetcode_solutions_button,coding_practices_button,tips_button,questions_button,roadmaps;
 
     @SuppressLint("MissingInflatedId")
@@ -74,12 +74,8 @@ public class LandingPage extends AppCompatActivity implements View.OnClickListen
         advertisement_image.setOnClickListener(this);
         payment_image=(ImageView) findViewById(R.id.company8);
         payment_image.setOnClickListener(this);
-        trading_image=(ImageView) findViewById(R.id.company9);
-        trading_image.setOnClickListener(this);
         investment_image=(ImageView) findViewById(R.id.company10);
         investment_image.setOnClickListener(this);
-        gaming_image=(ImageView) findViewById(R.id.company11);
-        gaming_image.setOnClickListener(this);
         entertainment_image=(ImageView) findViewById(R.id.company12);
         entertainment_image.setOnClickListener(this);
 
@@ -190,16 +186,8 @@ public class LandingPage extends AppCompatActivity implements View.OnClickListen
             Intent it=new Intent(this,PaymentCompanies.class);
             startActivity(it);
         }
-        else if(v.equals(trading_image)){
-            Intent it=new Intent(this,TradingCompanies.class);
-            startActivity(it);
-        }
         else if(v.equals(investment_image)){
             Intent it=new Intent(this,InvestmentCompanies.class);
-            startActivity(it);
-        }
-        else if(v.equals(gaming_image)){
-            Intent it=new Intent(this,GamingCompanies.class);
             startActivity(it);
         }
         else if(v.equals(entertainment_image)){

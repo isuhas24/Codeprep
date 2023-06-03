@@ -298,29 +298,6 @@
                         <ImageView
                             android:layout_width="200dp"
                             android:layout_height="150dp"
-                            android:id="@+id/company9"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/trading_compnaies"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Trading"
-                            android:textAlignment="center"
-                            android:textColor="@color/black"
-                            android:textSize="20dp"/>
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="10dp"
-                        android:layout_height="match_parent"/>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-                        <ImageView
-                            android:layout_width="200dp"
-                            android:layout_height="150dp"
                             android:id="@+id/company10"
                             android:src="@drawable/investment_companies"/>
                         <TextView
@@ -332,28 +309,6 @@
                             android:textSize="20dp"/>
                     </LinearLayout>
 
-                    <View
-                        android:layout_width="10dp"
-                        android:layout_height="match_parent"/>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-                        <ImageView
-                            android:layout_width="200dp"
-                            android:layout_height="150dp"
-                            android:id="@+id/company11"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/gaming_companies"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Gaming"
-                            android:textAlignment="center"
-                            android:textColor="@color/black"
-                            android:textSize="20dp"/>
-                    </LinearLayout>
 
                     <View
                         android:layout_width="10dp"

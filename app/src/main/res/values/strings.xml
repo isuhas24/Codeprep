@@ -1912,4 +1912,259 @@ Step by step guide to become a AI/ML scientist.
         The HR Round is based on Atlassian core values. Here the interviewers check if the candidate is culturally fit or not for the organization.\n\n
         <b>NOTE:</b> The number of Technical rounds at Atlassian may vary from 2-3.\n
     </string>
+
+
+    <string name="oracle_about_heading">About ORACLE</string>
+    <string name="oracle_about_content">
+        <b>=></b> The company was founded in 1977, headquartered Redwood Shores, California.\n
+        <b>=></b> Oracle a multinational computer technology specializes primarily in developing and marketing database software and technology, cloud engineered system. \n
+        <b>=></b> According to Oracle latest financial reports the companys current revenue (TTM) is $47.95 B. In 2022 the company made a revenue of $46.07 B an increase over the years 2021 revenue that were of $41.40 B. \n
+    </string>
+    <string name="oracle_hiring_details_heading">Recruitment process at ORACLE</string>
+    <string name="oracle_hiring_details_content">
+        <b>=> Recruitment Process :</b>\n
+        Oracle conducts 3-4 rounds to select freshers for Software Engineer in their organisation.\n
+        &#160;&#160;&#160;&#160;* Online Test
+        &#160;&#160;&#160;&#160;* Technical Interview Round 1
+        &#160;&#160;&#160;&#160;* Technical Interview Round 2
+        &#160;&#160;&#160;&#160;* HR Round
+
+        <b>=> ORACLE Eligibility Criteria :</b>\n
+        &#160;&#160;&#160;&#160;* Candidate must have consistent academic records from class X onwards.\n
+        &#160;&#160;&#160;&#160;* Must have cleared all the subjects with no backlogs.\n\n
+
+        <b>=> Online Assessment :</b>\n
+        It is an online test round where MCQ questions ranging from verbal, quantitative to core subjects such as DS, Networking, OOPS, Database are asked. Practice is required as number of questions are more.\n\n
+        <b>=> Technical Round 1 :</b>\n
+        This is a coding round where generally 2 questions are given. The concept of Data Structure must be cleared as the questions are tough.\n\n
+        <b>=> Technical Round 2 :</b>\n
+        It is a personal interview round where questions based on data structure asked and some questions from resume. Some puzzle based questions are also asked.\n\n
+        <b>=> HR Round/ Interview :</b>\n
+        Some Behavioral questions and Normal Hr questions are asked here.\n\n
+    </string>
+
+
+    <string name="redhat_about_heading">About REDHAT</string>
+    <string name="redhat_about_content">
+        <b>=></b> Red Hat is a United States-based IBM subsidiary that sells open-source software to businesses.\n
+        <b>=></b> Red Hat was established in 1993 and has offices all around the world in addition to its corporate headquarters in Raleigh, North Carolina.\n
+        <b>=></b> Red Hat offers storage, platforms for operating systems, middleware, applications, and management tools as well as support, consulting, training, and support services.\n
+    </string>
+    <string name="redhat_hiring_details_heading">Recruitment process at REDHAT</string>
+    <string name="redhat_hiring_details_content">
+        <b>=> Recruitment Process :</b>\n
+        &#160;&#160;&#160;&#160;* Online Assessment\n
+        &#160;&#160;&#160;&#160;* Technical Round 1\n
+        &#160;&#160;&#160;&#160;* Technical Round 2\n
+        &#160;&#160;&#160;&#160;* Tech/ Managerial Round\n
+        &#160;&#160;&#160;&#160;* HR\n\n
+
+        <b>=> RED HAT Eligibility Criteria :</b>\n
+        &#160;&#160;&#160;&#160;* BE/BTech,MCA,BCA,MTech\n\n
+        <b>=> Online Assessment :</b>\n
+        Online assessment tests may include numerical reasoning, inductive logical thinking, verbal reasoning assessments, Coding questions on Data Structures and Algorithms personality questionnaires, and much more besides.\n\n
+        <b>=> Technical Round 1 :</b>\n
+        Questions are asked on Data Structure and Algorithms Easy – Medium Level.\n\n
+        <b>=> Technical Round 2 :</b>\n
+        Discussion on Projects and technologies used in detail, Computer Science Concepts, and Some questions on Programming Languages.\n\n
+        <b>=> Tech/ Managerial Round :</b>\n
+        System Design Questions and Behavioral Questions.\n\n
+        <b>=> HR Round/ Interview :</b>\n
+        Some Behavioral questions and Normal Hr questions are asked here.\n\n
+    </string>
+    
+    
+    <string name="twilio_about_heading">About TWILIO</string>
+    <string name="twilio_about_content">
+        <b>=></b> Twilio was founded on 13 March 2008 and is based in San Francisco, California, United States.\n
+        <b>=></b> Twilio Inc (Twilio) is a provider of cloud communications platforms. Twilio enable developers to build, scale and operate real-time communications within software applications.\n
+        <b>=></b> Twilio cash on hand for the quarter ending March 31, 2023 was $3.945B, a 24.47% decline year-over-year. Twilio cash on hand for 2022 was $4.155B, a 22.45% decline from 2021. Twilio cash on hand for 2021 was $5.358B, a 76.26% increase from 2020.\n
+    </string>
+    <string name="twilio_hiring_details_heading">Recruitment process at TWILIO</string>
+    <string name="twilio_hiring_details_content">
+        <b>=> Recruitment Process :</b>\n
+        &#160;&#160;&#160;&#160;* Hackerrank Test\n
+        &#160;&#160;&#160;&#160;* Technical Round 1 and 2\n
+        &#160;&#160;&#160;&#160;* Managerial Round\n
+        &#160;&#160;&#160;&#160;* Behavioral round\n\n
+
+        <b>=> Hackerrank Test :</b>\n
+        It has 4 coding questions, 2 easy, and 2 medium. It is expected to solve at least 3 coding questions to get shortlisted for further rounds.\n\n
+        <b>=> Tech screening :</b>\n
+        One of the senior software engineer in the organization can be expected to take this interview. Questions from Java OOPS and coding questions are asked. System design questions like design a system like red bus app can be expected.\n\n
+        <b>=> Managerial Round :</b>\n
+        It is taken by one of the senior employees or manager. Questions about the projects and some behavioral questions are asked.\n\n
+        <b>=> Behavioral round :</b>\n
+        It is taken by a bar raiser. More than 10 behavioral questions can be asked. Better to answer questions by using the STAR approach.\n
+    </string>
+
+
+    <string name="media_dot_net_about_heading">About MEDIA.NET</string>
+    <string name="media_dot_net_about_content">
+        <b>=></b> Media.net is a technology company with over 1250 employees committed to developing innovative monetization products for digital publishers and advertisers.\n
+        <b>=></b> It is the second-largest contextual advertising network in the world. It is also one of the TOP 5 largest ad tech companies by market cap.\n
+    </string>
+    <string name="media_dot_net_hiring_details_heading">Recruitment process at MEDIA.NET</string>
+    <string name="media_dot_net_hiring_details_content">
+        <b>=> Recruitment Process :</b>\n
+        &#160;&#160;&#160;&#160;* Round 1: Online Assessment\n
+        &#160;&#160;&#160;&#160;* Round 2: Technical Interview 1\n
+        &#160;&#160;&#160;&#160;* Round 3: Technical Interview 2\n
+        &#160;&#160;&#160;&#160;* Round 4: HR round\n\n
+
+        <b>=> MEDIA.NET Eligibility Criteria :</b>\n
+        Bachelor/ Masters in Computer Science, or equivalent.\n\n
+        <b>=> Online Assessment :</b>\n
+        There will be an online MCQ test including topics General aptitude, computer network, DBMS, OS, Data structure and algorithms, and coding test 2-3 easy to medium level problems.\n\n
+        <b>=> Technical Interview 1 :</b>\n
+        In this round, The interviewer asks to perform tasks like networking tasks and to solve medium-level DSA coding problems.\n\n
+        <b>=> Technical Interview 2 :</b>\n
+        Questions from CS fundamentals, Discussion on previously performed projects, and low-level system designing may be asked.\n\n
+        <b>=> HR Round :</b>\n
+        Some Behavioral questions and Normal Hr questions are asked here.\n\n
+    </string>
+
+
+    <string name="paypal_about_heading">About PAYPAL</string>
+    <string name="paypal_about_content">
+        <b>=></b> PayPal is a multinational financial technology business headquartered in the United States that operates an online payment system. \n
+        <b>=></b> PayPal is one of the largest online payment processors in the world. PayPal provides the service as a faster, safer way to send and receive money or make an online payment.\n
+        <b>=></b> In 2022, the company revenue was $27.5 billion, out of which it made $2.4 billion in net profit. In 2021, PayPal generated $25.37 billion in revenue, an increase over the previous years $21.45 billion.\n
+    </string>
+    <string name="paypal_hiring_details_heading">Recruitment process at PAYPAL</string>
+    <string name="paypal_hiring_details_content">
+        <b>=> Recruitment Process :</b>\n
+        &#160;&#160;&#160;&#160;* Round 1: Online Assessment\n
+        &#160;&#160;&#160;&#160;* Round 2: Technical Interview 1\n
+        &#160;&#160;&#160;&#160;* Round 3: Technical Interview 2\n
+        &#160;&#160;&#160;&#160;* Round 4: HR Round\n
+
+        <b>=> PAYPAL Eligibility Criteria :</b>\n
+        BE degree in Computer Science or Engineering or relevant experience.\n\n
+        <b>=> Online Assessment :</b>\n
+        In this round, candidates are to solve 2-3 easy to medium-level coding questions in 60-90 Minutes.\n\n
+        <b>=> Technical Interview 1 :</b>\n
+        This round will be fully based on data structures and algorithms. The interviewer could check the candidate’s problem-solving skills. Ask technical questions, including topics like C/C++, data structures, OOPs, operating systems, DBMS, and networking, and solve coding problems.\n\n
+        <b>=> Technical Interview 2 :</b>\n
+        This Round will be based on system design. Discussion on previously performed projects, scenario-based questions, and low-level system design.\n\n
+        <b>=> HR Round :</b>\n
+        Some Behavioral questions and Normal Hr questions are asked here.\n\n
+    </string>
+
+
+    <string name="paytm_about_heading">About PAYTM</string>
+    <string name="paytm_about_content">
+        <b>=></b> It was founded in 2010 by Vijay Shekhar Sharma under One97 Communications.\n
+        <b>=></b> Paytm is an Indian multinational financial technology company, that specializes in digital payments and financial services, based in Noida.\n
+        <b>=></b> Paytm FY23 Results: Revenue Jumps to ₹7,990 Crore, Up By 61% YoY.\n
+    </string>
+    <string name="paytm_hiring_details_heading">Recruitment processes at PAYTM</string>
+    <string name="paytm_hiring_details_content">
+        <b>=> Recruitment Process :</b>\n
+        &#160;&#160;&#160;&#160;* Online Coding Round(On platforms like Hackkerank, HackerEarth, etc.)\n
+        &#160;&#160;&#160;&#160;* Technical Interview Rounds\n
+        &#160;&#160;&#160;&#160;* HR Round\n\n
+
+        <b>=> Online Coding Round :</b>\n
+        It is usually a coding round where candidates are required to answer two to three questions about Data Structures and Algorithms on platforms like Hackkerank, HackerEarth, Cocubes and others over a time span of about sixty to seventy minutes.\n\n
+        <b>=> Technical Interview Rounds :</b>\n
+        The Paytm on-site or online technical interviews will consist of four to six face-to-face interviews.a series of questions about Data Structures and Algorithms are asked.For a range of operations requiring Relational Databases, candidates may be requested to write SQL queries.Data structures, algorithms, database management systems, operating systems, networking, object-oriented programming concepts, and their chosen programming languages, such as C++, Java, Python, and others, should all be familiar to candidates.\n\n
+        <b>=> HR Round :</b>\n
+        The Human Resources (HR) or Behavioral Round (usually one or two in number) of the Paytm Recruitment Process tries to establish whether the candidate is a cultural match for Paytm. In order to ace these interviews, candidates need to study more about Paytm and its products. Candidates may be offered puzzle-based questions during these rounds to assess their overall intelligence and how well they adapt to awkward and challenging situations.\n\n
+    </string>
+
+
+    <string name="goldman_sachs_about_heading">About GOLDMAN SACHS</string>
+    <string name="goldman_sachs_about_content">
+        <b>=></b> It was founded in 1869 and is headquartered in New York, United States.\n
+        <b>=></b> Apart from investment banking, it offers services in investment management, securities, asset management, prime brokerage, and securities underwriting.\n
+        <b>=></b> Goldman Sachs revenue for the twelve months ending March 31, 2023 was $46.656B, a 14.5% decline year-over-year. Goldman Sachs annual revenue for 2022 was $47.365B, a 20.18% decline from 2021.\n
+    </string>
+    <string name="goldman_sachs_hiring_details_heading">Recruitment process at GOLDMAN SACHS</string>
+    <string name="goldman_sachs_hiring_details_content">
+        <b>=> Recruitment Process :</b>\n
+        Goldman Sachs conducts 6 to 8 rounds to select the freshers as SDE in their organisation: \n
+        &#160;&#160;&#160;&#160;* Online or The Hackerrank Round\n
+        &#160;&#160;&#160;&#160;* Coderpad Round\n
+        &#160;&#160;&#160;&#160;* Telephonic Round\n
+        &#160;&#160;&#160;&#160;* Technical Round 1\n
+        &#160;&#160;&#160;&#160;* Technical Round 2\n
+        &#160;&#160;&#160;&#160;* Technical Round 3\n
+        &#160;&#160;&#160;&#160;* Technical Round 4\n
+        &#160;&#160;&#160;&#160;* Technical-cum HR round\n\n
+
+        <b>=> Online or The Hackerrank Round :</b>\n
+        The online round is held on the Hackerrank platform and generally consists of three sections and user is allowed to switch between the sections. \n
+        &#160;&#160;&#160;&#160;* The CS section which consists of programming questions along with few MCQs and lasts for about 1 hour.\n
+        &#160;&#160;&#160;&#160;* ML section consists of questions from Machine Learning and lasts for about 30 minutes.\n
+        &#160;&#160;&#160;&#160;* Quants sections consist of general numerical aptitude questions running for about 1 hour.\n\n
+        <b>=> The Coderpad Round :</b>\n
+        The CoderPad Round is a coding round in which live coding is held in which the screen is shared between the student and the interviewer who will be on call with the student. The round lasts for about 1 hour and the interviewer may ask one to two questions depending on the time frame. \n\n
+        <b>=> Telephonic Round :</b>\n
+        In this round, the interviewer asks questions over the phone, testing the students technical skills, related to course subjects, programming, System Designing and Algorithms. \n\n
+        <b>=> Technical Rounds :</b>\n
+        Subjects that interest the interviewer mostly are Data Structure, Algorithms, Operating System, Networking, Database Management etc. Students will be tested of his or her in-depth knowledge in all aspects of domains related to Computer Science and his or her interests. Students can also be expected to write codes in the interview. \n\n
+        <b>=> Technical-cum HR Round :</b>\n
+        This round deals less with less technical questions and more with the HR questions.\n\n
+    </string>
+
+
+    <string name="jpmorgan_about_heading">About JP MORGAN CHASE and CO.</string>
+    <string name="jpmorgan_about_content">
+        <b>=></b> It was founded on 31 December 2000 and is headquartered in New York, New York, United States.\n
+        <b>=></b> J.P. Morgan is a leader in investment banking, commercial banking, financial transaction processing and asset management. \n
+        <b>=></b> JPMorgan Chase net worth as of May 31, 2023 is $401.7B.\n
+    </string>
+    <string name="jpmorgan_hiring_details_heading">Recruitment process at JP MORGAN CHASE and CO.</string>
+    <string name="jpmorgan_hiring_details_content">
+        <b>=> Recruitment Process :</b>\n
+        &#160;&#160;&#160;&#160;* Round 1: Online Assessment\n
+        &#160;&#160;&#160;&#160;* Round 2: Technical Round 1\n
+        &#160;&#160;&#160;&#160;* Round 3: Technical Round 2\n
+        &#160;&#160;&#160;&#160;* Round 4: HR\n\n
+
+        <b>=> JP MORGAN Eligibility Criteria :</b>\n
+        Bachelors Degree in an engineering field, experience in Software Development.\n\n
+        <b>=> Online Assessment :</b>\n
+        The Online Assessment is a coding round. DSA based coding questions are asked.\n\n
+        <b>=> Technical Round 1 :</b>\n
+        &#160;&#160;&#160;&#160;* Some self-introduction questions.\n
+        &#160;&#160;&#160;&#160;* Easy to medium-level questions based on technologies like java, python, oops, DSA, etc.\n\n
+        <b>=> Technical Round 2 :</b>\n
+        Coding Questions on Data Structures and System Design questions on Low-Level Design.\n\n
+        <b>=> HR Round :</b>\n
+        Some Behavioral questions and Normal Hr questions are asked here.\n\n
+    </string>
+
+
+    <string name="netflix_about_heading">About NETFLIX</string>
+    <string name="netflix_about_content">
+        <b>=></b> Netflix was founded on 29 August 1997 and is headquartered in Scotts Valley, California.\n\n
+        <b>=></b> It consumes more than 15 percent of the world’s internet bandwidth and has subscribers in more than 190 countries.\n
+        <b>=></b> Netflix net income for the twelve months ending March 31, 2023 was $4.200B, a 16.12% decline year-over-year. Netflix annual net income for 2022 was $4.492B, a 12.2% decline from 2021. Netflix annual net income for 2021 was $5.116B, a 85.28% increase from 2020.\n
+    </string>
+    <string name="netflix_hiring_details_heading">Recruitment process at NETFLIX</string>
+    <string name="netflix_hiring_details_content">
+        <b>=> Recruitment Process :</b>\n
+        &#160;&#160;&#160;&#160;* Pre screening with a recruiter\n
+        &#160;&#160;&#160;&#160;* Phone call interview\n
+        &#160;&#160;&#160;&#160;* On-site interview\n
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;* Coding Round 1\n
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;* Coding Round 2\n
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;* HR\n\n
+
+        <b>=> NETFLIX Eligibility Criteria :</b>\n
+        &#160;&#160;&#160;&#160;* A graduate degree in Computer Science, IT, or a relevant field\n
+        &#160;&#160;&#160;&#160;* Good problem-solving and analytical skills\n\n
+        <b>=> Pre screening With a recruiter :</b>\n
+        Your initial phone screen will be around 30 minutes when the recruiter will dig into your resume and ask questions about your past projects and cultural fit.\n\n
+        <b>=> Phone Call Interview :</b>\n
+        The next step is a phone interview to assess your technical skills. You can anticipate questions on data structures and algorithms as well as an assignment with a Netflix use case. There may also be some behavioral inquiries. The interview will be led by an engineer.\n\n
+        <b>=> Coding Round 1 :</b>\n
+        Coding Questions on data Structures Medium and Hard Level and Computer Science Concepts.\n\n
+        <b>=> Coding Round 2 :</b>\n
+        Coding Questions on Data Structures and Design questions Low-Level Design and High-Level Design.\n\n
+        <b>=> HR Round :</b>\n
+        Some Behavioral questions and Normal Hr questions are asked here.\n\n
+    </string>
 </resources>
