@@ -2,9 +2,13 @@ package com.example.majorproject;
 
 import android.animation.LayoutTransition;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.transition.AutoTransition;
 import android.transition.TransitionManager;
 import android.view.View;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -13,11 +17,32 @@ import androidx.appcompat.app.AppCompatActivity;
 public class BitManipulation extends AppCompatActivity {
     LinearLayout layout1,layout2,layout3;
     TextView code1,code2,code3;
+    WebView VideoPlayer;
+    TextView LinkText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.bit_manipulation);
+
+        //Link Show
+        LinkText = findViewById(R.id.Linkshow);
+        String setlink = "https://drive.google.com/file/d/15SwuBVqPlNZFV2epaPNuol-mnTW6IHDs/view?usp=sharing";
+        LinkText.setText(setlink);
+
+        //Link Show End
+
+        //for video player
+        VideoPlayer = findViewById(R.id.bit_video);
+        VideoPlayer.getSettings().setJavaScriptEnabled(true);
+        VideoPlayer.getSettings().setPluginState(WebSettings.PluginState.ON);
+        VideoPlayer.setWebViewClient(new WebViewClient());
+        //for video getting the link
+        String videoId = "OSoO8eCEEC8";
+        String html = "<html><body><iframe class=\"youtube-player\" type=\"text/html\" width=\"100%\" height=\"100%\" src=\"http://www.youtube.com/embed/" + videoId + "\" frameborder=\"0\"></iframe></body></html>";
+        VideoPlayer.loadData(html, "text/html", "utf-8");
+
+        //video player ends
 
         //for 1st card view
         layout1=(LinearLayout) findViewById(R.id.layout_bit_manipulation_q1);
@@ -54,4 +79,13 @@ public class BitManipulation extends AppCompatActivity {
         TransitionManager.beginDelayedTransition(layout3,new AutoTransition());
         code3.setVisibility(v3);
     }
+    @Override
+    public void onBackPressed() {
+        if (VideoPlayer.canGoBack()) {
+            VideoPlayer.goBack();
+        } else {
+            super.onBackPressed();
+        }
+    }
+
 }

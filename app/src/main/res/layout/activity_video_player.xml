@@ -48,7 +48,6 @@
                 android:layout_height="15dp"/>
 
             <androidx.cardview.widget.CardView
-                android:onClick="expand_dynamic_programming_q1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="20dp"
@@ -59,7 +58,7 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/layout_dynamic_programming_q1"
+
                     android:animateLayoutChanges="true"
                     android:orientation="vertical">
                     <ImageView
@@ -79,7 +78,6 @@
                 android:layout_height="25dp"/>
 
             <androidx.cardview.widget.CardView
-                android:onClick="expand_dynamic_programming_q2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="20dp"
@@ -90,7 +88,6 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/layout_dynamic_programming_q2"
                     android:animateLayoutChanges="true"
                     android:orientation="vertical">
                     <TextView
