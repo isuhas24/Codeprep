@@ -57,50 +57,14 @@ public class DSA extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String videoId = "-sktNalfrE0";
-                Resources res = getResources();
-                String Headtxt = "ARRAYS";
-                String Link = "Download Resources PDF From Here: https://drive.google.com/drive/folders/1zZoDSbpaB-5-V_PeNNyeT9-jQRDYjkEI?usp=share_link";
-                BitmapFactory.Options options = new BitmapFactory.Options();
-                options.inSampleSize = 2;
-                Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.dsaarray, options);
-                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                bitmap.compress(Bitmap.CompressFormat.JPEG, 50, stream);
-                byte[] byteArray = stream.toByteArray();
-                String Imagefinder ="R.drawable.image";
-                Intent intent = new Intent(DSA.this, VideoPlayerActivity.class);
-                intent.putExtra("Link_file", Link);
-                intent.putExtra("video_id", videoId);
-                intent.putExtra("Headtext_id", Headtxt);
-                intent.putExtra("image_finder", Imagefinder);
-                intent.putExtra("image_byte_array", byteArray);
-
-                startActivity(intent);
+                startActivity(new Intent(getApplicationContext(), Array.class));
             }
         });
         btn3=(Button) findViewById(R.id.DSACustomButton3);
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String videoId = "Db8OmMfzwl8";
-                Resources res = getResources();
-                String Headtxt = "BIT MANIPULATION";
-                String Link = "Download Resources PDF From Here: https://drive.google.com/drive/folders/1NITXuMBEEhOPj8SpQzPXSXDhxvpZdMTm?usp=share_link";
-                BitmapFactory.Options options = new BitmapFactory.Options();
-                options.inSampleSize = 2;
-                Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.dsabitm, options);
-                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                bitmap.compress(Bitmap.CompressFormat.JPEG, 50, stream);
-                byte[] byteArray = stream.toByteArray();
-                String Imagefinder ="R.drawable.image";
-                Intent intent = new Intent(DSA.this, VideoPlayerActivity.class);
-                intent.putExtra("Link_file", Link);
-                intent.putExtra("video_id", videoId);
-                intent.putExtra("Headtext_id", Headtxt);
-                intent.putExtra("image_finder", Imagefinder);
-                intent.putExtra("image_byte_array", byteArray);
-
-                startActivity(intent);
+                startActivity(new Intent(getApplicationContext(), BitManipulation.class));
             }
         });
         btn4=(Button) findViewById(R.id.DSACustomButton4);
@@ -132,75 +96,21 @@ public class DSA extends AppCompatActivity {
         btn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String videoId = "lVR2u9lsxl8";
-                Resources res = getResources();
-                String Headtxt = "DYNAMIC PROGRAMMING";
-                String Link = "Download Resources PDF From Here: https://drive.google.com/drive/folders/1hJx-PjyEbCh--vuUbfGfFk5yJNRqLpF3?usp=share_link";
-                BitmapFactory.Options options = new BitmapFactory.Options();
-                options.inSampleSize = 2;
-                Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.dsadynamic, options);
-                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                bitmap.compress(Bitmap.CompressFormat.JPEG, 50, stream);
-                byte[] byteArray = stream.toByteArray();
-                String Imagefinder ="R.drawable.image";
-                Intent intent = new Intent(DSA.this, VideoPlayerActivity.class);
-                intent.putExtra("Link_file", Link);
-                intent.putExtra("video_id", videoId);
-                intent.putExtra("Headtext_id", Headtxt);
-                intent.putExtra("image_finder", Imagefinder);
-                intent.putExtra("image_byte_array", byteArray);
-
-                startActivity(intent);
+                startActivity(new Intent(getApplicationContext(), DynamicProgramming.class));
             }
         });
         btn6=(Button) findViewById(R.id.DSACustomButton6);
         btn6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String videoId = "TwdjOQMTaQ4";
-                Resources res = getResources();
-                String Headtxt = "GRAPHS";
-                String Link = "Download Resources PDF From Here: https://drive.google.com/drive/folders/1C8IwYZ1gs2wel3ucNBw8MlhoI830gWGh?usp=share_link";
-                BitmapFactory.Options options = new BitmapFactory.Options();
-                options.inSampleSize = 2;
-                Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.dsagraphs, options);
-                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                bitmap.compress(Bitmap.CompressFormat.JPEG, 50, stream);
-                byte[] byteArray = stream.toByteArray();
-                String Imagefinder ="R.drawable.image";
-                Intent intent = new Intent(DSA.this, VideoPlayerActivity.class);
-                intent.putExtra("Link_file", Link);
-                intent.putExtra("video_id", videoId);
-                intent.putExtra("Headtext_id", Headtxt);
-                intent.putExtra("image_finder", Imagefinder);
-                intent.putExtra("image_byte_array", byteArray);
-
-                startActivity(intent);
+                startActivity(new Intent(getApplicationContext(), Graphs.class));
             }
         });
         btn7=(Button) findViewById(R.id.DSACustomButton7);
         btn7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String videoId = "v0eQ4nXJjsk";
-                Resources res = getResources();
-                String Headtxt = "GREEDY";
-                String Link = "Download Resources PDF From Here: https://drive.google.com/drive/folders/14EeF1UMk-euh7X8MXh8Sf5IOJ5vt0Je6?usp=share_link";
-                BitmapFactory.Options options = new BitmapFactory.Options();
-                options.inSampleSize = 2;
-                Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.dsagreedy, options);
-                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                bitmap.compress(Bitmap.CompressFormat.JPEG, 50, stream);
-                byte[] byteArray = stream.toByteArray();
-                String Imagefinder ="R.drawable.image";
-                Intent intent = new Intent(DSA.this, VideoPlayerActivity.class);
-                intent.putExtra("Link_file", Link);
-                intent.putExtra("video_id", videoId);
-                intent.putExtra("Headtext_id", Headtxt);
-                intent.putExtra("image_finder", Imagefinder);
-                intent.putExtra("image_byte_array", byteArray);
-
-                startActivity(intent);
+                startActivity(new Intent(getApplicationContext(), Greedy.class));
             }
         });
         btn8=(Button) findViewById(R.id.DSACustomButton8);
@@ -232,75 +142,21 @@ public class DSA extends AppCompatActivity {
         btn9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String videoId = "oAja8-Ulz6o";
-                Resources res = getResources();
-                String Headtxt = "LINKED LIST";
-                String Link = "Download Resources PDF From Here: https://drive.google.com/drive/folders/1aq4I7QMUwkKETLpDOWzhjw186BY27ehK?usp=share_link";
-                BitmapFactory.Options options = new BitmapFactory.Options();
-                options.inSampleSize = 2;
-                Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.dsalinked, options);
-                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                bitmap.compress(Bitmap.CompressFormat.JPEG, 50, stream);
-                byte[] byteArray = stream.toByteArray();
-                String Imagefinder ="R.drawable.image";
-                Intent intent = new Intent(DSA.this, VideoPlayerActivity.class);
-                intent.putExtra("Link_file", Link);
-                intent.putExtra("video_id", videoId);
-                intent.putExtra("Headtext_id", Headtxt);
-                intent.putExtra("image_finder", Imagefinder);
-                intent.putExtra("image_byte_array", byteArray);
-
-                startActivity(intent);
+                startActivity(new Intent(getApplicationContext(), LinkedList.class));
             }
         });
         btn10=(Button) findViewById(R.id.DSACustomButton10);
         btn10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String videoId = "Peo7k2osVVs";
-                Resources res = getResources();
-                String Headtxt = "RECURSION AND BACKTRACKING";
-                String Link = "Download Resources PDF From Here: https://drive.google.com/drive/folders/1XSMzvHUPmsXZbVIGZ-0_nF15eHGxjO-P?usp=share_link";
-                BitmapFactory.Options options = new BitmapFactory.Options();
-                options.inSampleSize = 2;
-                Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.dsarecursion, options);
-                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                bitmap.compress(Bitmap.CompressFormat.JPEG, 50, stream);
-                byte[] byteArray = stream.toByteArray();
-                String Imagefinder ="R.drawable.image";
-                Intent intent = new Intent(DSA.this, VideoPlayerActivity.class);
-                intent.putExtra("Link_file", Link);
-                intent.putExtra("video_id", videoId);
-                intent.putExtra("Headtext_id", Headtxt);
-                intent.putExtra("image_finder", Imagefinder);
-                intent.putExtra("image_byte_array", byteArray);
-
-                startActivity(intent);
+                startActivity(new Intent(getApplicationContext(), Backtracking.class));
             }
         });
         btn11=(Button) findViewById(R.id.DSACustomButton11);
         btn11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String videoId = "lno6Ft0tOZI";
-                Resources res = getResources();
-                String Headtxt = "STACKS AND QUEUE";
-                String Link = "Download Resources PDF From Here: https://drive.google.com/drive/folders/1u2vKyJS6fTBZQhWJPLgLFGEjJa-Snuta?usp=share_link";
-                BitmapFactory.Options options = new BitmapFactory.Options();
-                options.inSampleSize = 2;
-                Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.dsastacks, options);
-                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                bitmap.compress(Bitmap.CompressFormat.JPEG, 50, stream);
-                byte[] byteArray = stream.toByteArray();
-                String Imagefinder ="R.drawable.image";
-                Intent intent = new Intent(DSA.this, VideoPlayerActivity.class);
-                intent.putExtra("Link_file", Link);
-                intent.putExtra("video_id", videoId);
-                intent.putExtra("Headtext_id", Headtxt);
-                intent.putExtra("image_finder", Imagefinder);
-                intent.putExtra("image_byte_array", byteArray);
-
-                startActivity(intent);
+                startActivity(new Intent(getApplicationContext(), StacksAndQueues.class));
             }
         });
         btn12=(Button) findViewById(R.id.DSACustomButton12);
@@ -332,25 +188,7 @@ public class DSA extends AppCompatActivity {
         btn13.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String videoId = "YAdLFsTG70w";
-                Resources res = getResources();
-                String Headtxt = "TREES";
-                String Link = "Download Resources PDF From Here: https://drive.google.com/drive/folders/1xG0RACqBq6BdMUQbDyQY57xCgYaEBJbx?usp=share_link";
-                BitmapFactory.Options options = new BitmapFactory.Options();
-                options.inSampleSize = 2;
-                Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.dsatree, options);
-                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                bitmap.compress(Bitmap.CompressFormat.JPEG, 50, stream);
-                byte[] byteArray = stream.toByteArray();
-                String Imagefinder ="R.drawable.image";
-                Intent intent = new Intent(DSA.this, VideoPlayerActivity.class);
-                intent.putExtra("Link_file", Link);
-                intent.putExtra("video_id", videoId);
-                intent.putExtra("Headtext_id", Headtxt);
-                intent.putExtra("image_finder", Imagefinder);
-                intent.putExtra("image_byte_array", byteArray);
-
-                startActivity(intent);
+                startActivity(new Intent(getApplicationContext(), Trees.class));
             }
         });
     }

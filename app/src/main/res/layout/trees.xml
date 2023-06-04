@@ -40,8 +40,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="5dp"
+                android:layout_margin="7dp"
                 app:cardElevation="10dp"
                 app:contentPadding="0dp">
                 <WebView
@@ -58,14 +57,14 @@
                 android:text="@string/trees_heading"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="30dp"
+                android:textSize="30sp"
                 android:textStyle="bold"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Choose the SDE sheet questions from below"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:textAlignment="center"
                 android:textColor="@color/black"/>
@@ -93,7 +92,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/trees_q1"
-                        android:textSize="15dp"
+                        android:textSize="15sp"
                         android:textStyle="bold"/>
                     <ImageView
                         android:layout_width="wrap_content"

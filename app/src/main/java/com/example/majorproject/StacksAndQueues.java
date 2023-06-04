@@ -38,7 +38,7 @@ public class StacksAndQueues extends AppCompatActivity {
         VideoPlayer.getSettings().setPluginState(WebSettings.PluginState.ON);
         VideoPlayer.setWebViewClient(new WebViewClient());
         //for video getting the link
-        String videoId = "TwdjOQMTaQ4";
+        String videoId = "lno6Ft0tOZI";
         String html = "<html><body><iframe class=\"youtube-player\" type=\"text/html\" width=\"100%\" height=\"100%\" src=\"http://www.youtube.com/embed/" + videoId + "\" frameborder=\"0\"></iframe></body></html>";
         VideoPlayer.loadData(html, "text/html", "utf-8");
 
