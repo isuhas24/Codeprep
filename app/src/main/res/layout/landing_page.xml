@@ -584,6 +584,20 @@
                     android:layout_centerInParent="true"
                     android:text="ROADMAPS"/>
 
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+
+                <Button
+                    android:id="@+id/resumemaker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buttonbag"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_centerInParent="true"
+                    android:text="Create Resume"/>
+
 
             </LinearLayout>
 

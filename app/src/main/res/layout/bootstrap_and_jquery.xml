@@ -76,7 +76,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/buttonbag"
                 android:layout_centerInParent="true"
-                android:text="Bootstrap overview"/>
+                android:text="Bootstrap Overview"/>
 
             <View
                 android:layout_width="match_parent"

@@ -39,7 +39,7 @@ public class LandingPage extends AppCompatActivity implements View.OnClickListen
     private int currentIndex = 0;
 
     ImageView mobility_image,ecommerce_image,crm_image,cloud_image,collaboration_image,communication_image,advertisement_image,payment_image,investment_image,entertainment_image;
-    Button system_design_button,programming_languages_button,dsa_button,oops_button,dbms_button,os_button,se_button,cn_button,github_button,sde_sheet_button,web_development_button,leetcode_solutions_button,coding_practices_button,tips_button,questions_button,roadmaps;
+    Button system_design_button,programming_languages_button,dsa_button,oops_button,dbms_button,os_button,se_button,cn_button,github_button,sde_sheet_button,web_development_button,leetcode_solutions_button,coding_practices_button,tips_button,questions_button,roadmaps,resumemaker;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -112,6 +112,8 @@ public class LandingPage extends AppCompatActivity implements View.OnClickListen
         questions_button.setOnClickListener(this);
         roadmaps=(Button)findViewById(R.id.btn_roadmaps);
         roadmaps.setOnClickListener(this);
+        resumemaker=(Button)findViewById(R.id.resumemaker);
+        resumemaker.setOnClickListener(this);
 
 
         PFname = findViewById(R.id.profilename);
@@ -264,5 +266,6 @@ public class LandingPage extends AppCompatActivity implements View.OnClickListen
             Intent it=new Intent(this,Roadmaps.class);
             startActivity(it);
         }
+
     }
 }

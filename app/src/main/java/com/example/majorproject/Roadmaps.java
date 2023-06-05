@@ -14,11 +14,26 @@ public class Roadmaps extends AppCompatActivity implements View.OnClickListener 
         super.onCreate(b);
         setContentView(R.layout.activity_roadmap);
         b1=(Button) findViewById(R.id.btn1);
-        b1.setOnClickListener(this);
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
         b2=(Button) findViewById(R.id.btn2);
-        b2.setOnClickListener(this);
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
         b3=(Button) findViewById(R.id.btn3);
-        b3.setOnClickListener(this);
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
     public void onClick(View view) {
 

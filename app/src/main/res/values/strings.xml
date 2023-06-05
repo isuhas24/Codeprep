@@ -1531,8 +1531,6 @@ Step by step guide to become a AI/ML scientist.
     </string>
 
 
-
-
     <string name="trees_q1">Question 1:\n
         Given a binary tree, find its level order traversal. Level order traversal of a tree is breadth-first traversal for the tree.\n\n
     </string>
@@ -1583,7 +1581,6 @@ Step by step guide to become a AI/ML scientist.
             &#160;}\n
         }\n
     </string>
-
 
 
     <string name="trees_q2">Question 2:\n
@@ -1972,8 +1969,8 @@ Step by step guide to become a AI/ML scientist.
         <b>=> HR Round/ Interview :</b>\n
         Some Behavioral questions and Normal Hr questions are asked here.\n\n
     </string>
-    
-    
+
+
     <string name="twilio_about_heading">About TWILIO</string>
     <string name="twilio_about_content">
         <b>=></b> Twilio was founded on 13 March 2008 and is based in San Francisco, California, United States.\n
