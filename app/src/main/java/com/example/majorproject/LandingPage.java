@@ -110,8 +110,6 @@ public class LandingPage extends AppCompatActivity implements View.OnClickListen
         tips_button.setOnClickListener(this);
         questions_button=(Button) findViewById(R.id.customButton15);
         questions_button.setOnClickListener(this);
-        roadmaps=(Button)findViewById(R.id.btn_roadmaps);
-        roadmaps.setOnClickListener(this);
         resumemaker=(Button)findViewById(R.id.resumemaker);
         resumemaker.setOnClickListener(this);
 
@@ -262,10 +260,5 @@ public class LandingPage extends AppCompatActivity implements View.OnClickListen
             Intent it=new Intent(this,Questions.class);
             startActivity(it);
         }
-        else if(v.equals(roadmaps)){
-            Intent it=new Intent(this,Roadmaps.class);
-            startActivity(it);
-        }
-
     }
 }

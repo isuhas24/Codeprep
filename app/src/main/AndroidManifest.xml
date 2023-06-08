@@ -167,9 +167,6 @@
             android:name=".SQLResources"
             android:exported="true" />
         <activity
-            android:name=".Roadmaps"
-            android:exported="true" />
-        <activity
             android:name=".HtmlAndCss"
             android:exported="true" />
         <activity
