@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".first_resume">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="221dp">
+
+
+        <ImageView
+            android:id="@+id/Profilepic"
+            android:layout_width="182dp"
+            android:layout_height="221dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/manphoto" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/FullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="47dp"
+                android:gravity="center"
+                android:text="Suhas Indrigi "
+                android:background="#B91616"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="27sp"/>
+
+            <TextView
+                android:id="@+id/DeveloperType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="31dp"
+                android:background="#B91616"
+                android:text="App Developer"
+                android:paddingBottom="25dp"
+                android:gravity="start"
+                android:textColor="@color/white"
+                android:textSize="17sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="start"
+                android:background="#ECEDEF"
+                android:layout_height="wrap_content">
+
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+
+                    android:gravity="center">
+
+                   <ImageView
+                       android:layout_width="21dp"
+                       android:layout_height="21dp"
+                       android:background="#ECEDEF"
+                       android:src="@drawable/callicon"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"/>
+                    <ImageView
+                        android:layout_width="21dp"
+                        android:layout_height="21dp"
+                        android:background="#ECEDEF"
+                        android:src="@drawable/locationicon"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"/>
+                    <ImageView
+                        android:layout_width="21dp"
+                        android:layout_height="21dp"
+                        android:background="#ECEDEF"
+                        android:src="@drawable/emailicon"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"/>
+                    <ImageView
+                        android:layout_width="21dp"
+                        android:layout_height="21dp"
+                        android:background="#ECEDEF"
+                        android:src="@drawable/websiteicon"/>
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="19dp"
+                    android:background="#ECEDEF"
+                    android:layout_height="match_parent"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Phone"
+                        android:background="#ECEDEF"
+                        android:gravity="start"
+                        android:textStyle="bold"
+
+                        android:textColor="@color/black"
+                        android:textSize="13.5sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Address"
+                        android:background="#ECEDEF"
+                        android:paddingTop="7dp"
+                        android:gravity="start"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="13.5sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:gravity="start"
+                        android:background="#ECEDEF"
+                        android:textStyle="bold"
+                        android:paddingTop="7dp"
+                        android:textColor="@color/black"
+                        android:textSize="13.5sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Website"
+                        android:gravity="start"
+                        android:paddingTop="3dp"
+                        android:background="#ECEDEF"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="13.5sp"/>
+
+
+
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="10dp"
+                    android:background="#ECEDEF"
+                    android:layout_height="match_parent"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/PhoneNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="+123-4567-890"
+                        android:background="#ECEDEF"
+                        android:gravity="start"
+                        android:textColor="@color/black"
+                        android:textSize="13.5sp"/>
+                    <TextView
+                        android:id="@+id/SmallAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bengalore,India"
+                        android:paddingTop="7dp"
+                        android:background="#ECEDEF"
+                        android:gravity="start"
+                        android:textColor="@color/black"
+                        android:textSize="13.5sp"/>
+                    <TextView
+                        android:id="@+id/EmailAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Suhash@gmail.com"
+                        android:gravity="start"
+                        android:background="#ECEDEF"
+                        android:paddingTop="7dp"
+                        android:textColor="@color/black"
+                        android:textSize="13.5sp"/>
+                    <TextView
+                        android:id="@+id/Website"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Codeprep.co.in"
+                        android:gravity="start"
+                        android:background="#ECEDEF"
+                        android:paddingTop="3dp"
+                        android:textColor="@color/black"
+                        android:textSize="13.5sp"/>
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="182dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="#ECEDEF"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="25dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About me"
+           android:gravity="start"
+            android:paddingStart="19dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15.5sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <TextView
+            android:id="@+id/Aboutme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I work in information technology, I have expertise in Web Development. I am an expert in software that has a website creation base"
+            android:gravity="start"
+            android:paddingStart="19dp"
+            android:textColor="@color/black"
+            android:textSize="12.5sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="25dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Professional Skills"
+            android:gravity="start"
+            android:paddingStart="19dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15.5sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <TextView
+            android:id="@+id/Skill1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JAVA"
+            android:gravity="start"
+            android:textColor="@color/black"
+            android:textSize="12.5sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <TextView
+            android:id="@+id/Skill2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KOTLIN"
+            android:gravity="start"
+            android:textColor="@color/black"
+            android:textSize="12.5sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <TextView
+            android:id="@+id/Skill3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PYTHON"
+            android:gravity="start"
+            android:textColor="@color/black"
+            android:textSize="12.5sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="25dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Award"
+            android:gravity="start"
+            android:paddingStart="19dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15.5sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <TextView
+            android:id="@+id/Award1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Finalist Web Development Contest - 2017"
+            android:gravity="start"
+            android:paddingStart="19dp"
+            android:textColor="@color/black"
+            android:textSize="12.5sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <TextView
+            android:id="@+id/Award2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingStart="19dp"
+            android:text="Champion of Web Development at Studio Shodwe"
+            android:textColor="@color/black"
+            android:textSize="12.5sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <TextView
+            android:id="@+id/Award3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingStart="19dp"
+            android:text="2nd Place of Web Designer Contest"
+            android:textColor="@color/black"
+            android:textSize="12.5sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Interests"
+            android:gravity="start"
+            android:paddingStart="19dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15.5sp"/>
+
+        <TextView
+            android:id="@+id/Intrest1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Photography"
+            android:gravity="start"
+            android:paddingStart="19dp"
+            android:textColor="@color/black"
+            android:textSize="12.5sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <TextView
+            android:id="@+id/Intrest2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Drawing"
+            android:gravity="start"
+            android:paddingStart="19dp"
+            android:textColor="@color/black"
+            android:textSize="12.5sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <TextView
+            android:id="@+id/Intrest3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Watching Movie"
+            android:gravity="start"
+            android:paddingStart="19dp"
+            android:textColor="@color/black"
+            android:textSize="12.5sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <TextView
+            android:id="@+id/Intrest4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Swimming"
+            android:gravity="start"
+            android:paddingStart="19dp"
+            android:textColor="@color/black"
+            android:textSize="12.5sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <TextView
+            android:id="@+id/Intrest5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Programing"
+            android:gravity="start"
+            android:paddingStart="19dp"
+            android:textColor="@color/black"
+            android:textSize="12.5sp"/>
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Education Background"
+                android:gravity="start"
+                android:paddingStart="13dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="15.5sp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="start"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/EDUYear1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:paddingStart="13dp"
+                        android:text="2013 - 2017"
+                        android:textColor="@color/black"
+                        android:textSize="12.5sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/EDUYear2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:paddingStart="13dp"
+                        android:text="2013 - 2017"
+                        android:textColor="@color/black"
+                        android:textSize="12.5sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp" />
+
+                    <TextView
+                        android:id="@+id/EDUYear3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:paddingStart="13dp"
+                        android:text="2013 - 2017"
+                        android:textColor="@color/black"
+                        android:textSize="12.5sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="start"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/EDUYear1Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:paddingStart="13dp"
+                        android:text="University of Art"
+                        android:textColor="@color/black"
+                        android:textSize="12.5sp"
+                        android:textStyle="bold" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3.8dp" />
+                    <TextView
+                        android:id="@+id/EDUYear1StudyIn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:paddingStart="13dp"
+                        android:text="Visual Art Design"
+                        android:textColor="@color/black"
+                        android:textSize="12.5sp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3.99dp" />
+                    <TextView
+                        android:id="@+id/EDUYear2Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:paddingStart="13dp"
+                        android:text="University of Art"
+                        android:textColor="@color/black"
+                        android:textSize="12.5sp"
+                        android:textStyle="bold" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3.99dp" />
+                    <TextView
+                        android:id="@+id/EDUYear2StudyIn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:paddingStart="13dp"
+                        android:text="Visual Art Design"
+                        android:textColor="@color/black"
+                        android:textSize="12.5sp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3.99dp" />
+                    <TextView
+                        android:id="@+id/EDUYear3Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:paddingStart="13dp"
+                        android:text="University of Art"
+                        android:textColor="@color/black"
+                        android:textSize="12.5sp"
+                        android:textStyle="bold" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3.99dp" />
+                    <TextView
+                        android:id="@+id/EDUYear3StudyIn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:paddingStart="13dp"
+                        android:text="Visual Art Design"
+                        android:textColor="@color/black"
+                        android:textSize="12.5sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:paddingTop="7dp"
+                android:gravity="top"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="15dp"
+
+                    android:background="@drawable/mejorbar"
+                    android:layout_height="match_parent" />
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:gravity="start"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Work Experiences"
+                        android:gravity="start"
+                        android:paddingStart="13dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="15.5sp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+                    <TextView
+                        android:id="@+id/WorkEXPYear1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2016"
+                        android:gravity="start"
+                        android:paddingStart="7dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="15.5sp"/>
+
+
+
+
+
+
+
+
+
+
+
+                    <TextView
+                        android:id="@+id/WorkEXPplacmentandcompany1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Web Development - Studio Shodwe"
+                        android:textColor="@color/black"
+                        android:textSize="12.5sp" />
+
+                    <TextView
+                        android:id="@+id/WorkEXPwork1a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:paddingStart="13dp"
+                        android:text="Build a web interface"
+                        android:textColor="@color/black"
+                        android:textSize="12.5sp" />
+
+
+                    <TextView
+                        android:id="@+id/WorkEXPwork1b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:paddingStart="13dp"
+                        android:text="Handling a company's web"
+                        android:textColor="@color/black"
+                        android:textSize="12.5sp" />
+
+
+
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+                    <TextView
+                        android:id="@+id/WorkEXPYear2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2016"
+                        android:gravity="start"
+                        android:paddingStart="10dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="15.5sp"/>
+
+
+
+
+
+
+
+
+
+
+
+                    <TextView
+                        android:id="@+id/WorkEXPplacmentandcompany2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="UI/UX Designer - Wardiere Inc."
+                        android:textColor="@color/black"
+                        android:textSize="12.5sp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+                    <TextView
+                        android:id="@+id/WorkEXPwork2a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:paddingStart="13dp"
+                        android:text="Create applications by utilizing prototypes."
+                        android:textColor="@color/black"
+                        android:textSize="12.5sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+                    <TextView
+                        android:id="@+id/WorkEXPwork2b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:paddingStart="13dp"
+                        android:text="Make a good interface in terms of colors, letters, images, and animations"
+                        android:textColor="@color/black"
+                        android:textSize="12.5sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="7dp" />
+
+
+
+                    <TextView
+                        android:id="@+id/WorkEXPYear3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2016"
+                        android:gravity="start"
+                        android:paddingStart="13dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="15.5sp"/>
+
+
+
+
+
+
+
+
+
+
+
+                    <TextView
+                        android:id="@+id/WorkEXPplacmentandcompany3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="UI/UX Designer - Larana, Inc."
+                        android:textColor="@color/black"
+                        android:textSize="12.5sp" />
+                    <TextView
+                        android:id="@+id/WorkEXPwork3a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:paddingStart="13dp"
+                        android:text="Build a web interface"
+                        android:textColor="@color/black"
+                        android:textSize="12.5sp" />
+
+                    <TextView
+                        android:id="@+id/WorkEXPwork3b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:paddingStart="13dp"
+                        android:text="Managing a applications of a clients"
+                        android:textColor="@color/black"
+                        android:textSize="12.5sp" />
+
+
+
+
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+</LinearLayout>
+
+
+
+
+
+

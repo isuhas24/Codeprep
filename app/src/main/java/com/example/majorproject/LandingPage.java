@@ -219,6 +219,7 @@ public class LandingPage extends AppCompatActivity implements View.OnClickListen
         else if(v.equals(os_button)){
             Intent it=new Intent(this,OperatingSystem.class);
             startActivity(it);
+
         }
         else if(v.equals(se_button)){
             Intent it=new Intent(this,SoftwareEngineering.class);
@@ -258,6 +259,10 @@ public class LandingPage extends AppCompatActivity implements View.OnClickListen
         }
         else if(v.equals(questions_button)){
             Intent it=new Intent(this,Questions.class);
+            startActivity(it);
+        }
+        else if(v.equals(resumemaker)){
+            Intent it=new Intent(this,ResumeMaker.class);
             startActivity(it);
         }
     }
