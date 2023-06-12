@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="5sp"
     android:background="@color/white">
@@ -107,12 +108,15 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <ImageView
+
+                        <com.google.android.material.imageview.ShapeableImageView
                             android:layout_width="200dp"
                             android:layout_height="150dp"
                             android:id="@+id/company1"
+                            android:background="@drawable/roundedbag"
                             android:src="@drawable/mobility_companies"
-                            android:scaleType="centerCrop"
+                            android:scaleType="center"
+                            app:shapeAppearanceOverlay="@style/RoundedSquare"
                             android:contentDescription="@string/app_name"/>
 
                         <TextView
@@ -134,11 +138,12 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <ImageView
+                        <com.google.android.material.imageview.ShapeableImageView
                             android:id="@+id/company2"
                             android:layout_width="200dp"
                             android:layout_height="150dp"
                             android:scaleType="centerCrop"
+                            app:shapeAppearanceOverlay="@style/RoundedSquare"
                             android:src="@drawable/ecommerce_companies" />
 
                         <TextView
@@ -158,11 +163,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
-                        <ImageView
+                        <com.google.android.material.imageview.ShapeableImageView
                             android:layout_width="200dp"
                             android:layout_height="150dp"
                             android:id="@+id/company3"
                             android:scaleType="centerCrop"
+                            app:shapeAppearanceOverlay="@style/RoundedSquare"
                             android:src="@drawable/crm_companies"/>
                         <TextView
                             android:layout_width="match_parent"
@@ -181,11 +187,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
-                        <ImageView
+                        <com.google.android.material.imageview.ShapeableImageView
                             android:layout_width="200dp"
                             android:layout_height="150dp"
                             android:id="@+id/company4"
                             android:scaleType="centerCrop"
+                            app:shapeAppearanceOverlay="@style/RoundedSquare"
                             android:src="@drawable/collaboration_companies"/>
                         <TextView
                             android:layout_width="match_parent"
@@ -204,9 +211,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
-                        <ImageView
+                        <com.google.android.material.imageview.ShapeableImageView
                             android:layout_width="200dp"
                             android:layout_height="150dp"
+                            app:shapeAppearanceOverlay="@style/RoundedSquare"
                             android:id="@+id/company5"
                             android:src="@drawable/cloudcomputing_companies"/>
                         <TextView
@@ -226,11 +234,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
-                        <ImageView
+                        <com.google.android.material.imageview.ShapeableImageView
                             android:layout_width="200dp"
                             android:layout_height="150dp"
                             android:scaleType="centerCrop"
                             android:id="@+id/company6"
+                            app:shapeAppearanceOverlay="@style/RoundedSquare"
                             android:src="@drawable/communication_companies"/>
                         <TextView
                             android:layout_width="match_parent"
@@ -249,11 +258,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
-                        <ImageView
+                        <com.google.android.material.imageview.ShapeableImageView
                             android:layout_width="200dp"
                             android:layout_height="150dp"
+                            app:shapeAppearanceOverlay="@style/RoundedSquare"
                             android:id="@+id/company7"
                             android:scaleType="centerCrop"
+
                             android:src="@drawable/advertisement_companies"/>
                         <TextView
                             android:layout_width="match_parent"
@@ -272,10 +283,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
-                        <ImageView
+                        <com.google.android.material.imageview.ShapeableImageView
                             android:layout_width="200dp"
                             android:layout_height="150dp"
                             android:id="@+id/company8"
+                            app:shapeAppearanceOverlay="@style/RoundedSquare"
                             android:scaleType="centerCrop"
                             android:src="@drawable/payments_companies"/>
                         <TextView
@@ -295,9 +307,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
-                        <ImageView
+                        <com.google.android.material.imageview.ShapeableImageView
                             android:layout_width="200dp"
                             android:layout_height="150dp"
+                            app:shapeAppearanceOverlay="@style/RoundedSquare"
                             android:id="@+id/company10"
                             android:src="@drawable/investment_companies"/>
                         <TextView
@@ -318,10 +331,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
-                        <ImageView
+                        <com.google.android.material.imageview.ShapeableImageView
                             android:layout_width="200dp"
                             android:layout_height="150dp"
                             android:id="@+id/company12"
+                            app:shapeAppearanceOverlay="@style/RoundedSquare"
                             android:scaleType="centerCrop"
                             android:src="@drawable/entertainment_companies"/>
                         <TextView
@@ -330,6 +344,7 @@
                             android:text="Entertainment"
                             android:textAlignment="center"
                             android:textColor="@color/black"
+
                             android:textSize="20dp"/>
                     </LinearLayout>
 
