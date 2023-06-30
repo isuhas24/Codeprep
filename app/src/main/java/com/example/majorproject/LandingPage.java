@@ -2,11 +2,13 @@ package com.example.majorproject;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -30,8 +32,16 @@ public class LandingPage extends AppCompatActivity implements View.OnClickListen
     FirebaseAuth fAuth;
     String userID,name;
 
+//animation
+    private LinearLayout layout1;
+    private LinearLayout landingpagescroll,Buttonlayout;
+    private HorizontalScrollView horizontalScrollView;
+    private TextView companycat,rcblock;
 
-    TextView PFname;
+
+
+    TextView PFname,pftext;
+    ImageView pfimage;
 
     private LinearLayout factPhoto;
     private Handler handler = new Handler();
@@ -53,9 +63,25 @@ public class LandingPage extends AppCompatActivity implements View.OnClickListen
         user = fAuth.getCurrentUser();
         userID = fAuth.getCurrentUser().getUid();
 
+//animation
+        layout1 = findViewById(R.id.layout1);
+        landingpagescroll = findViewById(R.id.factphoto);
+        horizontalScrollView = findViewById(R.id.horizontalScrollView);
+        companycat=findViewById(R.id.companycat);
+        Buttonlayout=findViewById(R.id.Buttonlayout);
+        rcblock=findViewById(R.id.rcblock);
+
+
+        startSlideFadeInAnimation2(landingpagescroll);
+        startSlideFadeInAnimation(layout1);
+        startSlideFadeInAnimationright(horizontalScrollView);
+        startSlideFadeInAnimationright2(companycat);
+        startSlideFadeInAnimationleft(rcblock);
+        startSlideFadeInAnimationleft2(Buttonlayout);
 
 
 
+        //*******************
 
         //Images
         mobility_image=(ImageView) findViewById(R.id.company1);
@@ -113,8 +139,24 @@ public class LandingPage extends AppCompatActivity implements View.OnClickListen
         resumemaker=(Button)findViewById(R.id.resumemaker);
         resumemaker.setOnClickListener(this);
 
-
+        //top bar actions
         PFname = findViewById(R.id.profilename);
+        pftext=findViewById(R.id.pftext);
+        pfimage=findViewById(R.id.pfimage);
+        pfimage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), ProfileActivity.class));
+            }
+        });
+        pftext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), ProfileActivity.class));
+            }
+        });
+
+
 
         //GETTING NAME FROM FIREBASE
         DocumentReference documentReferencenamename = fstore.collection("user").document(userID);
@@ -132,7 +174,7 @@ public class LandingPage extends AppCompatActivity implements View.OnClickListen
         //Image Slider Code
         factPhoto = findViewById(R.id.factphoto);
 
-        // Start the background changer
+        // Start the background changer-Image Slider Code
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -145,6 +187,55 @@ public class LandingPage extends AppCompatActivity implements View.OnClickListen
             }
         }, 3000);
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        startSlideFadeInAnimation2(landingpagescroll);
+        startSlideFadeInAnimation(layout1);
+        startSlideFadeInAnimationright(horizontalScrollView);
+        startSlideFadeInAnimationright2(companycat);
+        startSlideFadeInAnimationleft(rcblock);
+        startSlideFadeInAnimationleft2(Buttonlayout);
+    }
+
+//Animation
+    private void startSlideFadeInAnimation(LinearLayout layout) {
+        Animation slideFadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.slide_in_layout);
+        layout.startAnimation(slideFadeInAnimation);
+    }
+    private void startSlideFadeInAnimation2(LinearLayout layout) {
+        Animation slideFadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.slide_leftright_layout);
+        layout.startAnimation(slideFadeInAnimation);
+
+    }
+
+    private void startSlideFadeInAnimationright(HorizontalScrollView layout) {
+        Animation slideFadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.slide_in_layout);
+        layout.startAnimation(slideFadeInAnimation);
+
+    }
+
+
+    private void startSlideFadeInAnimationleft(TextView layout) {
+        Animation slideFadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.slide_leftright_layout);
+        layout.startAnimation(slideFadeInAnimation);
+
+    }
+    private void startSlideFadeInAnimationleft2(LinearLayout layout) {
+        Animation slideFadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.slide_leftright_layout);
+        layout.startAnimation(slideFadeInAnimation);
+
+    }
+
+
+    private void startSlideFadeInAnimationright2(TextView layout) {
+        Animation slideFadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.slide_in_layout);
+        layout.startAnimation(slideFadeInAnimation);
+
+    }
+
+
 
     @Override
     public void onClick(View v){
